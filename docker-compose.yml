@@ -1,0 +1,27 @@
+#levantar los contenedores
+#sudo docker-compose up --build
+#eliminar contenedor anterior: sudo kill -9 1047 /Donde [PID] es el número de proceso que te dio el comando anterior
+
+version: '3.8'
+
+services:
+  mongo:
+    image: mongo:latest
+    container_name: mongodb
+    ports:
+      - "27017:27017"
+    volumes:
+      - ./data/mongo:/data/db
+    restart: always
+
+  scraper:
+    build:
+      context: .
+      dockerfile: dockerfile
+    container_name: scraper
+    volumes:
+      - ./app:/app
+    depends_on:
+      - mongo
+    working_dir: /app
+    command: python scraper.py
