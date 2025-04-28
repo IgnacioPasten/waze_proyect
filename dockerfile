@@ -1,13 +1,18 @@
-# Usa una imagen oficial de Python
 FROM python:3.10-slim
 
-# Instala pymongo
+# pymongo
 RUN pip install pymongo requests
 
-# Crea el directorio de la app
+# directorio de la app
 WORKDIR /app
 
-# Copia el contenido de app al contenedor
+# contenido de app al contenedor
 COPY app/ /app
+
+# archivo requirements.txt al contenedor
+COPY requirements.txt /app/
+
+# dependencias del proyecto
+RUN pip install --no-cache-dir -r requirements.txt
 
 # No definimos CMD aquí porque lo pusimos en docker-compose.yml
