@@ -2,7 +2,7 @@ from pymongo import MongoClient
 
 
 class Storage:
-    def __init__(self, uri="mongodb://mongodb:27017/", db_name="waze_data"):
+    def __init__(self, uri="mongodb://mongo:27017/", db_name="waze_data"):
         self.client = MongoClient(uri)
         self.db = self.client[db_name]
         self.collection = self.db["events"]

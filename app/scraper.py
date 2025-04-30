@@ -11,7 +11,7 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 # conexión mongodb
-client = MongoClient("mongodb://mongodb:27017/")
+client = MongoClient("mongodb://mongo:27017/")
 db = client["waze_data"]
 collection = db["events"]
 
