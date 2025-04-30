@@ -11,8 +11,8 @@ logger = logging.getLogger(__name__)
 
 storage = Storage()
 
-policies = [CacheLRU]
-rates = [2, 5]
+policies = [CacheLRU] # elegir entre CacheLRU o CacheFIFO
+rates = [2, 5] # tasas de trafico a probar
 
 
 def make_query(cache):
@@ -45,7 +45,7 @@ if __name__ == "__main__":
             )
 
             cache = policy(capacidad=50)
-            generator = TrafficGenerator(model="poisson", rate=rate)
+            generator = TrafficGenerator(model="poisson", rate=rate) # elegir entre modelo poisson o uniform
 
             query_func = make_query(cache)
             generator.generate_queries(query_func=query_func, duration_seconds=30)
