@@ -42,9 +42,9 @@ Pasos de ejecución
 
 1. Clona el repositorio y entra al directorio del proyecto:**
 ```bash
-   **git clone https://github.com/IgnacioPasten/waze_proyect.git
-   cd waze_proyect**
-
+   git clone https://github.com/IgnacioPasten/waze_proyect.git
+   cd waze_proyect
+```
 2. Configura el comportamiento deseado en app/main.py (o usar lo ya definido):
    - Define la política de caché (LRU o FIFO)
    - Define la tasa de arribo (rate)
@@ -52,7 +52,8 @@ Pasos de ejecución
 
 3. Ejecuta el sistema con el comando:
 ```bash
-   **docker-compose up --build**
+   docker-compose up --build
+```
 
 4. Monitorea la ejecución:
    - En Docker Desktop, abre el contenedor llamado app para visualizar los logs de los módulos funcionando (scraper, generador, caché y almacenamiento).
