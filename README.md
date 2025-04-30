@@ -11,7 +11,8 @@ Este proyecto es desarrollado para el análisis de tráfico en la Región Metrop
 1. scraper.py
 Extrae eventos desde la API de Waze dividiendo el área metropolitana en 52 casillas. Filtra, transforma y guarda los eventos en MongoDB. Soporta traducción de tipos de eventos y extracción de comentarios.
 
-**Nota:** En la variable `TOTAL_OBJETIVO` se puede ajustar la cantidad de eventos a obtener.
+**En la variable `TOTAL_OBJETIVO` se puede ajustar la cantidad de eventos a obtener.**
+
 
 2. storage.py
 Módulo de acceso a datos que permite insertar y consultar eventos almacenados en la base MongoDB.
@@ -39,10 +40,10 @@ Requisitos previos
 
 Pasos de ejecución
 
-1. Clona el repositorio y entra al directorio del proyecto:
+1. Clona el repositorio y entra al directorio del proyecto:**
 
-   git clone https://github.com/IgnacioPasten/waze_proyect.git
-   cd waze_proyect
+   **git clone https://github.com/IgnacioPasten/waze_proyect.git
+   cd waze_proyect**
 
 2. Configura el comportamiento deseado en app/main.py (o usar lo ya definido):
    - Define la política de caché (LRU o FIFO)
@@ -51,7 +52,7 @@ Pasos de ejecución
 
 3. Ejecuta el sistema con el comando:
 
-   docker-compose up --build
+   **docker-compose up --build**
 
 4. Monitorea la ejecución:
    - En Docker Desktop, abre el contenedor llamado app para visualizar los logs de los módulos funcionando (scraper, generador, caché y almacenamiento).
