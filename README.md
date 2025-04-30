@@ -11,6 +11,8 @@ Este proyecto es desarrollado para el análisis de tráfico en la Región Metrop
 1. scraper.py
 Extrae eventos desde la API de Waze dividiendo el área metropolitana en 52 casillas. Filtra, transforma y guarda los eventos en MongoDB. Soporta traducción de tipos de eventos y extracción de comentarios.
 
+En la variable TOTAL_OBJETIVO se puede ajustar la cantidad de eventos a obtener.
+
 2. storage.py
 Módulo de acceso a datos que permite insertar y consultar eventos almacenados en la base MongoDB.
 
