@@ -2,7 +2,7 @@ import time
 import random
 import numpy as np
 
-CIUDADES_POPULARES = ["Santiago", "Providencia", "Ñuñoa", "Las Condes", "Puente Alto"]
+CIUDADES_POPULARES = ["Santiago", "Providencia", "Las Condes", "Maipú", "Ñuñoa"]
 
 
 class TrafficGenerator:

@@ -11,7 +11,7 @@ logger = logging.getLogger(__name__)
 
 storage = Storage()
 
-policies = [CacheLRU, CacheFIFO]
+policies = [CacheLRU]
 rates = [2, 5]
 
 
