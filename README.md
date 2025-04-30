@@ -41,7 +41,7 @@ Requisitos previos
 Pasos de ejecución
 
 1. Clona el repositorio y entra al directorio del proyecto:**
-
+```bash
    **git clone https://github.com/IgnacioPasten/waze_proyect.git
    cd waze_proyect**
 
@@ -51,7 +51,7 @@ Pasos de ejecución
    - Define el modelo de distribución (uniform o poisson)
 
 3. Ejecuta el sistema con el comando:
-
+```bash
    **docker-compose up --build**
 
 4. Monitorea la ejecución:
