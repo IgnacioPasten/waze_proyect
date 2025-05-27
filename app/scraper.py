@@ -18,7 +18,7 @@ collection = db["events"]
 # configuración
 WAZE_URL = "https://www.waze.com/live-map/api/georss"
 HEADERS = {"User-Agent": "Mozilla/5.0"}
-TOTAL_OBJETIVO = 10000 # total de eventos a obtener, se puede ajustar
+TOTAL_OBJETIVO = 20000 # total de eventos a obtener, se puede ajustar
 EVENTOS_POR_CASILLA = 200
 DELAY_MINUTOS = 5
 DIRECTORIO_SALIDA = "data_eventos_waze"
