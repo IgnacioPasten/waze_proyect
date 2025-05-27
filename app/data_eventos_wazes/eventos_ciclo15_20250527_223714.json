@@ -1,0 +1,2557 @@
+[
+  {
+    "fecha": "2025-05-27T22:31:15",
+    "tipo": "Tráfico",
+    "subtipo": "JAM_STAND_STILL_TRAFFIC",
+    "calle": "Ruta G-132 / Camino A Polpaico",
+    "ciudad": null,
+    "reportado_por": "world_bsh0x6my",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.129818,
+      "lon": -70.84784
+    },
+    "comentarios": [],
+    "casilla": "casilla_0_4"
+  },
+  {
+    "fecha": "2025-05-27T22:34:17",
+    "tipo": "Peligro",
+    "subtipo": "HAZARD_ON_SHOULDER_CAR_STOPPED",
+    "calle": "Ruta 71",
+    "ciudad": null,
+    "reportado_por": "Hosmilito2",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.079224,
+      "lon": -70.739757
+    },
+    "comentarios": [],
+    "casilla": "casilla_0_5"
+  },
+  {
+    "fecha": "2025-05-27T22:36:34",
+    "tipo": "Tráfico",
+    "subtipo": "JAM_HEAVY_TRAFFIC",
+    "calle": "Circunvalación Chacabuco Sur",
+    "ciudad": "Lampa",
+    "reportado_por": "Anónimo",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.274724,
+      "lon": -70.74591
+    },
+    "comentarios": [],
+    "casilla": "casilla_0_5"
+  },
+  {
+    "fecha": "2025-05-27T22:35:32",
+    "tipo": "Tráfico",
+    "subtipo": "",
+    "calle": "Santa Ester",
+    "ciudad": "Liray",
+    "reportado_por": "Anónimo",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.213549,
+      "lon": -70.702019
+    },
+    "comentarios": [],
+    "casilla": "casilla_0_6"
+  },
+  {
+    "fecha": "2025-05-27T22:34:10",
+    "tipo": "Policía",
+    "subtipo": "",
+    "calle": "Ruta 57 CH / Autopista Los Libertadores",
+    "ciudad": null,
+    "reportado_por": "Anónimo",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.219121,
+      "lon": -70.676868
+    },
+    "comentarios": [],
+    "casilla": "casilla_0_6"
+  },
+  {
+    "fecha": "2025-05-27T22:35:13",
+    "tipo": "Policía",
+    "subtipo": "",
+    "calle": "Ruta 57 CH / Autopista Los Libertadores",
+    "ciudad": null,
+    "reportado_por": "Anónimo",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.211019,
+      "lon": -70.670456
+    },
+    "comentarios": [],
+    "casilla": "casilla_0_6"
+  },
+  {
+    "fecha": "2025-05-27T22:36:27",
+    "tipo": "Policía",
+    "subtipo": "POLICE_HIDING",
+    "calle": "Diagonal Santa Elena",
+    "ciudad": "Colina",
+    "reportado_por": "Anónimo",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.236745,
+      "lon": -70.69672
+    },
+    "comentarios": [],
+    "casilla": "casilla_0_6"
+  },
+  {
+    "fecha": "2025-05-27T22:31:11",
+    "tipo": "Tráfico",
+    "subtipo": "",
+    "calle": "Av. del Valle",
+    "ciudad": "Chicureo",
+    "reportado_por": "LOKILLO300115",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.276207,
+      "lon": -70.655828
+    },
+    "comentarios": [],
+    "casilla": "casilla_0_7"
+  },
+  {
+    "fecha": "2025-05-27T22:33:44",
+    "tipo": "Tráfico",
+    "subtipo": "JAM_STAND_STILL_TRAFFIC",
+    "calle": "San Antonio de Comaico",
+    "ciudad": "Colina",
+    "reportado_por": "AlexInostrozagajardo",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.189707,
+      "lon": -70.661414
+    },
+    "comentarios": [],
+    "casilla": "casilla_0_7"
+  },
+  {
+    "fecha": "2025-05-27T22:32:38",
+    "tipo": "Tráfico",
+    "subtipo": "JAM_HEAVY_TRAFFIC",
+    "calle": "General San Martín",
+    "ciudad": "Colina",
+    "reportado_por": "jorx26",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.19003,
+      "lon": -70.660423
+    },
+    "comentarios": [],
+    "casilla": "casilla_0_7"
+  },
+  {
+    "fecha": "2025-05-27T22:35:19",
+    "tipo": "Policía",
+    "subtipo": "",
+    "calle": "Camino Chicureo",
+    "ciudad": "Chicureo",
+    "reportado_por": "world_gvx2cnt9",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.286606,
+      "lon": -70.660865
+    },
+    "comentarios": [],
+    "casilla": "casilla_0_7"
+  },
+  {
+    "fecha": "2025-05-27T22:32:14",
+    "tipo": "Tráfico",
+    "subtipo": "JAM_STAND_STILL_TRAFFIC",
+    "calle": "Ruta 78",
+    "ciudad": null,
+    "reportado_por": "Anónimo",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.554537,
+      "lon": -70.817656
+    },
+    "comentarios": [],
+    "casilla": "casilla_1_4"
+  },
+  {
+    "fecha": "2025-05-27T22:31:48",
+    "tipo": "Tráfico",
+    "subtipo": "JAM_HEAVY_TRAFFIC",
+    "calle": "Ruta 78",
+    "ciudad": null,
+    "reportado_por": "Anónimo",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.528548,
+      "lon": -70.799261
+    },
+    "comentarios": [],
+    "casilla": "casilla_1_4"
+  },
+  {
+    "fecha": "2025-05-27T22:32:24",
+    "tipo": "Peligro",
+    "subtipo": "HAZARD_ON_SHOULDER_CAR_STOPPED",
+    "calle": "Ruta 78",
+    "ciudad": null,
+    "reportado_por": "Elolivar",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.570343,
+      "lon": -70.848448
+    },
+    "comentarios": [],
+    "casilla": "casilla_1_4"
+  },
+  {
+    "fecha": "2025-05-27T22:31:41",
+    "tipo": "Tráfico",
+    "subtipo": "JAM_STAND_STILL_TRAFFIC",
+    "calle": "Ruta G-18 / Camino El Noviciado",
+    "ciudad": null,
+    "reportado_por": "DjShamakito",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.328553,
+      "lon": -70.837378
+    },
+    "comentarios": [],
+    "casilla": "casilla_1_4"
+  },
+  {
+    "fecha": "2025-05-27T22:32:55",
+    "tipo": "Peligro",
+    "subtipo": "HAZARD_ON_SHOULDER_CAR_STOPPED",
+    "calle": "Ruta 78",
+    "ciudad": null,
+    "reportado_por": "hanamishi",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.499184,
+      "lon": -70.793989
+    },
+    "comentarios": [],
+    "casilla": "casilla_1_4"
+  },
+  {
+    "fecha": "2025-05-27T22:36:13",
+    "tipo": "Peligro",
+    "subtipo": "HAZARD_ON_SHOULDER_CAR_STOPPED",
+    "calle": "Ruta 78",
+    "ciudad": null,
+    "reportado_por": "Anónimo",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.577811,
+      "lon": -70.849206
+    },
+    "comentarios": [],
+    "casilla": "casilla_1_4"
+  },
+  {
+    "fecha": "2025-05-27T22:33:17",
+    "tipo": "Peligro",
+    "subtipo": "HAZARD_ON_SHOULDER_CAR_STOPPED",
+    "calle": "Mapocho Sur",
+    "ciudad": "Cerro Navia",
+    "reportado_por": "Moisolay",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.422258,
+      "lon": -70.751636
+    },
+    "comentarios": [],
+    "casilla": "casilla_1_5"
+  },
+  {
+    "fecha": "2025-05-27T22:36:25",
+    "tipo": "Policía",
+    "subtipo": "",
+    "calle": "Estados Unidos",
+    "ciudad": "Cerro Navia",
+    "reportado_por": "Anónimo",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.430942,
+      "lon": -70.737713
+    },
+    "comentarios": [],
+    "casilla": "casilla_1_5"
+  },
+  {
+    "fecha": "2025-05-27T22:34:57",
+    "tipo": "Tráfico",
+    "subtipo": "JAM_HEAVY_TRAFFIC",
+    "calle": "Av. El Rosal",
+    "ciudad": "Maipú",
+    "reportado_por": "world_ul35g9dl",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.479534,
+      "lon": -70.757935
+    },
+    "comentarios": [],
+    "casilla": "casilla_1_5"
+  },
+  {
+    "fecha": "2025-05-27T22:32:47",
+    "tipo": "Tráfico",
+    "subtipo": "JAM_HEAVY_TRAFFIC",
+    "calle": "Primo de Rivera",
+    "ciudad": "Maipú",
+    "reportado_por": "Anónimo",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.492753,
+      "lon": -70.743505
+    },
+    "comentarios": [],
+    "casilla": "casilla_1_5"
+  },
+  {
+    "fecha": "2025-05-27T22:32:28",
+    "tipo": "Tráfico",
+    "subtipo": "",
+    "calle": "Mapocho",
+    "ciudad": "Cerro Navia",
+    "reportado_por": "Anónimo",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.422902,
+      "lon": -70.739662
+    },
+    "comentarios": [],
+    "casilla": "casilla_1_5"
+  },
+  {
+    "fecha": "2025-05-27T22:32:37",
+    "tipo": "Tráfico",
+    "subtipo": "JAM_HEAVY_TRAFFIC",
+    "calle": "Puente Petersen",
+    "ciudad": "Renca",
+    "reportado_por": "Anónimo",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.412315,
+      "lon": -70.746766
+    },
+    "comentarios": [],
+    "casilla": "casilla_1_5"
+  },
+  {
+    "fecha": "2025-05-27T22:33:41",
+    "tipo": "Policía",
+    "subtipo": "",
+    "calle": "Av. Las Torres",
+    "ciudad": "Estación Central",
+    "reportado_por": "world_dx1rfzvs",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.466139,
+      "lon": -70.731405
+    },
+    "comentarios": [],
+    "casilla": "casilla_1_5"
+  },
+  {
+    "fecha": "2025-05-27T22:33:34",
+    "tipo": "Tráfico",
+    "subtipo": "JAM_STAND_STILL_TRAFFIC",
+    "calle": "Ruta G-30 / Camino a Lonquén",
+    "ciudad": null,
+    "reportado_por": "Alex_esparza",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.547336,
+      "lon": -70.746372
+    },
+    "comentarios": [],
+    "casilla": "casilla_1_5"
+  },
+  {
+    "fecha": "2025-05-27T22:33:44",
+    "tipo": "Tráfico",
+    "subtipo": "JAM_HEAVY_TRAFFIC",
+    "calle": "Santa Luisa",
+    "ciudad": "Quilicura",
+    "reportado_por": "Anónimo",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.357194,
+      "lon": -70.737513
+    },
+    "comentarios": [],
+    "casilla": "casilla_1_5"
+  },
+  {
+    "fecha": "2025-05-27T22:34:02",
+    "tipo": "Tráfico",
+    "subtipo": "",
+    "calle": "Camino del Cerro",
+    "ciudad": "Quilicura",
+    "reportado_por": "Anónimo",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.3725,
+      "lon": -70.737194
+    },
+    "comentarios": [],
+    "casilla": "casilla_1_5"
+  },
+  {
+    "fecha": "2025-05-27T22:31:09",
+    "tipo": "Tráfico",
+    "subtipo": "JAM_STAND_STILL_TRAFFIC",
+    "calle": "Av. Portales",
+    "ciudad": "Maipú",
+    "reportado_por": "Anónimo",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.517735,
+      "lon": -70.765525
+    },
+    "comentarios": [],
+    "casilla": "casilla_1_5"
+  },
+  {
+    "fecha": "2025-05-27T22:33:47",
+    "tipo": "Tráfico",
+    "subtipo": "JAM_STAND_STILL_TRAFFIC",
+    "calle": "La Montaña",
+    "ciudad": "Lampa",
+    "reportado_por": "jniloe",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.318223,
+      "lon": -70.732574
+    },
+    "comentarios": [],
+    "casilla": "casilla_1_5"
+  },
+  {
+    "fecha": "2025-05-27T22:31:12",
+    "tipo": "Tráfico",
+    "subtipo": "JAM_HEAVY_TRAFFIC",
+    "calle": "Av. Laguna Sur",
+    "ciudad": "Pudahuel",
+    "reportado_por": "RomiIsaEdum",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.45883,
+      "lon": -70.758563
+    },
+    "comentarios": [],
+    "casilla": "casilla_1_5"
+  },
+  {
+    "fecha": "2025-05-27T22:32:30",
+    "tipo": "Policía",
+    "subtipo": "",
+    "calle": "Av. Las Torres",
+    "ciudad": "Pudahuel",
+    "reportado_por": "world_dx1rfzvs",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.459961,
+      "lon": -70.731346
+    },
+    "comentarios": [],
+    "casilla": "casilla_1_5"
+  },
+  {
+    "fecha": "2025-05-27T22:34:04",
+    "tipo": "Tráfico",
+    "subtipo": "JAM_HEAVY_TRAFFIC",
+    "calle": "Av. La Estrella",
+    "ciudad": "Pudahuel",
+    "reportado_por": "Anónimo",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.455025,
+      "lon": -70.750818
+    },
+    "comentarios": [],
+    "casilla": "casilla_1_5"
+  },
+  {
+    "fecha": "2025-05-27T22:35:37",
+    "tipo": "Tráfico",
+    "subtipo": "JAM_HEAVY_TRAFFIC",
+    "calle": "Baquedano",
+    "ciudad": "San Bernardo",
+    "reportado_por": "Anónimo",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.599875,
+      "lon": -70.697205
+    },
+    "comentarios": [],
+    "casilla": "casilla_1_6"
+  },
+  {
+    "fecha": "2025-05-27T22:32:05",
+    "tipo": "Tráfico",
+    "subtipo": "JAM_STAND_STILL_TRAFFIC",
+    "calle": "Santa Elena de Huechuraba",
+    "ciudad": "Huechuraba",
+    "reportado_por": "Anónimo",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.364123,
+      "lon": -70.674711
+    },
+    "comentarios": [],
+    "casilla": "casilla_1_6"
+  },
+  {
+    "fecha": "2025-05-27T22:36:12",
+    "tipo": "Tráfico",
+    "subtipo": "",
+    "calle": "Ismael Briceño",
+    "ciudad": "Quilicura",
+    "reportado_por": "Anónimo",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.373295,
+      "lon": -70.729218
+    },
+    "comentarios": [],
+    "casilla": "casilla_1_6"
+  },
+  {
+    "fecha": "2025-05-27T22:34:48",
+    "tipo": "Policía",
+    "subtipo": "",
+    "calle": "Salomón Sack",
+    "ciudad": "Cerrillos",
+    "reportado_por": "Anónimo",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.49693,
+      "lon": -70.707663
+    },
+    "comentarios": [],
+    "casilla": "casilla_1_6"
+  },
+  {
+    "fecha": "2025-05-27T22:31:46",
+    "tipo": "Conversación",
+    "subtipo": "",
+    "calle": "Av. Apóstol Santiago",
+    "ciudad": "Quinta Normal",
+    "reportado_por": "world_o5yaenfj",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.442239,
+      "lon": -70.692133
+    },
+    "comentarios": [],
+    "casilla": "casilla_1_6"
+  },
+  {
+    "fecha": "2025-05-27T22:36:15",
+    "tipo": "Tráfico",
+    "subtipo": "JAM_STAND_STILL_TRAFFIC",
+    "calle": "Av. María Rozas Velásquez",
+    "ciudad": "Lo Prado",
+    "reportado_por": "cristiancr2019",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.452603,
+      "lon": -70.70633
+    },
+    "comentarios": [],
+    "casilla": "casilla_1_6"
+  },
+  {
+    "fecha": "2025-05-27T22:35:40",
+    "tipo": "Tráfico",
+    "subtipo": "JAM_STAND_STILL_TRAFFIC",
+    "calle": "Coronel Robles",
+    "ciudad": "Quinta Normal",
+    "reportado_por": "Anónimo",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.434078,
+      "lon": -70.69256
+    },
+    "comentarios": [],
+    "casilla": "casilla_1_6"
+  },
+  {
+    "fecha": "2025-05-27T22:34:04",
+    "tipo": "Peligro",
+    "subtipo": "HAZARD_ON_SHOULDER_CAR_STOPPED",
+    "calle": "Autopista Central - Eje Gral. Velásquez",
+    "ciudad": null,
+    "reportado_por": "RWittwerR",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.405803,
+      "lon": -70.695253
+    },
+    "comentarios": [],
+    "casilla": "casilla_1_6"
+  },
+  {
+    "fecha": "2025-05-27T22:34:07",
+    "tipo": "Conversación",
+    "subtipo": "",
+    "calle": "Coronel Robles",
+    "ciudad": "Santiago",
+    "reportado_por": "ronalchenko",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.440362,
+      "lon": -70.691536
+    },
+    "comentarios": [
+      {
+        "pulgar_arriba": false,
+        "texto": "evitar*"
+      }
+    ],
+    "casilla": "casilla_1_6"
+  },
+  {
+    "fecha": "2025-05-27T22:36:29",
+    "tipo": "Peligro",
+    "subtipo": "HAZARD_ON_SHOULDER_CAR_STOPPED",
+    "calle": "Av. Presidente José Joaquín Prieto Vial",
+    "ciudad": "El Bosque",
+    "reportado_por": "SebaVigas",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.540339,
+      "lon": -70.685851
+    },
+    "comentarios": [],
+    "casilla": "casilla_1_6"
+  },
+  {
+    "fecha": "2025-05-27T22:34:59",
+    "tipo": "Tráfico",
+    "subtipo": "JAM_HEAVY_TRAFFIC",
+    "calle": "Buzo Sobenes",
+    "ciudad": "Estación Central",
+    "reportado_por": "Anónimo",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.450099,
+      "lon": -70.693605
+    },
+    "comentarios": [],
+    "casilla": "casilla_1_6"
+  },
+  {
+    "fecha": "2025-05-27T22:35:33",
+    "tipo": "Tráfico",
+    "subtipo": "JAM_HEAVY_TRAFFIC",
+    "calle": "Forestal",
+    "ciudad": "Conchalí",
+    "reportado_por": "Anónimo",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.366385,
+      "lon": -70.696975
+    },
+    "comentarios": [],
+    "casilla": "casilla_1_6"
+  },
+  {
+    "fecha": "2025-05-27T22:36:08",
+    "tipo": "Tráfico",
+    "subtipo": "JAM_STAND_STILL_TRAFFIC",
+    "calle": "Ruta 5 > Norte",
+    "ciudad": "Lo Espejo",
+    "reportado_por": "MauricioSaavedraHassan",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.532048,
+      "lon": -70.680123
+    },
+    "comentarios": [],
+    "casilla": "casilla_1_6"
+  },
+  {
+    "fecha": "2025-05-27T22:32:23",
+    "tipo": "Accidente",
+    "subtipo": "",
+    "calle": "Rosa Ester Rodríguez",
+    "ciudad": "Cerrillos",
+    "reportado_por": "Anónimo",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.489189,
+      "lon": -70.723893
+    },
+    "comentarios": [],
+    "casilla": "casilla_1_6"
+  },
+  {
+    "fecha": "2025-05-27T22:36:06",
+    "tipo": "Tráfico",
+    "subtipo": "JAM_HEAVY_TRAFFIC",
+    "calle": "Av. Las Parcelas",
+    "ciudad": "Estación Central",
+    "reportado_por": "Anónimo",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.463709,
+      "lon": -70.712527
+    },
+    "comentarios": [],
+    "casilla": "casilla_1_6"
+  },
+  {
+    "fecha": "2025-05-27T22:32:30",
+    "tipo": "Peligro",
+    "subtipo": "HAZARD_ON_SHOULDER_CAR_STOPPED",
+    "calle": "Av. Américo Vespucio",
+    "ciudad": "Cerrillos",
+    "reportado_por": "SonikoCH",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.507961,
+      "lon": -70.724713
+    },
+    "comentarios": [],
+    "casilla": "casilla_1_6"
+  },
+  {
+    "fecha": "2025-05-27T22:34:02",
+    "tipo": "Policía",
+    "subtipo": "",
+    "calle": "Rafael Sotomayor",
+    "ciudad": "Santiago",
+    "reportado_por": "world_yh46bny6",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.441856,
+      "lon": -70.673193
+    },
+    "comentarios": [],
+    "casilla": "casilla_1_6"
+  },
+  {
+    "fecha": "2025-05-27T22:34:49",
+    "tipo": "Policía",
+    "subtipo": "POLICE_HIDING",
+    "calle": "Martín de Solís",
+    "ciudad": "San Bernardo",
+    "reportado_por": "Anónimo",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.593692,
+      "lon": -70.685443
+    },
+    "comentarios": [],
+    "casilla": "casilla_1_6"
+  },
+  {
+    "fecha": "2025-05-27T22:34:42",
+    "tipo": "Accidente",
+    "subtipo": "ACCIDENT_MAJOR",
+    "calle": "San Alberto Hurtado",
+    "ciudad": "Estación Central",
+    "reportado_por": "Tiberii",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.464885,
+      "lon": -70.688292
+    },
+    "comentarios": [],
+    "casilla": "casilla_1_6"
+  },
+  {
+    "fecha": "2025-05-27T22:36:19",
+    "tipo": "Tráfico",
+    "subtipo": "",
+    "calle": "Autopista Costanera Norte",
+    "ciudad": null,
+    "reportado_por": "world_u74ewzhh",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.407328,
+      "lon": -70.707433
+    },
+    "comentarios": [],
+    "casilla": "casilla_1_6"
+  },
+  {
+    "fecha": "2025-05-27T22:31:23",
+    "tipo": "Tráfico",
+    "subtipo": "JAM_STAND_STILL_TRAFFIC",
+    "calle": "Ismael Briceño",
+    "ciudad": "Quilicura",
+    "reportado_por": "GuilleUberBlack",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.372847,
+      "lon": -70.729785
+    },
+    "comentarios": [],
+    "casilla": "casilla_1_6"
+  },
+  {
+    "fecha": "2025-05-27T22:33:50",
+    "tipo": "Tráfico",
+    "subtipo": "JAM_STAND_STILL_TRAFFIC",
+    "calle": "Av. Presidente José Joaquín Prieto Vial",
+    "ciudad": "Lo Espejo",
+    "reportado_por": "Anónimo",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.525893,
+      "lon": -70.678608
+    },
+    "comentarios": [],
+    "casilla": "casilla_1_6"
+  },
+  {
+    "fecha": "2025-05-27T22:36:31",
+    "tipo": "Policía",
+    "subtipo": "",
+    "calle": "Autopista Vespucio Sur",
+    "ciudad": null,
+    "reportado_por": "SoyelSeba",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.516415,
+      "lon": -70.713539
+    },
+    "comentarios": [],
+    "casilla": "casilla_1_6"
+  },
+  {
+    "fecha": "2025-05-27T22:36:28",
+    "tipo": "Tráfico",
+    "subtipo": "JAM_HEAVY_TRAFFIC",
+    "calle": "Av. Presidente Eduardo Frei Montalva",
+    "ciudad": "Conchalí",
+    "reportado_por": "Negrojavier",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.392457,
+      "lon": -70.687959
+    },
+    "comentarios": [],
+    "casilla": "casilla_1_6"
+  },
+  {
+    "fecha": "2025-05-27T22:27:19",
+    "tipo": "Tráfico",
+    "subtipo": "JAM_STAND_STILL_TRAFFIC",
+    "calle": "Toro Mazotte",
+    "ciudad": "Estación Central",
+    "reportado_por": "Tiberii",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.453471,
+      "lon": -70.69243
+    },
+    "comentarios": [],
+    "casilla": "casilla_1_6"
+  },
+  {
+    "fecha": "2025-05-27T22:33:16",
+    "tipo": "Tráfico",
+    "subtipo": "JAM_STAND_STILL_TRAFFIC",
+    "calle": "Moneda",
+    "ciudad": "Santiago",
+    "reportado_por": "MiguelJimenezj",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.442107,
+      "lon": -70.652324
+    },
+    "comentarios": [],
+    "casilla": "casilla_1_7"
+  },
+  {
+    "fecha": "2025-05-27T22:34:39",
+    "tipo": "Policía",
+    "subtipo": "",
+    "calle": "Sierra Bella",
+    "ciudad": "San Joaquín",
+    "reportado_por": "PataDeCamello",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.475171,
+      "lon": -70.632244
+    },
+    "comentarios": [],
+    "casilla": "casilla_1_7"
+  },
+  {
+    "fecha": "2025-05-27T22:31:11",
+    "tipo": "Tráfico",
+    "subtipo": "JAM_HEAVY_TRAFFIC",
+    "calle": "Autopista Costanera Norte",
+    "ciudad": null,
+    "reportado_por": "Anónimo",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.427858,
+      "lon": -70.623882
+    },
+    "comentarios": [],
+    "casilla": "casilla_1_7"
+  },
+  {
+    "fecha": "2025-05-27T22:35:11",
+    "tipo": "Tráfico",
+    "subtipo": "JAM_HEAVY_TRAFFIC",
+    "calle": "Av. Carlos Valdovinos",
+    "ciudad": "San Miguel",
+    "reportado_por": "ajsaravia955",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.479401,
+      "lon": -70.650153
+    },
+    "comentarios": [],
+    "casilla": "casilla_1_7"
+  },
+  {
+    "fecha": "2025-05-27T22:35:04",
+    "tipo": "Tráfico",
+    "subtipo": "JAM_HEAVY_TRAFFIC",
+    "calle": "Av. El Salto",
+    "ciudad": "Recoleta",
+    "reportado_por": "sergio___e",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.399616,
+      "lon": -70.628802
+    },
+    "comentarios": [],
+    "casilla": "casilla_1_7"
+  },
+  {
+    "fecha": "2025-05-27T22:36:48",
+    "tipo": "Tráfico",
+    "subtipo": "",
+    "calle": "Av. Vicuña Mackenna",
+    "ciudad": "Santiago",
+    "reportado_por": "Anónimo",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.452883,
+      "lon": -70.630684
+    },
+    "comentarios": [],
+    "casilla": "casilla_1_7"
+  },
+  {
+    "fecha": "2025-05-27T22:35:17",
+    "tipo": "Tráfico",
+    "subtipo": "JAM_STAND_STILL_TRAFFIC",
+    "calle": "Av. Providencia",
+    "ciudad": "Providencia",
+    "reportado_por": "cmetz",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.424373,
+      "lon": -70.613361
+    },
+    "comentarios": [],
+    "casilla": "casilla_1_7"
+  },
+  {
+    "fecha": "2025-05-27T22:35:53",
+    "tipo": "Peligro",
+    "subtipo": "HAZARD_ON_ROAD_CONSTRUCTION",
+    "calle": "Carmen",
+    "ciudad": "Santiago",
+    "reportado_por": "Anónimo",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.451594,
+      "lon": -70.641047
+    },
+    "comentarios": [],
+    "casilla": "casilla_1_7"
+  },
+  {
+    "fecha": "2025-05-27T22:35:18",
+    "tipo": "Policía",
+    "subtipo": "",
+    "calle": "Tarapacá",
+    "ciudad": "Santiago",
+    "reportado_por": "Anónimo",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.447954,
+      "lon": -70.654957
+    },
+    "comentarios": [],
+    "casilla": "casilla_1_7"
+  },
+  {
+    "fecha": "2025-05-27T22:35:32",
+    "tipo": "Peligro",
+    "subtipo": "HAZARD_ON_ROAD",
+    "calle": "Av. San Francisco",
+    "ciudad": "La Pintana",
+    "reportado_por": "StudioMamba",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.563048,
+      "lon": -70.656958
+    },
+    "comentarios": [],
+    "casilla": "casilla_1_7"
+  },
+  {
+    "fecha": "2025-05-27T22:33:01",
+    "tipo": "Tráfico",
+    "subtipo": "JAM_STAND_STILL_TRAFFIC",
+    "calle": "Emilio Vaisse",
+    "ciudad": "Ñuñoa",
+    "reportado_por": "Anónimo",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.451678,
+      "lon": -70.625894
+    },
+    "comentarios": [],
+    "casilla": "casilla_1_7"
+  },
+  {
+    "fecha": "2025-05-27T22:35:14",
+    "tipo": "Tráfico",
+    "subtipo": "JAM_HEAVY_TRAFFIC",
+    "calle": "Av. Providencia",
+    "ciudad": "Providencia",
+    "reportado_por": "Anónimo",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.422002,
+      "lon": -70.610195
+    },
+    "comentarios": [],
+    "casilla": "casilla_1_7"
+  },
+  {
+    "fecha": "2025-05-27T22:31:28",
+    "tipo": "Tráfico",
+    "subtipo": "",
+    "calle": "Santa Isabel",
+    "ciudad": "Santiago",
+    "reportado_por": "Anónimo",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.452578,
+      "lon": -70.653135
+    },
+    "comentarios": [],
+    "casilla": "casilla_1_7"
+  },
+  {
+    "fecha": "2025-05-27T22:32:27",
+    "tipo": "Tráfico",
+    "subtipo": "JAM_STAND_STILL_TRAFFIC",
+    "calle": "Av. Américo Vespucio",
+    "ciudad": "Huechuraba",
+    "reportado_por": "Anónimo",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.379666,
+      "lon": -70.647312
+    },
+    "comentarios": [],
+    "casilla": "casilla_1_7"
+  },
+  {
+    "fecha": "2025-05-27T22:35:03",
+    "tipo": "Accidente",
+    "subtipo": "",
+    "calle": "Av. Libertador Bernardo O'Higgins",
+    "ciudad": "Santiago",
+    "reportado_por": "Anónimo",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.442462,
+      "lon": -70.645227
+    },
+    "comentarios": [],
+    "casilla": "casilla_1_7"
+  },
+  {
+    "fecha": "2025-05-27T22:31:41",
+    "tipo": "Tráfico",
+    "subtipo": "JAM_STAND_STILL_TRAFFIC",
+    "calle": "Padre Alonso de Ovalle",
+    "ciudad": "Santiago",
+    "reportado_por": "Anónimo",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.445191,
+      "lon": -70.645662
+    },
+    "comentarios": [],
+    "casilla": "casilla_1_7"
+  },
+  {
+    "fecha": "2025-05-27T22:35:05",
+    "tipo": "Tráfico",
+    "subtipo": "JAM_HEAVY_TRAFFIC",
+    "calle": "Acceso Autopista Costanera Norte > Oriente",
+    "ciudad": "Santiago",
+    "reportado_por": "pumbaster",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.429957,
+      "lon": -70.659621
+    },
+    "comentarios": [],
+    "casilla": "casilla_1_7"
+  },
+  {
+    "fecha": "2025-05-27T22:33:54",
+    "tipo": "Tráfico",
+    "subtipo": "JAM_HEAVY_TRAFFIC",
+    "calle": "Av. Américo Vespucio",
+    "ciudad": "La Cisterna",
+    "reportado_por": "DepaseoporLima",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.536746,
+      "lon": -70.667102
+    },
+    "comentarios": [],
+    "casilla": "casilla_1_7"
+  },
+  {
+    "fecha": "2025-05-27T22:34:08",
+    "tipo": "Policía",
+    "subtipo": "",
+    "calle": "Av. Independencia",
+    "ciudad": "Independencia",
+    "reportado_por": "world_7hoap4rb",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.419929,
+      "lon": -70.656024
+    },
+    "comentarios": [],
+    "casilla": "casilla_1_7"
+  },
+  {
+    "fecha": "2025-05-27T22:34:51",
+    "tipo": "Tráfico",
+    "subtipo": "JAM_STAND_STILL_TRAFFIC",
+    "calle": "José Manuel Infante",
+    "ciudad": "Ñuñoa",
+    "reportado_por": "Anónimo",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.454751,
+      "lon": -70.617949
+    },
+    "comentarios": [],
+    "casilla": "casilla_1_7"
+  },
+  {
+    "fecha": "2025-05-27T22:31:14",
+    "tipo": "Policía",
+    "subtipo": "",
+    "calle": "Av. Santa Rosa",
+    "ciudad": "Santiago",
+    "reportado_por": "Anónimo",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.445424,
+      "lon": -70.645515
+    },
+    "comentarios": [],
+    "casilla": "casilla_1_7"
+  },
+  {
+    "fecha": "2025-05-27T22:31:37",
+    "tipo": "Tráfico",
+    "subtipo": "JAM_HEAVY_TRAFFIC",
+    "calle": "Sargento Aldea",
+    "ciudad": "Santiago",
+    "reportado_por": "world_sj5sknv3",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.468727,
+      "lon": -70.649507
+    },
+    "comentarios": [],
+    "casilla": "casilla_1_7"
+  },
+  {
+    "fecha": "2025-05-27T22:34:03",
+    "tipo": "Tráfico",
+    "subtipo": "JAM_STAND_STILL_TRAFFIC",
+    "calle": "Santa Clara",
+    "ciudad": "Huechuraba",
+    "reportado_por": "Anónimo",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.380847,
+      "lon": -70.637066
+    },
+    "comentarios": [],
+    "casilla": "casilla_1_7"
+  },
+  {
+    "fecha": "2025-05-27T22:35:50",
+    "tipo": "Tráfico",
+    "subtipo": "JAM_HEAVY_TRAFFIC",
+    "calle": "Av. Américo Vespucio",
+    "ciudad": "La Cisterna",
+    "reportado_por": "DepaseoporLima",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.537331,
+      "lon": -70.665309
+    },
+    "comentarios": [],
+    "casilla": "casilla_1_7"
+  },
+  {
+    "fecha": "2025-05-27T22:32:41",
+    "tipo": "Tráfico",
+    "subtipo": "JAM_STAND_STILL_TRAFFIC",
+    "calle": "Paso nivel acceso San Ignacio",
+    "ciudad": "Santiago",
+    "reportado_por": "Christiandelta",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.475575,
+      "lon": -70.654757
+    },
+    "comentarios": [],
+    "casilla": "casilla_1_7"
+  },
+  {
+    "fecha": "2025-05-27T22:32:49",
+    "tipo": "Tráfico",
+    "subtipo": "JAM_HEAVY_TRAFFIC",
+    "calle": "Paso bajo nivel / La Granja",
+    "ciudad": "La Cisterna",
+    "reportado_por": "Jano120586",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.538801,
+      "lon": -70.650911
+    },
+    "comentarios": [],
+    "casilla": "casilla_1_7"
+  },
+  {
+    "fecha": "2025-05-27T22:35:50",
+    "tipo": "Tráfico",
+    "subtipo": "JAM_STAND_STILL_TRAFFIC",
+    "calle": "Calle G",
+    "ciudad": "Conchalí",
+    "reportado_por": "Anónimo",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.372608,
+      "lon": -70.668157
+    },
+    "comentarios": [],
+    "casilla": "casilla_1_7"
+  },
+  {
+    "fecha": "2025-05-27T22:34:15",
+    "tipo": "Tráfico",
+    "subtipo": "JAM_STAND_STILL_TRAFFIC",
+    "calle": "General del Canto",
+    "ciudad": "Providencia",
+    "reportado_por": "jjpc1992",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.432366,
+      "lon": -70.616544
+    },
+    "comentarios": [],
+    "casilla": "casilla_1_7"
+  },
+  {
+    "fecha": "2025-05-27T22:34:09",
+    "tipo": "Tráfico",
+    "subtipo": "JAM_STAND_STILL_TRAFFIC",
+    "calle": "Av. Libertador Bernardo O'Higgins",
+    "ciudad": "Santiago",
+    "reportado_por": "Anónimo",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.442462,
+      "lon": -70.645227
+    },
+    "comentarios": [],
+    "casilla": "casilla_1_7"
+  },
+  {
+    "fecha": "2025-05-27T22:33:30",
+    "tipo": "Tráfico",
+    "subtipo": "JAM_HEAVY_TRAFFIC",
+    "calle": "Av. Providencia",
+    "ciudad": "Providencia",
+    "reportado_por": "Anónimo",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.42145,
+      "lon": -70.609272
+    },
+    "comentarios": [],
+    "casilla": "casilla_1_7"
+  },
+  {
+    "fecha": "2025-05-27T22:35:41",
+    "tipo": "Tráfico",
+    "subtipo": "JAM_STAND_STILL_TRAFFIC",
+    "calle": "Rodrigo de Araya",
+    "ciudad": "Ñuñoa",
+    "reportado_por": "Dgovalenzuela",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.474891,
+      "lon": -70.62214
+    },
+    "comentarios": [],
+    "casilla": "casilla_1_7"
+  },
+  {
+    "fecha": "2025-05-27T22:35:25",
+    "tipo": "Tráfico",
+    "subtipo": "JAM_STAND_STILL_TRAFFIC",
+    "calle": "Manuel Montt",
+    "ciudad": "Providencia",
+    "reportado_por": "Jhonny960",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.434483,
+      "lon": -70.616772
+    },
+    "comentarios": [],
+    "casilla": "casilla_1_7"
+  },
+  {
+    "fecha": "2025-05-27T22:34:22",
+    "tipo": "Peligro",
+    "subtipo": "HAZARD_ON_SHOULDER_CAR_STOPPED",
+    "calle": "Autopista Vespucio Sur",
+    "ciudad": null,
+    "reportado_por": "world_izy3m5tr",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.541781,
+      "lon": -70.639984
+    },
+    "comentarios": [],
+    "casilla": "casilla_1_7"
+  },
+  {
+    "fecha": "2025-05-27T22:31:54",
+    "tipo": "Policía",
+    "subtipo": "",
+    "calle": "Sierra Bella",
+    "ciudad": "San Joaquín",
+    "reportado_por": "Anónimo",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.483759,
+      "lon": -70.632216
+    },
+    "comentarios": [],
+    "casilla": "casilla_1_7"
+  },
+  {
+    "fecha": "2025-05-27T22:36:36",
+    "tipo": "Tráfico",
+    "subtipo": "JAM_STAND_STILL_TRAFFIC",
+    "calle": "Tiltil",
+    "ciudad": "Macul",
+    "reportado_por": "JFL87",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.484256,
+      "lon": -70.616529
+    },
+    "comentarios": [],
+    "casilla": "casilla_1_7"
+  },
+  {
+    "fecha": "2025-05-27T22:32:31",
+    "tipo": "Tráfico",
+    "subtipo": "JAM_STAND_STILL_TRAFFIC",
+    "calle": "Jaime Eyzaguirre",
+    "ciudad": "Santiago",
+    "reportado_por": "SebastinBonillaCorrialSpeedy",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.440481,
+      "lon": -70.638446
+    },
+    "comentarios": [],
+    "casilla": "casilla_1_7"
+  },
+  {
+    "fecha": "2025-05-27T22:31:39",
+    "tipo": "Tráfico",
+    "subtipo": "JAM_HEAVY_TRAFFIC",
+    "calle": null,
+    "ciudad": "Macul",
+    "reportado_por": "JoseLuisCrak1968",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.474959,
+      "lon": -70.620309
+    },
+    "comentarios": [],
+    "casilla": "casilla_1_7"
+  },
+  {
+    "fecha": "2025-05-27T22:34:59",
+    "tipo": "Policía",
+    "subtipo": "",
+    "calle": "Av. Santa Rosa",
+    "ciudad": "Santiago",
+    "reportado_por": "Anónimo",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.44531,
+      "lon": -70.645545
+    },
+    "comentarios": [],
+    "casilla": "casilla_1_7"
+  },
+  {
+    "fecha": "2025-05-27T22:32:49",
+    "tipo": "Tráfico",
+    "subtipo": "JAM_STAND_STILL_TRAFFIC",
+    "calle": "Bellavista",
+    "ciudad": "Recoleta",
+    "reportado_por": "Eltondelley",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.432822,
+      "lon": -70.645191
+    },
+    "comentarios": [],
+    "casilla": "casilla_1_7"
+  },
+  {
+    "fecha": "2025-05-27T22:31:11",
+    "tipo": "Tráfico",
+    "subtipo": "JAM_STAND_STILL_TRAFFIC",
+    "calle": "Rivera",
+    "ciudad": "Independencia",
+    "reportado_por": "Anónimo",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.426371,
+      "lon": -70.659195
+    },
+    "comentarios": [],
+    "casilla": "casilla_1_7"
+  },
+  {
+    "fecha": "2025-05-27T22:33:06",
+    "tipo": "Tráfico",
+    "subtipo": "JAM_STAND_STILL_TRAFFIC",
+    "calle": "Av. La Florida",
+    "ciudad": "La Florida",
+    "reportado_por": "Algofue",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.533414,
+      "lon": -70.574422
+    },
+    "comentarios": [],
+    "casilla": "casilla_1_8"
+  },
+  {
+    "fecha": "2025-05-27T22:36:03",
+    "tipo": "Tráfico",
+    "subtipo": "JAM_STAND_STILL_TRAFFIC",
+    "calle": "Av. Ossa",
+    "ciudad": "La Reina",
+    "reportado_por": "world_povsp66s",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.432375,
+      "lon": -70.5742
+    },
+    "comentarios": [],
+    "casilla": "casilla_1_8"
+  },
+  {
+    "fecha": "2025-05-27T22:35:41",
+    "tipo": "Tráfico",
+    "subtipo": "JAM_HEAVY_TRAFFIC",
+    "calle": "Av. Echeñique",
+    "ciudad": "La Reina",
+    "reportado_por": "patyshappys",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.445289,
+      "lon": -70.570293
+    },
+    "comentarios": [],
+    "casilla": "casilla_1_8"
+  },
+  {
+    "fecha": "2025-05-27T22:36:18",
+    "tipo": "Peligro",
+    "subtipo": "HAZARD_ON_ROAD_TRAFFIC_LIGHT_FAULT",
+    "calle": "Av. Eliecer Parada",
+    "ciudad": "Ñuñoa",
+    "reportado_por": "Anónimo",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.435698,
+      "lon": -70.583864
+    },
+    "comentarios": [],
+    "casilla": "casilla_1_8"
+  },
+  {
+    "fecha": "2025-05-27T22:34:49",
+    "tipo": "Tráfico",
+    "subtipo": "JAM_HEAVY_TRAFFIC",
+    "calle": "Av. Las Torres",
+    "ciudad": "Peñalolén",
+    "reportado_por": "alejandrariquelmeDino6",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.504967,
+      "lon": -70.563292
+    },
+    "comentarios": [],
+    "casilla": "casilla_1_8"
+  },
+  {
+    "fecha": "2025-05-27T22:35:57",
+    "tipo": "Accidente",
+    "subtipo": "",
+    "calle": "General Arriagada",
+    "ciudad": "La Florida",
+    "reportado_por": "worldweb_orx2y7f5",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.558732,
+      "lon": -70.601337
+    },
+    "comentarios": [],
+    "casilla": "casilla_1_8"
+  },
+  {
+    "fecha": "2025-05-27T22:33:42",
+    "tipo": "Tráfico",
+    "subtipo": "",
+    "calle": "Retorno",
+    "ciudad": "Ñuñoa",
+    "reportado_por": "Anónimo",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.454577,
+      "lon": -70.598258
+    },
+    "comentarios": [],
+    "casilla": "casilla_1_8"
+  },
+  {
+    "fecha": "2025-05-27T22:34:36",
+    "tipo": "Tráfico",
+    "subtipo": "JAM_HEAVY_TRAFFIC",
+    "calle": "Av. Troncal San Francisco",
+    "ciudad": "Puente Alto",
+    "reportado_por": "DavidRojasO",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.575821,
+      "lon": -70.579276
+    },
+    "comentarios": [],
+    "casilla": "casilla_1_8"
+  },
+  {
+    "fecha": "2025-05-27T22:32:31",
+    "tipo": "Tráfico",
+    "subtipo": "JAM_STAND_STILL_TRAFFIC",
+    "calle": "Av. Francisco Bilbao",
+    "ciudad": "Providencia",
+    "reportado_por": "Anónimo",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.436442,
+      "lon": -70.59876
+    },
+    "comentarios": [],
+    "casilla": "casilla_1_8"
+  },
+  {
+    "fecha": "2025-05-27T22:36:15",
+    "tipo": "Policía",
+    "subtipo": "",
+    "calle": "San Vicente de Paul",
+    "ciudad": "La Reina",
+    "reportado_por": "Blade2022",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.443824,
+      "lon": -70.571909
+    },
+    "comentarios": [],
+    "casilla": "casilla_1_8"
+  },
+  {
+    "fecha": "2025-05-27T22:35:47",
+    "tipo": "Tráfico",
+    "subtipo": "JAM_STAND_STILL_TRAFFIC",
+    "calle": "Túnel Manquehue I",
+    "ciudad": null,
+    "reportado_por": "Rod00Cab",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.376604,
+      "lon": -70.602747
+    },
+    "comentarios": [],
+    "casilla": "casilla_1_8"
+  },
+  {
+    "fecha": "2025-05-27T22:34:46",
+    "tipo": "Policía",
+    "subtipo": "",
+    "calle": "Av. Camilo Henríquez",
+    "ciudad": "Puente Alto",
+    "reportado_por": "fiwis",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.57045,
+      "lon": -70.554999
+    },
+    "comentarios": [],
+    "casilla": "casilla_1_8"
+  },
+  {
+    "fecha": "2025-05-27T22:34:56",
+    "tipo": "Peligro",
+    "subtipo": "HAZARD_ON_SHOULDER_CAR_STOPPED",
+    "calle": "Av. San José de la Estrella",
+    "ciudad": "La Florida",
+    "reportado_por": "Don_Pablo23",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.552948,
+      "lon": -70.575172
+    },
+    "comentarios": [],
+    "casilla": "casilla_1_8"
+  },
+  {
+    "fecha": "2025-05-27T22:32:01",
+    "tipo": "Tráfico",
+    "subtipo": "JAM_STAND_STILL_TRAFFIC",
+    "calle": "Bahía Inglesa",
+    "ciudad": "Puente Alto",
+    "reportado_por": "Rasencrackz",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.562141,
+      "lon": -70.564733
+    },
+    "comentarios": [],
+    "casilla": "casilla_1_8"
+  },
+  {
+    "fecha": "2025-05-27T22:35:59",
+    "tipo": "Tráfico",
+    "subtipo": "JAM_HEAVY_TRAFFIC",
+    "calle": "Gerónimo de Alderete",
+    "ciudad": "La Florida",
+    "reportado_por": "Anónimo",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.528337,
+      "lon": -70.575447
+    },
+    "comentarios": [],
+    "casilla": "casilla_1_8"
+  },
+  {
+    "fecha": "2025-05-27T22:33:51",
+    "tipo": "Tráfico",
+    "subtipo": "JAM_STAND_STILL_TRAFFIC",
+    "calle": "Los Guindos",
+    "ciudad": "Peñalolén",
+    "reportado_por": "Anónimo",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.464244,
+      "lon": -70.572227
+    },
+    "comentarios": [],
+    "casilla": "casilla_1_8"
+  },
+  {
+    "fecha": "2025-05-27T22:34:18",
+    "tipo": "Tráfico",
+    "subtipo": "JAM_HEAVY_TRAFFIC",
+    "calle": "Autopista Kennedy",
+    "ciudad": null,
+    "reportado_por": "Anónimo",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.398123,
+      "lon": -70.571393
+    },
+    "comentarios": [],
+    "casilla": "casilla_1_8"
+  },
+  {
+    "fecha": "2025-05-27T22:31:14",
+    "tipo": "Peligro",
+    "subtipo": "HAZARD_ON_ROAD_POT_HOLE",
+    "calle": "Av. Quilín",
+    "ciudad": "Peñalolén",
+    "reportado_por": "JotaGallegos",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.499097,
+      "lon": -70.560644
+    },
+    "comentarios": [],
+    "casilla": "casilla_1_8"
+  },
+  {
+    "fecha": "2025-05-27T22:31:15",
+    "tipo": "Tráfico",
+    "subtipo": "JAM_STAND_STILL_TRAFFIC",
+    "calle": "Av. Ossa",
+    "ciudad": "Ñuñoa",
+    "reportado_por": "Anónimo",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.44578,
+      "lon": -70.572089
+    },
+    "comentarios": [],
+    "casilla": "casilla_1_8"
+  },
+  {
+    "fecha": "2025-05-27T22:34:22",
+    "tipo": "Tráfico",
+    "subtipo": "JAM_STAND_STILL_TRAFFIC",
+    "calle": "Acceso Autopista Américo Vespucio Oriente",
+    "ciudad": null,
+    "reportado_por": "Anónimo",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.40017,
+      "lon": -70.587533
+    },
+    "comentarios": [],
+    "casilla": "casilla_1_8"
+  },
+  {
+    "fecha": "2025-05-27T22:35:54",
+    "tipo": "Tráfico",
+    "subtipo": "JAM_STAND_STILL_TRAFFIC",
+    "calle": "Salida Manquehue Sur",
+    "ciudad": "Vitacura",
+    "reportado_por": "elboweveneco",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.397801,
+      "lon": -70.571631
+    },
+    "comentarios": [],
+    "casilla": "casilla_1_8"
+  },
+  {
+    "fecha": "2025-05-27T22:32:46",
+    "tipo": "Tráfico",
+    "subtipo": "JAM_STAND_STILL_TRAFFIC",
+    "calle": "Av. Alonso de Córdova",
+    "ciudad": "Vitacura",
+    "reportado_por": "redondillo",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.403139,
+      "lon": -70.589305
+    },
+    "comentarios": [],
+    "casilla": "casilla_1_8"
+  },
+  {
+    "fecha": "2025-05-27T22:33:43",
+    "tipo": "Tráfico",
+    "subtipo": "",
+    "calle": "La Gloria",
+    "ciudad": "Las Condes",
+    "reportado_por": "Anónimo",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.409024,
+      "lon": -70.576911
+    },
+    "comentarios": [],
+    "casilla": "casilla_1_8"
+  },
+  {
+    "fecha": "2025-05-27T22:32:16",
+    "tipo": "Tráfico",
+    "subtipo": "JAM_HEAVY_TRAFFIC",
+    "calle": "Av. Américo Vespucio Sur",
+    "ciudad": "Las Condes",
+    "reportado_por": "Anónimo",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.425289,
+      "lon": -70.577147
+    },
+    "comentarios": [],
+    "casilla": "casilla_1_8"
+  },
+  {
+    "fecha": "2025-05-27T22:31:43",
+    "tipo": "Accidente",
+    "subtipo": "",
+    "calle": "Av. Tobalaba",
+    "ciudad": "Peñalolén",
+    "reportado_por": "JotaGallegos",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.501699,
+      "lon": -70.561012
+    },
+    "comentarios": [],
+    "casilla": "casilla_1_8"
+  },
+  {
+    "fecha": "2025-05-27T22:33:32",
+    "tipo": "Tráfico",
+    "subtipo": "",
+    "calle": "La Gloria",
+    "ciudad": "Las Condes",
+    "reportado_por": "Anónimo",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.409294,
+      "lon": -70.576789
+    },
+    "comentarios": [],
+    "casilla": "casilla_1_8"
+  },
+  {
+    "fecha": "2025-05-27T22:33:41",
+    "tipo": "Peligro",
+    "subtipo": "HAZARD_ON_ROAD_TRAFFIC_LIGHT_FAULT",
+    "calle": "Av. Perú",
+    "ciudad": "La Florida",
+    "reportado_por": "Anónimo",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.548977,
+      "lon": -70.582933
+    },
+    "comentarios": [],
+    "casilla": "casilla_1_8"
+  },
+  {
+    "fecha": "2025-05-27T22:36:12",
+    "tipo": "Tráfico",
+    "subtipo": "JAM_STAND_STILL_TRAFFIC",
+    "calle": "Presidente José Batlle y Ordóñez",
+    "ciudad": "Ñuñoa",
+    "reportado_por": "Anónimo",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.453111,
+      "lon": -70.582479
+    },
+    "comentarios": [],
+    "casilla": "casilla_1_8"
+  },
+  {
+    "fecha": "2025-05-27T22:31:51",
+    "tipo": "Peligro",
+    "subtipo": "HAZARD_ON_ROAD",
+    "calle": "José Miguel Carrera",
+    "ciudad": "La Florida",
+    "reportado_por": "Milanosky",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.550331,
+      "lon": -70.568986
+    },
+    "comentarios": [],
+    "casilla": "casilla_1_8"
+  },
+  {
+    "fecha": "2025-05-27T22:35:19",
+    "tipo": "Tráfico",
+    "subtipo": "JAM_STAND_STILL_TRAFFIC",
+    "calle": "Ebro",
+    "ciudad": "Las Condes",
+    "reportado_por": "claudiahu",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.415332,
+      "lon": -70.602262
+    },
+    "comentarios": [],
+    "casilla": "casilla_1_8"
+  },
+  {
+    "fecha": "2025-05-27T22:32:35",
+    "tipo": "Tráfico",
+    "subtipo": "JAM_STAND_STILL_TRAFFIC",
+    "calle": "Sucre",
+    "ciudad": "Ñuñoa",
+    "reportado_por": "hag_chile",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.448075,
+      "lon": -70.600097
+    },
+    "comentarios": [],
+    "casilla": "casilla_1_8"
+  },
+  {
+    "fecha": "2025-05-27T22:34:00",
+    "tipo": "Tráfico",
+    "subtipo": "JAM_HEAVY_TRAFFIC",
+    "calle": "Av. José Pedro Alessandri",
+    "ciudad": "Ñuñoa",
+    "reportado_por": "Anónimo",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.459251,
+      "lon": -70.597932
+    },
+    "comentarios": [],
+    "casilla": "casilla_1_8"
+  },
+  {
+    "fecha": "2025-05-27T22:36:06",
+    "tipo": "Tráfico",
+    "subtipo": "JAM_HEAVY_TRAFFIC",
+    "calle": "Av. Larraín",
+    "ciudad": "La Reina",
+    "reportado_por": "Anónimo",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.453189,
+      "lon": -70.566819
+    },
+    "comentarios": [],
+    "casilla": "casilla_1_8"
+  },
+  {
+    "fecha": "2025-05-27T22:34:47",
+    "tipo": "Tráfico",
+    "subtipo": "JAM_STAND_STILL_TRAFFIC",
+    "calle": "Las Parcelas",
+    "ciudad": "Peñalolén",
+    "reportado_por": "cuchilla_loco",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.471898,
+      "lon": -70.540408
+    },
+    "comentarios": [],
+    "casilla": "casilla_1_9"
+  },
+  {
+    "fecha": "2025-05-27T22:34:24",
+    "tipo": "Policía",
+    "subtipo": "",
+    "calle": "Av. Padre Hurtado Sur",
+    "ciudad": "Las Condes",
+    "reportado_por": "Anónimo",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.415067,
+      "lon": -70.539609
+    },
+    "comentarios": [],
+    "casilla": "casilla_1_9"
+  },
+  {
+    "fecha": "2025-05-27T22:33:25",
+    "tipo": "Tráfico",
+    "subtipo": "JAM_STAND_STILL_TRAFFIC",
+    "calle": "Av. José Alcalde Délano",
+    "ciudad": "Lo Barnechea",
+    "reportado_por": "world_oyayptod",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.36565,
+      "lon": -70.544852
+    },
+    "comentarios": [],
+    "casilla": "casilla_1_9"
+  },
+  {
+    "fecha": "2025-05-27T22:35:34",
+    "tipo": "Tráfico",
+    "subtipo": "JAM_HEAVY_TRAFFIC",
+    "calle": "Av. San Carlos",
+    "ciudad": "Puente Alto",
+    "reportado_por": "Anónimo",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.594444,
+      "lon": -70.545357
+    },
+    "comentarios": [],
+    "casilla": "casilla_1_9"
+  },
+  {
+    "fecha": "2025-05-27T22:33:01",
+    "tipo": "Policía",
+    "subtipo": "",
+    "calle": "Av. José Arrieta",
+    "ciudad": "La Reina",
+    "reportado_por": "Anónimo",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.46311,
+      "lon": -70.539708
+    },
+    "comentarios": [],
+    "casilla": "casilla_1_9"
+  },
+  {
+    "fecha": "2025-05-27T22:36:21",
+    "tipo": "Peligro",
+    "subtipo": "HAZARD_ON_SHOULDER_CAR_STOPPED",
+    "calle": "Av. Los Presidentes",
+    "ciudad": "Peñalolén",
+    "reportado_por": "ElBeseta",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.490586,
+      "lon": -70.54409
+    },
+    "comentarios": [],
+    "casilla": "casilla_1_9"
+  },
+  {
+    "fecha": "2025-05-27T22:32:30",
+    "tipo": "Tráfico",
+    "subtipo": "",
+    "calle": "Camino Santa Teresa de Los Andes",
+    "ciudad": "Vitacura",
+    "reportado_por": "Anónimo",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.367477,
+      "lon": -70.54431
+    },
+    "comentarios": [],
+    "casilla": "casilla_1_9"
+  },
+  {
+    "fecha": "2025-05-27T22:36:38",
+    "tipo": "Tráfico",
+    "subtipo": "",
+    "calle": "Santa Blanca",
+    "ciudad": "Lo Barnechea",
+    "reportado_por": "Anónimo",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.356732,
+      "lon": -70.531541
+    },
+    "comentarios": [],
+    "casilla": "casilla_1_9"
+  },
+  {
+    "fecha": "2025-05-27T22:36:22",
+    "tipo": "Peligro",
+    "subtipo": "HAZARD_ON_SHOULDER_CAR_STOPPED",
+    "calle": "Av. Quilín",
+    "ciudad": "Peñalolén",
+    "reportado_por": "worldweb_8gmc6qus",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.5018,
+      "lon": -70.533369
+    },
+    "comentarios": [],
+    "casilla": "casilla_1_9"
+  },
+  {
+    "fecha": "2025-05-27T22:32:41",
+    "tipo": "Tráfico",
+    "subtipo": "JAM_HEAVY_TRAFFIC",
+    "calle": "Av. Tabancura",
+    "ciudad": "Vitacura",
+    "reportado_por": "Anónimo",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.37912,
+      "lon": -70.537799
+    },
+    "comentarios": [],
+    "casilla": "casilla_1_9"
+  },
+  {
+    "fecha": "2025-05-27T22:33:14",
+    "tipo": "Tráfico",
+    "subtipo": "JAM_HEAVY_TRAFFIC",
+    "calle": "Charles Hamilton",
+    "ciudad": "Las Condes",
+    "reportado_por": "Anónimo",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.392514,
+      "lon": -70.537556
+    },
+    "comentarios": [],
+    "casilla": "casilla_1_9"
+  },
+  {
+    "fecha": "2025-05-27T22:32:38",
+    "tipo": "Tráfico",
+    "subtipo": "JAM_STAND_STILL_TRAFFIC",
+    "calle": "Estoril",
+    "ciudad": "Las Condes",
+    "reportado_por": "Anónimo",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.385641,
+      "lon": -70.531657
+    },
+    "comentarios": [],
+    "casilla": "casilla_1_9"
+  },
+  {
+    "fecha": "2025-05-27T22:34:13",
+    "tipo": "Tráfico",
+    "subtipo": "JAM_HEAVY_TRAFFIC",
+    "calle": "General Blanche",
+    "ciudad": "Las Condes",
+    "reportado_por": "world_0mitf7k4",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.409053,
+      "lon": -70.541716
+    },
+    "comentarios": [],
+    "casilla": "casilla_1_9"
+  },
+  {
+    "fecha": "2025-05-27T22:33:55",
+    "tipo": "Tráfico",
+    "subtipo": "JAM_STAND_STILL_TRAFFIC",
+    "calle": "Gran Vía",
+    "ciudad": "Vitacura",
+    "reportado_por": "world_oyayptod",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.366706,
+      "lon": -70.545027
+    },
+    "comentarios": [],
+    "casilla": "casilla_1_9"
+  },
+  {
+    "fecha": "2025-05-27T22:34:44",
+    "tipo": "Tráfico",
+    "subtipo": "JAM_HEAVY_TRAFFIC",
+    "calle": "Las Hualtatas",
+    "ciudad": "Vitacura",
+    "reportado_por": "Anónimo",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.382401,
+      "lon": -70.53826
+    },
+    "comentarios": [],
+    "casilla": "casilla_1_9"
+  },
+  {
+    "fecha": "2025-05-27T22:31:41",
+    "tipo": "Tráfico",
+    "subtipo": "JAM_HEAVY_TRAFFIC",
+    "calle": "Las Hualtatas",
+    "ciudad": "Vitacura",
+    "reportado_por": "Anónimo",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.383232,
+      "lon": -70.539763
+    },
+    "comentarios": [],
+    "casilla": "casilla_1_9"
+  },
+  {
+    "fecha": "2025-05-27T22:35:40",
+    "tipo": "Peligro",
+    "subtipo": "HAZARD_ON_SHOULDER_CAR_STOPPED",
+    "calle": "Av. La Dehesa",
+    "ciudad": "Lo Barnechea",
+    "reportado_por": "Anónimo",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.347926,
+      "lon": -70.52224
+    },
+    "comentarios": [],
+    "casilla": "casilla_1_9"
+  },
+  {
+    "fecha": "2025-05-27T22:34:42",
+    "tipo": "Tráfico",
+    "subtipo": "JAM_STAND_STILL_TRAFFIC",
+    "calle": "Av. Balmaceda",
+    "ciudad": "Malloco, Peñaflor",
+    "reportado_por": "Anónimo",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.606513,
+      "lon": -70.854302
+    },
+    "comentarios": [],
+    "casilla": "casilla_2_3"
+  },
+  {
+    "fecha": "2025-05-27T22:31:19",
+    "tipo": "Tráfico",
+    "subtipo": "JAM_STAND_STILL_TRAFFIC",
+    "calle": "Ruta G-78 / Camino a Melipilla",
+    "ciudad": null,
+    "reportado_por": "Anónimo",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.632225,
+      "lon": -70.874324
+    },
+    "comentarios": [],
+    "casilla": "casilla_2_3"
+  },
+  {
+    "fecha": "2025-05-27T22:35:24",
+    "tipo": "Tráfico",
+    "subtipo": "JAM_HEAVY_TRAFFIC",
+    "calle": "Av. José Manuel Balmaceda",
+    "ciudad": "Buin",
+    "reportado_por": "Anónimo",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.731635,
+      "lon": -70.750401
+    },
+    "comentarios": [],
+    "casilla": "casilla_2_5"
+  },
+  {
+    "fecha": "2025-05-27T22:35:54",
+    "tipo": "Tráfico",
+    "subtipo": "JAM_HEAVY_TRAFFIC",
+    "calle": "Manuel Bulnes",
+    "ciudad": "Buin",
+    "reportado_por": "Anónimo",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.73171,
+      "lon": -70.744018
+    },
+    "comentarios": [],
+    "casilla": "casilla_2_5"
+  },
+  {
+    "fecha": "2025-05-27T22:33:49",
+    "tipo": "Tráfico",
+    "subtipo": "JAM_HEAVY_TRAFFIC",
+    "calle": "Av. Padre Hurtado",
+    "ciudad": "San Bernardo",
+    "reportado_por": "Jreitin",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.603696,
+      "lon": -70.682292
+    },
+    "comentarios": [],
+    "casilla": "casilla_2_6"
+  },
+  {
+    "fecha": "2025-05-27T22:31:43",
+    "tipo": "Tráfico",
+    "subtipo": "JAM_HEAVY_TRAFFIC",
+    "calle": "Ruta 79",
+    "ciudad": null,
+    "reportado_por": "Anónimo",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.664022,
+      "lon": -70.669863
+    },
+    "comentarios": [],
+    "casilla": "casilla_2_6"
+  },
+  {
+    "fecha": "2025-05-27T22:33:09",
+    "tipo": "Conversación",
+    "subtipo": "",
+    "calle": "Ruta 79",
+    "ciudad": null,
+    "reportado_por": "world_b6ncqawn",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.663143,
+      "lon": -70.669245
+    },
+    "comentarios": [],
+    "casilla": "casilla_2_6"
+  },
+  {
+    "fecha": "2025-05-27T22:35:23",
+    "tipo": "Tráfico",
+    "subtipo": "JAM_HEAVY_TRAFFIC",
+    "calle": "Ruta 5 Sur",
+    "ciudad": null,
+    "reportado_por": "Anónimo",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.717297,
+      "lon": -70.726141
+    },
+    "comentarios": [],
+    "casilla": "casilla_2_6"
+  },
+  {
+    "fecha": "2025-05-27T22:33:16",
+    "tipo": "Tráfico",
+    "subtipo": "JAM_STAND_STILL_TRAFFIC",
+    "calle": "Caletera al Norte",
+    "ciudad": "Buin",
+    "reportado_por": "Anónimo",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.717333,
+      "lon": -70.725626
+    },
+    "comentarios": [],
+    "casilla": "casilla_2_6"
+  },
+  {
+    "fecha": "2025-05-27T22:33:09",
+    "tipo": "Tráfico",
+    "subtipo": "JAM_HEAVY_TRAFFIC",
+    "calle": "Av. Eyzaguirre",
+    "ciudad": "Puente Alto",
+    "reportado_por": "Anónimo",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.610876,
+      "lon": -70.5465
+    },
+    "comentarios": [],
+    "casilla": "casilla_2_8"
+  },
+  {
+    "fecha": "2025-05-27T22:35:50",
+    "tipo": "Tráfico",
+    "subtipo": "",
+    "calle": "Av. Domingo Tocornal",
+    "ciudad": "Puente Alto",
+    "reportado_por": "Alejandrocortiz",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.60631,
+      "lon": -70.603548
+    },
+    "comentarios": [],
+    "casilla": "casilla_2_8"
+  },
+  {
+    "fecha": "2025-05-27T22:34:51",
+    "tipo": "Accidente",
+    "subtipo": "",
+    "calle": "Av. Eyzaguirre",
+    "ciudad": "Puente Alto",
+    "reportado_por": "Anónimo",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.611044,
+      "lon": -70.545682
+    },
+    "comentarios": [],
+    "casilla": "casilla_2_9"
+  },
+  {
+    "fecha": "2025-05-27T22:34:17",
+    "tipo": "Tráfico",
+    "subtipo": "JAM_STAND_STILL_TRAFFIC",
+    "calle": "27 de septiembre",
+    "ciudad": "Puente Alto",
+    "reportado_por": "Anónimo",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -33.608439,
+      "lon": -70.53736
+    },
+    "comentarios": [],
+    "casilla": "casilla_2_9"
+  },
+  {
+    "fecha": "2025-05-27T22:35:48",
+    "tipo": "Peligro",
+    "subtipo": "HAZARD_ON_SHOULDER_CAR_STOPPED",
+    "calle": "Av. Circunvalación",
+    "ciudad": "Rancagua",
+    "reportado_por": "GaLaN81",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -34.14619,
+      "lon": -70.73694
+    },
+    "comentarios": [],
+    "casilla": "casilla_3_5"
+  },
+  {
+    "fecha": "2025-05-27T22:34:14",
+    "tipo": "Tráfico",
+    "subtipo": "JAM_HEAVY_TRAFFIC",
+    "calle": "Freire",
+    "ciudad": "Rancagua",
+    "reportado_por": "world_4zx50mrk",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -34.175224,
+      "lon": -70.736104
+    },
+    "comentarios": [],
+    "casilla": "casilla_3_5"
+  },
+  {
+    "fecha": "2025-05-27T22:35:10",
+    "tipo": "Accidente",
+    "subtipo": "",
+    "calle": null,
+    "ciudad": "Rancagua",
+    "reportado_por": "Anónimo",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -34.17646,
+      "lon": -70.735845
+    },
+    "comentarios": [],
+    "casilla": "casilla_3_5"
+  },
+  {
+    "fecha": "2025-05-27T22:33:11",
+    "tipo": "Tráfico",
+    "subtipo": "JAM_HEAVY_TRAFFIC",
+    "calle": "Ruta H-30",
+    "ciudad": null,
+    "reportado_por": "world_f8runrfu",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -34.186438,
+      "lon": -70.768164
+    },
+    "comentarios": [],
+    "casilla": "casilla_3_5"
+  },
+  {
+    "fecha": "2025-05-27T22:33:25",
+    "tipo": "Tráfico",
+    "subtipo": "JAM_HEAVY_TRAFFIC",
+    "calle": "Ruta H-30",
+    "ciudad": null,
+    "reportado_por": "world_f8runrfu",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -34.186516,
+      "lon": -70.767321
+    },
+    "comentarios": [],
+    "casilla": "casilla_3_5"
+  },
+  {
+    "fecha": "2025-05-27T22:35:40",
+    "tipo": "Peligro",
+    "subtipo": "HAZARD_ON_SHOULDER_CAR_STOPPED",
+    "calle": "Ruta H-30",
+    "ciudad": null,
+    "reportado_por": "world_f8runrfu",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -34.187942,
+      "lon": -70.761172
+    },
+    "comentarios": [],
+    "casilla": "casilla_3_5"
+  },
+  {
+    "fecha": "2025-05-27T22:36:54",
+    "tipo": "Peligro",
+    "subtipo": "HAZARD_ON_SHOULDER_CAR_STOPPED",
+    "calle": "Av. Recreo",
+    "ciudad": "Rancagua",
+    "reportado_por": "GaLaN81",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -34.151165,
+      "lon": -70.736928
+    },
+    "comentarios": [],
+    "casilla": "casilla_3_5"
+  },
+  {
+    "fecha": "2025-05-27T22:37:03",
+    "tipo": "Tráfico",
+    "subtipo": "JAM_HEAVY_TRAFFIC",
+    "calle": "Millán",
+    "ciudad": "Rancagua",
+    "reportado_por": "world_6l5pweyk",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -34.175088,
+      "lon": -70.741237
+    },
+    "comentarios": [],
+    "casilla": "casilla_3_5"
+  },
+  {
+    "fecha": "2025-05-27T22:33:26",
+    "tipo": "Tráfico",
+    "subtipo": "",
+    "calle": "Av. República de Chile",
+    "ciudad": "Machalí",
+    "reportado_por": "Anónimo",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -34.173816,
+      "lon": -70.695782
+    },
+    "comentarios": [],
+    "casilla": "casilla_3_6"
+  },
+  {
+    "fecha": "2025-05-27T22:34:54",
+    "tipo": "Accidente",
+    "subtipo": "",
+    "calle": "Carretera El Cobre Tramo 2-A",
+    "ciudad": "Machalí",
+    "reportado_por": "Anónimo",
+    "usuario_municipal": false,
+    "ubicacion": {
+      "lat": -34.14536,
+      "lon": -70.532897
+    },
+    "comentarios": [],
+    "casilla": "casilla_3_9"
+  }
+]

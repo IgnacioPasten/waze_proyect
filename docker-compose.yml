@@ -21,3 +21,15 @@ services:
       - mongo
     working_dir: /app
     command: python main.py
+
+  hadoop:
+    image: bde2020/hadoop-namenode:2.0.0-hadoop3.2.1-java8
+    container_name: hadoop
+    ports:
+      - "9870:9870"  # Web UI de HDFS
+      - "9000:9000"
+    environment:
+      - CLUSTER_NAME=waze-cluster
+    volumes:
+      - ./data:/data  # Asegúrate de poner aquí el CSV que generaste
+    command: ["/bin/bash", "-c", "service ssh start && /entrypoint.sh"]

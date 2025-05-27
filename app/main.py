@@ -5,6 +5,8 @@ from cache import CacheLRU, CacheFIFO
 import random
 import time
 import logging
+from pymongo import MongoClient
+
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
