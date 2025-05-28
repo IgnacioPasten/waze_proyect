@@ -21,3 +21,13 @@ services:
       - mongo
     working_dir: /app
     command: python main.py
+
+  hadoop:
+    image: gettyimages/hadoop-pig:2.7.1
+    container_name: hadoop
+    ports:
+      - "9870:9870"  # Hadoop Namenode UI
+      - "9000:9000"  # HDFS Namenode puerto
+    volumes:
+      - ./app:/data
+    command: /bin/bash -c "while true; do sleep 1000; done"
