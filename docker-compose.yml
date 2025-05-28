@@ -21,13 +21,13 @@ services:
       - mongo
     working_dir: /app
     command: python main.py
+    restart: on-failure
 
-  hadoop:
-    image: gettyimages/hadoop-pig:2.7.1
-    container_name: hadoop
+  hadoop-pig:
+    image: sequenceiq/hadoop-docker:2.7.1
+    container_name: hadoop-pig
     ports:
-      - "9870:9870"  # Hadoop Namenode UI
-      - "9000:9000"  # HDFS Namenode puerto
+      - "50070:50070"
     volumes:
       - ./app:/data
-    command: /bin/bash -c "while true; do sleep 1000; done"
+    tty: true
