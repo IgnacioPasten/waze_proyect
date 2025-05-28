@@ -23,13 +23,11 @@ services:
     command: python main.py
 
   hadoop:
-    image: bde2020/hadoop-namenode:2.0.0-hadoop3.2.1-java8
+    image: gettyimages/hadoop-pig:2.7.1
     container_name: hadoop
     ports:
-      - "9870:9870"  # Web UI de HDFS
-      - "9000:9000"
-    environment:
-      - CLUSTER_NAME=waze-cluster
+      - "9870:9870"  # Hadoop Namenode UI
+      - "9000:9000"  # HDFS Namenode puerto
     volumes:
-      - ./data:/data  # Asegúrate de poner aquí el CSV que generaste
-    command: ["/bin/bash", "-c", "service ssh start && /entrypoint.sh"]
+      - ./app:/data
+    command: /bin/bash -c "while true; do sleep 1000; done"

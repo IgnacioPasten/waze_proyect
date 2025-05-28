@@ -1,18 +1,23 @@
--- Cargar CSV limpio
-raw_data = LOAD 'incidentes_limpios.csv' USING PigStorage(',')
-    AS (fecha:chararray, tipo:chararray, subtipo:chararray, subtipo_normalizado:chararray,
-        ciudad:chararray, calle:chararray, lat:double, lon:double);
+-- Carga CSV con esquema (ajusta columnas según tu CSV)
+incidentes = LOAD '/user/waze/incidentes_limpios.csv'
+  USING PigStorage(',')
+  AS (fecha:chararray, tipo:chararray, subtipo:chararray, subtipo_normalizado:chararray, ciudad:chararray, calle:chararray, lat:float, lon:float);
 
--- Agrupar por comuna (ciudad)
-por_ciudad = GROUP raw_data BY ciudad;
+-- Filtra registros con datos faltantes
+limpios = FILTER incidentes BY (fecha IS NOT NULL) AND (ciudad IS NOT NULL) AND (subtipo_normalizado IS NOT NULL);
 
--- Contar incidentes por ciudad
-cuenta_por_ciudad = FOREACH por_ciudad GENERATE group AS ciudad, COUNT(raw_data) AS total_incidentes;
+-- Agrupa por ciudad (comuna)
+por_comuna = GROUP limpios BY ciudad;
 
--- Agrupar por tipo
-por_tipo = GROUP raw_data BY subtipo_normalizado;
-cuenta_por_tipo = FOREACH por_tipo GENERATE group AS tipo_incidente, COUNT(raw_data) AS cantidad;
+-- Cuenta incidentes por comuna
+conteo_comuna = FOREACH por_comuna GENERATE group AS comuna, COUNT(limpios) AS total_incidentes;
 
--- Guardar resultados
-STORE cuenta_por_ciudad INTO 'resultados/por_ciudad' USING PigStorage(',');
-STORE cuenta_por_tipo INTO 'resultados/por_tipo' USING PigStorage(',');
+-- Agrupa por tipo de incidente
+por_tipo = GROUP limpios BY subtipo_normalizado;
+
+-- Cuenta incidentes por tipo
+conteo_tipo = FOREACH por_tipo GENERATE group AS tipo_incidente, COUNT(limpios) AS total;
+
+-- Guarda resultados en HDFS
+STORE conteo_comuna INTO '/user/waze/salida_conteo_comuna' USING PigStorage(',');
+STORE conteo_tipo INTO '/user/waze/salida_conteo_tipo' USING PigStorage(',');
