@@ -1,33 +1,48 @@
-version: '3.8'
-
 services:
-  mongo:
-    image: mongo:latest
+  mongodb:
+    image: mongo:5.0.18
     container_name: mongodb
     ports:
       - "27017:27017"
     volumes:
       - ./data/mongo:/data/db
-    restart: always
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: example
+    restart: unless-stopped
 
   app:
-    build:
-      context: .
-      dockerfile: Dockerfile
-    container_name: app
+    build: .
+    container_name: waze_proyect-app
+    environment:
+      MONGO_URI: "mongodb://root:example@mongodb:27017"
+    depends_on:
+      - mongodb
     volumes:
       - ./app:/app
-    depends_on:
-      - mongo
     working_dir: /app
     command: python main.py
-    restart: on-failure
+    restart: unless-stopped
 
   hadoop-pig:
-    image: sequenceiq/hadoop-docker:2.7.1
+    build:
+      context: .
+      dockerfile: Dockerfile-hadoop-pig
     container_name: hadoop-pig
+    hostname: hadoop
     ports:
-      - "50070:50070"
+      - "50070:50070"   # NameNode UI
+      - "8088:8088"     # ResourceManager
+      - "19888:19888"   # HistoryServer
     volumes:
-      - ./app:/data
-    tty: true
+      - hadoop-namenode:/hadoop/dfs/name     # Volumen Docker para NameNode
+      - ./config:/opt/hadoop/etc/hadoop      # Config XML (core-site.xml, etc.)
+      - ./init-hadoop.sh:/init-hadoop.sh     # Script de arranque
+      - ./app/incidentes_limpios.csv:/data/incidentes_limpios.csv
+      - ./app/pig:/app/pig                   # Scripts Pig
+    extra_hosts:
+      - "hadoop:127.0.0.1"
+    restart: unless-stopped
+
+volumes:
+  hadoop-namenode:

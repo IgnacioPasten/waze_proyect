@@ -15,7 +15,7 @@ def normalizar_tipo(subtipo):
         return "Atasco"
     return "Otro"
 
-client = MongoClient("mongodb://localhost:27017/")
+client = MongoClient("mongodb://root:example@localhost:27017/")
 db = client["waze_data"]
 collection = db["events"]
 
