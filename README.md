@@ -6,6 +6,55 @@ Creadores: Ignacio Pastén y Vicente Leiva
 
 Este proyecto es desarrollado para el análisis de tráfico en la Región Metropolitana, utilizando eventos a través de la plataforma Waze. El diseño se basa en microservicios configurados con Docker, permitiendo la extracción, almacenamiento, simulación y gestión de consultas de tráfico.
 
+
+# Entrega 2
+
+Nuevas funcionalidades agregadas
+Procesamiento distribuido con Hadoop para manejar grandes volúmenes de datos
+
+Scripts Pig para transformación y análisis de datos:
+
+filtrar_homogeneizar.pig: Filtra y estandariza los datos de incidentes
+
+analisis_agrupar_contar.pig: Realiza análisis agregados por tipo de incidente
+
+Pipeline completo desde la recolección hasta el análisis
+
+Requisitos adicionales
+Docker Compose versión 1.29+
+
+Espacio suficiente en disco para los volúmenes de Hadoop
+
+En sistemas Windows: tener instalado dos2unix para conversión de formatos de archivo
+
+Instalación y ejecución (Entrega 2)
+Clona el repositorio (si no lo has hecho):
+
+1. Clona el repositorio y entra al directorio del proyecto:**
+```bash
+   git clone https://github.com/IgnacioPasten/waze_proyect.git
+   cd waze_proyect
+```
+
+2. Prepara el sistema con los comandos:
+```bash
+   docker-compose down -v
+   dos2unix init-hadoop.sh
+   chmod +x ./init-hadoop.sh
+```
+
+3. Ejecuta el sistema con los comandos:
+```bash
+   docker-compose build
+   docker-compose up
+```
+
+4. Monitorea la ejecución:
+   - En Docker Desktop, abre el contenedor llamado hadoop-pig para visualizar los logs del módulo funcionando.
+   - El contenedor mongodb mostrara los logs de la base de datos.
+
+# Entrega 1
+
 # Descripción de los módulos
 
 1. scraper.py
@@ -60,3 +109,4 @@ Pasos de ejecución
 4. Monitorea la ejecución:
    - En Docker Desktop, abre el contenedor llamado app para visualizar los logs de los módulos funcionando (scraper, generador, caché y almacenamiento).
    - El contenedor mongodb mostrara los logs de la base de datos.
+
