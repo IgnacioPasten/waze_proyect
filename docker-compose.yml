@@ -1,3 +1,5 @@
+version: "3.8"
+
 services:
   mongodb:
     image: mongo:5.0.18
@@ -11,19 +13,6 @@ services:
       MONGO_INITDB_ROOT_PASSWORD: example
     restart: unless-stopped
 
-  app:
-    build: .
-    container_name: waze_proyect-app
-    environment:
-      MONGO_URI: "mongodb://root:example@mongodb:27017"
-    depends_on:
-      - mongodb
-    volumes:
-      - ./app:/app
-    working_dir: /app
-    command: python main.py
-    restart: unless-stopped
-
   hadoop-pig:
     build:
       context: .
@@ -31,12 +20,12 @@ services:
     container_name: hadoop-pig
     hostname: hadoop
     ports:
-      - "50070:50070"   #NameNode UI
-      - "8088:8088"     #ResourceManager
-      - "19888:19888"   #HistoryServer
-      - "4040:4040"     #Pig UI
-      - "8042:8042"     #NodeManager UI
-      - "8032:8032"     #ResourceManager RPC
+      - "50070:50070"   # NameNode UI
+      - "8088:8088"     # ResourceManager
+      - "19888:19888"   # HistoryServer
+      - "4040:4040"     # Pig UI
+      - "8042:8042"     # NodeManager UI
+      - "8032:8032"     # ResourceManager RPC
     environment:
       - HADOOP_HOME=/opt/hadoop
       - PIG_CLASSPATH=$HADOOP_HOME/etc/hadoop
@@ -53,7 +42,6 @@ services:
       - ./app/incidentes_limpios.csv:/app/incidentes_limpios.csv
       - ./app/pig:/app/pig
       - ./hadoop-logs:/opt/hadoop/logs
-    network_mode: host
     extra_hosts:
       - "hadoop:127.0.0.1"
     healthcheck:

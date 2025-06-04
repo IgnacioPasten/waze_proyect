@@ -16,3 +16,7 @@ COPY requirements.txt /app/
 RUN pip install --no-cache-dir -r requirements.txt
 
 # No definimos CMD aquí porque lo pusimos en docker-compose.yml
+
+
+# Declarar /app como volumen para evitar error ContainerConfig
+VOLUME ["/app"]
