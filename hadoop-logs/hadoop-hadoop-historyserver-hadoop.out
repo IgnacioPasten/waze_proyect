@@ -87,3 +87,8 @@ INFO: Binding org.apache.hadoop.mapreduce.v2.hs.webapp.HsWebServices to GuiceMan
 2025-06-04 03:16:52,667 INFO  ipc.Server (Server.java:run(1558)) - IPC Server Responder: starting
 2025-06-04 03:16:52,667 INFO  ipc.Server (Server.java:run(1398)) - IPC Server listener on 10033: starting
 2025-06-04 03:16:52,682 INFO  util.JvmPauseMonitor (JvmPauseMonitor.java:run(188)) - Starting JVM pause monitor
+2025-06-04 03:17:14,098 INFO  hs.JobHistory (JobHistory.java:run(204)) - History Cleaner started
+2025-06-04 03:17:14,112 INFO  hs.JobHistory (JobHistory.java:run(210)) - History Cleaner complete
+2025-06-04 03:19:36,703 INFO  hs.JobHistory (JobHistory.java:run(194)) - Starting scan to move intermediate done files
+2025-06-04 03:22:27,773 INFO  hs.JobHistory (JobHistory.java:run(194)) - Starting scan to move intermediate done files
+2025-06-04 03:25:18,796 INFO  hs.JobHistory (JobHistory.java:run(194)) - Starting scan to move intermediate done files

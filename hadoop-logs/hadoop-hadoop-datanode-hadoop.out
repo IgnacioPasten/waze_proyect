@@ -62,3 +62,46 @@ file locks                          (-x) unlimited
 2025-06-04 03:16:21,071 INFO  util.JvmPauseMonitor (JvmPauseMonitor.java:run(188)) - Starting JVM pause monitor
 2025-06-04 03:16:21,205 INFO  ipc.CallQueueManager (CallQueueManager.java:<init>(90)) - Using callQueue: class java.util.concurrent.LinkedBlockingQueue, queueCapacity: 1000, scheduler: class org.apache.hadoop.ipc.DefaultRpcScheduler, ipcBackoff: false.
 2025-06-04 03:16:21,276 INFO  ipc.Server (Server.java:run(1319)) - Starting Socket Reader #1 for port 9867
+2025-06-04 03:16:22,243 INFO  datanode.DataNode (DataNode.java:initIpcServer(1363)) - Opened IPC server at /0.0.0.0:9867
+2025-06-04 03:16:22,355 INFO  datanode.DataNode (BlockPoolManager.java:refreshNamenodes(149)) - Refresh request received for nameservices: null
+2025-06-04 03:16:22,382 INFO  datanode.DataNode (BlockPoolManager.java:doRefreshNamenodes(210)) - Starting BPOfferServices for nameservices: <default>
+2025-06-04 03:16:22,408 INFO  datanode.DataNode (BPServiceActor.java:run(851)) - Block pool <registering> (Datanode Uuid unassigned) service to hadoop/127.0.0.1:9000 starting to offer service
+2025-06-04 03:16:22,419 INFO  ipc.Server (Server.java:run(1558)) - IPC Server Responder: starting
+2025-06-04 03:16:22,419 INFO  ipc.Server (Server.java:run(1398)) - IPC Server listener on 9867: starting
+2025-06-04 03:16:23,338 INFO  datanode.DataNode (BPOfferService.java:verifyAndSetNamespaceInfo(381)) - Acknowledging ACTIVE Namenode during handshakeBlock pool <registering> (Datanode Uuid unassigned) service to hadoop/127.0.0.1:9000
+2025-06-04 03:16:23,367 INFO  common.Storage (DataStorage.java:getParallelVolumeLoadThreadsNum(356)) - Using 1 threads to upgrade data directories (dfs.datanode.parallel.volumes.load.threads.num=1, dataDirs=1)
+2025-06-04 03:16:23,382 INFO  common.Storage (Storage.java:tryLock(948)) - Lock on /hadoop/dfs/data/in_use.lock acquired by nodename 152@localhost
+2025-06-04 03:16:23,385 INFO  common.Storage (DataStorage.java:loadStorageDirectory(284)) - Storage directory with location [DISK]file:/hadoop/dfs/data is not formatted for namespace 667841717. Formatting...
+2025-06-04 03:16:23,388 INFO  common.Storage (DataStorage.java:createStorageID(160)) - Generated new storageID DS-f60a695d-6038-4c60-ab30-5182c0ac12f4 for directory /hadoop/dfs/data 
+2025-06-04 03:16:23,496 INFO  common.Storage (BlockPoolSliceStorage.java:recoverTransitionRead(256)) - Analyzing storage directories for bpid BP-13645124-127.0.0.1-1749006972704
+2025-06-04 03:16:23,499 INFO  common.Storage (Storage.java:lock(907)) - Locking is disabled for /hadoop/dfs/data/current/BP-13645124-127.0.0.1-1749006972704
+2025-06-04 03:16:23,501 INFO  common.Storage (BlockPoolSliceStorage.java:loadStorageDirectory(169)) - Block pool storage directory for location [DISK]file:/hadoop/dfs/data and block pool id BP-13645124-127.0.0.1-1749006972704 is not formatted. Formatting ...
+2025-06-04 03:16:23,501 INFO  common.Storage (BlockPoolSliceStorage.java:format(285)) - Formatting block pool BP-13645124-127.0.0.1-1749006972704 directory /hadoop/dfs/data/current/BP-13645124-127.0.0.1-1749006972704/current
+2025-06-04 03:16:23,510 INFO  datanode.DataNode (DataNode.java:initStorage(2062)) - Setting up storage: nsid=667841717;bpid=BP-13645124-127.0.0.1-1749006972704;lv=-57;nsInfo=lv=-66;cid=CID-9483172c-cb70-4bca-998d-2c3a820d91df;nsid=667841717;c=1749006972704;bpid=BP-13645124-127.0.0.1-1749006972704;dnuuid=null
+2025-06-04 03:16:23,515 INFO  datanode.DataNode (DataNode.java:checkDatanodeUuid(1860)) - Generated and persisted new Datanode UUID 6200348a-5533-4665-8b58-83bb8e827ded
+2025-06-04 03:16:23,549 INFO  impl.FsDatasetImpl (FsDatasetImpl.java:<init>(310)) - The datanode lock is a read write lock
+2025-06-04 03:16:24,014 INFO  impl.FsDatasetImpl (FsVolumeList.java:addVolume(318)) - Added new volume: DS-f60a695d-6038-4c60-ab30-5182c0ac12f4
+2025-06-04 03:16:24,015 INFO  impl.FsDatasetImpl (FsDatasetImpl.java:addVolume(493)) - Added volume - [DISK]file:/hadoop/dfs/data, StorageType: DISK
+2025-06-04 03:16:24,032 INFO  impl.MemoryMappableBlockLoader (MemoryMappableBlockLoader.java:initialize(48)) - Initializing cache loader: MemoryMappableBlockLoader.
+2025-06-04 03:16:24,039 INFO  impl.FsDatasetImpl (FsDatasetImpl.java:registerMBean(2342)) - Registered FSDatasetState MBean
+2025-06-04 03:16:24,061 INFO  impl.FsDatasetImpl (FsDatasetImpl.java:addBlockPool(2856)) - Adding block pool BP-13645124-127.0.0.1-1749006972704
+2025-06-04 03:16:24,063 INFO  impl.FsDatasetImpl (FsVolumeList.java:run(420)) - Scanning block pool BP-13645124-127.0.0.1-1749006972704 on volume /hadoop/dfs/data...
+2025-06-04 03:16:24,112 WARN  impl.FsDatasetImpl (BlockPoolSlice.java:loadDfsUsed(342)) - dfsUsed file missing in /hadoop/dfs/data/current/BP-13645124-127.0.0.1-1749006972704/current, will proceed with Du for space computation calculation, 
+2025-06-04 03:16:24,247 INFO  impl.FsDatasetImpl (FsVolumeList.java:run(425)) - Time taken to scan block pool BP-13645124-127.0.0.1-1749006972704 on /hadoop/dfs/data: 180ms
+2025-06-04 03:16:24,248 INFO  impl.FsDatasetImpl (FsVolumeList.java:addBlockPool(445)) - Total time to scan all replicas for block pool BP-13645124-127.0.0.1-1749006972704: 186ms
+2025-06-04 03:16:24,253 INFO  impl.FsDatasetImpl (FsVolumeList.java:run(213)) - Adding replicas to map for block pool BP-13645124-127.0.0.1-1749006972704 on volume /hadoop/dfs/data...
+2025-06-04 03:16:24,254 INFO  impl.BlockPoolSlice (BlockPoolSlice.java:readReplicasFromCache(958)) - Replica Cache file: /hadoop/dfs/data/current/BP-13645124-127.0.0.1-1749006972704/current/replicas doesn't exist 
+2025-06-04 03:16:24,264 INFO  impl.FsDatasetImpl (FsVolumeList.java:run(218)) - Time to add replicas to map for block pool BP-13645124-127.0.0.1-1749006972704 on volume /hadoop/dfs/data: 11ms
+2025-06-04 03:16:24,265 INFO  impl.FsDatasetImpl (FsVolumeList.java:getAllVolumesMap(239)) - Total time to add all replicas to map for block pool BP-13645124-127.0.0.1-1749006972704: 13ms
+2025-06-04 03:16:24,267 INFO  checker.ThrottledAsyncChecker (ThrottledAsyncChecker.java:schedule(137)) - Scheduling a check for /hadoop/dfs/data
+2025-06-04 03:16:24,306 INFO  checker.DatasetVolumeChecker (DatasetVolumeChecker.java:checkAllVolumes(224)) - Scheduled health check for volume /hadoop/dfs/data
+2025-06-04 03:16:24,319 INFO  datanode.VolumeScanner (VolumeScanner.java:findNextUsableBlockIter(385)) - Now scanning bpid BP-13645124-127.0.0.1-1749006972704 on volume /hadoop/dfs/data
+2025-06-04 03:16:24,333 WARN  datanode.DirectoryScanner (DirectoryScanner.java:<init>(301)) - dfs.datanode.directoryscan.throttle.limit.ms.per.sec set to value above 1000 ms/sec. Assuming default value of -1
+2025-06-04 03:16:24,336 INFO  datanode.DirectoryScanner (DirectoryScanner.java:start(330)) - Periodic Directory Tree Verification scan starting in 7811124ms with interval of 21600000ms and throttle limit of -1ms/s
+2025-06-04 03:16:24,337 INFO  datanode.VolumeScanner (VolumeScanner.java:getNextBlockToScan(505)) - VolumeScanner(/hadoop/dfs/data, DS-f60a695d-6038-4c60-ab30-5182c0ac12f4): finished scanning block pool BP-13645124-127.0.0.1-1749006972704
+2025-06-04 03:16:24,354 INFO  datanode.DataNode (BPServiceActor.java:register(792)) - Block pool BP-13645124-127.0.0.1-1749006972704 (Datanode Uuid 6200348a-5533-4665-8b58-83bb8e827ded) service to hadoop/127.0.0.1:9000 beginning handshake with NN
+2025-06-04 03:16:24,378 INFO  datanode.VolumeScanner (VolumeScanner.java:findNextUsableBlockIter(402)) - VolumeScanner(/hadoop/dfs/data, DS-f60a695d-6038-4c60-ab30-5182c0ac12f4): no suitable block pools found to scan.  Waiting 1814399940 ms.
+2025-06-04 03:16:24,650 INFO  datanode.DataNode (BPServiceActor.java:register(820)) - Block pool BP-13645124-127.0.0.1-1749006972704 (Datanode Uuid 6200348a-5533-4665-8b58-83bb8e827ded) service to hadoop/127.0.0.1:9000 successfully registered with NN
+2025-06-04 03:16:24,651 INFO  datanode.DataNode (BPServiceActor.java:offerService(649)) - For namenode hadoop/127.0.0.1:9000 using BLOCKREPORT_INTERVAL of 21600000msecs CACHEREPORT_INTERVAL of 10000msecs Initial delay: 0msecs; heartBeatInterval=3000
+2025-06-04 03:16:25,188 INFO  datanode.DataNode (BPServiceActor.java:blockReport(441)) - Successfully sent block report 0xedc8b23cbdcd18ab with lease ID 0xd64fee6b3fee5718 to namenode: hadoop/127.0.0.1:9000,  containing 1 storage report(s), of which we sent 1. The reports had 0 total blocks and used 1 RPC(s). This took 11 msecs to generate and 151 msecs for RPC and NN processing. Got back one command: FinalizeCommand/5.
+2025-06-04 03:16:25,204 INFO  datanode.DataNode (BPOfferService.java:processCommandFromActive(763)) - Got finalize command for block pool BP-13645124-127.0.0.1-1749006972704
