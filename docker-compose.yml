@@ -34,15 +34,34 @@ services:
       - "50070:50070"   # NameNode UI
       - "8088:8088"     # ResourceManager
       - "19888:19888"   # HistoryServer
+      - "4040:4040"     # Pig UI
+      - "8042:8042"     # NodeManager UI
+      - "8032:8032"     # ResourceManager RPC
+    environment:
+      - HADOOP_HOME=/opt/hadoop
+      - PIG_CLASSPATH=$HADOOP_HOME/etc/hadoop
+      - YARN_RESOURCEMANAGER_OPTS="-Dyarn.resourcemanager.connect.max-wait.ms=30000"
+      - HADOOP_LOG_DIR=/opt/hadoop/logs
+      - YARN_CONF_DIR=/opt/hadoop/etc/hadoop
+      - PIG_OPTS="-Dpig.log.dir=/opt/hadoop/logs"
     volumes:
-      - hadoop-namenode:/hadoop/dfs/name     # Volumen Docker para NameNode
-      - ./config:/opt/hadoop/etc/hadoop      # Config XML (core-site.xml, etc.)
-      - ./init-hadoop.sh:/init-hadoop.sh     # Script de arranque
-      - ./app/incidentes_limpios.csv:/data/incidentes_limpios.csv
-      - ./app/pig:/app/pig                   # Scripts Pig
+      - hadoop-namenode:/hadoop/dfs/name
+      - hadoop-datanode:/hadoop/dfs/data
+      - ./config:/opt/hadoop/etc/hadoop
+      - ./init-hadoop.sh:/init-hadoop.sh
+      - ./app/incidentes_limpios.csv:/app/incidentes_limpios.csv
+      - ./app/pig:/app/pig
+      - ./hadoop-logs:/opt/hadoop/logs
     extra_hosts:
       - "hadoop:127.0.0.1"
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://hadoop:8088/ws/v1/cluster/info"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
     restart: unless-stopped
 
 volumes:
   hadoop-namenode:
+  hadoop-datanode:
+  hadoop-logs:

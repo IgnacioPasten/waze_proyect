@@ -25,58 +25,67 @@ RUN mkdir -p /var/run/sshd && \
     sed -i 's/#PermitRootLogin prohibit-password/PermitRootLogin yes/' /etc/ssh/sshd_config && \
     sed -i 's/#PasswordAuthentication yes/PasswordAuthentication no/' /etc/ssh/sshd_config
 
-# 3) (Opcional) Exportar JAVA_HOME en el bashrc de 'hadoop'
-RUN echo 'export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64' >> /home/hadoop/.bashrc
-
-# 4) Variables de entorno de Java
+# 3) Variables de entorno
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
-ENV PATH=$PATH:$JAVA_HOME/bin
-
-# 5) Descargar y descomprimir Hadoop 3.3.5
 ENV HADOOP_VERSION=3.3.5
 ENV HADOOP_HOME=/opt/hadoop
-ENV HADOOP_DOWNLOAD_URL=https://downloads.apache.org/hadoop/common/hadoop-${HADOOP_VERSION}/hadoop-${HADOOP_VERSION}.tar.gz
-
-RUN curl -fSL "$HADOOP_DOWNLOAD_URL" -o /tmp/hadoop-${HADOOP_VERSION}.tar.gz \
- && mkdir -p /opt \
- && tar -xzf /tmp/hadoop-${HADOOP_VERSION}.tar.gz -C /opt/ \
- && mv /opt/hadoop-${HADOOP_VERSION} /opt/hadoop \
- && chown -R hadoop:hadoop /opt/hadoop \
- && rm /tmp/hadoop-${HADOOP_VERSION}.tar.gz
-
-# 6) Variables de entorno de Hadoop
 ENV HADOOP_CONF_DIR=$HADOOP_HOME/etc/hadoop
-ENV HADOOP_COMMON_HOME=$HADOOP_HOME
-ENV HADOOP_HDFS_HOME=$HADOOP_HOME
-ENV HADOOP_MAPRED_HOME=$HADOOP_HOME
-ENV HADOOP_YARN_HOME=$HADOOP_HOME
-ENV YARN_CONF_DIR=$HADOOP_HOME/etc/hadoop
-ENV PATH=$PATH:$HADOOP_HOME/bin:$HADOOP_HOME/sbin
-
-# 7) Descargar e instalar Pig 0.17.0
-ENV PIG_VERSION=0.17.0
 ENV PIG_HOME=/opt/pig
-ENV PIG_DOWNLOAD_URL=https://downloads.apache.org/pig/pig-${PIG_VERSION}/pig-${PIG_VERSION}.tar.gz
+ENV PATH=$PATH:$JAVA_HOME/bin:$HADOOP_HOME/bin:$HADOOP_HOME/sbin:$PIG_HOME/bin
 
-RUN curl -fSL "$PIG_DOWNLOAD_URL" -o /tmp/pig-${PIG_VERSION}.tar.gz \
- && tar -xzf /tmp/pig-${PIG_VERSION}.tar.gz -C /opt/ \
- && mv /opt/pig-${PIG_VERSION} /opt/pig \
- && chown -R hadoop:hadoop /opt/pig \
- && rm /tmp/pig-${PIG_VERSION}.tar.gz
+# 4) Instalar Hadoop
+RUN curl -fSL "https://downloads.apache.org/hadoop/common/hadoop-${HADOOP_VERSION}/hadoop-${HADOOP_VERSION}.tar.gz" -o /tmp/hadoop.tar.gz \
+ && tar -xzf /tmp/hadoop.tar.gz -C /opt \
+ && mv /opt/hadoop-${HADOOP_VERSION} $HADOOP_HOME \
+ && chown -R hadoop:hadoop $HADOOP_HOME \
+ && rm /tmp/hadoop.tar.gz
 
-ENV PATH=$PATH:$PIG_HOME/bin
+# 5) Instalar Pig
+RUN curl -fSL "https://downloads.apache.org/pig/pig-0.17.0/pig-0.17.0.tar.gz" -o /tmp/pig.tar.gz \
+ && tar -xzf /tmp/pig.tar.gz -C /opt \
+ && mv /opt/pig-0.17.0 $PIG_HOME \
+ && chown -R hadoop:hadoop $PIG_HOME \
+ && rm /tmp/pig.tar.gz
 
-# 8) Copiar configuraciones Hadoop (core-site.xml, hdfs-site.xml, yarn-site.xml, mapred-site.xml, hadoop-env.sh)
+# 6) Configuración del entorno
+RUN echo "export JAVA_HOME=$JAVA_HOME" >> /home/hadoop/.bashrc && \
+    echo "export HADOOP_HOME=$HADOOP_HOME" >> /home/hadoop/.bashrc && \
+    echo "export PIG_HOME=$PIG_HOME" >> /home/hadoop/.bashrc && \
+    echo "export PATH=$PATH" >> /home/hadoop/.bashrc && \
+    mkdir -p /opt/hadoop/logs && \
+    chown -R hadoop:hadoop /opt/hadoop/logs
+
+# 7) Copiar configuraciones
 COPY config/ $HADOOP_CONF_DIR/
+COPY config/pig-log4j.properties $PIG_HOME/conf/log4j.properties
+RUN ln -s $HADOOP_CONF_DIR /opt/hadoop/conf
 
-# 9) Copiar init-hadoop.sh (con permisos) al contenedor
+# 8) Configurar Pig para Hadoop 3
+RUN echo "pig.use.overriden.hadoop.configs=true" >> $PIG_HOME/conf/pig.properties && \
+    echo "fs.defaultFS=hdfs://hadoop:8020" >> $PIG_HOME/conf/pig.properties
+
+# 9) Preparar directorios HDFS
+RUN mkdir -p /hadoop/dfs/name /hadoop/dfs/data \
+ && chown -R hadoop:hadoop /hadoop/dfs
+
+# 10) Copiar script de inicialización
 COPY init-hadoop.sh /init-hadoop.sh
 RUN chmod +x /init-hadoop.sh && chown hadoop:hadoop /init-hadoop.sh
 
-# 10) Crear carpetas locales para NameNode y DataNode
-RUN mkdir -p /hadoop/dfs/name /hadoop/dfs/data \
-    && chown -R hadoop:hadoop /hadoop/dfs
-
-# 11) Lugar de trabajo y comando por defecto
+# 11) Configuración final
 WORKDIR /home/hadoop
+
+# Crear symlinks globales para hdfs/yarn
+RUN ln -s $HADOOP_HOME/bin/hdfs /usr/bin/hdfs && \
+    ln -s $HADOOP_HOME/bin/yarn /usr/bin/yarn
+
+# Crear symlinks globales para hdfs/yarn y configuraciones
+RUN ln -s $HADOOP_HOME/bin/hdfs /usr/bin/hdfs && \
+    ln -s $HADOOP_HOME/bin/yarn /usr/bin/yarn && \
+    echo 'export HADOOP_COMMON_LIB_NATIVE_DIR=$HADOOP_HOME/lib/native' >> /etc/profile && \
+    echo 'export HADOOP_OPTS="-Djava.library.path=$HADOOP_HOME/lib/native"' >> /etc/profile && \
+    ln -sf $HADOOP_HOME/libexec/hdfs-config.sh /usr/bin/hdfs-config.sh && \
+    chmod +x $HADOOP_HOME/libexec/*.sh && \
+    ln -sf $HADOOP_HOME/libexec/*-config.sh /usr/bin/ 2>/dev/null || true
+
 CMD ["/init-hadoop.sh"]
