@@ -23,12 +23,9 @@ Pipeline completo desde la recolección hasta el análisis
 Requisitos adicionales
 Docker Compose versión 1.29+
 
-Espacio suficiente en disco para los volúmenes de Hadoop
-
 En sistemas Windows: tener instalado dos2unix para conversión de formatos de archivo
 
-Instalación y ejecución (Entrega 2)
-Clona el repositorio (si no lo has hecho):
+Instalación y ejecución:
 
 1. Clona el repositorio y entra al directorio del proyecto:**
 ```bash
