@@ -31,12 +31,12 @@ services:
     container_name: hadoop-pig
     hostname: hadoop
     ports:
-      - "50070:50070"   # NameNode UI
-      - "8088:8088"     # ResourceManager
-      - "19888:19888"   # HistoryServer
-      - "4040:4040"     # Pig UI
-      - "8042:8042"     # NodeManager UI
-      - "8032:8032"     # ResourceManager RPC
+      - "50070:50070"   #NameNode UI
+      - "8088:8088"     #ResourceManager
+      - "19888:19888"   #HistoryServer
+      - "4040:4040"     #Pig UI
+      - "8042:8042"     #NodeManager UI
+      - "8032:8032"     #ResourceManager RPC
     environment:
       - HADOOP_HOME=/opt/hadoop
       - PIG_CLASSPATH=$HADOOP_HOME/etc/hadoop
@@ -44,6 +44,7 @@ services:
       - HADOOP_LOG_DIR=/opt/hadoop/logs
       - YARN_CONF_DIR=/opt/hadoop/etc/hadoop
       - PIG_OPTS="-Dpig.log.dir=/opt/hadoop/logs"
+      - HADOOP_OPTS="-Djava.net.preferIPv4Stack=true"
     volumes:
       - hadoop-namenode:/hadoop/dfs/name
       - hadoop-datanode:/hadoop/dfs/data
@@ -52,6 +53,7 @@ services:
       - ./app/incidentes_limpios.csv:/app/incidentes_limpios.csv
       - ./app/pig:/app/pig
       - ./hadoop-logs:/opt/hadoop/logs
+    network_mode: host
     extra_hosts:
       - "hadoop:127.0.0.1"
     healthcheck:

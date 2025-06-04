@@ -1,14 +1,10 @@
--- Añadir al inicio del archivo
-SET pig.exec.mapPartAgg true;  -- Optimizar agregaciones
-SET pig.splitCombination true; -- Combinar archivos pequeños
+SET pig.exec.mapPartAgg true;
+SET pig.splitCombination true;
 
--- Modificar el análisis temporal para incluir día de la semana
 REGISTER '/opt/hadoop/share/hadoop/tools/lib/piggybank.jar';
 DEFINE DayOfWeek org.apache.pig.piggybank.evaluation.datetime.extract.DayOfWeek();
 
--- ... (resto del script existente)
-
--- Añadir análisis por día de la semana
+--analisis x dia de la semana
 inc_semana = FOREACH incidentes GENERATE
     DayOfWeek(fecha_dt) AS dia_semana,
     ciudad,

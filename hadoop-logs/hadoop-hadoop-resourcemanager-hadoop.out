@@ -1,4 +1,4 @@
-2025-06-03 23:56:06,338 INFO  resourcemanager.ResourceManager (LogAdapter.java:info(51)) - STARTUP_MSG: 
+2025-06-04 00:51:19,467 INFO  resourcemanager.ResourceManager (LogAdapter.java:info(51)) - STARTUP_MSG: 
 /************************************************************
 STARTUP_MSG: Starting ResourceManager
 STARTUP_MSG:   host = localhost/127.0.0.1
@@ -8,7 +8,7 @@ STARTUP_MSG:   classpath = /opt/hadoop/etc/hadoop:/opt/hadoop/share/hadoop/commo
 STARTUP_MSG:   build = https://github.com/apache/hadoop.git -r 706d88266abcee09ed78fbaa0ad5f74d818ab0e9; compiled by 'stevel' on 2023-03-15T15:56Z
 STARTUP_MSG:   java = 1.8.0_452
 ************************************************************/
-2025-06-03 23:56:06,628 INFO  resourcemanager.ResourceManager (LogAdapter.java:info(51)) - registered UNIX signal handlers for [TERM, HUP, INT]
+2025-06-04 00:51:19,491 INFO  resourcemanager.ResourceManager (LogAdapter.java:info(51)) - registered UNIX signal handlers for [TERM, HUP, INT]
 real-time non-blocking time  (microseconds, -R) unlimited
 core file size              (blocks, -c) 0
 data seg size               (kbytes, -d) unlimited
@@ -26,37 +26,37 @@ cpu time                   (seconds, -t) unlimited
 max user processes                  (-u) unlimited
 virtual memory              (kbytes, -v) unlimited
 file locks                          (-x) unlimited
-2025-06-03 23:56:08,648 INFO  resourcemanager.RMNMInfo (RMInfo.java:register(55)) - Registered RMInfo MBean
-2025-06-03 23:56:08,668 INFO  conf.Configuration (Configuration.java:getConfResourceAsInputStream(2857)) - found resource core-site.xml at file:/opt/hadoop/etc/hadoop/core-site.xml
-2025-06-03 23:56:08,835 INFO  conf.Configuration (Configuration.java:getConfResourceAsInputStream(2854)) - resource-types.xml not found
-2025-06-03 23:56:08,839 INFO  resource.ResourceUtils (ResourceUtils.java:addResourcesFileToConf(476)) - Unable to find 'resource-types.xml'.
-2025-06-03 23:56:08,969 INFO  conf.Configuration (Configuration.java:getConfResourceAsInputStream(2857)) - found resource yarn-site.xml at file:/opt/hadoop/etc/hadoop/yarn-site.xml
-2025-06-03 23:56:08,987 INFO  metrics.GenericEventTypeMetrics (GenericEventTypeMetrics.java:registerMetrics(75)) - Registering GenericEventTypeMetrics
-2025-06-03 23:56:08,993 INFO  event.AsyncDispatcher (AsyncDispatcher.java:register(267)) - Registering class org.apache.hadoop.yarn.server.resourcemanager.RMFatalEventType for class org.apache.hadoop.yarn.server.resourcemanager.ResourceManager$RMFatalEventDispatcher
-2025-06-03 23:56:09,069 INFO  security.NMTokenSecretManagerInRM (NMTokenSecretManagerInRM.java:<init>(75)) - NMTokenKeyRollingInterval: 86400000ms and NMTokenKeyActivationDelay: 900000ms
-2025-06-03 23:56:09,089 INFO  security.RMContainerTokenSecretManager (RMContainerTokenSecretManager.java:<init>(81)) - ContainerTokenKeyRollingInterval: 86400000ms and ContainerTokenKeyActivationDelay: 900000ms
-2025-06-03 23:56:09,100 INFO  security.AMRMTokenSecretManager (AMRMTokenSecretManager.java:<init>(94)) - AMRMTokenKeyRollingInterval: 86400000ms and AMRMTokenKeyActivationDelay: 900000 ms
-2025-06-03 23:56:09,279 INFO  event.AsyncDispatcher (AsyncDispatcher.java:register(267)) - Registering class org.apache.hadoop.yarn.server.resourcemanager.recovery.RMStateStoreEventType for class org.apache.hadoop.yarn.server.resourcemanager.recovery.RMStateStore$ForwardingEventHandler
-2025-06-03 23:56:09,293 INFO  event.AsyncDispatcher (AsyncDispatcher.java:register(267)) - Registering class org.apache.hadoop.yarn.server.resourcemanager.NodesListManagerEventType for class org.apache.hadoop.yarn.server.resourcemanager.NodesListManager
-2025-06-03 23:56:09,295 INFO  resourcemanager.ResourceManager (ResourceManager.java:createScheduler(488)) - Using Scheduler: org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacityScheduler
-2025-06-03 23:56:09,445 INFO  event.AsyncDispatcher (AsyncDispatcher.java:register(267)) - Registering class org.apache.hadoop.yarn.server.resourcemanager.scheduler.event.SchedulerEventType for class org.apache.hadoop.yarn.server.resourcemanager.ResourceManager$SchedulerEventDispatcher
-2025-06-03 23:56:09,449 INFO  event.AsyncDispatcher (AsyncDispatcher.java:register(267)) - Registering class org.apache.hadoop.yarn.server.resourcemanager.rmapp.RMAppEventType for class org.apache.hadoop.yarn.server.resourcemanager.ResourceManager$ApplicationEventDispatcher
-2025-06-03 23:56:09,460 INFO  event.AsyncDispatcher (AsyncDispatcher.java:register(267)) - Registering class org.apache.hadoop.yarn.server.resourcemanager.rmapp.attempt.RMAppAttemptEventType for class org.apache.hadoop.yarn.server.resourcemanager.ResourceManager$ApplicationAttemptEventDispatcher
-2025-06-03 23:56:09,465 INFO  event.AsyncDispatcher (AsyncDispatcher.java:register(267)) - Registering class org.apache.hadoop.yarn.server.resourcemanager.rmnode.RMNodeEventType for class org.apache.hadoop.yarn.server.resourcemanager.ResourceManager$NodeEventDispatcher
-2025-06-03 23:56:09,972 WARN  impl.MetricsConfig (MetricsConfig.java:loadFirst(136)) - Cannot locate configuration: tried hadoop-metrics2-resourcemanager.properties,hadoop-metrics2.properties
-2025-06-03 23:56:10,024 INFO  impl.MetricsSystemImpl (MetricsSystemImpl.java:startTimer(378)) - Scheduled Metric snapshot period at 10 second(s).
-2025-06-03 23:56:10,024 INFO  impl.MetricsSystemImpl (MetricsSystemImpl.java:start(191)) - ResourceManager metrics system started
-2025-06-03 23:56:10,163 INFO  security.YarnAuthorizationProvider (YarnAuthorizationProvider.java:getInstance(59)) - org.apache.hadoop.yarn.security.ConfiguredYarnAuthorizer is instantiated.
-2025-06-03 23:56:10,173 INFO  event.AsyncDispatcher (AsyncDispatcher.java:register(267)) - Registering class org.apache.hadoop.yarn.server.resourcemanager.RMAppManagerEventType for class org.apache.hadoop.yarn.server.resourcemanager.RMAppManager
-2025-06-03 23:56:10,191 INFO  event.AsyncDispatcher (AsyncDispatcher.java:register(267)) - Registering class org.apache.hadoop.yarn.server.resourcemanager.amlauncher.AMLauncherEventType for class org.apache.hadoop.yarn.server.resourcemanager.amlauncher.ApplicationMasterLauncher
-2025-06-03 23:56:11,701 INFO  resourcemanager.RMNMInfo (RMNMInfo.java:<init>(66)) - Registered RMNMInfo MBean
-2025-06-03 23:56:11,705 INFO  monitor.RMAppLifetimeMonitor (RMAppLifetimeMonitor.java:serviceInit(67)) - Application lifelime monitor interval set to 3000 ms.
-2025-06-03 23:56:11,739 INFO  placement.MultiNodeSortingManager (MultiNodeSortingManager.java:serviceInit(59)) - Initializing NodeSortingService=MultiNodeSortingManager
-2025-06-03 23:56:11,751 INFO  util.HostsFileReader (HostsFileReader.java:refresh(239)) - Refreshing hosts (include/exclude) list
-2025-06-03 23:56:11,779 INFO  conf.Configuration (Configuration.java:getConfResourceAsInputStream(2854)) - capacity-scheduler.xml not found
-2025-06-03 23:56:11,809 INFO  scheduler.AbstractYarnScheduler (AbstractYarnScheduler.java:getMinimumAllocation(1524)) - Minimum allocation = <memory:512, vCores:1>
-2025-06-03 23:56:11,810 INFO  scheduler.AbstractYarnScheduler (AbstractYarnScheduler.java:getMaximumAllocation(1536)) - Maximum allocation = <memory:8192, vCores:4>
-2025-06-03 23:56:11,888 INFO  service.AbstractService (AbstractService.java:noteFailure(267)) - Service org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacityScheduler failed in state INITED
+2025-06-04 00:51:20,910 INFO  resourcemanager.RMNMInfo (RMInfo.java:register(55)) - Registered RMInfo MBean
+2025-06-04 00:51:20,953 INFO  conf.Configuration (Configuration.java:getConfResourceAsInputStream(2857)) - found resource core-site.xml at file:/opt/hadoop/etc/hadoop/core-site.xml
+2025-06-04 00:51:21,282 INFO  conf.Configuration (Configuration.java:getConfResourceAsInputStream(2854)) - resource-types.xml not found
+2025-06-04 00:51:21,287 INFO  resource.ResourceUtils (ResourceUtils.java:addResourcesFileToConf(476)) - Unable to find 'resource-types.xml'.
+2025-06-04 00:51:21,477 INFO  conf.Configuration (Configuration.java:getConfResourceAsInputStream(2857)) - found resource yarn-site.xml at file:/opt/hadoop/etc/hadoop/yarn-site.xml
+2025-06-04 00:51:21,501 INFO  metrics.GenericEventTypeMetrics (GenericEventTypeMetrics.java:registerMetrics(75)) - Registering GenericEventTypeMetrics
+2025-06-04 00:51:21,508 INFO  event.AsyncDispatcher (AsyncDispatcher.java:register(267)) - Registering class org.apache.hadoop.yarn.server.resourcemanager.RMFatalEventType for class org.apache.hadoop.yarn.server.resourcemanager.ResourceManager$RMFatalEventDispatcher
+2025-06-04 00:51:21,594 INFO  security.NMTokenSecretManagerInRM (NMTokenSecretManagerInRM.java:<init>(75)) - NMTokenKeyRollingInterval: 86400000ms and NMTokenKeyActivationDelay: 900000ms
+2025-06-04 00:51:21,617 INFO  security.RMContainerTokenSecretManager (RMContainerTokenSecretManager.java:<init>(81)) - ContainerTokenKeyRollingInterval: 86400000ms and ContainerTokenKeyActivationDelay: 900000ms
+2025-06-04 00:51:21,634 INFO  security.AMRMTokenSecretManager (AMRMTokenSecretManager.java:<init>(94)) - AMRMTokenKeyRollingInterval: 86400000ms and AMRMTokenKeyActivationDelay: 900000 ms
+2025-06-04 00:51:21,837 INFO  event.AsyncDispatcher (AsyncDispatcher.java:register(267)) - Registering class org.apache.hadoop.yarn.server.resourcemanager.recovery.RMStateStoreEventType for class org.apache.hadoop.yarn.server.resourcemanager.recovery.RMStateStore$ForwardingEventHandler
+2025-06-04 00:51:21,848 INFO  event.AsyncDispatcher (AsyncDispatcher.java:register(267)) - Registering class org.apache.hadoop.yarn.server.resourcemanager.NodesListManagerEventType for class org.apache.hadoop.yarn.server.resourcemanager.NodesListManager
+2025-06-04 00:51:21,848 INFO  resourcemanager.ResourceManager (ResourceManager.java:createScheduler(488)) - Using Scheduler: org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacityScheduler
+2025-06-04 00:51:22,065 INFO  event.AsyncDispatcher (AsyncDispatcher.java:register(267)) - Registering class org.apache.hadoop.yarn.server.resourcemanager.scheduler.event.SchedulerEventType for class org.apache.hadoop.yarn.server.resourcemanager.ResourceManager$SchedulerEventDispatcher
+2025-06-04 00:51:22,072 INFO  event.AsyncDispatcher (AsyncDispatcher.java:register(267)) - Registering class org.apache.hadoop.yarn.server.resourcemanager.rmapp.RMAppEventType for class org.apache.hadoop.yarn.server.resourcemanager.ResourceManager$ApplicationEventDispatcher
+2025-06-04 00:51:22,078 INFO  event.AsyncDispatcher (AsyncDispatcher.java:register(267)) - Registering class org.apache.hadoop.yarn.server.resourcemanager.rmapp.attempt.RMAppAttemptEventType for class org.apache.hadoop.yarn.server.resourcemanager.ResourceManager$ApplicationAttemptEventDispatcher
+2025-06-04 00:51:22,081 INFO  event.AsyncDispatcher (AsyncDispatcher.java:register(267)) - Registering class org.apache.hadoop.yarn.server.resourcemanager.rmnode.RMNodeEventType for class org.apache.hadoop.yarn.server.resourcemanager.ResourceManager$NodeEventDispatcher
+2025-06-04 00:51:22,511 WARN  impl.MetricsConfig (MetricsConfig.java:loadFirst(136)) - Cannot locate configuration: tried hadoop-metrics2-resourcemanager.properties,hadoop-metrics2.properties
+2025-06-04 00:51:22,571 INFO  impl.MetricsSystemImpl (MetricsSystemImpl.java:startTimer(378)) - Scheduled Metric snapshot period at 10 second(s).
+2025-06-04 00:51:22,573 INFO  impl.MetricsSystemImpl (MetricsSystemImpl.java:start(191)) - ResourceManager metrics system started
+2025-06-04 00:51:22,740 INFO  security.YarnAuthorizationProvider (YarnAuthorizationProvider.java:getInstance(59)) - org.apache.hadoop.yarn.security.ConfiguredYarnAuthorizer is instantiated.
+2025-06-04 00:51:22,752 INFO  event.AsyncDispatcher (AsyncDispatcher.java:register(267)) - Registering class org.apache.hadoop.yarn.server.resourcemanager.RMAppManagerEventType for class org.apache.hadoop.yarn.server.resourcemanager.RMAppManager
+2025-06-04 00:51:22,780 INFO  event.AsyncDispatcher (AsyncDispatcher.java:register(267)) - Registering class org.apache.hadoop.yarn.server.resourcemanager.amlauncher.AMLauncherEventType for class org.apache.hadoop.yarn.server.resourcemanager.amlauncher.ApplicationMasterLauncher
+2025-06-04 00:51:24,922 INFO  resourcemanager.RMNMInfo (RMNMInfo.java:<init>(66)) - Registered RMNMInfo MBean
+2025-06-04 00:51:24,933 INFO  monitor.RMAppLifetimeMonitor (RMAppLifetimeMonitor.java:serviceInit(67)) - Application lifelime monitor interval set to 3000 ms.
+2025-06-04 00:51:25,004 INFO  placement.MultiNodeSortingManager (MultiNodeSortingManager.java:serviceInit(59)) - Initializing NodeSortingService=MultiNodeSortingManager
+2025-06-04 00:51:25,017 INFO  util.HostsFileReader (HostsFileReader.java:refresh(239)) - Refreshing hosts (include/exclude) list
+2025-06-04 00:51:25,047 INFO  conf.Configuration (Configuration.java:getConfResourceAsInputStream(2854)) - capacity-scheduler.xml not found
+2025-06-04 00:51:25,075 INFO  scheduler.AbstractYarnScheduler (AbstractYarnScheduler.java:getMinimumAllocation(1524)) - Minimum allocation = <memory:512, vCores:1>
+2025-06-04 00:51:25,076 INFO  scheduler.AbstractYarnScheduler (AbstractYarnScheduler.java:getMaximumAllocation(1536)) - Maximum allocation = <memory:8192, vCores:4>
+2025-06-04 00:51:25,123 INFO  service.AbstractService (AbstractService.java:noteFailure(267)) - Service org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacityScheduler failed in state INITED
 org.apache.hadoop.yarn.exceptions.YarnException: Failed to initialize queues
 	at org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacityScheduler.initializeQueues(CapacityScheduler.java:774)
 	at org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacityScheduler.initScheduler(CapacityScheduler.java:346)
@@ -74,7 +74,7 @@ Caused by: java.lang.IllegalStateException: Queue configuration missing child qu
 	at org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacitySchedulerQueueManager.initializeQueues(CapacitySchedulerQueueManager.java:162)
 	at org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacityScheduler.initializeQueues(CapacityScheduler.java:765)
 	... 10 more
-2025-06-03 23:56:11,898 INFO  service.AbstractService (AbstractService.java:noteFailure(267)) - Service RMActiveServices failed in state INITED
+2025-06-04 00:51:25,135 INFO  service.AbstractService (AbstractService.java:noteFailure(267)) - Service RMActiveServices failed in state INITED
 org.apache.hadoop.service.ServiceStateException: org.apache.hadoop.yarn.exceptions.YarnException: Failed to initialize queues
 	at org.apache.hadoop.service.ServiceStateException.convert(ServiceStateException.java:105)
 	at org.apache.hadoop.service.AbstractService.init(AbstractService.java:173)
@@ -96,11 +96,11 @@ Caused by: java.lang.IllegalStateException: Queue configuration missing child qu
 	at org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacitySchedulerQueueManager.initializeQueues(CapacitySchedulerQueueManager.java:162)
 	at org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacityScheduler.initializeQueues(CapacityScheduler.java:765)
 	... 10 more
-2025-06-03 23:56:11,901 INFO  impl.MetricsSystemImpl (MetricsSystemImpl.java:stop(210)) - Stopping ResourceManager metrics system...
-2025-06-03 23:56:11,905 INFO  impl.MetricsSystemImpl (MetricsSystemImpl.java:stop(216)) - ResourceManager metrics system stopped.
-2025-06-03 23:56:11,906 INFO  impl.MetricsSystemImpl (MetricsSystemImpl.java:shutdown(611)) - ResourceManager metrics system shutdown complete.
-2025-06-03 23:56:11,907 INFO  event.AsyncDispatcher (AsyncDispatcher.java:serviceStop(201)) - AsyncDispatcher is draining to stop, ignoring any new events.
-2025-06-03 23:56:11,907 INFO  service.AbstractService (AbstractService.java:noteFailure(267)) - Service ResourceManager failed in state INITED
+2025-06-04 00:51:25,137 INFO  impl.MetricsSystemImpl (MetricsSystemImpl.java:stop(210)) - Stopping ResourceManager metrics system...
+2025-06-04 00:51:25,142 INFO  impl.MetricsSystemImpl (MetricsSystemImpl.java:stop(216)) - ResourceManager metrics system stopped.
+2025-06-04 00:51:25,145 INFO  impl.MetricsSystemImpl (MetricsSystemImpl.java:shutdown(611)) - ResourceManager metrics system shutdown complete.
+2025-06-04 00:51:25,147 INFO  event.AsyncDispatcher (AsyncDispatcher.java:serviceStop(201)) - AsyncDispatcher is draining to stop, ignoring any new events.
+2025-06-04 00:51:25,148 INFO  service.AbstractService (AbstractService.java:noteFailure(267)) - Service ResourceManager failed in state INITED
 org.apache.hadoop.service.ServiceStateException: org.apache.hadoop.yarn.exceptions.YarnException: Failed to initialize queues
 	at org.apache.hadoop.service.ServiceStateException.convert(ServiceStateException.java:105)
 	at org.apache.hadoop.service.AbstractService.init(AbstractService.java:173)
@@ -122,9 +122,9 @@ Caused by: java.lang.IllegalStateException: Queue configuration missing child qu
 	at org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacitySchedulerQueueManager.initializeQueues(CapacitySchedulerQueueManager.java:162)
 	at org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacityScheduler.initializeQueues(CapacityScheduler.java:765)
 	... 10 more
-2025-06-03 23:56:11,909 INFO  resourcemanager.ResourceManager (ResourceManager.java:transitionToStandby(1482)) - Transitioning to standby state
-2025-06-03 23:56:11,909 INFO  resourcemanager.ResourceManager (ResourceManager.java:transitionToStandby(1489)) - Transitioned to standby state
-2025-06-03 23:56:11,910 ERROR resourcemanager.ResourceManager (MarkerIgnoringBase.java:error(159)) - Error starting ResourceManager
+2025-06-04 00:51:25,152 INFO  resourcemanager.ResourceManager (ResourceManager.java:transitionToStandby(1482)) - Transitioning to standby state
+2025-06-04 00:51:25,153 INFO  resourcemanager.ResourceManager (ResourceManager.java:transitionToStandby(1489)) - Transitioned to standby state
+2025-06-04 00:51:25,154 ERROR resourcemanager.ResourceManager (MarkerIgnoringBase.java:error(159)) - Error starting ResourceManager
 org.apache.hadoop.service.ServiceStateException: org.apache.hadoop.yarn.exceptions.YarnException: Failed to initialize queues
 	at org.apache.hadoop.service.ServiceStateException.convert(ServiceStateException.java:105)
 	at org.apache.hadoop.service.AbstractService.init(AbstractService.java:173)
@@ -146,7 +146,7 @@ Caused by: java.lang.IllegalStateException: Queue configuration missing child qu
 	at org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacitySchedulerQueueManager.initializeQueues(CapacitySchedulerQueueManager.java:162)
 	at org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacityScheduler.initializeQueues(CapacityScheduler.java:765)
 	... 10 more
-2025-06-03 23:56:11,918 INFO  resourcemanager.ResourceManager (LogAdapter.java:info(51)) - SHUTDOWN_MSG: 
+2025-06-04 00:51:25,163 INFO  resourcemanager.ResourceManager (LogAdapter.java:info(51)) - SHUTDOWN_MSG: 
 /************************************************************
 SHUTDOWN_MSG: Shutting down ResourceManager at localhost/127.0.0.1
 ************************************************************/

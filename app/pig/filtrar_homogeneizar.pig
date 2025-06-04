@@ -1,4 +1,3 @@
--- filtrar_homogeneizar.pig
 REGISTER '/opt/pig/contrib/piggybank/java/piggybank.jar';  -- (lo usaremos luego, aunque aquí no haga falta todavía)
 
 %default CSV_INPUT '/user/waze/incidentes_limpios.csv';
@@ -15,7 +14,7 @@ incidentes_raw = LOAD '$CSV_INPUT' USING PigStorage(',')
         lon:double
     );
 
--- 3. Filtramos filas con campos nulos o vacíos:
+--filtrar x campos nulos o vacíos
 incidentes_filtrados = FILTER incidentes_raw BY
     fecha  IS NOT NULL
     AND ciudad  IS NOT NULL
@@ -26,7 +25,7 @@ incidentes_filtrados = FILTER incidentes_raw BY
     AND ciudad != ''
     AND tipo   != '';
 
--- 4. Homogeneizamos mayúsculas/minúsculas:
+--homogeneizar
 incidentes_norm = FOREACH incidentes_filtrados GENERATE
     LOWER(TRIM(fecha))        AS fecha_norm:chararray,
     UPPER(TRIM(tipo))         AS tipo_norm:chararray,
@@ -36,7 +35,7 @@ incidentes_norm = FOREACH incidentes_filtrados GENERATE
     lat,
     lon;
 
--- 5. Convertimos la fecha a datetime y reordenamos:
+--datetime
 incidentes_final = FOREACH incidentes_norm GENERATE
     ToDate(fecha_norm, 'YYYY-MM-DD HH:mm:ss') AS fecha_dt:datetime,
     ciudad_norm AS ciudad:chararray,

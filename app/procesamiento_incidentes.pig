@@ -1,9 +1,9 @@
--- Carga CSV con esquema
+--Carga csv
 incidentes = LOAD '/data/incidentes_limpios.csv'
   USING PigStorage(',')
   AS (fecha:chararray, tipo:chararray, subtipo:chararray, subtipo_normalizado:chararray, ciudad:chararray, calle:chararray, lat:float, lon:float);
 
--- Filtra registros con datos faltantes
+--filtra
 limpios = FILTER incidentes BY 
   (fecha IS NOT NULL) AND 
   (ciudad IS NOT NULL) AND 
@@ -11,10 +11,10 @@ limpios = FILTER incidentes BY
   (lat IS NOT NULL) AND
   (lon IS NOT NULL);
 
--- Agrupa por ciudad (comuna) y tipo
+--junta por comuna y tipo
 por_comuna_tipo = GROUP limpios BY (ciudad, subtipo_normalizado);
 
--- Estadísticas por comuna y tipo
+--estadisticas
 stats_comuna_tipo = FOREACH por_comuna_tipo GENERATE 
   FLATTEN(group) AS (comuna, tipo_incidente),
   COUNT(limpios) AS total,
@@ -23,7 +23,7 @@ stats_comuna_tipo = FOREACH por_comuna_tipo GENERATE
   MIN(lon) AS min_lon,
   MAX(lon) AS max_lon;
 
--- Agrupa por hora del día
+--junta por hora
 incidentes_con_hora = FOREACH limpios GENERATE 
   SUBSTRING(fecha, 11, 2) AS hora,
   ciudad,
@@ -35,6 +35,6 @@ stats_hora = FOREACH por_hora GENERATE
   FLATTEN(group) AS (hora, tipo_incidente),
   COUNT(incidentes_con_hora) AS total;
 
--- Guarda resultados
+--resultados
 STORE stats_comuna_tipo INTO '/output/stats_comuna_tipo' USING PigStorage(',');
 STORE stats_hora INTO '/output/stats_hora' USING PigStorage(',');
