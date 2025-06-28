@@ -6,6 +6,7 @@ import random
 import time
 import logging
 from pymongo import MongoClient
+import elasticsearch_logger
 
 
 logging.basicConfig(level=logging.INFO)
@@ -17,7 +18,7 @@ policies = [CacheLRU] # elegir entre CacheLRU o CacheFIFO
 rates = [2, 5] # tasas de trafico a probar
 
 
-def make_query(cache):
+def make_query(cache, politica, tasa):
     def query():
         city = random.choice(
             ["Santiago", "Providencia", "Las Condes", "Maipú", "Ñuñoa"]
@@ -26,12 +27,15 @@ def make_query(cache):
         cached_result = cache.get(city)
         if cached_result:
             logger.info(f"Cache HIT para {city}")
+            elasticsearch_logger.log_cache_event(politica, tasa, "hit")
         else:
             logger.info(f"Cache MISS para {city}, buscando en la base de datos...")
             result = storage.find_events({"ciudad": city})
             cache.put(city, result)
+            elasticsearch_logger.log_cache_event(politica, tasa, "miss")
 
     return query
+
 
 
 if __name__ == "__main__":
@@ -49,6 +53,6 @@ if __name__ == "__main__":
             cache = policy(capacidad=50)
             generator = TrafficGenerator(model="poisson", rate=rate) # elegir entre modelo poisson o uniform
 
-            query_func = make_query(cache)
+            query_func = make_query(cache, policy.__name__, rate)
             generator.generate_queries(query_func=query_func, duration_seconds=30)
             time.sleep(5)

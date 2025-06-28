@@ -1,4 +1,4 @@
-2025-06-04 00:51:21,969 INFO  nodemanager.NodeManager (LogAdapter.java:info(51)) - STARTUP_MSG: 
+2025-06-04 03:16:37,384 INFO  nodemanager.NodeManager (LogAdapter.java:info(51)) - STARTUP_MSG: 
 /************************************************************
 STARTUP_MSG: Starting NodeManager
 STARTUP_MSG:   host = localhost/127.0.0.1
@@ -8,7 +8,7 @@ STARTUP_MSG:   classpath = /opt/hadoop/etc/hadoop:/opt/hadoop/share/hadoop/commo
 STARTUP_MSG:   build = https://github.com/apache/hadoop.git -r 706d88266abcee09ed78fbaa0ad5f74d818ab0e9; compiled by 'stevel' on 2023-03-15T15:56Z
 STARTUP_MSG:   java = 1.8.0_452
 ************************************************************/
-2025-06-04 00:51:21,995 INFO  nodemanager.NodeManager (LogAdapter.java:info(51)) - registered UNIX signal handlers for [TERM, HUP, INT]
+2025-06-04 03:16:37,429 INFO  nodemanager.NodeManager (LogAdapter.java:info(51)) - registered UNIX signal handlers for [TERM, HUP, INT]
 real-time non-blocking time  (microseconds, -R) unlimited
 core file size              (blocks, -c) 0
 data seg size               (kbytes, -d) unlimited
@@ -26,3 +26,484 @@ cpu time                   (seconds, -t) unlimited
 max user processes                  (-u) unlimited
 virtual memory              (kbytes, -v) unlimited
 file locks                          (-x) unlimited
+2025-06-04 03:16:39,400 INFO  resourceplugin.ResourcePluginManager (ResourcePluginManager.java:getPluginsFromConfig(96)) - No Resource plugins found from configuration!
+2025-06-04 03:16:39,402 INFO  resourceplugin.ResourcePluginManager (ResourcePluginManager.java:getPluginsFromConfig(98)) - Found Resource plugins from configuration: null
+2025-06-04 03:16:39,404 INFO  resourceplugin.ResourcePluginManager (ResourcePluginManager.java:initialize(86)) - The pluggable device framework is not enabled. If you want, please set true to yarn.nodemanager.pluggable-device-framework.enabled
+2025-06-04 03:16:39,142 INFO  event.AsyncDispatcher (AsyncDispatcher.java:register(267)) - Registering class org.apache.hadoop.yarn.server.nodemanager.containermanager.container.ContainerEventType for class org.apache.hadoop.yarn.server.nodemanager.containermanager.ContainerManagerImpl$ContainerEventDispatcher
+2025-06-04 03:16:39,145 INFO  event.AsyncDispatcher (AsyncDispatcher.java:register(267)) - Registering class org.apache.hadoop.yarn.server.nodemanager.containermanager.application.ApplicationEventType for class org.apache.hadoop.yarn.server.nodemanager.containermanager.ContainerManagerImpl$ApplicationEventDispatcher
+2025-06-04 03:16:39,149 INFO  event.AsyncDispatcher (AsyncDispatcher.java:register(267)) - Registering class org.apache.hadoop.yarn.server.nodemanager.containermanager.localizer.event.LocalizationEventType for class org.apache.hadoop.yarn.server.nodemanager.containermanager.ContainerManagerImpl$LocalizationEventHandlerWrapper
+2025-06-04 03:16:39,151 INFO  event.AsyncDispatcher (AsyncDispatcher.java:register(267)) - Registering class org.apache.hadoop.yarn.server.nodemanager.containermanager.AuxServicesEventType for class org.apache.hadoop.yarn.server.nodemanager.containermanager.AuxServices
+2025-06-04 03:16:39,153 INFO  event.AsyncDispatcher (AsyncDispatcher.java:register(267)) - Registering class org.apache.hadoop.yarn.server.nodemanager.containermanager.monitor.ContainersMonitorEventType for class org.apache.hadoop.yarn.server.nodemanager.containermanager.monitor.ContainersMonitorImpl
+2025-06-04 03:16:39,154 INFO  event.AsyncDispatcher (AsyncDispatcher.java:register(267)) - Registering class org.apache.hadoop.yarn.server.nodemanager.containermanager.launcher.ContainersLauncherEventType for class org.apache.hadoop.yarn.server.nodemanager.containermanager.launcher.ContainersLauncher
+2025-06-04 03:16:39,156 INFO  event.AsyncDispatcher (AsyncDispatcher.java:register(267)) - Registering class org.apache.hadoop.yarn.server.nodemanager.containermanager.scheduler.ContainerSchedulerEventType for class org.apache.hadoop.yarn.server.nodemanager.containermanager.scheduler.ContainerScheduler
+2025-06-04 03:16:39,160 INFO  tracker.NMLogAggregationStatusTracker (NMLogAggregationStatusTracker.java:<init>(89)) - the rolling interval seconds for the NodeManager Cached Log aggregation status is 600
+2025-06-04 03:16:39,242 INFO  event.AsyncDispatcher (AsyncDispatcher.java:register(267)) - Registering class org.apache.hadoop.yarn.server.nodemanager.ContainerManagerEventType for class org.apache.hadoop.yarn.server.nodemanager.containermanager.ContainerManagerImpl
+2025-06-04 03:16:39,244 INFO  event.AsyncDispatcher (AsyncDispatcher.java:register(267)) - Registering class org.apache.hadoop.yarn.server.nodemanager.NodeManagerEventType for class org.apache.hadoop.yarn.server.nodemanager.NodeManager
+2025-06-04 03:16:39,435 WARN  impl.MetricsConfig (MetricsConfig.java:loadFirst(136)) - Cannot locate configuration: tried hadoop-metrics2-nodemanager.properties,hadoop-metrics2.properties
+2025-06-04 03:16:39,628 INFO  impl.MetricsSystemImpl (MetricsSystemImpl.java:startTimer(378)) - Scheduled Metric snapshot period at 10 second(s).
+2025-06-04 03:16:39,629 INFO  impl.MetricsSystemImpl (MetricsSystemImpl.java:start(191)) - NodeManager metrics system started
+2025-06-04 03:16:39,674 INFO  health.NodeHealthScriptRunner (NodeHealthScriptRunner.java:shouldRun(265)) - Missing location for the node health check script "script".
+2025-06-04 03:16:39,723 INFO  nodemanager.DirectoryCollection (DirectoryCollection.java:<init>(240)) - Disk Validator 'basic' is loaded.
+2025-06-04 03:16:39,752 INFO  nodemanager.DirectoryCollection (DirectoryCollection.java:<init>(240)) - Disk Validator 'basic' is loaded.
+2025-06-04 03:16:39,896 WARN  nodemanager.DirectoryCollection (DirectoryCollection.java:checkDirs(480)) - Directory /opt/hadoop/logs/userlogs error, used space above threshold of 90.0%, removing from list of valid directories
+2025-06-04 03:16:39,900 INFO  nodemanager.LocalDirsHandlerService (LocalDirsHandlerService.java:logDiskStatus(521)) - Disk(s) failed: 1/1 log-dirs usable space is below configured utilization percentage/no more usable space [ /opt/hadoop/logs/userlogs : used space above threshold of 90.0% ] 
+2025-06-04 03:16:39,902 ERROR nodemanager.LocalDirsHandlerService (LocalDirsHandlerService.java:updateDirsAfterTest(514)) - Most of the disks failed. 1/1 log-dirs usable space is below configured utilization percentage/no more usable space [ /opt/hadoop/logs/userlogs : used space above threshold of 90.0% ] 
+2025-06-04 03:16:39,962 INFO  nodemanager.NodeResourceMonitorImpl (NodeResourceMonitorImpl.java:serviceInit(100)) -  Using ResourceCalculatorPlugin : org.apache.hadoop.yarn.util.ResourceCalculatorPlugin@1838ccb8
+2025-06-04 03:16:39,968 INFO  event.AsyncDispatcher (AsyncDispatcher.java:register(267)) - Registering class org.apache.hadoop.yarn.server.nodemanager.containermanager.loghandler.event.LogHandlerEventType for class org.apache.hadoop.yarn.server.nodemanager.containermanager.loghandler.NonAggregatingLogHandler
+2025-06-04 03:16:39,973 INFO  event.AsyncDispatcher (AsyncDispatcher.java:register(267)) - Registering class org.apache.hadoop.yarn.server.nodemanager.containermanager.localizer.sharedcache.SharedCacheUploadEventType for class org.apache.hadoop.yarn.server.nodemanager.containermanager.localizer.sharedcache.SharedCacheUploadService
+2025-06-04 03:16:39,974 INFO  containermanager.ContainerManagerImpl (ContainerManagerImpl.java:createAMRMProxyService(345)) - AMRMProxyService is disabled
+2025-06-04 03:16:39,975 INFO  localizer.ResourceLocalizationService (ResourceLocalizationService.java:validateConf(243)) - per directory file limit = 8192
+2025-06-04 03:16:40,105 INFO  event.AsyncDispatcher (AsyncDispatcher.java:register(267)) - Registering class org.apache.hadoop.yarn.server.nodemanager.containermanager.localizer.event.LocalizerEventType for class org.apache.hadoop.yarn.server.nodemanager.containermanager.localizer.ResourceLocalizationService$LocalizerTracker
+2025-06-04 03:16:40,125 INFO  resources.ResourceHandlerModule (ResourceHandlerModule.java:initNetworkResourceHandler(198)) - Using traffic control bandwidth handler
+2025-06-04 03:16:40,527 INFO  containermanager.AuxServices (AuxServices.java:initAuxService(477)) - Initialized auxiliary service mapreduce_shuffle
+2025-06-04 03:16:40,528 INFO  containermanager.AuxServices (AuxServices.java:addService(159)) - Adding auxiliary service mapreduce_shuffle version null
+2025-06-04 03:16:40,529 INFO  monitor.ContainersMonitorImpl (ContainersMonitorImpl.java:serviceInit(159)) - Using ResourceCalculatorPlugin: org.apache.hadoop.yarn.util.ResourceCalculatorPlugin@1a20270e
+2025-06-04 03:16:40,533 INFO  monitor.ContainersMonitorImpl (ContainersMonitorImpl.java:serviceInit(164)) - Using ResourceCalculatorProcessTree: null
+2025-06-04 03:16:40,824 INFO  conf.Configuration (Configuration.java:getConfResourceAsInputStream(2854)) - resource-types.xml not found
+2025-06-04 03:16:40,827 INFO  resource.ResourceUtils (ResourceUtils.java:addResourcesFileToConf(476)) - Unable to find 'resource-types.xml'.
+2025-06-04 03:16:40,836 INFO  monitor.ContainersMonitorImpl (ContainersMonitorImpl.java:setAllocatedResourcesForContainers(1028)) - Setting the resources allocated to containers to <memory:2048, vCores:8>
+2025-06-04 03:16:40,837 INFO  monitor.ContainersMonitorImpl (ContainersMonitorImpl.java:serviceInit(208)) - Physical memory check enabled: false
+2025-06-04 03:16:40,837 INFO  monitor.ContainersMonitorImpl (ContainersMonitorImpl.java:serviceInit(209)) - Virtual memory check enabled: false
+2025-06-04 03:16:40,839 INFO  monitor.ContainersMonitorImpl (ContainersMonitorImpl.java:serviceInit(210)) - Elastic memory control enabled: false
+2025-06-04 03:16:40,839 INFO  monitor.ContainersMonitorImpl (ContainersMonitorImpl.java:serviceInit(211)) - Strict memory control enabled: true
+2025-06-04 03:16:40,842 INFO  monitor.ContainersMonitorImpl (ContainersMonitorImpl.java:serviceInit(236)) - ContainersMonitor enabled: true
+2025-06-04 03:16:40,843 INFO  monitor.ContainersMonitorImpl (ContainersMonitorImpl.java:serviceInit(241)) - Container Log Monitor Enabled: false
+2025-06-04 03:16:40,844 INFO  containermanager.ContainerManagerImpl (ContainerManagerImpl.java:recover(399)) - Not a recoverable state store. Nothing to recover.
+2025-06-04 03:16:40,846 INFO  conf.Configuration (Configuration.java:getConfResourceAsInputStream(2854)) - node-resources.xml not found
+2025-06-04 03:16:40,848 INFO  resource.ResourceUtils (ResourceUtils.java:addResourcesFileToConf(476)) - Unable to find 'node-resources.xml'.
+2025-06-04 03:16:40,854 INFO  nodemanager.NodeStatusUpdaterImpl (NodeStatusUpdaterImpl.java:serviceInit(204)) - Nodemanager resources is set to: <memory:2048, vCores:8>
+2025-06-04 03:16:40,862 INFO  nodemanager.NodeStatusUpdaterImpl (NodeStatusUpdaterImpl.java:serviceInit(250)) - Initialized nodemanager with : physical-memory=2048 virtual-memory=4301 virtual-cores=8
+2025-06-04 03:16:41,080 INFO  ipc.CallQueueManager (CallQueueManager.java:<init>(90)) - Using callQueue: class java.util.concurrent.LinkedBlockingQueue, queueCapacity: 2000, scheduler: class org.apache.hadoop.ipc.DefaultRpcScheduler, ipcBackoff: false.
+2025-06-04 03:16:41,381 INFO  ipc.Server (Server.java:run(1319)) - Starting Socket Reader #1 for port 0
+2025-06-04 03:16:41,661 INFO  pb.RpcServerFactoryPBImpl (RpcServerFactoryPBImpl.java:createServer(174)) - Adding protocol org.apache.hadoop.yarn.api.ContainerManagementProtocolPB to the server
+2025-06-04 03:16:41,666 INFO  ipc.Server (Server.java:run(1558)) - IPC Server Responder: starting
+2025-06-04 03:16:41,667 INFO  ipc.Server (Server.java:run(1398)) - IPC Server listener on 0: starting
+2025-06-04 03:16:41,757 INFO  security.NMContainerTokenSecretManager (NMContainerTokenSecretManager.java:setNodeId(265)) - Updating node address : localhost:36945
+2025-06-04 03:16:41,821 INFO  ipc.CallQueueManager (CallQueueManager.java:<init>(90)) - Using callQueue: class java.util.concurrent.LinkedBlockingQueue, queueCapacity: 500, scheduler: class org.apache.hadoop.ipc.DefaultRpcScheduler, ipcBackoff: false.
+2025-06-04 03:16:41,830 INFO  ipc.Server (Server.java:run(1319)) - Starting Socket Reader #1 for port 8040
+2025-06-04 03:16:41,835 INFO  pb.RpcServerFactoryPBImpl (RpcServerFactoryPBImpl.java:createServer(174)) - Adding protocol org.apache.hadoop.yarn.server.nodemanager.api.LocalizationProtocolPB to the server
+2025-06-04 03:16:41,838 INFO  ipc.Server (Server.java:run(1558)) - IPC Server Responder: starting
+2025-06-04 03:16:41,839 INFO  ipc.Server (Server.java:run(1398)) - IPC Server listener on 8040: starting
+2025-06-04 03:16:41,857 INFO  localizer.ResourceLocalizationService (ResourceLocalizationService.java:serviceStart(391)) - Localizer started on port 8040
+2025-06-04 03:16:41,893 INFO  mapred.IndexCache (IndexCache.java:<init>(47)) - IndexCache created with max memory = 10485760
+2025-06-04 03:16:41,937 INFO  mapred.ShuffleHandler (ShuffleHandler.java:serviceStart(561)) - mapreduce_shuffle listening on port 13562
+2025-06-04 03:16:41,941 INFO  containermanager.ContainerManagerImpl (ContainerManagerImpl.java:serviceStart(680)) - ContainerManager started at localhost/127.0.0.1:36945
+2025-06-04 03:16:41,941 INFO  containermanager.ContainerManagerImpl (ContainerManagerImpl.java:serviceStart(681)) - ContainerManager bound to 0.0.0.0/0.0.0.0:0
+2025-06-04 03:16:41,942 WARN  tracker.NMLogAggregationStatusTracker (NMLogAggregationStatusTracker.java:serviceStart(96)) - Log Aggregation is disabled.So is the LogAggregationStatusTracker.
+2025-06-04 03:16:41,987 INFO  webapp.WebServer (WebServer.java:serviceStart(108)) - Instantiating NMWebApp at 0.0.0.0:8042
+2025-06-04 03:16:42,178 INFO  util.log (Log.java:initialized(170)) - Logging initialized @7419ms to org.eclipse.jetty.util.log.Slf4jLog
+2025-06-04 03:16:42,538 WARN  server.AuthenticationFilter (AuthenticationFilter.java:constructSecretProvider(240)) - Unable to initialize FileSignerSecretProvider, falling back to use random secrets. Reason: Could not read signature secret file: /home/hadoop/hadoop-http-auth-signature-secret
+2025-06-04 03:16:42,548 INFO  http.HttpRequestLog (HttpRequestLog.java:getRequestLog(82)) - Http request log for http.requests.nodemanager is not defined
+2025-06-04 03:16:42,579 INFO  http.HttpServer2 (HttpServer2.java:addGlobalFilter(1124)) - Added global filter 'safety' (class=org.apache.hadoop.http.HttpServer2$QuotingInputFilter)
+2025-06-04 03:16:42,582 INFO  http.HttpServer2 (HttpServer2.java:addFilter(1097)) - Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context node
+2025-06-04 03:16:42,583 INFO  http.HttpServer2 (HttpServer2.java:addFilter(1107)) - Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context static
+2025-06-04 03:16:42,584 INFO  http.HttpServer2 (HttpServer2.java:addFilter(1107)) - Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context logs
+2025-06-04 03:16:42,585 INFO  http.HttpServer2 (HttpServer2.java:addFilter(1097)) - Added filter authentication (class=org.apache.hadoop.security.authentication.server.AuthenticationFilter) to context node
+2025-06-04 03:16:42,585 INFO  http.HttpServer2 (HttpServer2.java:addFilter(1107)) - Added filter authentication (class=org.apache.hadoop.security.authentication.server.AuthenticationFilter) to context static
+2025-06-04 03:16:42,586 INFO  http.HttpServer2 (HttpServer2.java:addFilter(1107)) - Added filter authentication (class=org.apache.hadoop.security.authentication.server.AuthenticationFilter) to context logs
+2025-06-04 03:16:44,794 INFO  webapp.WebApps (WebApps.java:build(428)) - Registered webapp guice modules
+2025-06-04 03:16:44,796 INFO  http.HttpServer2 (HttpServer2.java:bindListener(1357)) - Jetty bound to port 8042
+2025-06-04 03:16:44,808 INFO  server.Server (Server.java:doStart(375)) - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 1.8.0_452-8u452-ga~us1-0ubuntu1~22.04-b09
+2025-06-04 03:16:44,960 INFO  server.session (DefaultSessionIdManager.java:doStart(334)) - DefaultSessionIdManager workerName=node0
+2025-06-04 03:16:44,966 INFO  server.session (DefaultSessionIdManager.java:doStart(339)) - No SessionScavenger set, using defaults
+2025-06-04 03:16:44,973 INFO  server.session (HouseKeeper.java:startScavenging(132)) - node0 Scavenging every 600000ms
+2025-06-04 03:16:45,066 WARN  server.AuthenticationFilter (AuthenticationFilter.java:constructSecretProvider(240)) - Unable to initialize FileSignerSecretProvider, falling back to use random secrets. Reason: Could not read signature secret file: /home/hadoop/hadoop-http-auth-signature-secret
+2025-06-04 03:16:45,075 INFO  handler.ContextHandler (ContextHandler.java:doStart(921)) - Started o.e.j.s.ServletContextHandler@19fe4644{logs,/logs,file:///opt/hadoop/logs/,AVAILABLE}
+2025-06-04 03:16:45,084 INFO  handler.ContextHandler (ContextHandler.java:doStart(921)) - Started o.e.j.s.ServletContextHandler@18245eb0{static,/static,jar:file:/opt/hadoop/share/hadoop/yarn/hadoop-yarn-common-3.3.5.jar!/webapps/static,AVAILABLE}
+Jun 04, 2025 3:16:45 AM com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory register
+INFO: Registering org.apache.hadoop.yarn.server.nodemanager.webapp.NMWebServices as a root resource class
+Jun 04, 2025 3:16:45 AM com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory register
+INFO: Registering org.apache.hadoop.yarn.webapp.GenericExceptionHandler as a provider class
+Jun 04, 2025 3:16:45 AM com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory register
+INFO: Registering org.apache.hadoop.yarn.server.nodemanager.webapp.JAXBContextResolver as a provider class
+Jun 04, 2025 3:16:45 AM com.sun.jersey.server.impl.application.WebApplicationImpl _initiate
+INFO: Initiating Jersey application, version 'Jersey: 1.19.4 05/24/2017 03:20 PM'
+Jun 04, 2025 3:16:45 AM com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory getComponentProvider
+INFO: Binding org.apache.hadoop.yarn.server.nodemanager.webapp.JAXBContextResolver to GuiceManagedComponentProvider with the scope "Singleton"
+Jun 04, 2025 3:16:46 AM com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory getComponentProvider
+INFO: Binding org.apache.hadoop.yarn.webapp.GenericExceptionHandler to GuiceManagedComponentProvider with the scope "Singleton"
+Jun 04, 2025 3:16:47 AM com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory getComponentProvider
+INFO: Binding org.apache.hadoop.yarn.server.nodemanager.webapp.NMWebServices to GuiceManagedComponentProvider with the scope "Singleton"
+2025-06-04 03:16:47,882 INFO  handler.ContextHandler (ContextHandler.java:doStart(921)) - Started o.e.j.w.WebAppContext@2b8bb184{node,/,file:///tmp/jetty-0_0_0_0-8042-hadoop-yarn-common-3_3_5_jar-_-any-1654779292503529819/webapp/,AVAILABLE}{jar:file:/opt/hadoop/share/hadoop/yarn/hadoop-yarn-common-3.3.5.jar!/webapps/node}
+2025-06-04 03:16:47,936 INFO  server.AbstractConnector (AbstractConnector.java:doStart(333)) - Started ServerConnector@6273c5a4{HTTP/1.1, (http/1.1)}{0.0.0.0:8042}
+2025-06-04 03:16:47,938 INFO  server.Server (Server.java:doStart(415)) - Started @13178ms
+2025-06-04 03:16:47,944 INFO  webapp.WebApps (WebApps.java:start(473)) - Web app node started at 8042
+2025-06-04 03:16:47,953 INFO  nodemanager.NodeStatusUpdaterImpl (NodeStatusUpdaterImpl.java:serviceStart(267)) - Node ID assigned is : localhost:36945
+2025-06-04 03:16:47,958 INFO  util.JvmPauseMonitor (JvmPauseMonitor.java:run(188)) - Starting JVM pause monitor
+2025-06-04 03:16:47,995 INFO  client.DefaultNoHARMFailoverProxyProvider (DefaultNoHARMFailoverProxyProvider.java:init(64)) - Connecting to ResourceManager at hadoop/127.0.0.1:8031
+2025-06-04 03:16:49,527 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:16:50,529 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 1 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:16:51,532 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 2 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:16:52,534 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 3 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:16:53,535 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 4 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:16:54,537 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 5 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:16:55,539 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 6 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:16:56,544 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 7 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:16:57,546 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 8 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:16:58,548 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 9 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:17:01,654 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:17:02,684 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 1 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:17:03,699 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 2 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:17:04,718 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 3 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:17:05,720 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 4 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:17:06,721 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 5 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:17:07,724 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 6 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:17:08,126 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 7 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:17:08,259 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 8 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:17:09,262 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 9 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:17:09,267 INFO  retry.RetryInvocationHandler (RetryInvocationHandler.java:log(422)) - java.net.ConnectException: Call From localhost/127.0.0.1 to hadoop:8031 failed on connection exception: java.net.ConnectException: Connection refused; For more details see:  http://wiki.apache.org/hadoop/ConnectionRefused, while invoking ResourceTrackerPBClientImpl.registerNodeManager over null. Retrying after sleeping for 2000ms. Current retry count: 1.
+2025-06-04 03:17:12,273 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:17:13,275 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 1 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:17:14,276 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 2 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:17:15,279 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 3 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:17:16,281 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 4 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:17:17,349 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 5 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:17:18,351 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 6 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:17:19,353 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 7 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:17:20,355 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 8 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:17:21,360 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 9 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:17:21,459 INFO  retry.RetryInvocationHandler (RetryInvocationHandler.java:log(422)) - java.net.ConnectException: Call From localhost/127.0.0.1 to hadoop:8031 failed on connection exception: java.net.ConnectException: Connection refused; For more details see:  http://wiki.apache.org/hadoop/ConnectionRefused, while invoking ResourceTrackerPBClientImpl.registerNodeManager over null. Retrying after sleeping for 2000ms. Current retry count: 2.
+2025-06-04 03:17:24,534 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:17:25,536 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 1 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:17:26,538 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 2 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:17:27,540 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 3 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:17:28,542 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 4 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:17:29,544 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 5 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:17:30,552 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 6 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:17:31,554 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 7 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:17:32,555 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 8 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:17:33,556 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 9 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:17:33,571 INFO  retry.RetryInvocationHandler (RetryInvocationHandler.java:log(422)) - java.net.ConnectException: Call From localhost/127.0.0.1 to hadoop:8031 failed on connection exception: java.net.ConnectException: Connection refused; For more details see:  http://wiki.apache.org/hadoop/ConnectionRefused, while invoking ResourceTrackerPBClientImpl.registerNodeManager over null. Retrying after sleeping for 2000ms. Current retry count: 3.
+2025-06-04 03:17:36,575 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:17:36,075 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 1 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:17:37,077 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 2 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:17:38,079 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 3 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:17:39,090 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 4 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:17:40,091 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 5 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:17:41,092 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 6 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:17:42,094 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 7 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:17:43,096 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 8 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:17:44,289 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 9 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:17:44,291 INFO  retry.RetryInvocationHandler (RetryInvocationHandler.java:log(422)) - java.net.ConnectException: Call From localhost/127.0.0.1 to hadoop:8031 failed on connection exception: java.net.ConnectException: Connection refused; For more details see:  http://wiki.apache.org/hadoop/ConnectionRefused, while invoking ResourceTrackerPBClientImpl.registerNodeManager over null. Retrying after sleeping for 2000ms. Current retry count: 4.
+2025-06-04 03:17:47,295 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:17:48,296 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 1 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:17:49,297 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 2 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:17:50,299 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 3 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:17:51,301 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 4 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:17:52,312 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 5 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:17:53,314 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 6 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:17:54,317 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 7 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:17:55,319 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 8 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:17:56,320 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 9 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:17:56,323 INFO  retry.RetryInvocationHandler (RetryInvocationHandler.java:log(422)) - java.net.ConnectException: Call From localhost/127.0.0.1 to hadoop:8031 failed on connection exception: java.net.ConnectException: Connection refused; For more details see:  http://wiki.apache.org/hadoop/ConnectionRefused, while invoking ResourceTrackerPBClientImpl.registerNodeManager over null. Retrying after sleeping for 2000ms. Current retry count: 5.
+2025-06-04 03:17:59,327 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:18:00,328 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 1 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:18:01,331 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 2 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:18:02,341 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 3 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:18:03,343 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 4 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:18:04,344 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 5 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:18:05,346 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 6 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:18:04,893 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 7 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:18:05,895 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 8 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:18:06,897 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 9 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:18:06,899 INFO  retry.RetryInvocationHandler (RetryInvocationHandler.java:log(422)) - java.net.ConnectException: Call From localhost/127.0.0.1 to hadoop:8031 failed on connection exception: java.net.ConnectException: Connection refused; For more details see:  http://wiki.apache.org/hadoop/ConnectionRefused, while invoking ResourceTrackerPBClientImpl.registerNodeManager over null. Retrying after sleeping for 2000ms. Current retry count: 6.
+2025-06-04 03:18:09,905 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:18:10,912 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 1 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:18:11,920 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 2 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:18:12,921 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 3 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:18:13,923 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 4 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:18:14,924 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 5 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:18:16,002 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 6 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:18:17,020 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 7 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:18:18,022 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 8 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:18:19,024 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 9 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:18:19,026 INFO  retry.RetryInvocationHandler (RetryInvocationHandler.java:log(422)) - java.net.ConnectException: Call From localhost/127.0.0.1 to hadoop:8031 failed on connection exception: java.net.ConnectException: Connection refused; For more details see:  http://wiki.apache.org/hadoop/ConnectionRefused, while invoking ResourceTrackerPBClientImpl.registerNodeManager over null. Retrying after sleeping for 2000ms. Current retry count: 7.
+2025-06-04 03:18:22,028 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:18:23,030 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 1 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:18:24,032 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 2 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:18:25,033 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 3 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:18:26,036 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 4 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:18:27,039 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 5 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:18:28,040 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 6 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:18:29,042 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 7 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:18:30,044 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 8 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:18:31,045 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 9 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:18:31,052 INFO  retry.RetryInvocationHandler (RetryInvocationHandler.java:log(422)) - java.net.ConnectException: Call From localhost/127.0.0.1 to hadoop:8031 failed on connection exception: java.net.ConnectException: Connection refused; For more details see:  http://wiki.apache.org/hadoop/ConnectionRefused, while invoking ResourceTrackerPBClientImpl.registerNodeManager over null. Retrying after sleeping for 2000ms. Current retry count: 8.
+2025-06-04 03:18:34,056 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:18:33,578 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 1 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:18:34,580 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 2 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:18:35,586 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 3 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:18:36,588 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 4 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:18:37,589 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 5 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:18:38,590 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 6 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:18:39,592 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 7 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:18:40,594 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 8 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:18:41,681 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 9 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:18:41,735 INFO  retry.RetryInvocationHandler (RetryInvocationHandler.java:log(422)) - java.net.ConnectException: Call From localhost/127.0.0.1 to hadoop:8031 failed on connection exception: java.net.ConnectException: Connection refused; For more details see:  http://wiki.apache.org/hadoop/ConnectionRefused, while invoking ResourceTrackerPBClientImpl.registerNodeManager over null. Retrying after sleeping for 2000ms. Current retry count: 9.
+2025-06-04 03:18:44,745 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:18:45,747 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 1 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:18:46,749 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 2 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:18:47,779 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 3 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:18:48,786 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 4 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:18:49,788 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 5 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:18:50,790 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 6 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:18:51,791 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 7 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:18:52,794 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 8 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:18:53,804 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 9 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:18:53,805 INFO  retry.RetryInvocationHandler (RetryInvocationHandler.java:log(422)) - java.net.ConnectException: Call From localhost/127.0.0.1 to hadoop:8031 failed on connection exception: java.net.ConnectException: Connection refused; For more details see:  http://wiki.apache.org/hadoop/ConnectionRefused, while invoking ResourceTrackerPBClientImpl.registerNodeManager over null. Retrying after sleeping for 2000ms. Current retry count: 10.
+2025-06-04 03:18:56,808 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:18:57,809 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 1 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:18:58,811 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 2 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:18:59,813 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 3 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:19:00,814 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 4 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:19:01,816 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 5 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:19:02,219 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 6 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:19:02,350 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 7 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:19:03,351 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 8 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:19:04,353 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 9 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:19:04,355 INFO  retry.RetryInvocationHandler (RetryInvocationHandler.java:log(422)) - java.net.ConnectException: Call From localhost/127.0.0.1 to hadoop:8031 failed on connection exception: java.net.ConnectException: Connection refused; For more details see:  http://wiki.apache.org/hadoop/ConnectionRefused, while invoking ResourceTrackerPBClientImpl.registerNodeManager over null. Retrying after sleeping for 2000ms. Current retry count: 11.
+2025-06-04 03:19:07,359 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:19:08,360 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 1 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:19:09,362 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 2 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:19:10,364 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 3 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:19:11,366 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 4 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:19:12,371 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 5 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:19:13,373 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 6 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:19:14,375 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 7 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:19:15,377 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 8 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:19:16,378 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 9 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:19:16,381 INFO  retry.RetryInvocationHandler (RetryInvocationHandler.java:log(422)) - java.net.ConnectException: Call From localhost/127.0.0.1 to hadoop:8031 failed on connection exception: java.net.ConnectException: Connection refused; For more details see:  http://wiki.apache.org/hadoop/ConnectionRefused, while invoking ResourceTrackerPBClientImpl.registerNodeManager over null. Retrying after sleeping for 2000ms. Current retry count: 12.
+2025-06-04 03:19:19,387 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:19:20,389 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 1 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:19:21,390 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 2 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:19:22,393 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 3 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:19:23,394 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 4 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:19:24,396 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 5 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:19:25,398 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 6 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:19:26,399 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 7 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:19:27,402 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 8 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:19:28,404 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 9 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:19:28,415 INFO  retry.RetryInvocationHandler (RetryInvocationHandler.java:log(422)) - java.net.ConnectException: Call From localhost/127.0.0.1 to hadoop:8031 failed on connection exception: java.net.ConnectException: Connection refused; For more details see:  http://wiki.apache.org/hadoop/ConnectionRefused, while invoking ResourceTrackerPBClientImpl.registerNodeManager over null. Retrying after sleeping for 2000ms. Current retry count: 13.
+2025-06-04 03:19:30,805 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:19:30,940 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 1 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:19:31,943 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 2 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:19:32,945 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 3 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:19:33,971 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 4 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:19:34,972 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 5 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:19:35,973 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 6 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:19:36,975 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 7 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:19:37,977 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 8 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:19:38,978 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 9 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:19:38,979 INFO  retry.RetryInvocationHandler (RetryInvocationHandler.java:log(422)) - java.net.ConnectException: Call From localhost/127.0.0.1 to hadoop:8031 failed on connection exception: java.net.ConnectException: Connection refused; For more details see:  http://wiki.apache.org/hadoop/ConnectionRefused, while invoking ResourceTrackerPBClientImpl.registerNodeManager over null. Retrying after sleeping for 2000ms. Current retry count: 14.
+2025-06-04 03:19:41,983 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:19:42,985 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 1 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:19:43,986 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 2 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:19:44,988 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 3 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:19:45,989 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 4 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:19:46,990 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 5 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:19:47,992 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 6 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:19:48,993 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 7 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:19:49,995 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 8 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:19:50,998 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:8031. Already tried 9 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-04 03:19:51,002 ERROR nodemanager.NodeStatusUpdaterImpl (NodeStatusUpdaterImpl.java:serviceStart(279)) - Unexpected error starting NodeStatusUpdater
+java.net.ConnectException: Call From localhost/127.0.0.1 to hadoop:8031 failed on connection exception: java.net.ConnectException: Connection refused; For more details see:  http://wiki.apache.org/hadoop/ConnectionRefused
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.apache.hadoop.net.NetUtils.wrapWithMessage(NetUtils.java:930)
+	at org.apache.hadoop.net.NetUtils.wrapException(NetUtils.java:845)
+	at org.apache.hadoop.ipc.Client.getRpcResponse(Client.java:1588)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1530)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1427)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine2$Invoker.invoke(ProtobufRpcEngine2.java:258)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine2$Invoker.invoke(ProtobufRpcEngine2.java:139)
+	at com.sun.proxy.$Proxy75.registerNodeManager(Unknown Source)
+	at org.apache.hadoop.yarn.server.api.impl.pb.client.ResourceTrackerPBClientImpl.registerNodeManager(ResourceTrackerPBClientImpl.java:74)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:433)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler$Call.invokeMethod(RetryInvocationHandler.java:166)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler$Call.invoke(RetryInvocationHandler.java:158)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler$Call.invokeOnce(RetryInvocationHandler.java:96)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:362)
+	at com.sun.proxy.$Proxy76.registerNodeManager(Unknown Source)
+	at org.apache.hadoop.yarn.server.nodemanager.NodeStatusUpdaterImpl.registerWithRM(NodeStatusUpdaterImpl.java:417)
+	at org.apache.hadoop.yarn.server.nodemanager.NodeStatusUpdaterImpl.serviceStart(NodeStatusUpdaterImpl.java:274)
+	at org.apache.hadoop.service.AbstractService.start(AbstractService.java:194)
+	at org.apache.hadoop.service.CompositeService.serviceStart(CompositeService.java:122)
+	at org.apache.hadoop.service.AbstractService.start(AbstractService.java:194)
+	at org.apache.hadoop.yarn.server.nodemanager.NodeManager.initAndStartNodeManager(NodeManager.java:963)
+	at org.apache.hadoop.yarn.server.nodemanager.NodeManager.main(NodeManager.java:1042)
+Caused by: java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:716)
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:205)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:600)
+	at org.apache.hadoop.ipc.Client$Connection.setupConnection(Client.java:668)
+	at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:790)
+	at org.apache.hadoop.ipc.Client$Connection.access$3800(Client.java:363)
+	at org.apache.hadoop.ipc.Client.getConnection(Client.java:1649)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1474)
+	... 22 more
+2025-06-04 03:19:51,007 INFO  service.AbstractService (AbstractService.java:noteFailure(267)) - Service org.apache.hadoop.yarn.server.nodemanager.NodeStatusUpdaterImpl failed in state STARTED
+org.apache.hadoop.yarn.exceptions.YarnRuntimeException: java.net.ConnectException: Call From localhost/127.0.0.1 to hadoop:8031 failed on connection exception: java.net.ConnectException: Connection refused; For more details see:  http://wiki.apache.org/hadoop/ConnectionRefused
+	at org.apache.hadoop.yarn.server.nodemanager.NodeStatusUpdaterImpl.serviceStart(NodeStatusUpdaterImpl.java:280)
+	at org.apache.hadoop.service.AbstractService.start(AbstractService.java:194)
+	at org.apache.hadoop.service.CompositeService.serviceStart(CompositeService.java:122)
+	at org.apache.hadoop.service.AbstractService.start(AbstractService.java:194)
+	at org.apache.hadoop.yarn.server.nodemanager.NodeManager.initAndStartNodeManager(NodeManager.java:963)
+	at org.apache.hadoop.yarn.server.nodemanager.NodeManager.main(NodeManager.java:1042)
+Caused by: java.net.ConnectException: Call From localhost/127.0.0.1 to hadoop:8031 failed on connection exception: java.net.ConnectException: Connection refused; For more details see:  http://wiki.apache.org/hadoop/ConnectionRefused
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.apache.hadoop.net.NetUtils.wrapWithMessage(NetUtils.java:930)
+	at org.apache.hadoop.net.NetUtils.wrapException(NetUtils.java:845)
+	at org.apache.hadoop.ipc.Client.getRpcResponse(Client.java:1588)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1530)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1427)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine2$Invoker.invoke(ProtobufRpcEngine2.java:258)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine2$Invoker.invoke(ProtobufRpcEngine2.java:139)
+	at com.sun.proxy.$Proxy75.registerNodeManager(Unknown Source)
+	at org.apache.hadoop.yarn.server.api.impl.pb.client.ResourceTrackerPBClientImpl.registerNodeManager(ResourceTrackerPBClientImpl.java:74)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:433)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler$Call.invokeMethod(RetryInvocationHandler.java:166)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler$Call.invoke(RetryInvocationHandler.java:158)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler$Call.invokeOnce(RetryInvocationHandler.java:96)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:362)
+	at com.sun.proxy.$Proxy76.registerNodeManager(Unknown Source)
+	at org.apache.hadoop.yarn.server.nodemanager.NodeStatusUpdaterImpl.registerWithRM(NodeStatusUpdaterImpl.java:417)
+	at org.apache.hadoop.yarn.server.nodemanager.NodeStatusUpdaterImpl.serviceStart(NodeStatusUpdaterImpl.java:274)
+	... 5 more
+Caused by: java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:716)
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:205)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:600)
+	at org.apache.hadoop.ipc.Client$Connection.setupConnection(Client.java:668)
+	at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:790)
+	at org.apache.hadoop.ipc.Client$Connection.access$3800(Client.java:363)
+	at org.apache.hadoop.ipc.Client.getConnection(Client.java:1649)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1474)
+	... 22 more
+2025-06-04 03:19:51,010 INFO  service.AbstractService (AbstractService.java:noteFailure(267)) - Service NodeManager failed in state STARTED
+org.apache.hadoop.yarn.exceptions.YarnRuntimeException: java.net.ConnectException: Call From localhost/127.0.0.1 to hadoop:8031 failed on connection exception: java.net.ConnectException: Connection refused; For more details see:  http://wiki.apache.org/hadoop/ConnectionRefused
+	at org.apache.hadoop.yarn.server.nodemanager.NodeStatusUpdaterImpl.serviceStart(NodeStatusUpdaterImpl.java:280)
+	at org.apache.hadoop.service.AbstractService.start(AbstractService.java:194)
+	at org.apache.hadoop.service.CompositeService.serviceStart(CompositeService.java:122)
+	at org.apache.hadoop.service.AbstractService.start(AbstractService.java:194)
+	at org.apache.hadoop.yarn.server.nodemanager.NodeManager.initAndStartNodeManager(NodeManager.java:963)
+	at org.apache.hadoop.yarn.server.nodemanager.NodeManager.main(NodeManager.java:1042)
+Caused by: java.net.ConnectException: Call From localhost/127.0.0.1 to hadoop:8031 failed on connection exception: java.net.ConnectException: Connection refused; For more details see:  http://wiki.apache.org/hadoop/ConnectionRefused
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.apache.hadoop.net.NetUtils.wrapWithMessage(NetUtils.java:930)
+	at org.apache.hadoop.net.NetUtils.wrapException(NetUtils.java:845)
+	at org.apache.hadoop.ipc.Client.getRpcResponse(Client.java:1588)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1530)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1427)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine2$Invoker.invoke(ProtobufRpcEngine2.java:258)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine2$Invoker.invoke(ProtobufRpcEngine2.java:139)
+	at com.sun.proxy.$Proxy75.registerNodeManager(Unknown Source)
+	at org.apache.hadoop.yarn.server.api.impl.pb.client.ResourceTrackerPBClientImpl.registerNodeManager(ResourceTrackerPBClientImpl.java:74)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:433)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler$Call.invokeMethod(RetryInvocationHandler.java:166)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler$Call.invoke(RetryInvocationHandler.java:158)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler$Call.invokeOnce(RetryInvocationHandler.java:96)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:362)
+	at com.sun.proxy.$Proxy76.registerNodeManager(Unknown Source)
+	at org.apache.hadoop.yarn.server.nodemanager.NodeStatusUpdaterImpl.registerWithRM(NodeStatusUpdaterImpl.java:417)
+	at org.apache.hadoop.yarn.server.nodemanager.NodeStatusUpdaterImpl.serviceStart(NodeStatusUpdaterImpl.java:274)
+	... 5 more
+Caused by: java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:716)
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:205)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:600)
+	at org.apache.hadoop.ipc.Client$Connection.setupConnection(Client.java:668)
+	at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:790)
+	at org.apache.hadoop.ipc.Client$Connection.access$3800(Client.java:363)
+	at org.apache.hadoop.ipc.Client.getConnection(Client.java:1649)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1474)
+	... 22 more
+2025-06-04 03:19:51,016 INFO  handler.ContextHandler (ContextHandler.java:doStop(1159)) - Stopped o.e.j.w.WebAppContext@2b8bb184{node,/,null,STOPPED}{jar:file:/opt/hadoop/share/hadoop/yarn/hadoop-yarn-common-3.3.5.jar!/webapps/node}
+2025-06-04 03:19:51,027 INFO  server.AbstractConnector (AbstractConnector.java:doStop(383)) - Stopped ServerConnector@6273c5a4{HTTP/1.1, (http/1.1)}{0.0.0.0:8042}
+2025-06-04 03:19:51,028 INFO  server.session (HouseKeeper.java:stopScavenging(149)) - node0 Stopped scavenging
+2025-06-04 03:19:51,029 INFO  handler.ContextHandler (ContextHandler.java:doStop(1159)) - Stopped o.e.j.s.ServletContextHandler@18245eb0{static,/static,jar:file:/opt/hadoop/share/hadoop/yarn/hadoop-yarn-common-3.3.5.jar!/webapps/static,STOPPED}
+2025-06-04 03:19:51,031 INFO  handler.ContextHandler (ContextHandler.java:doStop(1159)) - Stopped o.e.j.s.ServletContextHandler@19fe4644{logs,/logs,file:///opt/hadoop/logs/,STOPPED}
+2025-06-04 03:19:51,038 INFO  ipc.Server (Server.java:stop(3501)) - Stopping server on 36945
+2025-06-04 03:19:51,044 INFO  ipc.Server (Server.java:run(1430)) - Stopping IPC Server listener on 0
+2025-06-04 03:19:51,045 INFO  ipc.Server (Server.java:run(1563)) - Stopping IPC Server Responder
+2025-06-04 03:19:51,046 WARN  monitor.ContainersMonitorImpl (ContainersMonitorImpl.java:run(605)) - org.apache.hadoop.yarn.server.nodemanager.containermanager.monitor.ContainersMonitorImpl is interrupted. Exiting.
+2025-06-04 03:19:51,077 INFO  ipc.Server (Server.java:stop(3501)) - Stopping server on 8040
+2025-06-04 03:19:51,082 INFO  ipc.Server (Server.java:run(1430)) - Stopping IPC Server listener on 8040
+2025-06-04 03:19:51,082 INFO  localizer.ResourceLocalizationService (ResourceLocalizationService.java:run(1016)) - Public cache exiting
+2025-06-04 03:19:51,085 WARN  nodemanager.NodeResourceMonitorImpl (NodeResourceMonitorImpl.java:run(207)) - org.apache.hadoop.yarn.server.nodemanager.NodeResourceMonitorImpl is interrupted. Exiting.
+2025-06-04 03:19:51,086 INFO  ipc.Server (Server.java:run(1563)) - Stopping IPC Server Responder
+2025-06-04 03:19:51,090 INFO  impl.MetricsSystemImpl (MetricsSystemImpl.java:stop(210)) - Stopping NodeManager metrics system...
+2025-06-04 03:19:51,091 INFO  impl.MetricsSystemImpl (MetricsSystemImpl.java:stop(216)) - NodeManager metrics system stopped.
+2025-06-04 03:19:51,092 INFO  impl.MetricsSystemImpl (MetricsSystemImpl.java:shutdown(611)) - NodeManager metrics system shutdown complete.
+2025-06-04 03:19:51,093 ERROR nodemanager.NodeManager (NodeManager.java:initAndStartNodeManager(965)) - Error starting NodeManager
+org.apache.hadoop.yarn.exceptions.YarnRuntimeException: java.net.ConnectException: Call From localhost/127.0.0.1 to hadoop:8031 failed on connection exception: java.net.ConnectException: Connection refused; For more details see:  http://wiki.apache.org/hadoop/ConnectionRefused
+	at org.apache.hadoop.yarn.server.nodemanager.NodeStatusUpdaterImpl.serviceStart(NodeStatusUpdaterImpl.java:280)
+	at org.apache.hadoop.service.AbstractService.start(AbstractService.java:194)
+	at org.apache.hadoop.service.CompositeService.serviceStart(CompositeService.java:122)
+	at org.apache.hadoop.service.AbstractService.start(AbstractService.java:194)
+	at org.apache.hadoop.yarn.server.nodemanager.NodeManager.initAndStartNodeManager(NodeManager.java:963)
+	at org.apache.hadoop.yarn.server.nodemanager.NodeManager.main(NodeManager.java:1042)
+Caused by: java.net.ConnectException: Call From localhost/127.0.0.1 to hadoop:8031 failed on connection exception: java.net.ConnectException: Connection refused; For more details see:  http://wiki.apache.org/hadoop/ConnectionRefused
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.apache.hadoop.net.NetUtils.wrapWithMessage(NetUtils.java:930)
+	at org.apache.hadoop.net.NetUtils.wrapException(NetUtils.java:845)
+	at org.apache.hadoop.ipc.Client.getRpcResponse(Client.java:1588)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1530)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1427)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine2$Invoker.invoke(ProtobufRpcEngine2.java:258)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine2$Invoker.invoke(ProtobufRpcEngine2.java:139)
+	at com.sun.proxy.$Proxy75.registerNodeManager(Unknown Source)
+	at org.apache.hadoop.yarn.server.api.impl.pb.client.ResourceTrackerPBClientImpl.registerNodeManager(ResourceTrackerPBClientImpl.java:74)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:433)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler$Call.invokeMethod(RetryInvocationHandler.java:166)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler$Call.invoke(RetryInvocationHandler.java:158)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler$Call.invokeOnce(RetryInvocationHandler.java:96)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:362)
+	at com.sun.proxy.$Proxy76.registerNodeManager(Unknown Source)
+	at org.apache.hadoop.yarn.server.nodemanager.NodeStatusUpdaterImpl.registerWithRM(NodeStatusUpdaterImpl.java:417)
+	at org.apache.hadoop.yarn.server.nodemanager.NodeStatusUpdaterImpl.serviceStart(NodeStatusUpdaterImpl.java:274)
+	... 5 more
+Caused by: java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:716)
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:205)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:600)
+	at org.apache.hadoop.ipc.Client$Connection.setupConnection(Client.java:668)
+	at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:790)
+	at org.apache.hadoop.ipc.Client$Connection.access$3800(Client.java:363)
+	at org.apache.hadoop.ipc.Client.getConnection(Client.java:1649)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1474)
+	... 22 more
+2025-06-04 03:19:51,105 INFO  nodemanager.NodeManager (LogAdapter.java:info(51)) - SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down NodeManager at localhost/127.0.0.1
+************************************************************/

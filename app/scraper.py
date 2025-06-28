@@ -6,6 +6,16 @@ import os
 import math
 from pymongo import MongoClient
 import logging
+from elasticsearch_logger import crear_indices_si_no_existen, log_scraper_metrics
+
+crear_indices_si_no_existen()
+
+# Ejemplo: después de scrapear
+#eventos_obtenidos = 150
+#tiempo_total = 3.72  # segundos
+
+log_scraper_metrics(eventos_obtenidos, tiempo_total)
+
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
@@ -157,6 +167,8 @@ def main_loop():
 
             total += len(eventos_ciclo)
             logger.info(f"Total acumulado: {total} eventos")
+            #guardar en Elasticsearch
+            elasticsearch_logger.log_scraper_event(total_eventos=len(eventos_ciclo))
         else:
             logger.info("No se obtuvieron eventos en esta iteración.")
 

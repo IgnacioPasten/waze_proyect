@@ -1,4 +1,4 @@
-2025-06-03 23:55:46,522 INFO  namenode.NameNode (LogAdapter.java:info(51)) - STARTUP_MSG: 
+2025-06-04 00:23:57,874 INFO  namenode.NameNode (LogAdapter.java:info(51)) - STARTUP_MSG: 
 /************************************************************
 STARTUP_MSG: Starting NameNode
 STARTUP_MSG:   host = localhost/127.0.0.1
@@ -8,7 +8,9 @@ STARTUP_MSG:   classpath = /opt/hadoop/etc/hadoop:/opt/hadoop/share/hadoop/commo
 STARTUP_MSG:   build = https://github.com/apache/hadoop.git -r 706d88266abcee09ed78fbaa0ad5f74d818ab0e9; compiled by 'stevel' on 2023-03-15T15:56Z
 STARTUP_MSG:   java = 1.8.0_452
 ************************************************************/
-2025-06-03 23:55:46,546 INFO  namenode.NameNode (LogAdapter.java:info(51)) - registered UNIX signal handlers for [TERM, HUP, INT]
+2025-06-04 00:23:57,911 INFO  namenode.NameNode (LogAdapter.java:info(51)) - registered UNIX signal handlers for [TERM, HUP, INT]
+2025-06-04 00:23:58,200 INFO  namenode.NameNode (NameNode.java:createNameNode(1716)) - createNameNode []
+2025-06-04 00:23:58,714 WARN  impl.MetricsConfig (MetricsConfig.java:loadFirst(136)) - Cannot locate configuration: tried hadoop-metrics2-namenode.properties,hadoop-metrics2.properties
 real-time non-blocking time  (microseconds, -R) unlimited
 core file size              (blocks, -c) 0
 data seg size               (kbytes, -d) unlimited
@@ -26,165 +28,166 @@ cpu time                   (seconds, -t) unlimited
 max user processes                  (-u) unlimited
 virtual memory              (kbytes, -v) unlimited
 file locks                          (-x) unlimited
-2025-06-03 23:55:46,963 INFO  namenode.NameNode (NameNode.java:createNameNode(1716)) - createNameNode []
-2025-06-03 23:55:47,381 WARN  impl.MetricsConfig (MetricsConfig.java:loadFirst(136)) - Cannot locate configuration: tried hadoop-metrics2-namenode.properties,hadoop-metrics2.properties
-2025-06-03 23:55:47,557 INFO  impl.MetricsSystemImpl (MetricsSystemImpl.java:startTimer(378)) - Scheduled Metric snapshot period at 10 second(s).
-2025-06-03 23:55:47,557 INFO  impl.MetricsSystemImpl (MetricsSystemImpl.java:start(191)) - NameNode metrics system started
-2025-06-03 23:55:47,602 INFO  namenode.NameNodeUtils (NameNodeUtils.java:getClientNamenodeAddress(79)) - fs.defaultFS is hdfs://hadoop:9000
-2025-06-03 23:55:47,603 INFO  namenode.NameNode (NameNode.java:<init>(1018)) - Clients should use hadoop:9000 to access this namenode/service.
-2025-06-03 23:55:48,835 INFO  util.JvmPauseMonitor (JvmPauseMonitor.java:run(188)) - Starting JVM pause monitor
-2025-06-03 23:55:49,008 INFO  hdfs.DFSUtil (DFSUtil.java:httpServerTemplateForNNAndJN(1694)) - Filter initializers set : org.apache.hadoop.http.lib.StaticUserWebFilter,org.apache.hadoop.hdfs.web.AuthFilterInitializer
-2025-06-03 23:55:49,038 INFO  hdfs.DFSUtil (DFSUtil.java:httpServerTemplateForNNAndJN(1716)) - Starting Web-server for hdfs at: http://0.0.0.0:9870
-2025-06-03 23:55:49,092 INFO  util.log (Log.java:initialized(170)) - Logging initialized @4179ms to org.eclipse.jetty.util.log.Slf4jLog
-2025-06-03 23:55:49,368 WARN  server.AuthenticationFilter (AuthenticationFilter.java:constructSecretProvider(240)) - Unable to initialize FileSignerSecretProvider, falling back to use random secrets. Reason: Could not read signature secret file: /home/hadoop/hadoop-http-auth-signature-secret
-2025-06-03 23:55:49,391 INFO  http.HttpRequestLog (HttpRequestLog.java:getRequestLog(82)) - Http request log for http.requests.namenode is not defined
-2025-06-03 23:55:49,405 INFO  http.HttpServer2 (HttpServer2.java:addGlobalFilter(1124)) - Added global filter 'safety' (class=org.apache.hadoop.http.HttpServer2$QuotingInputFilter)
-2025-06-03 23:55:49,409 INFO  http.HttpServer2 (HttpServer2.java:addFilter(1097)) - Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context hdfs
-2025-06-03 23:55:49,410 INFO  http.HttpServer2 (HttpServer2.java:addFilter(1107)) - Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context static
-2025-06-03 23:55:49,410 INFO  http.HttpServer2 (HttpServer2.java:addFilter(1107)) - Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context logs
-2025-06-03 23:55:49,414 INFO  http.HttpServer2 (HttpServer2.java:addFilter(1097)) - Added filter AuthFilter (class=org.apache.hadoop.hdfs.web.AuthFilter) to context hdfs
-2025-06-03 23:55:49,415 INFO  http.HttpServer2 (HttpServer2.java:addFilter(1107)) - Added filter AuthFilter (class=org.apache.hadoop.hdfs.web.AuthFilter) to context static
-2025-06-03 23:55:49,416 INFO  http.HttpServer2 (HttpServer2.java:addFilter(1107)) - Added filter AuthFilter (class=org.apache.hadoop.hdfs.web.AuthFilter) to context logs
-2025-06-03 23:55:49,493 INFO  http.HttpServer2 (HttpServer2.java:addJerseyResourcePackage(951)) - addJerseyResourcePackage: packageName=org.apache.hadoop.hdfs.server.namenode.web.resources;org.apache.hadoop.hdfs.web.resources, pathSpec=/webhdfs/v1/*
-2025-06-03 23:55:49,523 INFO  http.HttpServer2 (HttpServer2.java:bindListener(1357)) - Jetty bound to port 9870
-2025-06-03 23:55:49,529 INFO  server.Server (Server.java:doStart(375)) - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 1.8.0_452-8u452-ga~us1-0ubuntu1~22.04-b09
-2025-06-03 23:55:49,603 INFO  server.session (DefaultSessionIdManager.java:doStart(334)) - DefaultSessionIdManager workerName=node0
-2025-06-03 23:55:49,603 INFO  server.session (DefaultSessionIdManager.java:doStart(339)) - No SessionScavenger set, using defaults
-2025-06-03 23:55:49,607 INFO  server.session (HouseKeeper.java:startScavenging(132)) - node0 Scavenging every 600000ms
-2025-06-03 23:55:49,660 WARN  server.AuthenticationFilter (AuthenticationFilter.java:constructSecretProvider(240)) - Unable to initialize FileSignerSecretProvider, falling back to use random secrets. Reason: Could not read signature secret file: /home/hadoop/hadoop-http-auth-signature-secret
-2025-06-03 23:55:49,668 INFO  handler.ContextHandler (ContextHandler.java:doStart(921)) - Started o.e.j.s.ServletContextHandler@4d15107f{logs,/logs,file:///opt/hadoop/logs/,AVAILABLE}
-2025-06-03 23:55:49,670 INFO  handler.ContextHandler (ContextHandler.java:doStart(921)) - Started o.e.j.s.ServletContextHandler@60f00693{static,/static,file:///opt/hadoop/share/hadoop/hdfs/webapps/static/,AVAILABLE}
-2025-06-03 23:55:50,038 INFO  handler.ContextHandler (ContextHandler.java:doStart(921)) - Started o.e.j.w.WebAppContext@5717c37{hdfs,/,file:///opt/hadoop/share/hadoop/hdfs/webapps/hdfs/,AVAILABLE}{file:/opt/hadoop/share/hadoop/hdfs/webapps/hdfs}
-2025-06-03 23:55:50,076 INFO  server.AbstractConnector (AbstractConnector.java:doStart(333)) - Started ServerConnector@2235eaab{HTTP/1.1, (http/1.1)}{0.0.0.0:9870}
-2025-06-03 23:55:50,081 INFO  server.Server (Server.java:doStart(415)) - Started @5168ms
-2025-06-03 23:55:50,594 WARN  namenode.FSNamesystem (FSNamesystem.java:checkConfiguration(774)) - Only one image storage directory (dfs.namenode.name.dir) configured. Beware of data loss due to lack of redundant storage directories!
-2025-06-03 23:55:50,594 WARN  namenode.FSNamesystem (FSNamesystem.java:checkConfiguration(779)) - Only one namespace edits storage directory (dfs.namenode.edits.dir) configured. Beware of data loss due to lack of redundant storage directories!
-2025-06-03 23:55:50,720 INFO  namenode.FSEditLog (FSEditLog.java:newInstance(232)) - Edit logging is async:true
-2025-06-03 23:55:50,823 INFO  namenode.FSNamesystem (FSNamesystem.java:<init>(843)) - KeyProvider: null
-2025-06-03 23:55:50,832 INFO  namenode.FSNamesystem (FSNamesystemLock.java:<init>(141)) - fsLock is fair: true
-2025-06-03 23:55:50,833 INFO  namenode.FSNamesystem (FSNamesystemLock.java:<init>(159)) - Detailed lock hold time metrics enabled: false
-2025-06-03 23:55:50,844 INFO  namenode.FSNamesystem (FSNamesystem.java:<init>(882)) - fsOwner                = hadoop (auth:SIMPLE)
-2025-06-03 23:55:50,844 INFO  namenode.FSNamesystem (FSNamesystem.java:<init>(883)) - supergroup             = supergroup
-2025-06-03 23:55:50,845 INFO  namenode.FSNamesystem (FSNamesystem.java:<init>(884)) - isPermissionEnabled    = true
-2025-06-03 23:55:50,845 INFO  namenode.FSNamesystem (FSNamesystem.java:<init>(885)) - isStoragePolicyEnabled = true
-2025-06-03 23:55:50,846 INFO  namenode.FSNamesystem (FSNamesystem.java:<init>(896)) - HA Enabled: false
-2025-06-03 23:55:50,974 INFO  common.Util (Util.java:isDiskStatsEnabled(395)) - dfs.datanode.fileio.profiling.sampling.percentage set to 0. Disabling file IO profiling
-2025-06-03 23:55:52,010 INFO  blockmanagement.DatanodeManager (DatanodeManager.java:setBlockInvalidateLimit(2125)) - dfs.block.invalidate.limit : configured=1000, counted=60, effected=1000
-2025-06-03 23:55:52,011 INFO  blockmanagement.DatanodeManager (DatanodeManager.java:<init>(322)) - dfs.namenode.datanode.registration.ip-hostname-check=true
-2025-06-03 23:55:52,032 INFO  blockmanagement.BlockManager (InvalidateBlocks.java:printBlockDeletionTime(77)) - dfs.namenode.startup.delay.block.deletion.sec is set to 000:00:00:00.000
-2025-06-03 23:55:52,033 INFO  blockmanagement.BlockManager (InvalidateBlocks.java:printBlockDeletionTime(83)) - The block deletion will start around 2025 Jun 03 23:55:52
-2025-06-03 23:55:52,037 INFO  util.GSet (LightWeightGSet.java:computeCapacity(408)) - Computing capacity for map BlocksMap
-2025-06-03 23:55:52,037 INFO  util.GSet (LightWeightGSet.java:computeCapacity(409)) - VM type       = 64-bit
-2025-06-03 23:55:52,040 INFO  util.GSet (LightWeightGSet.java:computeCapacity(410)) - 2.0% max memory 1.7 GB = 35.2 MB
-2025-06-03 23:55:52,040 INFO  util.GSet (LightWeightGSet.java:computeCapacity(415)) - capacity      = 2^22 = 4194304 entries
-2025-06-03 23:55:52,062 INFO  blockmanagement.BlockManager (BlockManager.java:createSPSManager(5447)) - Storage policy satisfier is disabled
-2025-06-03 23:55:52,062 INFO  blockmanagement.BlockManager (BlockManager.java:createBlockTokenSecretManager(633)) - dfs.block.access.token.enable = false
-2025-06-03 23:55:52,077 INFO  blockmanagement.BlockManagerSafeMode (BlockManagerSafeMode.java:<init>(160)) - dfs.namenode.safemode.threshold-pct = 0.999
-2025-06-03 23:55:52,078 INFO  blockmanagement.BlockManagerSafeMode (BlockManagerSafeMode.java:<init>(161)) - dfs.namenode.safemode.min.datanodes = 0
-2025-06-03 23:55:52,078 INFO  blockmanagement.BlockManagerSafeMode (BlockManagerSafeMode.java:<init>(163)) - dfs.namenode.safemode.extension = 30000
-2025-06-03 23:55:52,080 INFO  blockmanagement.BlockManager (BlockManager.java:<init>(619)) - defaultReplication         = 3
-2025-06-03 23:55:52,082 INFO  blockmanagement.BlockManager (BlockManager.java:<init>(620)) - maxReplication             = 512
-2025-06-03 23:55:52,082 INFO  blockmanagement.BlockManager (BlockManager.java:<init>(621)) - minReplication             = 1
-2025-06-03 23:55:52,083 INFO  blockmanagement.BlockManager (BlockManager.java:<init>(622)) - maxReplicationStreams      = 2
-2025-06-03 23:55:52,083 INFO  blockmanagement.BlockManager (BlockManager.java:<init>(623)) - redundancyRecheckInterval  = 3000ms
-2025-06-03 23:55:52,083 INFO  blockmanagement.BlockManager (BlockManager.java:<init>(624)) - encryptDataTransfer        = false
-2025-06-03 23:55:52,084 INFO  blockmanagement.BlockManager (BlockManager.java:<init>(625)) - maxNumBlocksToLog          = 1000
-2025-06-03 23:55:52,187 INFO  namenode.FSDirectory (SerialNumberManager.java:<clinit>(51)) - GLOBAL serial map: bits=29 maxEntries=536870911
-2025-06-03 23:55:52,187 INFO  namenode.FSDirectory (SerialNumberManager.java:<clinit>(51)) - USER serial map: bits=24 maxEntries=16777215
-2025-06-03 23:55:52,188 INFO  namenode.FSDirectory (SerialNumberManager.java:<clinit>(51)) - GROUP serial map: bits=24 maxEntries=16777215
-2025-06-03 23:55:52,188 INFO  namenode.FSDirectory (SerialNumberManager.java:<clinit>(51)) - XATTR serial map: bits=24 maxEntries=16777215
-2025-06-03 23:55:52,220 INFO  util.GSet (LightWeightGSet.java:computeCapacity(408)) - Computing capacity for map INodeMap
-2025-06-03 23:55:52,221 INFO  util.GSet (LightWeightGSet.java:computeCapacity(409)) - VM type       = 64-bit
-2025-06-03 23:55:52,221 INFO  util.GSet (LightWeightGSet.java:computeCapacity(410)) - 1.0% max memory 1.7 GB = 17.6 MB
-2025-06-03 23:55:52,222 INFO  util.GSet (LightWeightGSet.java:computeCapacity(415)) - capacity      = 2^21 = 2097152 entries
-2025-06-03 23:55:52,224 INFO  namenode.FSDirectory (FSDirectory.java:<init>(335)) - ACLs enabled? true
-2025-06-03 23:55:52,224 INFO  namenode.FSDirectory (FSDirectory.java:<init>(339)) - POSIX ACL inheritance enabled? true
-2025-06-03 23:55:52,225 INFO  namenode.FSDirectory (FSDirectory.java:<init>(343)) - XAttrs enabled? true
-2025-06-03 23:55:52,225 INFO  namenode.NameNode (FSDirectory.java:<init>(406)) - Caching file names occurring more than 10 times
-2025-06-03 23:55:52,236 INFO  snapshot.SnapshotManager (SnapshotManager.java:<init>(124)) - Loaded config captureOpenFiles: false, skipCaptureAccessTimeOnlyChange: false, snapshotDiffAllowSnapRootDescendant: true, maxSnapshotLimit: 65536
-2025-06-03 23:55:52,239 INFO  snapshot.SnapshotManager (DirectoryDiffListFactory.java:init(43)) - SkipList is disabled
-2025-06-03 23:55:52,248 INFO  util.GSet (LightWeightGSet.java:computeCapacity(408)) - Computing capacity for map cachedBlocks
-2025-06-03 23:55:52,248 INFO  util.GSet (LightWeightGSet.java:computeCapacity(409)) - VM type       = 64-bit
-2025-06-03 23:55:52,249 INFO  util.GSet (LightWeightGSet.java:computeCapacity(410)) - 0.25% max memory 1.7 GB = 4.4 MB
-2025-06-03 23:55:52,249 INFO  util.GSet (LightWeightGSet.java:computeCapacity(415)) - capacity      = 2^19 = 524288 entries
-2025-06-03 23:55:52,268 INFO  metrics.TopMetrics (TopMetrics.java:logConf(75)) - NNTop conf: dfs.namenode.top.window.num.buckets = 10
-2025-06-03 23:55:52,269 INFO  metrics.TopMetrics (TopMetrics.java:logConf(77)) - NNTop conf: dfs.namenode.top.num.users = 10
-2025-06-03 23:55:52,270 INFO  metrics.TopMetrics (TopMetrics.java:logConf(79)) - NNTop conf: dfs.namenode.top.windows.minutes = 1,5,25
-2025-06-03 23:55:52,285 INFO  namenode.FSNamesystem (FSNamesystem.java:initRetryCache(1119)) - Retry cache on namenode is enabled
-2025-06-03 23:55:52,285 INFO  namenode.FSNamesystem (FSNamesystem.java:initRetryCache(1127)) - Retry cache will use 0.03 of total heap and retry cache entry expiry time is 600000 millis
-2025-06-03 23:55:52,292 INFO  util.GSet (LightWeightGSet.java:computeCapacity(408)) - Computing capacity for map NameNodeRetryCache
-2025-06-03 23:55:52,292 INFO  util.GSet (LightWeightGSet.java:computeCapacity(409)) - VM type       = 64-bit
-2025-06-03 23:55:52,293 INFO  util.GSet (LightWeightGSet.java:computeCapacity(410)) - 0.029999999329447746% max memory 1.7 GB = 540.2 KB
-2025-06-03 23:55:52,293 INFO  util.GSet (LightWeightGSet.java:computeCapacity(415)) - capacity      = 2^16 = 65536 entries
-2025-06-03 23:55:52,760 INFO  common.Storage (Storage.java:tryLock(948)) - Lock on /hadoop/dfs/name/in_use.lock acquired by nodename 98@localhost
-2025-06-03 23:55:52,809 INFO  namenode.FileJournalManager (FileJournalManager.java:recoverUnfinalizedSegments(428)) - Recovering unfinalized segments in /hadoop/dfs/name/current
-2025-06-03 23:55:52,810 INFO  namenode.FSImage (FSImage.java:loadFSImage(734)) - No edit log streams selected.
-2025-06-03 23:55:52,813 INFO  namenode.FSImage (FSImage.java:loadFSImageFile(800)) - Planning to load image: FSImageFile(file=/hadoop/dfs/name/current/fsimage_0000000000000000000, cpktTxId=0000000000000000000)
-2025-06-03 23:55:53,043 INFO  namenode.FSImageFormatPBINode (FSImageFormatPBINode.java:loadINodeSectionHeader(413)) - Loading 1 INodes.
-2025-06-03 23:55:53,071 INFO  namenode.FSImageFormatPBINode (FSImageFormatPBINode.java:loadINodeSection(371)) - Successfully loaded 1 inodes
-2025-06-03 23:55:53,098 INFO  namenode.FSImageFormatPBINode (FSImageFormatPBINode.java:waitBlocksMapAndNameCacheUpdateFinished(344)) - Completed update blocks map and name cache, total waiting duration 1ms.
-2025-06-03 23:55:53,120 INFO  namenode.FSImageFormatProtobuf (FSImageFormatProtobuf.java:load(255)) - Loaded FSImage in 0 seconds.
-2025-06-03 23:55:53,121 INFO  namenode.FSImage (FSImage.java:loadFSImage(978)) - Loaded image for txid 0 from /hadoop/dfs/name/current/fsimage_0000000000000000000
-2025-06-03 23:55:53,132 INFO  namenode.FSNamesystem (FSNamesystem.java:loadFSImage(1241)) - Need to save fs image? false (staleImage=false, haEnabled=false, isRollingUpgrade=false)
-2025-06-03 23:55:53,134 INFO  namenode.FSEditLog (FSEditLog.java:startLogSegment(1407)) - Starting log segment at 1
-2025-06-03 23:55:54,537 INFO  namenode.NameCache (NameCache.java:initialized(143)) - initialized with 0 entries 0 lookups
-2025-06-03 23:55:54,538 INFO  namenode.FSNamesystem (FSNamesystem.java:loadFromDisk(815)) - Finished loading FSImage in 2235 msecs
-2025-06-03 23:55:56,088 INFO  namenode.NameNode (NameNodeRpcServer.java:<init>(451)) - RPC server is binding to hadoop:9000
-2025-06-03 23:55:56,089 INFO  namenode.NameNode (NameNodeRpcServer.java:<init>(456)) - Enable NameNode state context:false
-2025-06-03 23:55:56,116 INFO  ipc.CallQueueManager (CallQueueManager.java:<init>(90)) - Using callQueue: class java.util.concurrent.LinkedBlockingQueue, queueCapacity: 1000, scheduler: class org.apache.hadoop.ipc.DefaultRpcScheduler, ipcBackoff: false.
-2025-06-03 23:55:56,139 INFO  ipc.Server (Server.java:run(1319)) - Starting Socket Reader #1 for port 9000
-2025-06-03 23:55:56,255 INFO  namenode.FSNamesystem (FSNamesystem.java:registerMBean(5501)) - Registered FSNamesystemState, ReplicatedBlocksState and ECBlockGroupsState MBeans.
-2025-06-03 23:55:56,828 INFO  namenode.LeaseManager (LeaseManager.java:getNumUnderConstructionBlocks(166)) - Number of blocks under construction: 0
-2025-06-03 23:55:56,858 INFO  blockmanagement.DatanodeAdminDefaultMonitor (DatanodeAdminDefaultMonitor.java:processConf(116)) - Initialized the Default Decommission and Maintenance monitor
-2025-06-03 23:55:56,861 INFO  blockmanagement.BlockManager (BlockManager.java:run(4968)) - Start MarkedDeleteBlockScrubber thread
-2025-06-03 23:55:56,865 INFO  blockmanagement.BlockManager (BlockManager.java:initializeReplQueues(5176)) - initializing replication queues
-2025-06-03 23:55:56,868 INFO  hdfs.StateChange (BlockManagerSafeMode.java:leaveSafeMode(399)) - STATE* Leaving safe mode after 0 secs
-2025-06-03 23:55:56,869 INFO  hdfs.StateChange (BlockManagerSafeMode.java:leaveSafeMode(405)) - STATE* Network topology has 0 racks and 0 datanodes
-2025-06-03 23:55:56,870 INFO  hdfs.StateChange (BlockManagerSafeMode.java:leaveSafeMode(407)) - STATE* UnderReplicatedBlocks has 0 blocks
-2025-06-03 23:55:56,887 INFO  blockmanagement.BlockManager (BlockManager.java:processMisReplicatesAsync(3742)) - Total number of blocks            = 0
-2025-06-03 23:55:56,888 INFO  blockmanagement.BlockManager (BlockManager.java:processMisReplicatesAsync(3743)) - Number of invalid blocks          = 0
-2025-06-03 23:55:56,889 INFO  blockmanagement.BlockManager (BlockManager.java:processMisReplicatesAsync(3744)) - Number of under-replicated blocks = 0
-2025-06-03 23:55:56,889 INFO  blockmanagement.BlockManager (BlockManager.java:processMisReplicatesAsync(3745)) - Number of  over-replicated blocks = 0
-2025-06-03 23:55:56,890 INFO  blockmanagement.BlockManager (BlockManager.java:processMisReplicatesAsync(3747)) - Number of blocks being written    = 0
-2025-06-03 23:55:56,891 INFO  hdfs.StateChange (BlockManager.java:processMisReplicatesAsync(3750)) - STATE* Replication Queue initialization scan for invalid, over- and under-replicated blocks completed in 22 msec
-2025-06-03 23:55:56,995 INFO  ipc.Server (Server.java:run(1558)) - IPC Server Responder: starting
-2025-06-03 23:55:56,995 INFO  ipc.Server (Server.java:run(1398)) - IPC Server listener on 9000: starting
-2025-06-03 23:55:57,027 INFO  namenode.NameNode (NameNode.java:startCommonServices(904)) - NameNode RPC up at: hadoop/127.0.0.1:9000
-2025-06-03 23:55:57,036 INFO  namenode.FSNamesystem (FSNamesystem.java:startActiveServices(1353)) - Starting services required for active state
-2025-06-03 23:55:57,037 INFO  namenode.FSDirectory (FSDirectory.java:updateCountForQuota(840)) - Initializing quota with 12 thread(s)
-2025-06-03 23:55:57,064 INFO  namenode.FSDirectory (FSDirectory.java:updateCountForQuota(849)) - Quota initialization completed in 27 milliseconds
+2025-06-04 00:23:59,231 INFO  impl.MetricsSystemImpl (MetricsSystemImpl.java:startTimer(378)) - Scheduled Metric snapshot period at 10 second(s).
+2025-06-04 00:23:59,232 INFO  impl.MetricsSystemImpl (MetricsSystemImpl.java:start(191)) - NameNode metrics system started
+2025-06-04 00:23:59,359 INFO  namenode.NameNodeUtils (NameNodeUtils.java:getClientNamenodeAddress(79)) - fs.defaultFS is hdfs://hadoop:9000
+2025-06-04 00:23:59,366 INFO  namenode.NameNode (NameNode.java:<init>(1018)) - Clients should use hadoop:9000 to access this namenode/service.
+2025-06-04 00:24:00,802 INFO  util.JvmPauseMonitor (JvmPauseMonitor.java:run(188)) - Starting JVM pause monitor
+2025-06-04 00:24:00,996 INFO  hdfs.DFSUtil (DFSUtil.java:httpServerTemplateForNNAndJN(1694)) - Filter initializers set : org.apache.hadoop.http.lib.StaticUserWebFilter,org.apache.hadoop.hdfs.web.AuthFilterInitializer
+2025-06-04 00:24:01,054 INFO  hdfs.DFSUtil (DFSUtil.java:httpServerTemplateForNNAndJN(1716)) - Starting Web-server for hdfs at: http://0.0.0.0:9870
+2025-06-04 00:24:01,108 INFO  util.log (Log.java:initialized(170)) - Logging initialized @4268ms to org.eclipse.jetty.util.log.Slf4jLog
+2025-06-04 00:24:02,027 WARN  server.AuthenticationFilter (AuthenticationFilter.java:constructSecretProvider(240)) - Unable to initialize FileSignerSecretProvider, falling back to use random secrets. Reason: Could not read signature secret file: /home/hadoop/hadoop-http-auth-signature-secret
+2025-06-04 00:24:02,110 INFO  http.HttpRequestLog (HttpRequestLog.java:getRequestLog(82)) - Http request log for http.requests.namenode is not defined
+2025-06-04 00:24:02,234 INFO  http.HttpServer2 (HttpServer2.java:addGlobalFilter(1124)) - Added global filter 'safety' (class=org.apache.hadoop.http.HttpServer2$QuotingInputFilter)
+2025-06-04 00:24:02,245 INFO  http.HttpServer2 (HttpServer2.java:addFilter(1097)) - Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context hdfs
+2025-06-04 00:24:02,246 INFO  http.HttpServer2 (HttpServer2.java:addFilter(1107)) - Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context static
+2025-06-04 00:24:02,247 INFO  http.HttpServer2 (HttpServer2.java:addFilter(1107)) - Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context logs
+2025-06-04 00:24:02,253 INFO  http.HttpServer2 (HttpServer2.java:addFilter(1097)) - Added filter AuthFilter (class=org.apache.hadoop.hdfs.web.AuthFilter) to context hdfs
+2025-06-04 00:24:02,255 INFO  http.HttpServer2 (HttpServer2.java:addFilter(1107)) - Added filter AuthFilter (class=org.apache.hadoop.hdfs.web.AuthFilter) to context static
+2025-06-04 00:24:02,258 INFO  http.HttpServer2 (HttpServer2.java:addFilter(1107)) - Added filter AuthFilter (class=org.apache.hadoop.hdfs.web.AuthFilter) to context logs
+2025-06-04 00:24:02,672 INFO  http.HttpServer2 (HttpServer2.java:addJerseyResourcePackage(951)) - addJerseyResourcePackage: packageName=org.apache.hadoop.hdfs.server.namenode.web.resources;org.apache.hadoop.hdfs.web.resources, pathSpec=/webhdfs/v1/*
+2025-06-04 00:24:02,874 INFO  http.HttpServer2 (HttpServer2.java:bindListener(1357)) - Jetty bound to port 9870
+2025-06-04 00:24:02,877 INFO  server.Server (Server.java:doStart(375)) - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 1.8.0_452-8u452-ga~us1-0ubuntu1~22.04-b09
+2025-06-04 00:24:03,087 INFO  server.session (DefaultSessionIdManager.java:doStart(334)) - DefaultSessionIdManager workerName=node0
+2025-06-04 00:24:03,088 INFO  server.session (DefaultSessionIdManager.java:doStart(339)) - No SessionScavenger set, using defaults
+2025-06-04 00:24:03,094 INFO  server.session (HouseKeeper.java:startScavenging(132)) - node0 Scavenging every 600000ms
+2025-06-04 00:24:03,150 WARN  server.AuthenticationFilter (AuthenticationFilter.java:constructSecretProvider(240)) - Unable to initialize FileSignerSecretProvider, falling back to use random secrets. Reason: Could not read signature secret file: /home/hadoop/hadoop-http-auth-signature-secret
+2025-06-04 00:24:03,157 INFO  handler.ContextHandler (ContextHandler.java:doStart(921)) - Started o.e.j.s.ServletContextHandler@4d15107f{logs,/logs,file:///opt/hadoop/logs/,AVAILABLE}
+2025-06-04 00:24:03,161 INFO  handler.ContextHandler (ContextHandler.java:doStart(921)) - Started o.e.j.s.ServletContextHandler@60f00693{static,/static,file:///opt/hadoop/share/hadoop/hdfs/webapps/static/,AVAILABLE}
+2025-06-04 00:24:03,500 INFO  handler.ContextHandler (ContextHandler.java:doStart(921)) - Started o.e.j.w.WebAppContext@5717c37{hdfs,/,file:///opt/hadoop/share/hadoop/hdfs/webapps/hdfs/,AVAILABLE}{file:/opt/hadoop/share/hadoop/hdfs/webapps/hdfs}
+2025-06-04 00:24:03,525 INFO  server.AbstractConnector (AbstractConnector.java:doStart(333)) - Started ServerConnector@2235eaab{HTTP/1.1, (http/1.1)}{0.0.0.0:9870}
+2025-06-04 00:24:03,525 INFO  server.Server (Server.java:doStart(415)) - Started @6685ms
+2025-06-04 00:24:03,986 WARN  namenode.FSNamesystem (FSNamesystem.java:checkConfiguration(774)) - Only one image storage directory (dfs.namenode.name.dir) configured. Beware of data loss due to lack of redundant storage directories!
+2025-06-04 00:24:03,987 WARN  namenode.FSNamesystem (FSNamesystem.java:checkConfiguration(779)) - Only one namespace edits storage directory (dfs.namenode.edits.dir) configured. Beware of data loss due to lack of redundant storage directories!
+2025-06-04 00:24:04,197 INFO  namenode.FSEditLog (FSEditLog.java:newInstance(232)) - Edit logging is async:true
+2025-06-04 00:24:04,314 INFO  namenode.FSNamesystem (FSNamesystem.java:<init>(843)) - KeyProvider: null
+2025-06-04 00:24:04,320 INFO  namenode.FSNamesystem (FSNamesystemLock.java:<init>(141)) - fsLock is fair: true
+2025-06-04 00:24:04,321 INFO  namenode.FSNamesystem (FSNamesystemLock.java:<init>(159)) - Detailed lock hold time metrics enabled: false
+2025-06-04 00:24:04,330 INFO  namenode.FSNamesystem (FSNamesystem.java:<init>(882)) - fsOwner                = hadoop (auth:SIMPLE)
+2025-06-04 00:24:04,331 INFO  namenode.FSNamesystem (FSNamesystem.java:<init>(883)) - supergroup             = supergroup
+2025-06-04 00:24:04,331 INFO  namenode.FSNamesystem (FSNamesystem.java:<init>(884)) - isPermissionEnabled    = true
+2025-06-04 00:24:04,332 INFO  namenode.FSNamesystem (FSNamesystem.java:<init>(885)) - isStoragePolicyEnabled = true
+2025-06-04 00:24:04,333 INFO  namenode.FSNamesystem (FSNamesystem.java:<init>(896)) - HA Enabled: false
+2025-06-04 00:24:04,455 INFO  common.Util (Util.java:isDiskStatsEnabled(395)) - dfs.datanode.fileio.profiling.sampling.percentage set to 0. Disabling file IO profiling
+2025-06-04 00:24:05,126 INFO  blockmanagement.DatanodeManager (DatanodeManager.java:setBlockInvalidateLimit(2125)) - dfs.block.invalidate.limit : configured=1000, counted=60, effected=1000
+2025-06-04 00:24:05,127 INFO  blockmanagement.DatanodeManager (DatanodeManager.java:<init>(322)) - dfs.namenode.datanode.registration.ip-hostname-check=true
+2025-06-04 00:24:05,139 INFO  blockmanagement.BlockManager (InvalidateBlocks.java:printBlockDeletionTime(77)) - dfs.namenode.startup.delay.block.deletion.sec is set to 000:00:00:00.000
+2025-06-04 00:24:05,140 INFO  blockmanagement.BlockManager (InvalidateBlocks.java:printBlockDeletionTime(83)) - The block deletion will start around 2025 Jun 04 00:24:05
+2025-06-04 00:24:05,145 INFO  util.GSet (LightWeightGSet.java:computeCapacity(408)) - Computing capacity for map BlocksMap
+2025-06-04 00:24:05,145 INFO  util.GSet (LightWeightGSet.java:computeCapacity(409)) - VM type       = 64-bit
+2025-06-04 00:24:05,148 INFO  util.GSet (LightWeightGSet.java:computeCapacity(410)) - 2.0% max memory 1.7 GB = 35.2 MB
+2025-06-04 00:24:05,149 INFO  util.GSet (LightWeightGSet.java:computeCapacity(415)) - capacity      = 2^22 = 4194304 entries
+2025-06-04 00:24:05,179 INFO  blockmanagement.BlockManager (BlockManager.java:createSPSManager(5447)) - Storage policy satisfier is disabled
+2025-06-04 00:24:05,180 INFO  blockmanagement.BlockManager (BlockManager.java:createBlockTokenSecretManager(633)) - dfs.block.access.token.enable = false
+2025-06-04 00:24:05,201 INFO  blockmanagement.BlockManagerSafeMode (BlockManagerSafeMode.java:<init>(160)) - dfs.namenode.safemode.threshold-pct = 0.999
+2025-06-04 00:24:05,201 INFO  blockmanagement.BlockManagerSafeMode (BlockManagerSafeMode.java:<init>(161)) - dfs.namenode.safemode.min.datanodes = 0
+2025-06-04 00:24:05,202 INFO  blockmanagement.BlockManagerSafeMode (BlockManagerSafeMode.java:<init>(163)) - dfs.namenode.safemode.extension = 30000
+2025-06-04 00:24:05,204 INFO  blockmanagement.BlockManager (BlockManager.java:<init>(619)) - defaultReplication         = 3
+2025-06-04 00:24:05,205 INFO  blockmanagement.BlockManager (BlockManager.java:<init>(620)) - maxReplication             = 512
+2025-06-04 00:24:05,205 INFO  blockmanagement.BlockManager (BlockManager.java:<init>(621)) - minReplication             = 1
+2025-06-04 00:24:05,205 INFO  blockmanagement.BlockManager (BlockManager.java:<init>(622)) - maxReplicationStreams      = 2
+2025-06-04 00:24:05,206 INFO  blockmanagement.BlockManager (BlockManager.java:<init>(623)) - redundancyRecheckInterval  = 3000ms
+2025-06-04 00:24:05,206 INFO  blockmanagement.BlockManager (BlockManager.java:<init>(624)) - encryptDataTransfer        = false
+2025-06-04 00:24:05,209 INFO  blockmanagement.BlockManager (BlockManager.java:<init>(625)) - maxNumBlocksToLog          = 1000
+2025-06-04 00:24:05,376 INFO  namenode.FSDirectory (SerialNumberManager.java:<clinit>(51)) - GLOBAL serial map: bits=29 maxEntries=536870911
+2025-06-04 00:24:05,376 INFO  namenode.FSDirectory (SerialNumberManager.java:<clinit>(51)) - USER serial map: bits=24 maxEntries=16777215
+2025-06-04 00:24:05,377 INFO  namenode.FSDirectory (SerialNumberManager.java:<clinit>(51)) - GROUP serial map: bits=24 maxEntries=16777215
+2025-06-04 00:24:05,377 INFO  namenode.FSDirectory (SerialNumberManager.java:<clinit>(51)) - XATTR serial map: bits=24 maxEntries=16777215
+2025-06-04 00:24:05,423 INFO  util.GSet (LightWeightGSet.java:computeCapacity(408)) - Computing capacity for map INodeMap
+2025-06-04 00:24:05,424 INFO  util.GSet (LightWeightGSet.java:computeCapacity(409)) - VM type       = 64-bit
+2025-06-04 00:24:05,425 INFO  util.GSet (LightWeightGSet.java:computeCapacity(410)) - 1.0% max memory 1.7 GB = 17.6 MB
+2025-06-04 00:24:05,425 INFO  util.GSet (LightWeightGSet.java:computeCapacity(415)) - capacity      = 2^21 = 2097152 entries
+2025-06-04 00:24:05,427 INFO  namenode.FSDirectory (FSDirectory.java:<init>(335)) - ACLs enabled? true
+2025-06-04 00:24:05,429 INFO  namenode.FSDirectory (FSDirectory.java:<init>(339)) - POSIX ACL inheritance enabled? true
+2025-06-04 00:24:05,429 INFO  namenode.FSDirectory (FSDirectory.java:<init>(343)) - XAttrs enabled? true
+2025-06-04 00:24:05,431 INFO  namenode.NameNode (FSDirectory.java:<init>(406)) - Caching file names occurring more than 10 times
+2025-06-04 00:24:05,446 INFO  snapshot.SnapshotManager (SnapshotManager.java:<init>(124)) - Loaded config captureOpenFiles: false, skipCaptureAccessTimeOnlyChange: false, snapshotDiffAllowSnapRootDescendant: true, maxSnapshotLimit: 65536
+2025-06-04 00:24:05,449 INFO  snapshot.SnapshotManager (DirectoryDiffListFactory.java:init(43)) - SkipList is disabled
+2025-06-04 00:24:05,460 INFO  util.GSet (LightWeightGSet.java:computeCapacity(408)) - Computing capacity for map cachedBlocks
+2025-06-04 00:24:05,461 INFO  util.GSet (LightWeightGSet.java:computeCapacity(409)) - VM type       = 64-bit
+2025-06-04 00:24:05,461 INFO  util.GSet (LightWeightGSet.java:computeCapacity(410)) - 0.25% max memory 1.7 GB = 4.4 MB
+2025-06-04 00:24:05,462 INFO  util.GSet (LightWeightGSet.java:computeCapacity(415)) - capacity      = 2^19 = 524288 entries
+2025-06-04 00:24:05,497 INFO  metrics.TopMetrics (TopMetrics.java:logConf(75)) - NNTop conf: dfs.namenode.top.window.num.buckets = 10
+2025-06-04 00:24:05,498 INFO  metrics.TopMetrics (TopMetrics.java:logConf(77)) - NNTop conf: dfs.namenode.top.num.users = 10
+2025-06-04 00:24:05,498 INFO  metrics.TopMetrics (TopMetrics.java:logConf(79)) - NNTop conf: dfs.namenode.top.windows.minutes = 1,5,25
+2025-06-04 00:24:05,520 INFO  namenode.FSNamesystem (FSNamesystem.java:initRetryCache(1119)) - Retry cache on namenode is enabled
+2025-06-04 00:24:05,522 INFO  namenode.FSNamesystem (FSNamesystem.java:initRetryCache(1127)) - Retry cache will use 0.03 of total heap and retry cache entry expiry time is 600000 millis
+2025-06-04 00:24:05,540 INFO  util.GSet (LightWeightGSet.java:computeCapacity(408)) - Computing capacity for map NameNodeRetryCache
+2025-06-04 00:24:05,542 INFO  util.GSet (LightWeightGSet.java:computeCapacity(409)) - VM type       = 64-bit
+2025-06-04 00:24:05,543 INFO  util.GSet (LightWeightGSet.java:computeCapacity(410)) - 0.029999999329447746% max memory 1.7 GB = 540.2 KB
+2025-06-04 00:24:05,543 INFO  util.GSet (LightWeightGSet.java:computeCapacity(415)) - capacity      = 2^16 = 65536 entries
+2025-06-04 00:24:05,596 INFO  common.Storage (Storage.java:tryLock(948)) - Lock on /hadoop/dfs/name/in_use.lock acquired by nodename 99@localhost
+2025-06-04 00:24:05,661 INFO  namenode.FileJournalManager (FileJournalManager.java:recoverUnfinalizedSegments(428)) - Recovering unfinalized segments in /hadoop/dfs/name/current
+2025-06-04 00:24:05,662 INFO  namenode.FSImage (FSImage.java:loadFSImage(734)) - No edit log streams selected.
+2025-06-04 00:24:05,663 INFO  namenode.FSImage (FSImage.java:loadFSImageFile(800)) - Planning to load image: FSImageFile(file=/hadoop/dfs/name/current/fsimage_0000000000000000000, cpktTxId=0000000000000000000)
+2025-06-04 00:24:05,927 INFO  namenode.FSImageFormatPBINode (FSImageFormatPBINode.java:loadINodeSectionHeader(413)) - Loading 1 INodes.
+2025-06-04 00:24:06,001 INFO  namenode.FSImageFormatPBINode (FSImageFormatPBINode.java:loadINodeSection(371)) - Successfully loaded 1 inodes
+2025-06-04 00:24:06,035 INFO  namenode.FSImageFormatPBINode (FSImageFormatPBINode.java:waitBlocksMapAndNameCacheUpdateFinished(344)) - Completed update blocks map and name cache, total waiting duration 1ms.
+2025-06-04 00:24:06,055 INFO  namenode.FSImageFormatProtobuf (FSImageFormatProtobuf.java:load(255)) - Loaded FSImage in 0 seconds.
+2025-06-04 00:24:06,055 INFO  namenode.FSImage (FSImage.java:loadFSImage(978)) - Loaded image for txid 0 from /hadoop/dfs/name/current/fsimage_0000000000000000000
+2025-06-04 00:24:06,066 INFO  namenode.FSNamesystem (FSNamesystem.java:loadFSImage(1241)) - Need to save fs image? false (staleImage=false, haEnabled=false, isRollingUpgrade=false)
+2025-06-04 00:24:06,067 INFO  namenode.FSEditLog (FSEditLog.java:startLogSegment(1407)) - Starting log segment at 1
+2025-06-04 00:24:06,259 INFO  namenode.NameCache (NameCache.java:initialized(143)) - initialized with 0 entries 0 lookups
+2025-06-04 00:24:06,261 INFO  namenode.FSNamesystem (FSNamesystem.java:loadFromDisk(815)) - Finished loading FSImage in 709 msecs
+2025-06-04 00:24:07,177 INFO  namenode.NameNode (NameNodeRpcServer.java:<init>(451)) - RPC server is binding to hadoop:9000
+2025-06-04 00:24:07,178 INFO  namenode.NameNode (NameNodeRpcServer.java:<init>(456)) - Enable NameNode state context:false
+2025-06-04 00:24:07,235 INFO  ipc.CallQueueManager (CallQueueManager.java:<init>(90)) - Using callQueue: class java.util.concurrent.LinkedBlockingQueue, queueCapacity: 1000, scheduler: class org.apache.hadoop.ipc.DefaultRpcScheduler, ipcBackoff: false.
+2025-06-04 00:24:07,301 INFO  ipc.Server (Server.java:run(1319)) - Starting Socket Reader #1 for port 9000
+2025-06-04 00:24:07,613 INFO  namenode.FSNamesystem (FSNamesystem.java:registerMBean(5501)) - Registered FSNamesystemState, ReplicatedBlocksState and ECBlockGroupsState MBeans.
+2025-06-04 00:24:07,658 INFO  namenode.LeaseManager (LeaseManager.java:getNumUnderConstructionBlocks(166)) - Number of blocks under construction: 0
+2025-06-04 00:24:07,707 INFO  blockmanagement.DatanodeAdminDefaultMonitor (DatanodeAdminDefaultMonitor.java:processConf(116)) - Initialized the Default Decommission and Maintenance monitor
+2025-06-04 00:24:07,717 INFO  blockmanagement.BlockManager (BlockManager.java:run(4968)) - Start MarkedDeleteBlockScrubber thread
+2025-06-04 00:24:07,724 INFO  blockmanagement.BlockManager (BlockManager.java:initializeReplQueues(5176)) - initializing replication queues
+2025-06-04 00:24:07,729 INFO  hdfs.StateChange (BlockManagerSafeMode.java:leaveSafeMode(399)) - STATE* Leaving safe mode after 0 secs
+2025-06-04 00:24:07,732 INFO  hdfs.StateChange (BlockManagerSafeMode.java:leaveSafeMode(405)) - STATE* Network topology has 0 racks and 0 datanodes
+2025-06-04 00:24:07,734 INFO  hdfs.StateChange (BlockManagerSafeMode.java:leaveSafeMode(407)) - STATE* UnderReplicatedBlocks has 0 blocks
+2025-06-04 00:24:07,767 INFO  blockmanagement.BlockManager (BlockManager.java:processMisReplicatesAsync(3742)) - Total number of blocks            = 0
+2025-06-04 00:24:07,770 INFO  blockmanagement.BlockManager (BlockManager.java:processMisReplicatesAsync(3743)) - Number of invalid blocks          = 0
+2025-06-04 00:24:07,770 INFO  blockmanagement.BlockManager (BlockManager.java:processMisReplicatesAsync(3744)) - Number of under-replicated blocks = 0
+2025-06-04 00:24:07,771 INFO  blockmanagement.BlockManager (BlockManager.java:processMisReplicatesAsync(3745)) - Number of  over-replicated blocks = 0
+2025-06-04 00:24:07,771 INFO  blockmanagement.BlockManager (BlockManager.java:processMisReplicatesAsync(3747)) - Number of blocks being written    = 0
+2025-06-04 00:24:07,773 INFO  hdfs.StateChange (BlockManager.java:processMisReplicatesAsync(3750)) - STATE* Replication Queue initialization scan for invalid, over- and under-replicated blocks completed in 40 msec
+2025-06-04 00:24:07,957 INFO  ipc.Server (Server.java:run(1558)) - IPC Server Responder: starting
+2025-06-04 00:24:07,960 INFO  ipc.Server (Server.java:run(1398)) - IPC Server listener on 9000: starting
+2025-06-04 00:24:07,990 INFO  namenode.NameNode (NameNode.java:startCommonServices(904)) - NameNode RPC up at: hadoop/127.0.0.1:9000
+2025-06-04 00:24:08,009 INFO  namenode.FSNamesystem (FSNamesystem.java:startActiveServices(1353)) - Starting services required for active state
+2025-06-04 00:24:08,010 INFO  namenode.FSDirectory (FSDirectory.java:updateCountForQuota(840)) - Initializing quota with 12 thread(s)
+2025-06-04 00:24:08,038 INFO  namenode.FSDirectory (FSDirectory.java:updateCountForQuota(849)) - Quota initialization completed in 28 milliseconds
 name space=1
 storage space=0
 storage types=RAM_DISK=0, SSD=0, DISK=0, ARCHIVE=0, PROVIDED=0
-2025-06-03 23:55:57,099 INFO  blockmanagement.CacheReplicationMonitor (CacheReplicationMonitor.java:run(160)) - Starting CacheReplicationMonitor with interval 30000 milliseconds
-2025-06-03 23:55:58,316 INFO  hdfs.StateChange (DatanodeManager.java:registerDatanode(1168)) - BLOCK* registerDatanode: from DatanodeRegistration(127.0.0.1:9866, datanodeUuid=ade9aa2d-510d-4097-8296-176f0610fc0b, infoPort=9864, infoSecurePort=0, ipcPort=9867, storageInfo=lv=-57;cid=CID-a59c97f2-1156-4dbc-a864-c00c3653be9b;nsid=1850174930;c=1748994937094) storage ade9aa2d-510d-4097-8296-176f0610fc0b
-2025-06-03 23:55:58,320 INFO  net.NetworkTopology (NetworkTopology.java:add(156)) - Adding a new node: /default-rack/127.0.0.1:9866
-2025-06-03 23:55:58,320 INFO  blockmanagement.BlockReportLeaseManager (BlockReportLeaseManager.java:registerNode(200)) - Registered DN ade9aa2d-510d-4097-8296-176f0610fc0b (127.0.0.1:9866).
-2025-06-03 23:55:58,634 INFO  blockmanagement.DatanodeDescriptor (DatanodeDescriptor.java:updateStorage(1010)) - Adding new storage ID DS-0431fbde-ec42-496c-9fc4-9df0c5e22e2b for DN 127.0.0.1:9866
-2025-06-03 23:55:58,778 INFO  BlockStateChange (BlockManager.java:processReport(2793)) - BLOCK* processReport 0xeec4e241e5050381 with lease ID 0xfbf8ba9f85d3cce8: Processing first storage report for DS-0431fbde-ec42-496c-9fc4-9df0c5e22e2b from datanode DatanodeRegistration(127.0.0.1:9866, datanodeUuid=ade9aa2d-510d-4097-8296-176f0610fc0b, infoPort=9864, infoSecurePort=0, ipcPort=9867, storageInfo=lv=-57;cid=CID-a59c97f2-1156-4dbc-a864-c00c3653be9b;nsid=1850174930;c=1748994937094)
-2025-06-03 23:55:58,786 INFO  BlockStateChange (BlockManager.java:processReport(2825)) - BLOCK* processReport 0xeec4e241e5050381 with lease ID 0xfbf8ba9f85d3cce8: from storage DS-0431fbde-ec42-496c-9fc4-9df0c5e22e2b node DatanodeRegistration(127.0.0.1:9866, datanodeUuid=ade9aa2d-510d-4097-8296-176f0610fc0b, infoPort=9864, infoSecurePort=0, ipcPort=9867, storageInfo=lv=-57;cid=CID-a59c97f2-1156-4dbc-a864-c00c3653be9b;nsid=1850174930;c=1748994937094), blocks: 0, hasStaleStorage: false, processing time: 8 msecs, invalidatedBlocks: 0
-2025-06-03 23:55:59,894 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=getfileinfo	src=/tmp/hadoop-yarn/staging	dst=null	perm=null	proto=rpc
-2025-06-03 23:56:00,076 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=mkdirs	src=/tmp/hadoop-yarn/staging	dst=null	perm=hadoop:supergroup:rwxr-xr-x	proto=rpc
-2025-06-03 23:56:04,156 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=getfileinfo	src=/tmp/hadoop-yarn	dst=null	perm=null	proto=rpc
-2025-06-03 23:56:04,245 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=setPermission	src=/tmp/hadoop-yarn	dst=null	perm=hadoop:supergroup:rwxrwxrwx	proto=rpc
-2025-06-03 23:56:04,276 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/hadoop-yarn	dst=null	perm=null	proto=rpc
-2025-06-03 23:56:04,302 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=setPermission	src=/tmp/hadoop-yarn/staging	dst=null	perm=hadoop:supergroup:rwxrwxrwx	proto=rpc
-2025-06-03 23:56:04,305 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/hadoop-yarn/staging	dst=null	perm=null	proto=rpc
-2025-06-03 23:56:16,423 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=getfileinfo	src=/tmp/hadoop-yarn/staging/history/done	dst=null	perm=null	proto=rpc
-2025-06-03 23:56:16,503 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=mkdirs	src=/tmp/hadoop-yarn/staging/history/done	dst=null	perm=hadoop:supergroup:rwxrwx---	proto=rpc
-2025-06-03 23:56:16,520 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=getfileinfo	src=/tmp/hadoop-yarn/staging/history/done	dst=null	perm=null	proto=rpc
-2025-06-03 23:56:16,627 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=getfileinfo	src=/tmp/hadoop-yarn/staging/history/done_intermediate	dst=null	perm=null	proto=rpc
-2025-06-03 23:56:16,635 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=mkdirs	src=/tmp/hadoop-yarn/staging/history/done_intermediate	dst=null	perm=hadoop:supergroup:rwxr-xr-x	proto=rpc
-2025-06-03 23:56:16,640 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=getfileinfo	src=/tmp/hadoop-yarn/staging/history/done_intermediate	dst=null	perm=null	proto=rpc
-2025-06-03 23:56:16,649 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=setPermission	src=/tmp/hadoop-yarn/staging/history/done_intermediate	dst=null	perm=hadoop:supergroup:rwxrwxrwt	proto=rpc
-2025-06-03 23:56:16,674 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/hadoop-yarn/staging/history/done	dst=null	perm=null	proto=rpc
-2025-06-03 23:56:16,901 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=getfileinfo	src=/user/waze	dst=null	perm=null	proto=rpc
-2025-06-03 23:56:17,023 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=mkdirs	src=/user/waze	dst=null	perm=hadoop:supergroup:rwxr-xr-x	proto=rpc
-2025-06-03 23:56:22,373 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=getfileinfo	src=/user/waze	dst=null	perm=null	proto=rpc
-2025-06-03 23:56:22,442 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=setPermission	src=/user/waze	dst=null	perm=hadoop:supergroup:rwxrwxrwx	proto=rpc
-2025-06-03 23:56:46,913 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/hadoop-yarn/staging/history/done	dst=null	perm=null	proto=rpc
-2025-06-03 23:57:48,846 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=root (auth:SIMPLE)	ip=/127.0.0.1	cmd=getfileinfo	src=/	dst=null	perm=null	proto=rpc
-2025-06-03 23:57:49,029 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=root (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/	dst=null	perm=null	proto=rpc
-2025-06-03 23:59:13,414 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/hadoop-yarn/staging/history/done_intermediate	dst=null	perm=null	proto=rpc
-2025-06-04 00:02:09,115 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/hadoop-yarn/staging/history/done_intermediate	dst=null	perm=null	proto=rpc
-2025-06-04 00:05:04,789 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/hadoop-yarn/staging/history/done_intermediate	dst=null	perm=null	proto=rpc
+2025-06-04 00:24:08,049 INFO  blockmanagement.CacheReplicationMonitor (CacheReplicationMonitor.java:run(160)) - Starting CacheReplicationMonitor with interval 30000 milliseconds
+2025-06-04 00:24:10,173 INFO  hdfs.StateChange (DatanodeManager.java:registerDatanode(1168)) - BLOCK* registerDatanode: from DatanodeRegistration(127.0.0.1:9866, datanodeUuid=ca5fb64a-9429-435b-949c-24aad5a724de, infoPort=9864, infoSecurePort=0, ipcPort=9867, storageInfo=lv=-57;cid=CID-d428991a-1d67-46a7-848e-8f77ba75b656;nsid=387027519;c=1748996635822) storage ca5fb64a-9429-435b-949c-24aad5a724de
+2025-06-04 00:24:10,177 INFO  net.NetworkTopology (NetworkTopology.java:add(156)) - Adding a new node: /default-rack/127.0.0.1:9866
+2025-06-04 00:24:10,178 INFO  blockmanagement.BlockReportLeaseManager (BlockReportLeaseManager.java:registerNode(200)) - Registered DN ca5fb64a-9429-435b-949c-24aad5a724de (127.0.0.1:9866).
+2025-06-04 00:24:10,422 INFO  blockmanagement.DatanodeDescriptor (DatanodeDescriptor.java:updateStorage(1010)) - Adding new storage ID DS-3b3823ad-f016-46dd-853f-a8b474a923cb for DN 127.0.0.1:9866
+2025-06-04 00:24:10,533 INFO  BlockStateChange (BlockManager.java:processReport(2793)) - BLOCK* processReport 0x4c2a4c352332253e with lease ID 0x876d2f7280d9ab59: Processing first storage report for DS-3b3823ad-f016-46dd-853f-a8b474a923cb from datanode DatanodeRegistration(127.0.0.1:9866, datanodeUuid=ca5fb64a-9429-435b-949c-24aad5a724de, infoPort=9864, infoSecurePort=0, ipcPort=9867, storageInfo=lv=-57;cid=CID-d428991a-1d67-46a7-848e-8f77ba75b656;nsid=387027519;c=1748996635822)
+2025-06-04 00:24:10,539 INFO  BlockStateChange (BlockManager.java:processReport(2825)) - BLOCK* processReport 0x4c2a4c352332253e with lease ID 0x876d2f7280d9ab59: from storage DS-3b3823ad-f016-46dd-853f-a8b474a923cb node DatanodeRegistration(127.0.0.1:9866, datanodeUuid=ca5fb64a-9429-435b-949c-24aad5a724de, infoPort=9864, infoSecurePort=0, ipcPort=9867, storageInfo=lv=-57;cid=CID-d428991a-1d67-46a7-848e-8f77ba75b656;nsid=387027519;c=1748996635822), blocks: 0, hasStaleStorage: false, processing time: 5 msecs, invalidatedBlocks: 0
+2025-06-04 00:24:11,294 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=getfileinfo	src=/tmp/hadoop-yarn/staging	dst=null	perm=null	proto=rpc
+2025-06-04 00:24:11,414 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=mkdirs	src=/tmp/hadoop-yarn/staging	dst=null	perm=hadoop:supergroup:rwxr-xr-x	proto=rpc
+2025-06-04 00:24:15,508 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=getfileinfo	src=/tmp/hadoop-yarn	dst=null	perm=null	proto=rpc
+2025-06-04 00:24:15,615 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=setPermission	src=/tmp/hadoop-yarn	dst=null	perm=hadoop:supergroup:rwxrwxrwx	proto=rpc
+2025-06-04 00:24:15,647 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/hadoop-yarn	dst=null	perm=null	proto=rpc
+2025-06-04 00:24:15,675 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=setPermission	src=/tmp/hadoop-yarn/staging	dst=null	perm=hadoop:supergroup:rwxrwxrwx	proto=rpc
+2025-06-04 00:24:15,678 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/hadoop-yarn/staging	dst=null	perm=null	proto=rpc
+2025-06-04 00:24:26,411 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=getfileinfo	src=/tmp/hadoop-yarn/staging/history/done	dst=null	perm=null	proto=rpc
+2025-06-04 00:24:26,479 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=mkdirs	src=/tmp/hadoop-yarn/staging/history/done	dst=null	perm=hadoop:supergroup:rwxrwx---	proto=rpc
+2025-06-04 00:24:26,496 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=getfileinfo	src=/tmp/hadoop-yarn/staging/history/done	dst=null	perm=null	proto=rpc
+2025-06-04 00:24:26,629 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=getfileinfo	src=/tmp/hadoop-yarn/staging/history/done_intermediate	dst=null	perm=null	proto=rpc
+2025-06-04 00:24:26,637 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=mkdirs	src=/tmp/hadoop-yarn/staging/history/done_intermediate	dst=null	perm=hadoop:supergroup:rwxr-xr-x	proto=rpc
+2025-06-04 00:24:26,642 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=getfileinfo	src=/tmp/hadoop-yarn/staging/history/done_intermediate	dst=null	perm=null	proto=rpc
+2025-06-04 00:24:26,656 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=setPermission	src=/tmp/hadoop-yarn/staging/history/done_intermediate	dst=null	perm=hadoop:supergroup:rwxrwxrwt	proto=rpc
+2025-06-04 00:24:26,689 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/hadoop-yarn/staging/history/done	dst=null	perm=null	proto=rpc
+2025-06-04 00:24:27,581 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=getfileinfo	src=/user/waze	dst=null	perm=null	proto=rpc
+2025-06-04 00:24:27,678 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=mkdirs	src=/user/waze	dst=null	perm=hadoop:supergroup:rwxr-xr-x	proto=rpc
+2025-06-04 00:24:33,911 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=getfileinfo	src=/user/waze	dst=null	perm=null	proto=rpc
+2025-06-04 00:24:34,002 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=setPermission	src=/user/waze	dst=null	perm=hadoop:supergroup:rwxrwxrwx	proto=rpc
+2025-06-04 00:24:57,123 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/hadoop-yarn/staging/history/done	dst=null	perm=null	proto=rpc
+2025-06-04 00:27:23,794 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/hadoop-yarn/staging/history/done_intermediate	dst=null	perm=null	proto=rpc
+2025-06-04 00:30:19,422 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/hadoop-yarn/staging/history/done_intermediate	dst=null	perm=null	proto=rpc
+2025-06-04 00:33:14,888 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/hadoop-yarn/staging/history/done_intermediate	dst=null	perm=null	proto=rpc
+2025-06-04 00:36:10,268 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/hadoop-yarn/staging/history/done_intermediate	dst=null	perm=null	proto=rpc
+2025-06-04 00:39:05,612 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/hadoop-yarn/staging/history/done_intermediate	dst=null	perm=null	proto=rpc
+2025-06-04 00:42:00,587 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/hadoop-yarn/staging/history/done_intermediate	dst=null	perm=null	proto=rpc
+2025-06-04 00:44:55,588 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/hadoop-yarn/staging/history/done_intermediate	dst=null	perm=null	proto=rpc
+2025-06-04 00:47:50,408 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/hadoop-yarn/staging/history/done_intermediate	dst=null	perm=null	proto=rpc
