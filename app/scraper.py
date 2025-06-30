@@ -8,27 +8,19 @@ from pymongo import MongoClient
 import logging
 from elasticsearch_logger import crear_indices_si_no_existen, log_scraper_metrics
 
-crear_indices_si_no_existen()
-
-# Ejemplo: después de scrapear
-#eventos_obtenidos = 150
-#tiempo_total = 3.72  # segundos
-
-log_scraper_metrics(eventos_obtenidos, tiempo_total)
-
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 # conexión mongodb
-client = MongoClient("mongodb://mongo:27017/")
+client = MongoClient("mongodb://localhost:27017/")
 db = client["waze_data"]
 collection = db["events"]
 
 # configuración
 WAZE_URL = "https://www.waze.com/live-map/api/georss"
 HEADERS = {"User-Agent": "Mozilla/5.0"}
-TOTAL_OBJETIVO = 20000 # total de eventos a obtener, se puede ajustar
+TOTAL_OBJETIVO = 200 # total de eventos a obtener, se puede ajustar
 EVENTOS_POR_CASILLA = 200
 DELAY_MINUTOS = 5
 DIRECTORIO_SALIDA = "data_eventos_waze"
@@ -147,9 +139,12 @@ def guardar_eventos(eventos, ciclo):
 
 
 def main_loop():
+    start_time = time.time()
     total = 0
     ciclo = 1
     casillas = generar_casillas()
+    
+    crear_indices_si_no_existen()
 
     while total < TOTAL_OBJETIVO:
         logger.info(f"\n Ciclo #{ciclo} - Escaneando las 52 casillas...")
@@ -168,7 +163,7 @@ def main_loop():
             total += len(eventos_ciclo)
             logger.info(f"Total acumulado: {total} eventos")
             #guardar en Elasticsearch
-            elasticsearch_logger.log_scraper_event(total_eventos=len(eventos_ciclo))
+            log_scraper_metrics(len(eventos_ciclo), time.time() - start_time)
         else:
             logger.info("No se obtuvieron eventos en esta iteración.")
 
@@ -178,6 +173,19 @@ def main_loop():
                 f"Esperando {DELAY_MINUTOS} minutos antes del siguiente ciclo..."
             )
             time.sleep(DELAY_MINUTOS * 60)
+
+
+def obtener_eventos_waze():
+    logger.info("Obteniendo eventos de Waze...")
+    casillas = generar_casillas()
+    eventos_totales = []
+    
+    for casilla in casillas[:5]:
+        eventos = obtener_eventos(casilla)
+        eventos_totales.extend(eventos)
+        
+    logger.info(f"Total de eventos obtenidos: {len(eventos_totales)}")
+    return eventos_totales
 
 
 if __name__ == "__main__":

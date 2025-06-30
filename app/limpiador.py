@@ -15,30 +15,43 @@ def normalizar_tipo(subtipo):
         return "Atasco"
     return "Otro"
 
-client = MongoClient("mongodb://root:example@localhost:27017/")
-db = client["waze_data"]
-collection = db["events"]
+def limpiar_datos_mongodb():
+    try:
+        client = MongoClient("mongodb://root:example@localhost:27017/")
+        db = client["waze_data"]
+        collection = db["events"]
 
-with open("incidentes_limpios.csv", mode="w", newline="", encoding="utf-8") as archivo:
-    writer = csv.writer(archivo)
-    writer.writerow(["fecha", "tipo", "subtipo", "subtipo_normalizado", "ciudad", "calle", "lat", "lon"])
+        with open("incidentes_limpios.csv", mode="w", newline="", encoding="utf-8") as archivo:
+            writer = csv.writer(archivo)
+            writer.writerow(["fecha", "tipo", "subtipo", "subtipo_normalizado", "ciudad", "calle", "lat", "lon"])
 
-    for evento in collection.find():
-        if not all(k in evento for k in ["fecha", "tipo", "subtipo", "ciudad", "calle", "ubicacion"]):
-            continue
-        if not evento["fecha"] or not evento["ciudad"]:
-            continue
+            for evento in collection.find():
+                if not all(k in evento for k in ["fecha", "tipo", "subtipo", "ciudad", "calle", "ubicacion"]):
+                    continue
+                if not evento["fecha"] or not evento["ciudad"]:
+                    continue
 
-        subtipo_normal = normalizar_tipo(evento["subtipo"])
-        fecha = datetime.strptime(evento["fecha"], "%Y-%m-%dT%H:%M:%S").strftime("%Y-%m-%d %H:%M:%S")
+                subtipo_normal = normalizar_tipo(evento["subtipo"])
+                fecha = datetime.strptime(evento["fecha"], "%Y-%m-%dT%H:%M:%S").strftime("%Y-%m-%d %H:%M:%S")
 
-        writer.writerow([
-            fecha,
-            evento["tipo"],
-            evento["subtipo"],
-            subtipo_normal,
-            evento["ciudad"],
-            evento["calle"],
-            evento["ubicacion"]["lat"],
-            evento["ubicacion"]["lon"]
-        ])
+                writer.writerow([
+                    fecha,
+                    evento["tipo"],
+                    evento["subtipo"],
+                    subtipo_normal,
+                    evento["ciudad"],
+                    evento["calle"],
+                    evento["ubicacion"]["lat"],
+                    evento["ubicacion"]["lon"]
+                ])
+        
+        print("Archivo incidentes_limpios.csv creado exitosamente")
+        return True
+        
+    except Exception as e:
+        print(f"Error limpiando datos de MongoDB: {e}")
+        return False
+
+if __name__ == "__main__":
+    # Solo ejecutar si se llama directamente
+    limpiar_datos_mongodb()

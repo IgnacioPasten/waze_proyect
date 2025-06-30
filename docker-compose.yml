@@ -1,5 +1,3 @@
-version: "3.8"
-
 services:
   mongodb:
     image: mongo:5.0.18
@@ -8,9 +6,8 @@ services:
       - "27017:27017"
     volumes:
       - ./data/mongo:/data/db
-    environment:
-      MONGO_INITDB_ROOT_USERNAME: root
-      MONGO_INITDB_ROOT_PASSWORD: example
+    networks:
+      - waze_net
     restart: unless-stopped
 
   hadoop-pig:
@@ -20,12 +17,12 @@ services:
     container_name: hadoop-pig
     hostname: hadoop
     ports:
-      - "50070:50070"   # NameNode UI
-      - "8088:8088"     # ResourceManager
-      - "19888:19888"   # HistoryServer
-      - "4040:4040"     # Pig UI
-      - "8042:8042"     # NodeManager UI
-      - "8032:8032"     # ResourceManager RPC
+      - "50070:50070" # NameNode UI
+      - "8088:8088" # ResourceManager
+      - "19888:19888" # HistoryServer
+      - "4040:4040" # Pig UI
+      - "8042:8042" # NodeManager UI
+      - "8032:8032" # ResourceManager RPC
     environment:
       - HADOOP_HOME=/opt/hadoop
       - PIG_CLASSPATH=$HADOOP_HOME/etc/hadoop
@@ -42,6 +39,8 @@ services:
       - ./app/incidentes_limpios.csv:/app/incidentes_limpios.csv
       - ./app/pig:/app/pig
       - ./hadoop-logs:/opt/hadoop/logs
+    networks:
+      - waze_net
     extra_hosts:
       - "hadoop:127.0.0.1"
     healthcheck:
@@ -51,33 +50,41 @@ services:
       retries: 3
     restart: unless-stopped
 
-volumes:
-  hadoop-namenode:
-  hadoop-datanode:
-  hadoop-logs:
-
-
-#parte de visualizacion
-
-services:
+  # Parte de visualización
   elasticsearch:
     image: docker.elastic.co/elasticsearch/elasticsearch:8.13.2
+    container_name: elasticsearch
     environment:
       - discovery.type=single-node
       - xpack.security.enabled=false
+      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
     ports:
       - "9200:9200"
+    volumes:
+      - elasticsearch-data:/usr/share/elasticsearch/data
     networks:
       - waze_net
+    restart: unless-stopped
 
   kibana:
     image: docker.elastic.co/kibana/kibana:8.13.2
+    container_name: kibana
     ports:
       - "5601:5601"
     environment:
       - ELASTICSEARCH_HOSTS=http://elasticsearch:9200
+      - XPACK_SECURITY_ENABLED=false
     networks:
       - waze_net
+    depends_on:
+      - elasticsearch
+    restart: unless-stopped
+
+volumes:
+  hadoop-namenode:
+  hadoop-datanode:
+  hadoop-logs:
+  elasticsearch-data:
 
 networks:
   waze_net:
