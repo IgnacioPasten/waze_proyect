@@ -253,3 +253,23 @@ No GCs detected
 2025-06-30 03:47:25,074 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/hadoop-yarn/staging/history/done_intermediate	dst=null	perm=null	proto=rpc
 2025-06-30 03:50:24,994 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/hadoop-yarn/staging/history/done_intermediate	dst=null	perm=null	proto=rpc
 2025-06-30 03:53:24,958 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/hadoop-yarn/staging/history/done_intermediate	dst=null	perm=null	proto=rpc
+2025-06-30 03:56:13,022 INFO  util.JvmPauseMonitor (JvmPauseMonitor.java:run(205)) - Detected pause in JVM or host machine (eg GC): pause of approximately 1209ms
+No GCs detected
+2025-06-30 03:56:19,059 INFO  util.JvmPauseMonitor (JvmPauseMonitor.java:run(205)) - Detected pause in JVM or host machine (eg GC): pause of approximately 1903ms
+No GCs detected
+2025-06-30 03:56:25,251 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/hadoop-yarn/staging/history/done_intermediate	dst=null	perm=null	proto=rpc
+2025-06-30 03:57:48,828 INFO  util.JvmPauseMonitor (JvmPauseMonitor.java:run(205)) - Detected pause in JVM or host machine (eg GC): pause of approximately 1454ms
+No GCs detected
+2025-06-30 03:59:24,959 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/hadoop-yarn/staging/history/done_intermediate	dst=null	perm=null	proto=rpc
+2025-06-30 04:02:29,755 INFO  util.JvmPauseMonitor (JvmPauseMonitor.java:run(205)) - Detected pause in JVM or host machine (eg GC): pause of approximately 1340ms
+No GCs detected
+2025-06-30 04:02:35,210 INFO  util.JvmPauseMonitor (JvmPauseMonitor.java:run(205)) - Detected pause in JVM or host machine (eg GC): pause of approximately 2045ms
+No GCs detected
+2025-06-30 04:02:35,591 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/hadoop-yarn/staging/history/done_intermediate	dst=null	perm=null	proto=rpc
+2025-06-30 04:05:24,895 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/hadoop-yarn/staging/history/done_intermediate	dst=null	perm=null	proto=rpc
+2025-06-30 04:08:24,866 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/hadoop-yarn/staging/history/done_intermediate	dst=null	perm=null	proto=rpc
+2025-06-30 04:09:30,704 INFO  util.JvmPauseMonitor (JvmPauseMonitor.java:run(205)) - Detected pause in JVM or host machine (eg GC): pause of approximately 1511ms
+No GCs detected
+2025-06-30 04:11:24,887 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/hadoop-yarn/staging/history/done_intermediate	dst=null	perm=null	proto=rpc
+2025-06-30 04:12:23,318 INFO  util.JvmPauseMonitor (JvmPauseMonitor.java:run(205)) - Detected pause in JVM or host machine (eg GC): pause of approximately 1325ms
+No GCs detected

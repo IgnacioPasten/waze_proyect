@@ -16,20 +16,12 @@ Características principales de la Entrega 3:
 **Sistema de Visualización Integrado:**
 - Dashboards interactivos en Kibana para análisis en tiempo real
 - Métricas avanzadas de rendimiento del cache (LRU vs FIFO)
-- Visualización geográfica de eventos de tráfico
 - Monitoreo del sistema completo
 
 **Pipeline Completo Integrado:**
 - main.py como punto de entrada único del sistema completo
-- Integración automática: Scraper → Procesamiento → Cache → Storage → Visualización
 - Configuración automática de Elasticsearch y Kibana
-- Sistema de métricas y logging avanzado
-
-**Módulos de Visualización:**
-- visualization_controller.py: Control central del sistema de visualización
-- advanced_kibana_setup.py: Configuración automática de dashboards
-- cache_metrics_logger.py: Logging avanzado de métricas de cache
-- pipeline_integrado.py: Métricas del pipeline completo
+- Sistema de métricas y logging
 
 **Instalación y ejecución:**
 
