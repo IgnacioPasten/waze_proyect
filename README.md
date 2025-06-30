@@ -6,7 +6,7 @@ Creadores: Ignacio Pastén y Vicente Leiva
 
 Este proyecto es desarrollado para el análisis de tráfico en la Región Metropolitana, utilizando eventos a través de la plataforma Waze. El diseño se basa en microservicios configurados con Docker, permitiendo la extracción, almacenamiento, simulación y gestión de consultas de tráfico.
 
-# Entrega 3
+# Entrega 3 - Video: https://www.youtube.com/watch?v=kazeHYNkgAw
 
 Nuevas funcionalidades agregadas
 Sistema completo de visualización y análisis en tiempo real
@@ -41,7 +41,7 @@ Características principales de la Entrega 3:
    python main.py
 ```
 
-4. Para modo visualziación:
+4. Para modo visualización:
 ```bash
    python main.py --visualizar
 ```
