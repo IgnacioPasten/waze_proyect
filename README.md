@@ -48,7 +48,7 @@ Características principales de la Entrega 3:
 
 **Acceso a visualizaciones:**
 - Kibana Dashboard: http://localhost:5601/app/kibana
-   ir a dashboards para ver gráficos
+   ir a dashboards para ver gráficos e indicar "Last 24 hours"
 - Elasticsearch: http://localhost:9200
 
 **Opciones de ejecución:**
