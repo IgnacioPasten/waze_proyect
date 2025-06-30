@@ -1,6 +1,3 @@
-"""
-Controlador de visualización básico para el sistema Waze
-"""
 import logging
 import time
 from datetime import datetime

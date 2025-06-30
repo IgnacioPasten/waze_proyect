@@ -199,3 +199,5 @@ No GCs detected
 No GCs detected
 2025-06-30 04:12:23,310 INFO  util.JvmPauseMonitor (JvmPauseMonitor.java:run(205)) - Detected pause in JVM or host machine (eg GC): pause of approximately 1432ms
 No GCs detected
+2025-06-30 04:15:40,107 INFO  util.JvmPauseMonitor (JvmPauseMonitor.java:run(205)) - Detected pause in JVM or host machine (eg GC): pause of approximately 1510ms
+No GCs detected
