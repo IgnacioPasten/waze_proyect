@@ -15,7 +15,7 @@ cpu time                   (seconds, -t) unlimited
 max user processes                  (-u) unlimited
 virtual memory              (kbytes, -v) unlimited
 file locks                          (-x) unlimited
-2025-06-29 22:09:06,948 INFO  hs.JobHistoryServer (LogAdapter.java:info(51)) - STARTUP_MSG: 
+2025-06-29 23:02:05,281 INFO  hs.JobHistoryServer (LogAdapter.java:info(51)) - STARTUP_MSG: 
 /************************************************************
 STARTUP_MSG: Starting JobHistoryServer
 STARTUP_MSG:   host = localhost/127.0.0.1
@@ -25,79 +25,165 @@ STARTUP_MSG:   classpath = /opt/hadoop/etc/hadoop:/opt/hadoop/share/hadoop/commo
 STARTUP_MSG:   build = https://github.com/apache/hadoop.git -r 706d88266abcee09ed78fbaa0ad5f74d818ab0e9; compiled by 'stevel' on 2023-03-15T15:56Z
 STARTUP_MSG:   java = 1.8.0_452
 ************************************************************/
-2025-06-29 22:09:07,049 INFO  hs.JobHistoryServer (LogAdapter.java:info(51)) - registered UNIX signal handlers for [TERM, HUP, INT]
-2025-06-29 22:09:14,747 WARN  impl.MetricsConfig (MetricsConfig.java:loadFirst(136)) - Cannot locate configuration: tried hadoop-metrics2-jobhistoryserver.properties,hadoop-metrics2.properties
-2025-06-29 22:09:15,409 INFO  impl.MetricsSystemImpl (MetricsSystemImpl.java:startTimer(378)) - Scheduled Metric snapshot period at 10 second(s).
-2025-06-29 22:09:15,410 INFO  impl.MetricsSystemImpl (MetricsSystemImpl.java:start(191)) - JobHistoryServer metrics system started
-2025-06-29 22:09:15,583 INFO  hs.JobHistory (JobHistory.java:serviceInit(86)) - JobHistory Init
-2025-06-29 22:09:19,867 INFO  jobhistory.JobHistoryUtils (JobHistoryUtils.java:getDefaultFileContext(273)) - Default file system [hdfs://hadoop:9000]
-2025-06-29 22:09:21,120 INFO  jobhistory.JobHistoryUtils (JobHistoryUtils.java:getDefaultFileContext(273)) - Default file system [hdfs://hadoop:9000]
-2025-06-29 22:09:21,291 INFO  hs.HistoryFileManager (HistoryFileManager.java:initExisting(784)) - Initializing Existing Jobs...
-2025-06-29 22:09:21,411 INFO  hs.HistoryFileManager (HistoryFileManager.java:initExisting(788)) - Found 0 directories to load
-2025-06-29 22:09:21,415 INFO  hs.HistoryFileManager (HistoryFileManager.java:initExisting(809)) - Existing job initialization finished. 0.0% of cache is occupied.
-2025-06-29 22:09:21,431 INFO  hs.CachedHistoryStorage (CachedHistoryStorage.java:serviceInit(72)) - CachedHistoryStorage Init
-2025-06-29 22:09:21,543 INFO  ipc.CallQueueManager (CallQueueManager.java:<init>(90)) - Using callQueue: class java.util.concurrent.LinkedBlockingQueue, queueCapacity: 100, scheduler: class org.apache.hadoop.ipc.DefaultRpcScheduler, ipcBackoff: false.
-2025-06-29 22:09:21,576 INFO  ipc.Server (Server.java:run(1319)) - Starting Socket Reader #1 for port 10033
-2025-06-29 22:09:22,882 INFO  delegation.AbstractDelegationTokenSecretManager (AbstractDelegationTokenSecretManager.java:updateCurrentKey(411)) - Updating the current master key for generating delegation tokens
-2025-06-29 22:09:22,903 INFO  delegation.AbstractDelegationTokenSecretManager (AbstractDelegationTokenSecretManager.java:run(763)) - Starting expired delegation token remover thread, tokenRemoverScanInterval=60 min(s)
-2025-06-29 22:09:22,912 INFO  delegation.AbstractDelegationTokenSecretManager (AbstractDelegationTokenSecretManager.java:updateCurrentKey(411)) - Updating the current master key for generating delegation tokens
-2025-06-29 22:09:23,015 INFO  client.DefaultNoHARMFailoverProxyProvider (DefaultNoHARMFailoverProxyProvider.java:init(64)) - Connecting to ResourceManager at hadoop/127.0.0.1:8032
-2025-06-29 22:09:25,972 INFO  util.log (Log.java:initialized(170)) - Logging initialized @25277ms to org.eclipse.jetty.util.log.Slf4jLog
-2025-06-29 22:09:27,301 WARN  server.AuthenticationFilter (AuthenticationFilter.java:constructSecretProvider(240)) - Unable to initialize FileSignerSecretProvider, falling back to use random secrets. Reason: Could not read signature secret file: /home/hadoop/hadoop-http-auth-signature-secret
-2025-06-29 22:09:27,363 INFO  http.HttpRequestLog (HttpRequestLog.java:getRequestLog(82)) - Http request log for http.requests.jobhistory is not defined
-2025-06-29 22:09:27,456 INFO  http.HttpServer2 (HttpServer2.java:addGlobalFilter(1124)) - Added global filter 'safety' (class=org.apache.hadoop.http.HttpServer2$QuotingInputFilter)
-2025-06-29 22:09:27,517 INFO  http.HttpServer2 (HttpServer2.java:addFilter(1097)) - Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context jobhistory
-2025-06-29 22:09:27,523 INFO  http.HttpServer2 (HttpServer2.java:addFilter(1107)) - Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context logs
-2025-06-29 22:09:27,535 INFO  http.HttpServer2 (HttpServer2.java:addFilter(1107)) - Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context static
-2025-06-29 22:09:33,395 INFO  webapp.WebApps (WebApps.java:build(428)) - Registered webapp guice modules
-2025-06-29 22:09:33,398 INFO  http.HttpServer2 (HttpServer2.java:bindListener(1357)) - Jetty bound to port 19888
-2025-06-29 22:09:33,411 INFO  server.Server (Server.java:doStart(375)) - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 1.8.0_452-8u452-ga~us1-0ubuntu1~22.04-b09
-2025-06-29 22:09:46,762 INFO  server.session (DefaultSessionIdManager.java:doStart(334)) - DefaultSessionIdManager workerName=node0
-2025-06-29 22:09:46,765 INFO  server.session (DefaultSessionIdManager.java:doStart(339)) - No SessionScavenger set, using defaults
-2025-06-29 22:09:46,869 INFO  server.session (HouseKeeper.java:startScavenging(132)) - node0 Scavenging every 600000ms
-2025-06-29 22:09:47,230 INFO  handler.ContextHandler (ContextHandler.java:doStart(921)) - Started o.e.j.s.ServletContextHandler@6d868997{logs,/logs,file:///opt/hadoop/logs/,AVAILABLE}
-2025-06-29 22:09:47,249 INFO  handler.ContextHandler (ContextHandler.java:doStart(921)) - Started o.e.j.s.ServletContextHandler@2fa3be26{static,/static,jar:file:/opt/hadoop/share/hadoop/yarn/hadoop-yarn-common-3.3.5.jar!/webapps/static,AVAILABLE}
-Jun 29, 2025 10:09:48 PM com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory register
+2025-06-29 23:02:05,504 INFO  hs.JobHistoryServer (LogAdapter.java:info(51)) - registered UNIX signal handlers for [TERM, HUP, INT]
+2025-06-29 23:02:15,246 WARN  impl.MetricsConfig (MetricsConfig.java:loadFirst(136)) - Cannot locate configuration: tried hadoop-metrics2-jobhistoryserver.properties,hadoop-metrics2.properties
+2025-06-29 23:02:15,884 INFO  impl.MetricsSystemImpl (MetricsSystemImpl.java:startTimer(378)) - Scheduled Metric snapshot period at 10 second(s).
+2025-06-29 23:02:15,905 INFO  impl.MetricsSystemImpl (MetricsSystemImpl.java:start(191)) - JobHistoryServer metrics system started
+2025-06-29 23:02:16,443 INFO  hs.JobHistory (JobHistory.java:serviceInit(86)) - JobHistory Init
+2025-06-29 23:02:40,170 INFO  jobhistory.JobHistoryUtils (JobHistoryUtils.java:getDefaultFileContext(273)) - Default file system [hdfs://hadoop:9000]
+2025-06-29 23:02:44,147 INFO  jobhistory.JobHistoryUtils (JobHistoryUtils.java:getDefaultFileContext(273)) - Default file system [hdfs://hadoop:9000]
+2025-06-29 23:02:44,224 INFO  hs.HistoryFileManager (HistoryFileManager.java:initExisting(784)) - Initializing Existing Jobs...
+2025-06-29 23:02:44,290 INFO  hs.HistoryFileManager (HistoryFileManager.java:initExisting(788)) - Found 0 directories to load
+2025-06-29 23:02:44,291 INFO  hs.HistoryFileManager (HistoryFileManager.java:initExisting(809)) - Existing job initialization finished. 0.0% of cache is occupied.
+2025-06-29 23:02:44,298 INFO  hs.CachedHistoryStorage (CachedHistoryStorage.java:serviceInit(72)) - CachedHistoryStorage Init
+2025-06-29 23:02:44,416 INFO  ipc.CallQueueManager (CallQueueManager.java:<init>(90)) - Using callQueue: class java.util.concurrent.LinkedBlockingQueue, queueCapacity: 100, scheduler: class org.apache.hadoop.ipc.DefaultRpcScheduler, ipcBackoff: false.
+2025-06-29 23:02:44,458 INFO  ipc.Server (Server.java:run(1319)) - Starting Socket Reader #1 for port 10033
+2025-06-29 23:02:46,566 INFO  delegation.AbstractDelegationTokenSecretManager (AbstractDelegationTokenSecretManager.java:updateCurrentKey(411)) - Updating the current master key for generating delegation tokens
+2025-06-29 23:02:46,573 INFO  delegation.AbstractDelegationTokenSecretManager (AbstractDelegationTokenSecretManager.java:run(763)) - Starting expired delegation token remover thread, tokenRemoverScanInterval=60 min(s)
+2025-06-29 23:02:46,580 INFO  delegation.AbstractDelegationTokenSecretManager (AbstractDelegationTokenSecretManager.java:updateCurrentKey(411)) - Updating the current master key for generating delegation tokens
+2025-06-29 23:02:46,725 INFO  client.DefaultNoHARMFailoverProxyProvider (DefaultNoHARMFailoverProxyProvider.java:init(64)) - Connecting to ResourceManager at hadoop/127.0.0.1:8032
+2025-06-29 23:02:49,322 INFO  util.log (Log.java:initialized(170)) - Logging initialized @49587ms to org.eclipse.jetty.util.log.Slf4jLog
+2025-06-29 23:02:52,884 WARN  server.AuthenticationFilter (AuthenticationFilter.java:constructSecretProvider(240)) - Unable to initialize FileSignerSecretProvider, falling back to use random secrets. Reason: Could not read signature secret file: /home/hadoop/hadoop-http-auth-signature-secret
+2025-06-29 23:02:52,998 INFO  http.HttpRequestLog (HttpRequestLog.java:getRequestLog(82)) - Http request log for http.requests.jobhistory is not defined
+2025-06-29 23:02:53,187 INFO  http.HttpServer2 (HttpServer2.java:addGlobalFilter(1124)) - Added global filter 'safety' (class=org.apache.hadoop.http.HttpServer2$QuotingInputFilter)
+2025-06-29 23:02:53,223 INFO  http.HttpServer2 (HttpServer2.java:addFilter(1097)) - Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context jobhistory
+2025-06-29 23:02:53,271 INFO  http.HttpServer2 (HttpServer2.java:addFilter(1107)) - Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context logs
+2025-06-29 23:02:53,303 INFO  http.HttpServer2 (HttpServer2.java:addFilter(1107)) - Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context static
+2025-06-29 23:02:59,908 INFO  webapp.WebApps (WebApps.java:build(428)) - Registered webapp guice modules
+2025-06-29 23:02:59,915 INFO  http.HttpServer2 (HttpServer2.java:bindListener(1357)) - Jetty bound to port 19888
+2025-06-29 23:02:59,949 INFO  server.Server (Server.java:doStart(375)) - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 1.8.0_452-8u452-ga~us1-0ubuntu1~22.04-b09
+2025-06-29 23:03:02,315 INFO  server.session (DefaultSessionIdManager.java:doStart(334)) - DefaultSessionIdManager workerName=node0
+2025-06-29 23:03:02,316 INFO  server.session (DefaultSessionIdManager.java:doStart(339)) - No SessionScavenger set, using defaults
+2025-06-29 23:03:02,335 INFO  server.session (HouseKeeper.java:startScavenging(132)) - node0 Scavenging every 600000ms
+2025-06-29 23:03:02,474 INFO  handler.ContextHandler (ContextHandler.java:doStart(921)) - Started o.e.j.s.ServletContextHandler@6d868997{logs,/logs,file:///opt/hadoop/logs/,AVAILABLE}
+2025-06-29 23:03:02,478 INFO  handler.ContextHandler (ContextHandler.java:doStart(921)) - Started o.e.j.s.ServletContextHandler@2fa3be26{static,/static,jar:file:/opt/hadoop/share/hadoop/yarn/hadoop-yarn-common-3.3.5.jar!/webapps/static,AVAILABLE}
+Jun 29, 2025 11:03:04 PM com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory register
 INFO: Registering org.apache.hadoop.mapreduce.v2.hs.webapp.HsWebServices as a root resource class
-Jun 29, 2025 10:09:48 PM com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory register
+Jun 29, 2025 11:03:04 PM com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory register
 INFO: Registering org.apache.hadoop.mapreduce.v2.hs.webapp.JAXBContextResolver as a provider class
-Jun 29, 2025 10:09:48 PM com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory register
+Jun 29, 2025 11:03:04 PM com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory register
 INFO: Registering org.apache.hadoop.yarn.webapp.GenericExceptionHandler as a provider class
-Jun 29, 2025 10:09:48 PM com.sun.jersey.server.impl.application.WebApplicationImpl _initiate
+Jun 29, 2025 11:03:04 PM com.sun.jersey.server.impl.application.WebApplicationImpl _initiate
 INFO: Initiating Jersey application, version 'Jersey: 1.19.4 05/24/2017 03:20 PM'
-Jun 29, 2025 10:09:49 PM com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory getComponentProvider
+Jun 29, 2025 11:03:05 PM com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory getComponentProvider
 INFO: Binding org.apache.hadoop.mapreduce.v2.hs.webapp.JAXBContextResolver to GuiceManagedComponentProvider with the scope "Singleton"
-Jun 29, 2025 10:09:50 PM com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory getComponentProvider
+Jun 29, 2025 11:03:08 PM com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory getComponentProvider
 INFO: Binding org.apache.hadoop.yarn.webapp.GenericExceptionHandler to GuiceManagedComponentProvider with the scope "Singleton"
-2025-06-29 22:09:52,919 INFO  hs.JobHistory (JobHistory.java:run(204)) - History Cleaner started
-2025-06-29 22:09:53,027 INFO  hs.JobHistory (JobHistory.java:run(210)) - History Cleaner complete
-Jun 29, 2025 10:09:53 PM com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory getComponentProvider
+Jun 29, 2025 11:03:13 PM com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory getComponentProvider
 INFO: Binding org.apache.hadoop.mapreduce.v2.hs.webapp.HsWebServices to GuiceManagedComponentProvider with the scope "PerRequest"
-2025-06-29 22:09:53,243 INFO  handler.ContextHandler (ContextHandler.java:doStart(921)) - Started o.e.j.w.WebAppContext@13dbed9e{jobhistory,/,file:///tmp/jetty-0_0_0_0-19888-hadoop-yarn-common-3_3_5_jar-_-any-2906658295150062488/webapp/,AVAILABLE}{jar:file:/opt/hadoop/share/hadoop/yarn/hadoop-yarn-common-3.3.5.jar!/webapps/jobhistory}
-2025-06-29 22:09:53,268 INFO  server.AbstractConnector (AbstractConnector.java:doStart(333)) - Started ServerConnector@56193c7d{HTTP/1.1, (http/1.1)}{0.0.0.0:19888}
-2025-06-29 22:09:53,269 INFO  server.Server (Server.java:doStart(415)) - Started @52574ms
-2025-06-29 22:09:53,274 INFO  webapp.WebApps (WebApps.java:start(473)) - Web app jobhistory started at 19888
-2025-06-29 22:09:53,335 INFO  ipc.CallQueueManager (CallQueueManager.java:<init>(90)) - Using callQueue: class java.util.concurrent.LinkedBlockingQueue, queueCapacity: 1000, scheduler: class org.apache.hadoop.ipc.DefaultRpcScheduler, ipcBackoff: false.
-2025-06-29 22:09:53,368 INFO  ipc.Server (Server.java:run(1319)) - Starting Socket Reader #1 for port 10020
-2025-06-29 22:09:53,396 INFO  pb.RpcServerFactoryPBImpl (RpcServerFactoryPBImpl.java:createServer(174)) - Adding protocol org.apache.hadoop.mapreduce.v2.api.HSClientProtocolPB to the server
-2025-06-29 22:09:53,399 INFO  ipc.Server (Server.java:run(1558)) - IPC Server Responder: starting
-2025-06-29 22:09:53,399 INFO  ipc.Server (Server.java:run(1398)) - IPC Server listener on 10020: starting
-2025-06-29 22:09:53,409 INFO  hs.HistoryClientService (HistoryClientService.java:serviceStart(150)) - Instantiated HistoryClientService at localhost/127.0.0.1:10020
-2025-06-29 22:09:53,416 INFO  ipc.Server (Server.java:run(1558)) - IPC Server Responder: starting
-2025-06-29 22:09:53,422 INFO  ipc.Server (Server.java:run(1398)) - IPC Server listener on 10033: starting
-2025-06-29 22:09:53,428 INFO  util.JvmPauseMonitor (JvmPauseMonitor.java:run(188)) - Starting JVM pause monitor
-2025-06-29 22:12:22,885 INFO  hs.JobHistory (JobHistory.java:run(194)) - Starting scan to move intermediate done files
-2025-06-29 22:15:22,867 INFO  hs.JobHistory (JobHistory.java:run(194)) - Starting scan to move intermediate done files
-2025-06-29 22:18:22,844 INFO  hs.JobHistory (JobHistory.java:run(194)) - Starting scan to move intermediate done files
-2025-06-29 22:21:22,822 INFO  hs.JobHistory (JobHistory.java:run(194)) - Starting scan to move intermediate done files
-2025-06-29 22:24:22,803 INFO  hs.JobHistory (JobHistory.java:run(194)) - Starting scan to move intermediate done files
-2025-06-29 22:27:22,781 INFO  hs.JobHistory (JobHistory.java:run(194)) - Starting scan to move intermediate done files
-2025-06-29 22:30:22,759 INFO  hs.JobHistory (JobHistory.java:run(194)) - Starting scan to move intermediate done files
-2025-06-29 22:33:22,722 INFO  hs.JobHistory (JobHistory.java:run(194)) - Starting scan to move intermediate done files
-2025-06-29 22:36:22,699 INFO  hs.JobHistory (JobHistory.java:run(194)) - Starting scan to move intermediate done files
-2025-06-29 22:39:22,682 INFO  hs.JobHistory (JobHistory.java:run(194)) - Starting scan to move intermediate done files
-2025-06-29 22:42:22,671 INFO  hs.JobHistory (JobHistory.java:run(194)) - Starting scan to move intermediate done files
-2025-06-29 22:45:22,661 INFO  hs.JobHistory (JobHistory.java:run(194)) - Starting scan to move intermediate done files
-2025-06-29 22:48:22,653 INFO  hs.JobHistory (JobHistory.java:run(194)) - Starting scan to move intermediate done files
-2025-06-29 22:51:22,620 INFO  hs.JobHistory (JobHistory.java:run(194)) - Starting scan to move intermediate done files
-2025-06-29 22:54:22,595 INFO  hs.JobHistory (JobHistory.java:run(194)) - Starting scan to move intermediate done files
+2025-06-29 23:03:14,308 INFO  handler.ContextHandler (ContextHandler.java:doStart(921)) - Started o.e.j.w.WebAppContext@13dbed9e{jobhistory,/,file:///tmp/jetty-0_0_0_0-19888-hadoop-yarn-common-3_3_5_jar-_-any-4494072975095760198/webapp/,AVAILABLE}{jar:file:/opt/hadoop/share/hadoop/yarn/hadoop-yarn-common-3.3.5.jar!/webapps/jobhistory}
+2025-06-29 23:03:14,357 INFO  server.AbstractConnector (AbstractConnector.java:doStart(333)) - Started ServerConnector@56193c7d{HTTP/1.1, (http/1.1)}{0.0.0.0:19888}
+2025-06-29 23:03:14,357 INFO  server.Server (Server.java:doStart(415)) - Started @74627ms
+2025-06-29 23:03:14,358 INFO  webapp.WebApps (WebApps.java:start(473)) - Web app jobhistory started at 19888
+2025-06-29 23:03:14,470 INFO  ipc.CallQueueManager (CallQueueManager.java:<init>(90)) - Using callQueue: class java.util.concurrent.LinkedBlockingQueue, queueCapacity: 1000, scheduler: class org.apache.hadoop.ipc.DefaultRpcScheduler, ipcBackoff: false.
+2025-06-29 23:03:14,517 INFO  ipc.Server (Server.java:run(1319)) - Starting Socket Reader #1 for port 10020
+2025-06-29 23:03:14,550 INFO  pb.RpcServerFactoryPBImpl (RpcServerFactoryPBImpl.java:createServer(174)) - Adding protocol org.apache.hadoop.mapreduce.v2.api.HSClientProtocolPB to the server
+2025-06-29 23:03:14,558 INFO  ipc.Server (Server.java:run(1558)) - IPC Server Responder: starting
+2025-06-29 23:03:14,600 INFO  ipc.Server (Server.java:run(1398)) - IPC Server listener on 10020: starting
+2025-06-29 23:03:14,656 INFO  hs.HistoryClientService (HistoryClientService.java:serviceStart(150)) - Instantiated HistoryClientService at localhost/127.0.0.1:10020
+2025-06-29 23:03:14,662 INFO  ipc.Server (Server.java:run(1398)) - IPC Server listener on 10033: starting
+2025-06-29 23:03:14,664 INFO  ipc.Server (Server.java:run(1558)) - IPC Server Responder: starting
+2025-06-29 23:03:14,687 INFO  util.JvmPauseMonitor (JvmPauseMonitor.java:run(188)) - Starting JVM pause monitor
+2025-06-29 23:03:16,577 INFO  hs.JobHistory (JobHistory.java:run(204)) - History Cleaner started
+2025-06-29 23:03:16,606 INFO  hs.JobHistory (JobHistory.java:run(210)) - History Cleaner complete
+2025-06-29 23:04:15,527 INFO  util.JvmPauseMonitor (JvmPauseMonitor.java:run(205)) - Detected pause in JVM or host machine (eg GC): pause of approximately 1336ms
+No GCs detected
+2025-06-29 23:05:46,543 INFO  hs.JobHistory (JobHistory.java:run(194)) - Starting scan to move intermediate done files
+2025-06-29 23:08:46,524 INFO  hs.JobHistory (JobHistory.java:run(194)) - Starting scan to move intermediate done files
+2025-06-29 23:11:46,519 INFO  hs.JobHistory (JobHistory.java:run(194)) - Starting scan to move intermediate done files
+2025-06-29 23:14:46,506 INFO  hs.JobHistory (JobHistory.java:run(194)) - Starting scan to move intermediate done files
+2025-06-29 23:17:46,480 INFO  hs.JobHistory (JobHistory.java:run(194)) - Starting scan to move intermediate done files
+2025-06-29 23:20:46,476 INFO  hs.JobHistory (JobHistory.java:run(194)) - Starting scan to move intermediate done files
+2025-06-29 23:23:46,484 INFO  hs.JobHistory (JobHistory.java:run(194)) - Starting scan to move intermediate done files
+2025-06-29 23:26:46,460 INFO  hs.JobHistory (JobHistory.java:run(194)) - Starting scan to move intermediate done files
+2025-06-29 23:29:46,451 INFO  hs.JobHistory (JobHistory.java:run(194)) - Starting scan to move intermediate done files
+2025-06-29 23:32:46,435 INFO  hs.JobHistory (JobHistory.java:run(194)) - Starting scan to move intermediate done files
+2025-06-29 23:35:46,428 INFO  hs.JobHistory (JobHistory.java:run(194)) - Starting scan to move intermediate done files
+2025-06-29 23:38:46,411 INFO  hs.JobHistory (JobHistory.java:run(194)) - Starting scan to move intermediate done files
+2025-06-29 23:39:15,632 INFO  util.JvmPauseMonitor (JvmPauseMonitor.java:run(205)) - Detected pause in JVM or host machine (eg GC): pause of approximately 2159ms
+No GCs detected
+2025-06-29 23:41:46,397 INFO  hs.JobHistory (JobHistory.java:run(194)) - Starting scan to move intermediate done files
+2025-06-29 23:44:46,389 INFO  hs.JobHistory (JobHistory.java:run(194)) - Starting scan to move intermediate done files
+2025-06-29 23:47:46,379 INFO  hs.JobHistory (JobHistory.java:run(194)) - Starting scan to move intermediate done files
+2025-06-29 23:50:46,358 INFO  hs.JobHistory (JobHistory.java:run(194)) - Starting scan to move intermediate done files
+2025-06-29 23:53:46,348 INFO  hs.JobHistory (JobHistory.java:run(194)) - Starting scan to move intermediate done files
+2025-06-29 23:56:46,316 INFO  hs.JobHistory (JobHistory.java:run(194)) - Starting scan to move intermediate done files
+2025-06-29 23:59:46,268 INFO  hs.JobHistory (JobHistory.java:run(194)) - Starting scan to move intermediate done files
+2025-06-30 00:02:46,238 INFO  hs.JobHistory (JobHistory.java:run(194)) - Starting scan to move intermediate done files
+2025-06-30 00:04:56,065 INFO  util.JvmPauseMonitor (JvmPauseMonitor.java:run(205)) - Detected pause in JVM or host machine (eg GC): pause of approximately 1571ms
+No GCs detected
+2025-06-30 00:05:46,240 INFO  hs.JobHistory (JobHistory.java:run(194)) - Starting scan to move intermediate done files
+2025-06-30 00:08:46,209 INFO  hs.JobHistory (JobHistory.java:run(194)) - Starting scan to move intermediate done files
+2025-06-30 00:11:46,201 INFO  hs.JobHistory (JobHistory.java:run(194)) - Starting scan to move intermediate done files
+2025-06-30 00:14:46,129 INFO  hs.JobHistory (JobHistory.java:run(194)) - Starting scan to move intermediate done files
+2025-06-30 00:17:46,123 INFO  hs.JobHistory (JobHistory.java:run(194)) - Starting scan to move intermediate done files
+2025-06-30 00:20:46,084 INFO  hs.JobHistory (JobHistory.java:run(194)) - Starting scan to move intermediate done files
+2025-06-30 00:23:46,046 INFO  hs.JobHistory (JobHistory.java:run(194)) - Starting scan to move intermediate done files
+2025-06-30 00:26:46,019 INFO  hs.JobHistory (JobHistory.java:run(194)) - Starting scan to move intermediate done files
+2025-06-30 00:29:46,142 INFO  hs.JobHistory (JobHistory.java:run(194)) - Starting scan to move intermediate done files
+2025-06-30 00:32:45,984 INFO  hs.JobHistory (JobHistory.java:run(194)) - Starting scan to move intermediate done files
+2025-06-30 00:33:37,932 INFO  util.JvmPauseMonitor (JvmPauseMonitor.java:run(205)) - Detected pause in JVM or host machine (eg GC): pause of approximately 1944ms
+No GCs detected
+2025-06-30 00:35:19,438 INFO  util.JvmPauseMonitor (JvmPauseMonitor.java:run(205)) - Detected pause in JVM or host machine (eg GC): pause of approximately 2784ms
+No GCs detected
+2025-06-30 00:35:45,964 INFO  hs.JobHistory (JobHistory.java:run(194)) - Starting scan to move intermediate done files
+2025-06-30 00:38:45,982 INFO  hs.JobHistory (JobHistory.java:run(194)) - Starting scan to move intermediate done files
+2025-06-30 00:41:45,969 INFO  hs.JobHistory (JobHistory.java:run(194)) - Starting scan to move intermediate done files
+2025-06-30 00:42:43,568 INFO  util.JvmPauseMonitor (JvmPauseMonitor.java:run(205)) - Detected pause in JVM or host machine (eg GC): pause of approximately 2554ms
+No GCs detected
+2025-06-30 00:44:45,942 INFO  hs.JobHistory (JobHistory.java:run(194)) - Starting scan to move intermediate done files
+2025-06-30 00:47:45,934 INFO  hs.JobHistory (JobHistory.java:run(194)) - Starting scan to move intermediate done files
+2025-06-30 00:50:45,863 INFO  hs.JobHistory (JobHistory.java:run(194)) - Starting scan to move intermediate done files
+2025-06-30 00:53:45,820 INFO  hs.JobHistory (JobHistory.java:run(194)) - Starting scan to move intermediate done files
+2025-06-30 00:56:45,811 INFO  hs.JobHistory (JobHistory.java:run(194)) - Starting scan to move intermediate done files
+2025-06-30 00:59:45,802 INFO  hs.JobHistory (JobHistory.java:run(194)) - Starting scan to move intermediate done files
+2025-06-30 00:59:48,378 INFO  util.JvmPauseMonitor (JvmPauseMonitor.java:run(205)) - Detected pause in JVM or host machine (eg GC): pause of approximately 2052ms
+GC pool 'PS Scavenge' had collection(s): count=1 time=2448ms
+2025-06-30 01:02:45,768 INFO  hs.JobHistory (JobHistory.java:run(194)) - Starting scan to move intermediate done files
+2025-06-30 01:04:51,722 INFO  util.JvmPauseMonitor (JvmPauseMonitor.java:run(205)) - Detected pause in JVM or host machine (eg GC): pause of approximately 1328ms
+No GCs detected
+2025-06-30 01:04:54,810 INFO  util.JvmPauseMonitor (JvmPauseMonitor.java:run(205)) - Detected pause in JVM or host machine (eg GC): pause of approximately 1027ms
+No GCs detected
+2025-06-30 01:05:46,093 INFO  hs.JobHistory (JobHistory.java:run(194)) - Starting scan to move intermediate done files
+2025-06-30 01:08:46,158 INFO  hs.JobHistory (JobHistory.java:run(194)) - Starting scan to move intermediate done files
+2025-06-30 01:11:46,133 INFO  hs.JobHistory (JobHistory.java:run(194)) - Starting scan to move intermediate done files
+2025-06-30 01:14:36,381 INFO  util.JvmPauseMonitor (JvmPauseMonitor.java:run(205)) - Detected pause in JVM or host machine (eg GC): pause of approximately 1251ms
+No GCs detected
+2025-06-30 01:14:46,058 INFO  hs.JobHistory (JobHistory.java:run(194)) - Starting scan to move intermediate done files
+2025-06-30 01:17:45,993 INFO  hs.JobHistory (JobHistory.java:run(194)) - Starting scan to move intermediate done files
+2025-06-30 01:20:46,014 INFO  hs.JobHistory (JobHistory.java:run(194)) - Starting scan to move intermediate done files
+2025-06-30 01:23:45,997 INFO  hs.JobHistory (JobHistory.java:run(194)) - Starting scan to move intermediate done files
+2025-06-30 01:26:32,290 INFO  util.JvmPauseMonitor (JvmPauseMonitor.java:run(205)) - Detected pause in JVM or host machine (eg GC): pause of approximately 1521ms
+No GCs detected
+2025-06-30 01:26:46,078 INFO  hs.JobHistory (JobHistory.java:run(194)) - Starting scan to move intermediate done files
+2025-06-30 01:27:59,804 INFO  util.JvmPauseMonitor (JvmPauseMonitor.java:run(205)) - Detected pause in JVM or host machine (eg GC): pause of approximately 1076ms
+No GCs detected
+2025-06-30 01:29:46,061 INFO  hs.JobHistory (JobHistory.java:run(194)) - Starting scan to move intermediate done files
+2025-06-30 01:32:46,037 INFO  hs.JobHistory (JobHistory.java:run(194)) - Starting scan to move intermediate done files
+2025-06-30 01:35:45,920 INFO  hs.JobHistory (JobHistory.java:run(194)) - Starting scan to move intermediate done files
+2025-06-30 01:38:45,923 INFO  hs.JobHistory (JobHistory.java:run(194)) - Starting scan to move intermediate done files
+2025-06-30 01:41:45,935 INFO  hs.JobHistory (JobHistory.java:run(194)) - Starting scan to move intermediate done files
+2025-06-30 01:44:45,928 INFO  hs.JobHistory (JobHistory.java:run(194)) - Starting scan to move intermediate done files
+2025-06-30 01:45:43,227 INFO  util.JvmPauseMonitor (JvmPauseMonitor.java:run(205)) - Detected pause in JVM or host machine (eg GC): pause of approximately 4317ms
+No GCs detected
+2025-06-30 01:47:45,790 INFO  hs.JobHistory (JobHistory.java:run(194)) - Starting scan to move intermediate done files
+2025-06-30 01:49:31,900 INFO  util.JvmPauseMonitor (JvmPauseMonitor.java:run(205)) - Detected pause in JVM or host machine (eg GC): pause of approximately 1097ms
+No GCs detected
+2025-06-30 01:50:00,372 INFO  util.JvmPauseMonitor (JvmPauseMonitor.java:run(205)) - Detected pause in JVM or host machine (eg GC): pause of approximately 1044ms
+No GCs detected
+2025-06-30 01:50:11,905 INFO  util.JvmPauseMonitor (JvmPauseMonitor.java:run(205)) - Detected pause in JVM or host machine (eg GC): pause of approximately 1319ms
+No GCs detected
+2025-06-30 01:50:45,802 INFO  hs.JobHistory (JobHistory.java:run(194)) - Starting scan to move intermediate done files
+2025-06-30 01:53:45,812 INFO  hs.JobHistory (JobHistory.java:run(194)) - Starting scan to move intermediate done files
+2025-06-30 01:56:45,833 INFO  hs.JobHistory (JobHistory.java:run(194)) - Starting scan to move intermediate done files
+2025-06-30 01:57:07,870 INFO  util.JvmPauseMonitor (JvmPauseMonitor.java:run(205)) - Detected pause in JVM or host machine (eg GC): pause of approximately 1436ms
+No GCs detected
+2025-06-30 01:59:45,844 INFO  hs.JobHistory (JobHistory.java:run(194)) - Starting scan to move intermediate done files
+2025-06-30 02:01:28,799 INFO  util.JvmPauseMonitor (JvmPauseMonitor.java:run(205)) - Detected pause in JVM or host machine (eg GC): pause of approximately 4085ms
+No GCs detected
+2025-06-30 02:02:45,842 INFO  hs.JobHistory (JobHistory.java:run(194)) - Starting scan to move intermediate done files
+2025-06-30 02:03:21,027 INFO  util.JvmPauseMonitor (JvmPauseMonitor.java:run(205)) - Detected pause in JVM or host machine (eg GC): pause of approximately 1848ms
+No GCs detected
+2025-06-30 02:05:45,758 INFO  hs.JobHistory (JobHistory.java:run(194)) - Starting scan to move intermediate done files
+2025-06-30 02:05:58,267 INFO  util.JvmPauseMonitor (JvmPauseMonitor.java:run(205)) - Detected pause in JVM or host machine (eg GC): pause of approximately 1927ms
+No GCs detected

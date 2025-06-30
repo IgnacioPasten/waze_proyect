@@ -15,7 +15,7 @@ cpu time                   (seconds, -t) unlimited
 max user processes                  (-u) unlimited
 virtual memory              (kbytes, -v) unlimited
 file locks                          (-x) unlimited
-2025-06-29 22:07:13,174 INFO  hs.JobHistoryServer (LogAdapter.java:info(51)) - STARTUP_MSG: 
+2025-06-29 22:58:23,370 INFO  hs.JobHistoryServer (LogAdapter.java:info(51)) - STARTUP_MSG: 
 /************************************************************
 STARTUP_MSG: Starting JobHistoryServer
 STARTUP_MSG:   host = localhost/127.0.0.1
@@ -25,45 +25,64 @@ STARTUP_MSG:   classpath = /opt/hadoop/etc/hadoop:/opt/hadoop/share/hadoop/commo
 STARTUP_MSG:   build = https://github.com/apache/hadoop.git -r 706d88266abcee09ed78fbaa0ad5f74d818ab0e9; compiled by 'stevel' on 2023-03-15T15:56Z
 STARTUP_MSG:   java = 1.8.0_452
 ************************************************************/
-2025-06-29 22:07:13,544 INFO  hs.JobHistoryServer (LogAdapter.java:info(51)) - registered UNIX signal handlers for [TERM, HUP, INT]
-2025-06-29 22:07:31,272 WARN  impl.MetricsConfig (MetricsConfig.java:loadFirst(136)) - Cannot locate configuration: tried hadoop-metrics2-jobhistoryserver.properties,hadoop-metrics2.properties
-2025-06-29 22:07:32,465 INFO  impl.MetricsSystemImpl (MetricsSystemImpl.java:startTimer(378)) - Scheduled Metric snapshot period at 10 second(s).
-2025-06-29 22:07:32,468 INFO  impl.MetricsSystemImpl (MetricsSystemImpl.java:start(191)) - JobHistoryServer metrics system started
-2025-06-29 22:07:33,039 INFO  hs.JobHistory (JobHistory.java:serviceInit(86)) - JobHistory Init
-2025-06-29 22:07:47,637 INFO  jobhistory.JobHistoryUtils (JobHistoryUtils.java:getDefaultFileContext(273)) - Default file system [hdfs://hadoop:9000]
-2025-06-29 22:07:48,470 INFO  jobhistory.JobHistoryUtils (JobHistoryUtils.java:getDefaultFileContext(273)) - Default file system [hdfs://hadoop:9000]
-2025-06-29 22:07:48,570 INFO  hs.HistoryFileManager (HistoryFileManager.java:initExisting(784)) - Initializing Existing Jobs...
-2025-06-29 22:07:48,639 INFO  hs.HistoryFileManager (HistoryFileManager.java:initExisting(788)) - Found 0 directories to load
-2025-06-29 22:07:48,643 INFO  hs.HistoryFileManager (HistoryFileManager.java:initExisting(809)) - Existing job initialization finished. 0.0% of cache is occupied.
-2025-06-29 22:07:48,654 INFO  hs.CachedHistoryStorage (CachedHistoryStorage.java:serviceInit(72)) - CachedHistoryStorage Init
-2025-06-29 22:07:48,842 INFO  ipc.CallQueueManager (CallQueueManager.java:<init>(90)) - Using callQueue: class java.util.concurrent.LinkedBlockingQueue, queueCapacity: 100, scheduler: class org.apache.hadoop.ipc.DefaultRpcScheduler, ipcBackoff: false.
-2025-06-29 22:07:48,898 INFO  ipc.Server (Server.java:run(1319)) - Starting Socket Reader #1 for port 10033
-2025-06-29 22:07:51,959 INFO  delegation.AbstractDelegationTokenSecretManager (AbstractDelegationTokenSecretManager.java:updateCurrentKey(411)) - Updating the current master key for generating delegation tokens
-2025-06-29 22:07:51,979 INFO  delegation.AbstractDelegationTokenSecretManager (AbstractDelegationTokenSecretManager.java:run(763)) - Starting expired delegation token remover thread, tokenRemoverScanInterval=60 min(s)
-2025-06-29 22:07:52,012 INFO  delegation.AbstractDelegationTokenSecretManager (AbstractDelegationTokenSecretManager.java:updateCurrentKey(411)) - Updating the current master key for generating delegation tokens
-2025-06-29 22:07:52,599 INFO  client.DefaultNoHARMFailoverProxyProvider (DefaultNoHARMFailoverProxyProvider.java:init(64)) - Connecting to ResourceManager at hadoop/127.0.0.1:8032
-2025-06-29 22:07:55,395 INFO  util.log (Log.java:initialized(170)) - Logging initialized @53690ms to org.eclipse.jetty.util.log.Slf4jLog
-2025-06-29 22:07:56,310 WARN  server.AuthenticationFilter (AuthenticationFilter.java:constructSecretProvider(240)) - Unable to initialize FileSignerSecretProvider, falling back to use random secrets. Reason: Could not read signature secret file: /home/hadoop/hadoop-http-auth-signature-secret
-2025-06-29 22:07:56,349 INFO  http.HttpRequestLog (HttpRequestLog.java:getRequestLog(82)) - Http request log for http.requests.jobhistory is not defined
-2025-06-29 22:07:56,388 INFO  http.HttpServer2 (HttpServer2.java:addGlobalFilter(1124)) - Added global filter 'safety' (class=org.apache.hadoop.http.HttpServer2$QuotingInputFilter)
-2025-06-29 22:07:56,398 INFO  http.HttpServer2 (HttpServer2.java:addFilter(1097)) - Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context jobhistory
-2025-06-29 22:07:56,406 INFO  http.HttpServer2 (HttpServer2.java:addFilter(1107)) - Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context logs
-2025-06-29 22:07:56,407 INFO  http.HttpServer2 (HttpServer2.java:addFilter(1107)) - Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context static
-2025-06-29 22:07:58,794 INFO  webapp.WebApps (WebApps.java:build(428)) - Registered webapp guice modules
-2025-06-29 22:07:58,796 INFO  http.HttpServer2 (HttpServer2.java:bindListener(1357)) - Jetty bound to port 19888
-2025-06-29 22:07:58,799 INFO  server.Server (Server.java:doStart(375)) - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 1.8.0_452-8u452-ga~us1-0ubuntu1~22.04-b09
-2025-06-29 22:07:59,042 INFO  server.session (DefaultSessionIdManager.java:doStart(334)) - DefaultSessionIdManager workerName=node0
-2025-06-29 22:07:59,043 INFO  server.session (DefaultSessionIdManager.java:doStart(339)) - No SessionScavenger set, using defaults
-2025-06-29 22:07:59,050 INFO  server.session (HouseKeeper.java:startScavenging(132)) - node0 Scavenging every 660000ms
-2025-06-29 22:07:59,116 INFO  handler.ContextHandler (ContextHandler.java:doStart(921)) - Started o.e.j.s.ServletContextHandler@6d868997{logs,/logs,file:///opt/hadoop/logs/,AVAILABLE}
-2025-06-29 22:07:59,118 INFO  handler.ContextHandler (ContextHandler.java:doStart(921)) - Started o.e.j.s.ServletContextHandler@2fa3be26{static,/static,jar:file:/opt/hadoop/share/hadoop/yarn/hadoop-yarn-common-3.3.5.jar!/webapps/static,AVAILABLE}
-Jun 29, 2025 10:08:00 PM com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory register
+2025-06-29 22:58:23,542 INFO  hs.JobHistoryServer (LogAdapter.java:info(51)) - registered UNIX signal handlers for [TERM, HUP, INT]
+2025-06-29 22:58:34,178 WARN  impl.MetricsConfig (MetricsConfig.java:loadFirst(136)) - Cannot locate configuration: tried hadoop-metrics2-jobhistoryserver.properties,hadoop-metrics2.properties
+2025-06-29 22:58:35,228 INFO  impl.MetricsSystemImpl (MetricsSystemImpl.java:startTimer(378)) - Scheduled Metric snapshot period at 10 second(s).
+2025-06-29 22:58:35,229 INFO  impl.MetricsSystemImpl (MetricsSystemImpl.java:start(191)) - JobHistoryServer metrics system started
+2025-06-29 22:58:36,072 INFO  hs.JobHistory (JobHistory.java:serviceInit(86)) - JobHistory Init
+2025-06-29 22:58:51,379 INFO  jobhistory.JobHistoryUtils (JobHistoryUtils.java:getDefaultFileContext(273)) - Default file system [hdfs://hadoop:9000]
+2025-06-29 22:58:53,917 INFO  jobhistory.JobHistoryUtils (JobHistoryUtils.java:getDefaultFileContext(273)) - Default file system [hdfs://hadoop:9000]
+2025-06-29 22:58:53,981 INFO  hs.HistoryFileManager (HistoryFileManager.java:initExisting(784)) - Initializing Existing Jobs...
+2025-06-29 22:58:54,055 INFO  hs.HistoryFileManager (HistoryFileManager.java:initExisting(788)) - Found 0 directories to load
+2025-06-29 22:58:54,056 INFO  hs.HistoryFileManager (HistoryFileManager.java:initExisting(809)) - Existing job initialization finished. 0.0% of cache is occupied.
+2025-06-29 22:58:54,084 INFO  hs.CachedHistoryStorage (CachedHistoryStorage.java:serviceInit(72)) - CachedHistoryStorage Init
+2025-06-29 22:58:54,419 INFO  ipc.CallQueueManager (CallQueueManager.java:<init>(90)) - Using callQueue: class java.util.concurrent.LinkedBlockingQueue, queueCapacity: 100, scheduler: class org.apache.hadoop.ipc.DefaultRpcScheduler, ipcBackoff: false.
+2025-06-29 22:58:54,648 INFO  ipc.Server (Server.java:run(1319)) - Starting Socket Reader #1 for port 10033
+2025-06-29 22:58:56,747 INFO  delegation.AbstractDelegationTokenSecretManager (AbstractDelegationTokenSecretManager.java:updateCurrentKey(411)) - Updating the current master key for generating delegation tokens
+2025-06-29 22:58:56,760 INFO  delegation.AbstractDelegationTokenSecretManager (AbstractDelegationTokenSecretManager.java:run(763)) - Starting expired delegation token remover thread, tokenRemoverScanInterval=60 min(s)
+2025-06-29 22:58:56,784 INFO  delegation.AbstractDelegationTokenSecretManager (AbstractDelegationTokenSecretManager.java:updateCurrentKey(411)) - Updating the current master key for generating delegation tokens
+2025-06-29 22:58:56,979 INFO  client.DefaultNoHARMFailoverProxyProvider (DefaultNoHARMFailoverProxyProvider.java:init(64)) - Connecting to ResourceManager at hadoop/127.0.0.1:8032
+2025-06-29 22:59:01,888 INFO  util.log (Log.java:initialized(170)) - Logging initialized @44982ms to org.eclipse.jetty.util.log.Slf4jLog
+2025-06-29 22:59:02,948 WARN  server.AuthenticationFilter (AuthenticationFilter.java:constructSecretProvider(240)) - Unable to initialize FileSignerSecretProvider, falling back to use random secrets. Reason: Could not read signature secret file: /home/hadoop/hadoop-http-auth-signature-secret
+2025-06-29 22:59:02,995 INFO  http.HttpRequestLog (HttpRequestLog.java:getRequestLog(82)) - Http request log for http.requests.jobhistory is not defined
+2025-06-29 22:59:03,080 INFO  http.HttpServer2 (HttpServer2.java:addGlobalFilter(1124)) - Added global filter 'safety' (class=org.apache.hadoop.http.HttpServer2$QuotingInputFilter)
+2025-06-29 22:59:03,097 INFO  http.HttpServer2 (HttpServer2.java:addFilter(1097)) - Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context jobhistory
+2025-06-29 22:59:03,098 INFO  http.HttpServer2 (HttpServer2.java:addFilter(1107)) - Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context logs
+2025-06-29 22:59:03,101 INFO  http.HttpServer2 (HttpServer2.java:addFilter(1107)) - Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context static
+2025-06-29 22:59:10,523 INFO  webapp.WebApps (WebApps.java:build(428)) - Registered webapp guice modules
+2025-06-29 22:59:10,525 INFO  http.HttpServer2 (HttpServer2.java:bindListener(1357)) - Jetty bound to port 19888
+2025-06-29 22:59:10,530 INFO  server.Server (Server.java:doStart(375)) - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 1.8.0_452-8u452-ga~us1-0ubuntu1~22.04-b09
+2025-06-29 22:59:11,952 INFO  server.session (DefaultSessionIdManager.java:doStart(334)) - DefaultSessionIdManager workerName=node0
+2025-06-29 22:59:11,983 INFO  server.session (DefaultSessionIdManager.java:doStart(339)) - No SessionScavenger set, using defaults
+2025-06-29 22:59:12,009 INFO  server.session (HouseKeeper.java:startScavenging(132)) - node0 Scavenging every 600000ms
+2025-06-29 22:59:12,190 INFO  handler.ContextHandler (ContextHandler.java:doStart(921)) - Started o.e.j.s.ServletContextHandler@6d868997{logs,/logs,file:///opt/hadoop/logs/,AVAILABLE}
+2025-06-29 22:59:12,194 INFO  handler.ContextHandler (ContextHandler.java:doStart(921)) - Started o.e.j.s.ServletContextHandler@2fa3be26{static,/static,jar:file:/opt/hadoop/share/hadoop/yarn/hadoop-yarn-common-3.3.5.jar!/webapps/static,AVAILABLE}
+Jun 29, 2025 10:59:14 PM com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory register
 INFO: Registering org.apache.hadoop.mapreduce.v2.hs.webapp.HsWebServices as a root resource class
-Jun 29, 2025 10:08:00 PM com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory register
+Jun 29, 2025 10:59:14 PM com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory register
 INFO: Registering org.apache.hadoop.mapreduce.v2.hs.webapp.JAXBContextResolver as a provider class
-Jun 29, 2025 10:08:00 PM com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory register
+Jun 29, 2025 10:59:14 PM com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory register
 INFO: Registering org.apache.hadoop.yarn.webapp.GenericExceptionHandler as a provider class
-Jun 29, 2025 10:08:00 PM com.sun.jersey.server.impl.application.WebApplicationImpl _initiate
+Jun 29, 2025 10:59:14 PM com.sun.jersey.server.impl.application.WebApplicationImpl _initiate
 INFO: Initiating Jersey application, version 'Jersey: 1.19.4 05/24/2017 03:20 PM'
-Jun 29, 2025 10:08:00 PM com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory getComponentProvider
+Jun 29, 2025 10:59:15 PM com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory getComponentProvider
 INFO: Binding org.apache.hadoop.mapreduce.v2.hs.webapp.JAXBContextResolver to GuiceManagedComponentProvider with the scope "Singleton"
+Jun 29, 2025 10:59:18 PM com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory getComponentProvider
+INFO: Binding org.apache.hadoop.yarn.webapp.GenericExceptionHandler to GuiceManagedComponentProvider with the scope "Singleton"
+Jun 29, 2025 10:59:21 PM com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory getComponentProvider
+INFO: Binding org.apache.hadoop.mapreduce.v2.hs.webapp.HsWebServices to GuiceManagedComponentProvider with the scope "PerRequest"
+2025-06-29 22:59:21,785 INFO  handler.ContextHandler (ContextHandler.java:doStart(921)) - Started o.e.j.w.WebAppContext@13dbed9e{jobhistory,/,file:///tmp/jetty-0_0_0_0-19888-hadoop-yarn-common-3_3_5_jar-_-any-1220412382437133037/webapp/,AVAILABLE}{jar:file:/opt/hadoop/share/hadoop/yarn/hadoop-yarn-common-3.3.5.jar!/webapps/jobhistory}
+2025-06-29 22:59:21,945 INFO  server.AbstractConnector (AbstractConnector.java:doStart(333)) - Started ServerConnector@56193c7d{HTTP/1.1, (http/1.1)}{0.0.0.0:19888}
+2025-06-29 22:59:21,951 INFO  server.Server (Server.java:doStart(415)) - Started @65045ms
+2025-06-29 22:59:21,955 INFO  webapp.WebApps (WebApps.java:start(473)) - Web app jobhistory started at 19888
+2025-06-29 22:59:22,233 INFO  ipc.CallQueueManager (CallQueueManager.java:<init>(90)) - Using callQueue: class java.util.concurrent.LinkedBlockingQueue, queueCapacity: 1000, scheduler: class org.apache.hadoop.ipc.DefaultRpcScheduler, ipcBackoff: false.
+2025-06-29 22:59:22,386 INFO  ipc.Server (Server.java:run(1319)) - Starting Socket Reader #1 for port 10020
+2025-06-29 22:59:22,535 INFO  pb.RpcServerFactoryPBImpl (RpcServerFactoryPBImpl.java:createServer(174)) - Adding protocol org.apache.hadoop.mapreduce.v2.api.HSClientProtocolPB to the server
+2025-06-29 22:59:22,537 INFO  ipc.Server (Server.java:run(1558)) - IPC Server Responder: starting
+2025-06-29 22:59:22,537 INFO  ipc.Server (Server.java:run(1398)) - IPC Server listener on 10020: starting
+2025-06-29 22:59:22,581 INFO  hs.HistoryClientService (HistoryClientService.java:serviceStart(150)) - Instantiated HistoryClientService at localhost/127.0.0.1:10020
+2025-06-29 22:59:22,584 INFO  ipc.Server (Server.java:run(1398)) - IPC Server listener on 10033: starting
+2025-06-29 22:59:22,589 INFO  ipc.Server (Server.java:run(1558)) - IPC Server Responder: starting
+2025-06-29 22:59:22,610 INFO  util.JvmPauseMonitor (JvmPauseMonitor.java:run(188)) - Starting JVM pause monitor
+2025-06-29 22:59:26,792 INFO  hs.JobHistory (JobHistory.java:run(204)) - History Cleaner started
+2025-06-29 22:59:26,805 INFO  hs.JobHistory (JobHistory.java:run(210)) - History Cleaner complete

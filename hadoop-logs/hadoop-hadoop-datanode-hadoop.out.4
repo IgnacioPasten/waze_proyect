@@ -15,7 +15,7 @@ cpu time                   (seconds, -t) unlimited
 max user processes                  (-u) unlimited
 virtual memory              (kbytes, -v) unlimited
 file locks                          (-x) unlimited
-2025-06-29 22:08:26,478 INFO  datanode.DataNode (LogAdapter.java:info(51)) - STARTUP_MSG: 
+2025-06-29 23:01:26,555 INFO  datanode.DataNode (LogAdapter.java:info(51)) - STARTUP_MSG: 
 /************************************************************
 STARTUP_MSG: Starting DataNode
 STARTUP_MSG:   host = localhost/127.0.0.1
@@ -25,81 +25,127 @@ STARTUP_MSG:   classpath = /opt/hadoop/etc/hadoop:/opt/hadoop/share/hadoop/commo
 STARTUP_MSG:   build = https://github.com/apache/hadoop.git -r 706d88266abcee09ed78fbaa0ad5f74d818ab0e9; compiled by 'stevel' on 2023-03-15T15:56Z
 STARTUP_MSG:   java = 1.8.0_452
 ************************************************************/
-2025-06-29 22:08:26,587 INFO  datanode.DataNode (LogAdapter.java:info(51)) - registered UNIX signal handlers for [TERM, HUP, INT]
-2025-06-29 22:08:36,080 INFO  checker.ThrottledAsyncChecker (ThrottledAsyncChecker.java:schedule(137)) - Scheduling a check for [DISK]file:/hadoop/dfs/data
-2025-06-29 22:08:39,024 WARN  impl.MetricsConfig (MetricsConfig.java:loadFirst(136)) - Cannot locate configuration: tried hadoop-metrics2-datanode.properties,hadoop-metrics2.properties
-2025-06-29 22:08:39,408 INFO  impl.MetricsSystemImpl (MetricsSystemImpl.java:startTimer(378)) - Scheduled Metric snapshot period at 10 second(s).
-2025-06-29 22:08:39,410 INFO  impl.MetricsSystemImpl (MetricsSystemImpl.java:start(191)) - DataNode metrics system started
-2025-06-29 22:08:40,776 INFO  common.Util (Util.java:isDiskStatsEnabled(395)) - dfs.datanode.fileio.profiling.sampling.percentage set to 0. Disabling file IO profiling
-2025-06-29 22:08:40,972 INFO  datanode.BlockScanner (BlockScanner.java:<init>(201)) - Initialized block scanner with targetBytesPerSec 1048576
-2025-06-29 22:08:41,122 INFO  datanode.DataNode (DataNode.java:<init>(563)) - Configured hostname is localhost
-2025-06-29 22:08:41,129 INFO  common.Util (Util.java:isDiskStatsEnabled(395)) - dfs.datanode.fileio.profiling.sampling.percentage set to 0. Disabling file IO profiling
-2025-06-29 22:08:41,171 INFO  datanode.DataNode (DataNode.java:startDataNode(1714)) - Starting DataNode with maxLockedMemory = 0
-2025-06-29 22:08:41,509 INFO  datanode.DataNode (DataNode.java:initDataXceiver(1477)) - Opened streaming server at /0.0.0.0:9866
-2025-06-29 22:08:41,530 INFO  datanode.DataNode (DataXceiverServer.java:<init>(93)) - Balancing bandwidth is 104857600 bytes/s
-2025-06-29 22:08:41,535 INFO  datanode.DataNode (DataXceiverServer.java:<init>(94)) - Number threads for balancing is 100
-2025-06-29 22:08:42,426 INFO  util.log (Log.java:initialized(170)) - Logging initialized @24827ms to org.eclipse.jetty.util.log.Slf4jLog
-2025-06-29 22:08:44,829 WARN  server.AuthenticationFilter (AuthenticationFilter.java:constructSecretProvider(240)) - Unable to initialize FileSignerSecretProvider, falling back to use random secrets. Reason: Could not read signature secret file: /home/hadoop/hadoop-http-auth-signature-secret
-2025-06-29 22:08:44,963 INFO  http.HttpRequestLog (HttpRequestLog.java:getRequestLog(82)) - Http request log for http.requests.datanode is not defined
-2025-06-29 22:08:45,228 INFO  http.HttpServer2 (HttpServer2.java:addGlobalFilter(1124)) - Added global filter 'safety' (class=org.apache.hadoop.http.HttpServer2$QuotingInputFilter)
-2025-06-29 22:08:45,256 INFO  http.HttpServer2 (HttpServer2.java:addFilter(1097)) - Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context datanode
-2025-06-29 22:08:45,257 INFO  http.HttpServer2 (HttpServer2.java:addFilter(1107)) - Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context static
-2025-06-29 22:08:45,281 INFO  http.HttpServer2 (HttpServer2.java:addFilter(1107)) - Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context logs
-2025-06-29 22:08:45,669 INFO  http.HttpServer2 (HttpServer2.java:bindListener(1357)) - Jetty bound to port 36389
-2025-06-29 22:08:45,674 INFO  server.Server (Server.java:doStart(375)) - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 1.8.0_452-8u452-ga~us1-0ubuntu1~22.04-b09
-2025-06-29 22:08:45,916 INFO  server.session (DefaultSessionIdManager.java:doStart(334)) - DefaultSessionIdManager workerName=node0
-2025-06-29 22:08:45,938 INFO  server.session (DefaultSessionIdManager.java:doStart(339)) - No SessionScavenger set, using defaults
-2025-06-29 22:08:45,985 INFO  server.session (HouseKeeper.java:startScavenging(132)) - node0 Scavenging every 660000ms
-2025-06-29 22:08:46,808 INFO  handler.ContextHandler (ContextHandler.java:doStart(921)) - Started o.e.j.s.ServletContextHandler@78a773fd{logs,/logs,file:///opt/hadoop/logs/,AVAILABLE}
-2025-06-29 22:08:46,827 INFO  handler.ContextHandler (ContextHandler.java:doStart(921)) - Started o.e.j.s.ServletContextHandler@45ac5f9b{static,/static,file:///opt/hadoop/share/hadoop/hdfs/webapps/static/,AVAILABLE}
-2025-06-29 22:08:48,501 INFO  handler.ContextHandler (ContextHandler.java:doStart(921)) - Started o.e.j.w.WebAppContext@d62fe5b{datanode,/,file:///opt/hadoop/share/hadoop/hdfs/webapps/datanode/,AVAILABLE}{file:/opt/hadoop/share/hadoop/hdfs/webapps/datanode}
-2025-06-29 22:08:48,616 INFO  server.AbstractConnector (AbstractConnector.java:doStart(333)) - Started ServerConnector@418c5a9c{HTTP/1.1, (http/1.1)}{localhost:36389}
-2025-06-29 22:08:48,641 INFO  server.Server (Server.java:doStart(415)) - Started @31041ms
-2025-06-29 22:08:50,794 WARN  web.DatanodeHttpServer (RestCsrfPreventionFilterHandler.java:<init>(75)) - Got null for restCsrfPreventionFilter - will not do any filtering.
-2025-06-29 22:08:51,740 INFO  web.DatanodeHttpServer (DatanodeHttpServer.java:start(318)) - Listening HTTP traffic on /0.0.0.0:9864
-2025-06-29 22:08:51,781 INFO  util.JvmPauseMonitor (JvmPauseMonitor.java:run(188)) - Starting JVM pause monitor
-2025-06-29 22:08:51,790 INFO  datanode.DataNode (DataNode.java:startDataNode(1742)) - dnUserName = hadoop
-2025-06-29 22:08:51,795 INFO  datanode.DataNode (DataNode.java:startDataNode(1743)) - supergroup = supergroup
-2025-06-29 22:08:52,240 INFO  ipc.CallQueueManager (CallQueueManager.java:<init>(90)) - Using callQueue: class java.util.concurrent.LinkedBlockingQueue, queueCapacity: 1000, scheduler: class org.apache.hadoop.ipc.DefaultRpcScheduler, ipcBackoff: false.
-2025-06-29 22:08:52,472 INFO  ipc.Server (Server.java:run(1319)) - Starting Socket Reader #1 for port 9867
-2025-06-29 22:08:55,549 INFO  datanode.DataNode (DataNode.java:initIpcServer(1363)) - Opened IPC server at /0.0.0.0:9867
-2025-06-29 22:08:55,827 INFO  datanode.DataNode (BlockPoolManager.java:refreshNamenodes(149)) - Refresh request received for nameservices: null
-2025-06-29 22:08:55,876 INFO  datanode.DataNode (BlockPoolManager.java:doRefreshNamenodes(210)) - Starting BPOfferServices for nameservices: <default>
-2025-06-29 22:08:55,935 INFO  datanode.DataNode (BPServiceActor.java:run(851)) - Block pool <registering> (Datanode Uuid unassigned) service to hadoop/127.0.0.1:9000 starting to offer service
-2025-06-29 22:08:56,002 INFO  ipc.Server (Server.java:run(1398)) - IPC Server listener on 9867: starting
-2025-06-29 22:08:55,997 INFO  ipc.Server (Server.java:run(1558)) - IPC Server Responder: starting
-2025-06-29 22:08:57,662 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:9000. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
-2025-06-29 22:08:58,695 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:9000. Already tried 1 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
-2025-06-29 22:08:59,697 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:9000. Already tried 2 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
-2025-06-29 22:09:05,032 INFO  datanode.DataNode (BPOfferService.java:verifyAndSetNamespaceInfo(381)) - Acknowledging ACTIVE Namenode during handshakeBlock pool <registering> (Datanode Uuid unassigned) service to hadoop/127.0.0.1:9000
-2025-06-29 22:09:05,170 INFO  common.Storage (DataStorage.java:getParallelVolumeLoadThreadsNum(356)) - Using 1 threads to upgrade data directories (dfs.datanode.parallel.volumes.load.threads.num=1, dataDirs=1)
-2025-06-29 22:09:05,298 INFO  common.Storage (Storage.java:tryLock(948)) - Lock on /hadoop/dfs/data/in_use.lock acquired by nodename 97@localhost
-2025-06-29 22:09:05,793 INFO  common.Storage (BlockPoolSliceStorage.java:recoverTransitionRead(256)) - Analyzing storage directories for bpid BP-13645124-127.0.0.1-1749006972704
-2025-06-29 22:09:05,806 INFO  common.Storage (Storage.java:lock(907)) - Locking is disabled for /hadoop/dfs/data/current/BP-13645124-127.0.0.1-1749006972704
-2025-06-29 22:09:05,866 INFO  datanode.DataNode (DataNode.java:initStorage(2062)) - Setting up storage: nsid=667841717;bpid=BP-13645124-127.0.0.1-1749006972704;lv=-57;nsInfo=lv=-66;cid=CID-9483172c-cb70-4bca-998d-2c3a820d91df;nsid=667841717;c=1749006972704;bpid=BP-13645124-127.0.0.1-1749006972704;dnuuid=6200348a-5533-4665-8b58-83bb8e827ded
-2025-06-29 22:09:06,147 INFO  impl.FsDatasetImpl (FsDatasetImpl.java:<init>(310)) - The datanode lock is a read write lock
-2025-06-29 22:09:08,173 INFO  impl.FsDatasetImpl (FsVolumeList.java:addVolume(318)) - Added new volume: DS-f60a695d-6038-4c60-ab30-5182c0ac12f4
-2025-06-29 22:09:08,177 INFO  impl.FsDatasetImpl (FsDatasetImpl.java:addVolume(493)) - Added volume - [DISK]file:/hadoop/dfs/data, StorageType: DISK
-2025-06-29 22:09:08,248 INFO  impl.MemoryMappableBlockLoader (MemoryMappableBlockLoader.java:initialize(48)) - Initializing cache loader: MemoryMappableBlockLoader.
-2025-06-29 22:09:08,333 INFO  impl.FsDatasetImpl (FsDatasetImpl.java:registerMBean(2342)) - Registered FSDatasetState MBean
-2025-06-29 22:09:08,504 INFO  impl.FsDatasetImpl (FsDatasetImpl.java:addBlockPool(2856)) - Adding block pool BP-13645124-127.0.0.1-1749006972704
-2025-06-29 22:09:08,511 INFO  impl.FsDatasetImpl (FsVolumeList.java:run(420)) - Scanning block pool BP-13645124-127.0.0.1-1749006972704 on volume /hadoop/dfs/data...
-2025-06-29 22:09:08,694 WARN  impl.FsDatasetImpl (BlockPoolSlice.java:loadDfsUsed(342)) - dfsUsed file missing in /hadoop/dfs/data/current/BP-13645124-127.0.0.1-1749006972704/current, will proceed with Du for space computation calculation, 
-2025-06-29 22:09:09,806 INFO  impl.FsDatasetImpl (FsVolumeList.java:run(425)) - Time taken to scan block pool BP-13645124-127.0.0.1-1749006972704 on /hadoop/dfs/data: 1288ms
-2025-06-29 22:09:09,838 INFO  impl.FsDatasetImpl (FsVolumeList.java:addBlockPool(445)) - Total time to scan all replicas for block pool BP-13645124-127.0.0.1-1749006972704: 1333ms
-2025-06-29 22:09:09,890 INFO  impl.FsDatasetImpl (FsVolumeList.java:run(213)) - Adding replicas to map for block pool BP-13645124-127.0.0.1-1749006972704 on volume /hadoop/dfs/data...
-2025-06-29 22:09:09,980 INFO  impl.BlockPoolSlice (BlockPoolSlice.java:readReplicasFromCache(958)) - Replica Cache file: /hadoop/dfs/data/current/BP-13645124-127.0.0.1-1749006972704/current/replicas doesn't exist 
-2025-06-29 22:09:10,124 INFO  impl.FsDatasetImpl (FsVolumeList.java:run(218)) - Time to add replicas to map for block pool BP-13645124-127.0.0.1-1749006972704 on volume /hadoop/dfs/data: 144ms
-2025-06-29 22:09:10,151 INFO  impl.FsDatasetImpl (FsVolumeList.java:getAllVolumesMap(239)) - Total time to add all replicas to map for block pool BP-13645124-127.0.0.1-1749006972704: 262ms
-2025-06-29 22:09:10,172 INFO  checker.ThrottledAsyncChecker (ThrottledAsyncChecker.java:schedule(137)) - Scheduling a check for /hadoop/dfs/data
-2025-06-29 22:09:10,688 INFO  checker.DatasetVolumeChecker (DatasetVolumeChecker.java:checkAllVolumes(224)) - Scheduled health check for volume /hadoop/dfs/data
-2025-06-29 22:09:10,971 INFO  datanode.VolumeScanner (VolumeScanner.java:findNextUsableBlockIter(402)) - VolumeScanner(/hadoop/dfs/data, DS-f60a695d-6038-4c60-ab30-5182c0ac12f4): no suitable block pools found to scan.  Waiting 1804422330 ms.
-2025-06-29 22:09:11,009 WARN  datanode.DirectoryScanner (DirectoryScanner.java:<init>(301)) - dfs.datanode.directoryscan.throttle.limit.ms.per.sec set to value above 1000 ms/sec. Assuming default value of -1
-2025-06-29 22:09:11,018 INFO  datanode.DirectoryScanner (DirectoryScanner.java:start(330)) - Periodic Directory Tree Verification scan starting in 8527046ms with interval of 21600000ms and throttle limit of -1ms/s
-2025-06-29 22:09:11,154 INFO  datanode.DataNode (BPServiceActor.java:register(792)) - Block pool BP-13645124-127.0.0.1-1749006972704 (Datanode Uuid 6200348a-5533-4665-8b58-83bb8e827ded) service to hadoop/127.0.0.1:9000 beginning handshake with NN
-2025-06-29 22:09:13,050 INFO  datanode.DataNode (BPServiceActor.java:register(820)) - Block pool BP-13645124-127.0.0.1-1749006972704 (Datanode Uuid 6200348a-5533-4665-8b58-83bb8e827ded) service to hadoop/127.0.0.1:9000 successfully registered with NN
-2025-06-29 22:09:13,053 INFO  datanode.DataNode (BPServiceActor.java:offerService(649)) - For namenode hadoop/127.0.0.1:9000 using BLOCKREPORT_INTERVAL of 21600000msecs CACHEREPORT_INTERVAL of 10000msecs Initial delay: 0msecs; heartBeatInterval=3000
-2025-06-29 22:09:14,597 INFO  datanode.DataNode (BPServiceActor.java:blockReport(441)) - Successfully sent block report 0x37dbe5f294b61978 with lease ID 0xa071b2e1df310c56 to namenode: hadoop/127.0.0.1:9000,  containing 1 storage report(s), of which we sent 1. The reports had 0 total blocks and used 1 RPC(s). This took 33 msecs to generate and 392 msecs for RPC and NN processing. Got back one command: FinalizeCommand/5.
-2025-06-29 22:09:14,599 INFO  datanode.DataNode (BPOfferService.java:processCommandFromActive(763)) - Got finalize command for block pool BP-13645124-127.0.0.1-1749006972704
-2025-06-29 22:09:46,683 INFO  util.JvmPauseMonitor (JvmPauseMonitor.java:run(205)) - Detected pause in JVM or host machine (eg GC): pause of approximately 3687ms
+2025-06-29 23:01:26,581 INFO  datanode.DataNode (LogAdapter.java:info(51)) - registered UNIX signal handlers for [TERM, HUP, INT]
+2025-06-29 23:01:28,721 INFO  checker.ThrottledAsyncChecker (ThrottledAsyncChecker.java:schedule(137)) - Scheduling a check for [DISK]file:/hadoop/dfs/data
+2025-06-29 23:01:29,392 WARN  impl.MetricsConfig (MetricsConfig.java:loadFirst(136)) - Cannot locate configuration: tried hadoop-metrics2-datanode.properties,hadoop-metrics2.properties
+2025-06-29 23:01:29,950 INFO  impl.MetricsSystemImpl (MetricsSystemImpl.java:startTimer(378)) - Scheduled Metric snapshot period at 10 second(s).
+2025-06-29 23:01:29,962 INFO  impl.MetricsSystemImpl (MetricsSystemImpl.java:start(191)) - DataNode metrics system started
+2025-06-29 23:01:31,302 INFO  common.Util (Util.java:isDiskStatsEnabled(395)) - dfs.datanode.fileio.profiling.sampling.percentage set to 0. Disabling file IO profiling
+2025-06-29 23:01:31,546 INFO  datanode.BlockScanner (BlockScanner.java:<init>(201)) - Initialized block scanner with targetBytesPerSec 1048576
+2025-06-29 23:01:31,670 INFO  datanode.DataNode (DataNode.java:<init>(563)) - Configured hostname is localhost
+2025-06-29 23:01:31,674 INFO  common.Util (Util.java:isDiskStatsEnabled(395)) - dfs.datanode.fileio.profiling.sampling.percentage set to 0. Disabling file IO profiling
+2025-06-29 23:01:31,720 INFO  datanode.DataNode (DataNode.java:startDataNode(1714)) - Starting DataNode with maxLockedMemory = 0
+2025-06-29 23:01:31,859 INFO  datanode.DataNode (DataNode.java:initDataXceiver(1477)) - Opened streaming server at /0.0.0.0:9866
+2025-06-29 23:01:31,875 INFO  datanode.DataNode (DataXceiverServer.java:<init>(93)) - Balancing bandwidth is 104857600 bytes/s
+2025-06-29 23:01:31,879 INFO  datanode.DataNode (DataXceiverServer.java:<init>(94)) - Number threads for balancing is 100
+2025-06-29 23:01:32,509 INFO  util.log (Log.java:initialized(170)) - Logging initialized @9994ms to org.eclipse.jetty.util.log.Slf4jLog
+2025-06-29 23:01:33,817 WARN  server.AuthenticationFilter (AuthenticationFilter.java:constructSecretProvider(240)) - Unable to initialize FileSignerSecretProvider, falling back to use random secrets. Reason: Could not read signature secret file: /home/hadoop/hadoop-http-auth-signature-secret
+2025-06-29 23:01:34,211 INFO  http.HttpRequestLog (HttpRequestLog.java:getRequestLog(82)) - Http request log for http.requests.datanode is not defined
+2025-06-29 23:01:34,379 INFO  http.HttpServer2 (HttpServer2.java:addGlobalFilter(1124)) - Added global filter 'safety' (class=org.apache.hadoop.http.HttpServer2$QuotingInputFilter)
+2025-06-29 23:01:34,449 INFO  http.HttpServer2 (HttpServer2.java:addFilter(1097)) - Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context datanode
+2025-06-29 23:01:34,481 INFO  http.HttpServer2 (HttpServer2.java:addFilter(1107)) - Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context logs
+2025-06-29 23:01:34,499 INFO  http.HttpServer2 (HttpServer2.java:addFilter(1107)) - Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context static
+2025-06-29 23:01:35,674 INFO  http.HttpServer2 (HttpServer2.java:bindListener(1357)) - Jetty bound to port 36549
+2025-06-29 23:01:35,713 INFO  server.Server (Server.java:doStart(375)) - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 1.8.0_452-8u452-ga~us1-0ubuntu1~22.04-b09
+2025-06-29 23:01:36,002 INFO  server.session (DefaultSessionIdManager.java:doStart(334)) - DefaultSessionIdManager workerName=node0
+2025-06-29 23:01:36,023 INFO  server.session (DefaultSessionIdManager.java:doStart(339)) - No SessionScavenger set, using defaults
+2025-06-29 23:01:36,064 INFO  server.session (HouseKeeper.java:startScavenging(132)) - node0 Scavenging every 660000ms
+2025-06-29 23:01:36,240 INFO  handler.ContextHandler (ContextHandler.java:doStart(921)) - Started o.e.j.s.ServletContextHandler@45ac5f9b{logs,/logs,file:///opt/hadoop/logs/,AVAILABLE}
+2025-06-29 23:01:36,254 INFO  handler.ContextHandler (ContextHandler.java:doStart(921)) - Started o.e.j.s.ServletContextHandler@4f74980d{static,/static,file:///opt/hadoop/share/hadoop/hdfs/webapps/static/,AVAILABLE}
+2025-06-29 23:01:36,771 INFO  handler.ContextHandler (ContextHandler.java:doStart(921)) - Started o.e.j.w.WebAppContext@5ce8d869{datanode,/,file:///opt/hadoop/share/hadoop/hdfs/webapps/datanode/,AVAILABLE}{file:/opt/hadoop/share/hadoop/hdfs/webapps/datanode}
+2025-06-29 23:01:36,815 INFO  server.AbstractConnector (AbstractConnector.java:doStart(333)) - Started ServerConnector@302f7971{HTTP/1.1, (http/1.1)}{localhost:36549}
+2025-06-29 23:01:36,816 INFO  server.Server (Server.java:doStart(415)) - Started @14300ms
+2025-06-29 23:01:37,331 WARN  web.DatanodeHttpServer (RestCsrfPreventionFilterHandler.java:<init>(75)) - Got null for restCsrfPreventionFilter - will not do any filtering.
+2025-06-29 23:01:38,483 INFO  web.DatanodeHttpServer (DatanodeHttpServer.java:start(318)) - Listening HTTP traffic on /0.0.0.0:9864
+2025-06-29 23:01:38,638 INFO  util.JvmPauseMonitor (JvmPauseMonitor.java:run(188)) - Starting JVM pause monitor
+2025-06-29 23:01:38,648 INFO  datanode.DataNode (DataNode.java:startDataNode(1742)) - dnUserName = hadoop
+2025-06-29 23:01:38,662 INFO  datanode.DataNode (DataNode.java:startDataNode(1743)) - supergroup = supergroup
+2025-06-29 23:01:40,395 INFO  ipc.CallQueueManager (CallQueueManager.java:<init>(90)) - Using callQueue: class java.util.concurrent.LinkedBlockingQueue, queueCapacity: 1000, scheduler: class org.apache.hadoop.ipc.DefaultRpcScheduler, ipcBackoff: false.
+2025-06-29 23:01:40,964 INFO  ipc.Server (Server.java:run(1319)) - Starting Socket Reader #1 for port 9867
+2025-06-29 23:01:45,637 INFO  datanode.DataNode (DataNode.java:initIpcServer(1363)) - Opened IPC server at /0.0.0.0:9867
+2025-06-29 23:01:46,046 INFO  datanode.DataNode (BlockPoolManager.java:refreshNamenodes(149)) - Refresh request received for nameservices: null
+2025-06-29 23:01:46,120 INFO  datanode.DataNode (BlockPoolManager.java:doRefreshNamenodes(210)) - Starting BPOfferServices for nameservices: <default>
+2025-06-29 23:01:46,197 INFO  datanode.DataNode (BPServiceActor.java:run(851)) - Block pool <registering> (Datanode Uuid unassigned) service to hadoop/127.0.0.1:9000 starting to offer service
+2025-06-29 23:01:46,253 INFO  ipc.Server (Server.java:run(1398)) - IPC Server listener on 9867: starting
+2025-06-29 23:01:46,267 INFO  ipc.Server (Server.java:run(1558)) - IPC Server Responder: starting
+2025-06-29 23:01:48,707 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:9000. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-29 23:01:49,753 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:9000. Already tried 1 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-29 23:01:50,776 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:9000. Already tried 2 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-29 23:01:51,797 INFO  ipc.Client (Client.java:handleConnectionFailure(967)) - Retrying connect to server: hadoop/127.0.0.1:9000. Already tried 3 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2025-06-29 23:01:55,295 INFO  datanode.DataNode (BPOfferService.java:verifyAndSetNamespaceInfo(381)) - Acknowledging ACTIVE Namenode during handshakeBlock pool <registering> (Datanode Uuid unassigned) service to hadoop/127.0.0.1:9000
+2025-06-29 23:01:55,365 INFO  common.Storage (DataStorage.java:getParallelVolumeLoadThreadsNum(356)) - Using 1 threads to upgrade data directories (dfs.datanode.parallel.volumes.load.threads.num=1, dataDirs=1)
+2025-06-29 23:01:55,503 INFO  common.Storage (Storage.java:tryLock(948)) - Lock on /hadoop/dfs/data/in_use.lock acquired by nodename 97@localhost
+2025-06-29 23:01:56,247 INFO  common.Storage (BlockPoolSliceStorage.java:recoverTransitionRead(256)) - Analyzing storage directories for bpid BP-13645124-127.0.0.1-1749006972704
+2025-06-29 23:01:56,254 INFO  common.Storage (Storage.java:lock(907)) - Locking is disabled for /hadoop/dfs/data/current/BP-13645124-127.0.0.1-1749006972704
+2025-06-29 23:01:56,291 INFO  datanode.DataNode (DataNode.java:initStorage(2062)) - Setting up storage: nsid=667841717;bpid=BP-13645124-127.0.0.1-1749006972704;lv=-57;nsInfo=lv=-66;cid=CID-9483172c-cb70-4bca-998d-2c3a820d91df;nsid=667841717;c=1749006972704;bpid=BP-13645124-127.0.0.1-1749006972704;dnuuid=6200348a-5533-4665-8b58-83bb8e827ded
+2025-06-29 23:01:56,462 INFO  impl.FsDatasetImpl (FsDatasetImpl.java:<init>(310)) - The datanode lock is a read write lock
+2025-06-29 23:01:59,982 INFO  impl.FsDatasetImpl (FsVolumeList.java:addVolume(318)) - Added new volume: DS-f60a695d-6038-4c60-ab30-5182c0ac12f4
+2025-06-29 23:02:00,018 INFO  impl.FsDatasetImpl (FsDatasetImpl.java:addVolume(493)) - Added volume - [DISK]file:/hadoop/dfs/data, StorageType: DISK
+2025-06-29 23:02:00,140 INFO  impl.MemoryMappableBlockLoader (MemoryMappableBlockLoader.java:initialize(48)) - Initializing cache loader: MemoryMappableBlockLoader.
+2025-06-29 23:02:00,178 INFO  impl.FsDatasetImpl (FsDatasetImpl.java:registerMBean(2342)) - Registered FSDatasetState MBean
+2025-06-29 23:02:00,253 INFO  impl.FsDatasetImpl (FsDatasetImpl.java:addBlockPool(2856)) - Adding block pool BP-13645124-127.0.0.1-1749006972704
+2025-06-29 23:02:00,262 INFO  impl.FsDatasetImpl (FsVolumeList.java:run(420)) - Scanning block pool BP-13645124-127.0.0.1-1749006972704 on volume /hadoop/dfs/data...
+2025-06-29 23:02:00,318 WARN  impl.FsDatasetImpl (BlockPoolSlice.java:loadDfsUsed(342)) - dfsUsed file missing in /hadoop/dfs/data/current/BP-13645124-127.0.0.1-1749006972704/current, will proceed with Du for space computation calculation, 
+2025-06-29 23:02:01,003 INFO  impl.FsDatasetImpl (FsVolumeList.java:run(425)) - Time taken to scan block pool BP-13645124-127.0.0.1-1749006972704 on /hadoop/dfs/data: 735ms
+2025-06-29 23:02:01,010 INFO  impl.FsDatasetImpl (FsVolumeList.java:addBlockPool(445)) - Total time to scan all replicas for block pool BP-13645124-127.0.0.1-1749006972704: 755ms
+2025-06-29 23:02:01,055 INFO  impl.FsDatasetImpl (FsVolumeList.java:run(213)) - Adding replicas to map for block pool BP-13645124-127.0.0.1-1749006972704 on volume /hadoop/dfs/data...
+2025-06-29 23:02:01,074 INFO  impl.BlockPoolSlice (BlockPoolSlice.java:readReplicasFromCache(958)) - Replica Cache file: /hadoop/dfs/data/current/BP-13645124-127.0.0.1-1749006972704/current/replicas doesn't exist 
+2025-06-29 23:02:01,116 INFO  impl.FsDatasetImpl (FsVolumeList.java:run(218)) - Time to add replicas to map for block pool BP-13645124-127.0.0.1-1749006972704 on volume /hadoop/dfs/data: 42ms
+2025-06-29 23:02:01,124 INFO  impl.FsDatasetImpl (FsVolumeList.java:getAllVolumesMap(239)) - Total time to add all replicas to map for block pool BP-13645124-127.0.0.1-1749006972704: 109ms
+2025-06-29 23:02:01,134 INFO  checker.ThrottledAsyncChecker (ThrottledAsyncChecker.java:schedule(137)) - Scheduling a check for /hadoop/dfs/data
+2025-06-29 23:02:01,276 INFO  checker.DatasetVolumeChecker (DatasetVolumeChecker.java:checkAllVolumes(224)) - Scheduled health check for volume /hadoop/dfs/data
+2025-06-29 23:02:01,369 INFO  datanode.VolumeScanner (VolumeScanner.java:findNextUsableBlockIter(402)) - VolumeScanner(/hadoop/dfs/data, DS-f60a695d-6038-4c60-ab30-5182c0ac12f4): no suitable block pools found to scan.  Waiting 1801251932 ms.
+2025-06-29 23:02:01,416 WARN  datanode.DirectoryScanner (DirectoryScanner.java:<init>(301)) - dfs.datanode.directoryscan.throttle.limit.ms.per.sec set to value above 1000 ms/sec. Assuming default value of -1
+2025-06-29 23:02:01,429 INFO  datanode.DirectoryScanner (DirectoryScanner.java:start(330)) - Periodic Directory Tree Verification scan starting in 3545509ms with interval of 21600000ms and throttle limit of -1ms/s
+2025-06-29 23:02:01,503 INFO  datanode.DataNode (BPServiceActor.java:register(792)) - Block pool BP-13645124-127.0.0.1-1749006972704 (Datanode Uuid 6200348a-5533-4665-8b58-83bb8e827ded) service to hadoop/127.0.0.1:9000 beginning handshake with NN
+2025-06-29 23:02:03,814 INFO  datanode.DataNode (BPServiceActor.java:register(820)) - Block pool BP-13645124-127.0.0.1-1749006972704 (Datanode Uuid 6200348a-5533-4665-8b58-83bb8e827ded) service to hadoop/127.0.0.1:9000 successfully registered with NN
+2025-06-29 23:02:03,817 INFO  datanode.DataNode (BPServiceActor.java:offerService(649)) - For namenode hadoop/127.0.0.1:9000 using BLOCKREPORT_INTERVAL of 21600000msecs CACHEREPORT_INTERVAL of 10000msecs Initial delay: 0msecs; heartBeatInterval=3000
+2025-06-29 23:02:06,590 INFO  datanode.DataNode (BPServiceActor.java:blockReport(441)) - Successfully sent block report 0x8cc9d9570f018199 with lease ID 0x997cf886412f20d5 to namenode: hadoop/127.0.0.1:9000,  containing 1 storage report(s), of which we sent 1. The reports had 0 total blocks and used 1 RPC(s). This took 100 msecs to generate and 975 msecs for RPC and NN processing. Got back one command: FinalizeCommand/5.
+2025-06-29 23:02:06,617 INFO  datanode.DataNode (BPOfferService.java:processCommandFromActive(763)) - Got finalize command for block pool BP-13645124-127.0.0.1-1749006972704
+2025-06-29 23:04:04,084 INFO  util.JvmPauseMonitor (JvmPauseMonitor.java:run(205)) - Detected pause in JVM or host machine (eg GC): pause of approximately 1011ms
+No GCs detected
+2025-06-29 23:16:28,029 INFO  util.JvmPauseMonitor (JvmPauseMonitor.java:run(205)) - Detected pause in JVM or host machine (eg GC): pause of approximately 1016ms
+No GCs detected
+2025-06-29 23:39:15,185 INFO  util.JvmPauseMonitor (JvmPauseMonitor.java:run(205)) - Detected pause in JVM or host machine (eg GC): pause of approximately 2133ms
+No GCs detected
+2025-06-30 00:01:08,214 INFO  datanode.DirectoryScanner (DirectoryScanner.java:scan(552)) - Scan Results: BlockPool BP-13645124-127.0.0.1-1749006972704 Total blocks: 0, missing metadata files: 0, missing block files: 0, missing blocks in memory: 0, mismatched blocks: 0, duplicated blocks: 0
+2025-06-30 00:04:56,110 INFO  util.JvmPauseMonitor (JvmPauseMonitor.java:run(205)) - Detected pause in JVM or host machine (eg GC): pause of approximately 1362ms
+No GCs detected
+2025-06-30 00:17:52,581 INFO  util.JvmPauseMonitor (JvmPauseMonitor.java:run(205)) - Detected pause in JVM or host machine (eg GC): pause of approximately 1583ms
+No GCs detected
+2025-06-30 00:33:37,955 INFO  util.JvmPauseMonitor (JvmPauseMonitor.java:run(205)) - Detected pause in JVM or host machine (eg GC): pause of approximately 1090ms
+No GCs detected
+2025-06-30 00:35:14,853 INFO  util.JvmPauseMonitor (JvmPauseMonitor.java:run(205)) - Detected pause in JVM or host machine (eg GC): pause of approximately 1488ms
+No GCs detected
+2025-06-30 00:35:19,342 INFO  util.JvmPauseMonitor (JvmPauseMonitor.java:run(205)) - Detected pause in JVM or host machine (eg GC): pause of approximately 3264ms
+No GCs detected
+2025-06-30 00:42:43,614 INFO  util.JvmPauseMonitor (JvmPauseMonitor.java:run(205)) - Detected pause in JVM or host machine (eg GC): pause of approximately 2281ms
+No GCs detected
+2025-06-30 00:47:54,373 INFO  util.JvmPauseMonitor (JvmPauseMonitor.java:run(205)) - Detected pause in JVM or host machine (eg GC): pause of approximately 1232ms
+No GCs detected
+2025-06-30 00:59:01,184 INFO  util.JvmPauseMonitor (JvmPauseMonitor.java:run(205)) - Detected pause in JVM or host machine (eg GC): pause of approximately 1562ms
+No GCs detected
+2025-06-30 01:04:51,744 INFO  util.JvmPauseMonitor (JvmPauseMonitor.java:run(205)) - Detected pause in JVM or host machine (eg GC): pause of approximately 1167ms
+No GCs detected
+2025-06-30 01:14:36,615 INFO  util.JvmPauseMonitor (JvmPauseMonitor.java:run(205)) - Detected pause in JVM or host machine (eg GC): pause of approximately 1269ms
+No GCs detected
+2025-06-30 01:26:32,525 INFO  util.JvmPauseMonitor (JvmPauseMonitor.java:run(205)) - Detected pause in JVM or host machine (eg GC): pause of approximately 5246ms
+No GCs detected
+2025-06-30 01:27:59,895 INFO  util.JvmPauseMonitor (JvmPauseMonitor.java:run(205)) - Detected pause in JVM or host machine (eg GC): pause of approximately 1075ms
+No GCs detected
+2025-06-30 01:45:47,895 INFO  util.JvmPauseMonitor (JvmPauseMonitor.java:run(205)) - Detected pause in JVM or host machine (eg GC): pause of approximately 1339ms
+No GCs detected
+2025-06-30 01:49:31,927 INFO  util.JvmPauseMonitor (JvmPauseMonitor.java:run(205)) - Detected pause in JVM or host machine (eg GC): pause of approximately 1047ms
+No GCs detected
+2025-06-30 01:57:03,764 INFO  util.JvmPauseMonitor (JvmPauseMonitor.java:run(205)) - Detected pause in JVM or host machine (eg GC): pause of approximately 1019ms
+No GCs detected
+2025-06-30 01:57:07,597 INFO  util.JvmPauseMonitor (JvmPauseMonitor.java:run(205)) - Detected pause in JVM or host machine (eg GC): pause of approximately 1290ms
+No GCs detected
+2025-06-30 02:01:28,940 INFO  util.JvmPauseMonitor (JvmPauseMonitor.java:run(205)) - Detected pause in JVM or host machine (eg GC): pause of approximately 1097ms
+No GCs detected
+2025-06-30 02:03:19,466 INFO  util.JvmPauseMonitor (JvmPauseMonitor.java:run(205)) - Detected pause in JVM or host machine (eg GC): pause of approximately 4774ms
+No GCs detected
+2025-06-30 02:03:28,343 INFO  util.JvmPauseMonitor (JvmPauseMonitor.java:run(205)) - Detected pause in JVM or host machine (eg GC): pause of approximately 1557ms
+No GCs detected
+2025-06-30 02:05:58,373 INFO  util.JvmPauseMonitor (JvmPauseMonitor.java:run(205)) - Detected pause in JVM or host machine (eg GC): pause of approximately 1884ms
 No GCs detected

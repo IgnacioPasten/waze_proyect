@@ -1,4 +1,4 @@
-REGISTER '/opt/pig/contrib/piggybank/java/piggybank.jar';  -- (lo usaremos luego, aunque aquí no haga falta todavía)
+REGISTER '/opt/pig/contrib/piggybank/java/piggybank.jar';
 
 %default CSV_INPUT '/user/waze/incidentes_limpios.csv';
 

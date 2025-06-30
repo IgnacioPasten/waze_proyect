@@ -17,7 +17,7 @@ def normalizar_tipo(subtipo):
 
 def limpiar_datos_mongodb():
     try:
-        client = MongoClient("mongodb://root:example@localhost:27017/")
+        client = MongoClient("mongodb://localhost:27017/")
         db = client["waze_data"]
         collection = db["events"]
 
@@ -53,5 +53,4 @@ def limpiar_datos_mongodb():
         return False
 
 if __name__ == "__main__":
-    # Solo ejecutar si se llama directamente
     limpiar_datos_mongodb()

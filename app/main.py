@@ -28,7 +28,7 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-storage = None  # Se inicializará solo cuando sea necesario
+storage = None 
 policies = [CacheLRU, CacheFIFO]
 rates = [2, 5] 
 visualization_controller = None
@@ -56,7 +56,6 @@ def make_query(cache, politica, tasa):
             logger.info(f"Cache MISS para {city} - {response_time:.2f}ms")
             
             db_start = time.time()
-            # Simular datos en lugar de usar MongoDB
             result = {
                 "ciudad": city,
                 "eventos": random.randint(1, 50),
@@ -116,7 +115,7 @@ def check_services():
         logger.warning(f"Kibana no disponible: {e}")
     
     try:
-        client = MongoClient("mongodb://mongo:27017/", serverSelectionTimeoutMS=5000)
+        client = MongoClient("mongodb://localhost:27017/", serverSelectionTimeoutMS=5000)
         client.server_info()
         logger.info("MongoDB disponible")
     except Exception as e:
@@ -219,18 +218,15 @@ def run_visualization_phase():
         return False
 
 def create_automatic_dashboards():
-    """Crea dashboard automático funcional con gráficos visuales"""
-    logger.info("🎨 CREANDO DASHBOARD FUNCIONAL")
+    logger.info("CREANDO DASHBOARD")
     
     try:
-        # Importar funciones directamente de create_waze_dashboard
         import requests
         
         KIBANA_URL = "http://localhost:5601"
         ELASTICSEARCH_URL = "http://localhost:9200"
         
         def test_data_access():
-            """Probar acceso directo a los datos"""
             logger.info("Probando acceso a datos...")
             
             try:
@@ -270,7 +266,6 @@ def create_automatic_dashboards():
             return False
 
         def create_dashboard():
-            """Crear dashboard con visualizaciones"""
             logger.info("Creando dashboard de prueba...")
             
             dashboard = {
@@ -339,11 +334,9 @@ def create_automatic_dashboards():
                 return False
 
         def create_index_pattern():
-            """Crear index pattern si no existe"""
             logger.info("Creando index pattern cache-metrics-real...")
             
             try:
-                # Verificar si ya existe
                 check_response = requests.get(
                     f"{KIBANA_URL}/api/saved_objects/index-pattern/cache-metrics-real",
                     headers={"kbn-xsrf": "true"}
@@ -353,7 +346,6 @@ def create_automatic_dashboards():
                     logger.info("Index pattern ya existe")
                     return True
                 
-                # Crear index pattern
                 index_pattern = {
                     "attributes": {
                         "title": "cache_metrics*",
@@ -407,53 +399,46 @@ def create_automatic_dashboards():
                 logger.error(f"Error: {e}")
                 return False
 
-        # Ejecutar creación del dashboard
         if not test_data_access():
             logger.error("ERROR: No se puede acceder a los datos")
             return False
         
-        # Crear index pattern primero
         if not create_index_pattern():
             logger.error("ERROR: No se pudo crear el index pattern")
             return False
         
-        # Importar y ejecutar las funciones del creador
         try:
             from create_waze_dashboard import create_working_pie_chart, create_working_bar_chart
             
-            # Crear visualizaciones
+            # visualizaciones
             pie_ok = create_working_pie_chart()
             time.sleep(1)
             
             bar_ok = create_working_bar_chart()
             time.sleep(1)
             
-            # Crear dashboard
+            # dashboard
             if pie_ok and bar_ok:
                 dashboard_ok = create_dashboard()
                 
                 if dashboard_ok:
-                    logger.info("✅ ¡DASHBOARD FUNCIONAL CREADO!")
+                    logger.info("DASHBOARD FUNCIONAL CREADO!")
                     logger.info("")
                     logger.info("=" * 70)
-                    logger.info("🧪 DASHBOARD GRAPHICS WAZE")
+                    logger.info("DASHBOARD GRAPHICS WAZE")
                     logger.info("=" * 70)
-                    logger.info("🌐 URL: http://localhost:5601/app/dashboards#/view/dashboard-graphics-waze")
+                    logger.info("URL: http://localhost:5601/app/dashboards#/view/dashboard-graphics-waze")
                     logger.info("")
-                    logger.info("📊 GRÁFICOS FUNCIONANDO:")
-                    logger.info("   🥧 Pie Chart: Cache Hits vs Misses")
-                    logger.info("   📊 Bar Chart: LRU vs FIFO Performance")
+                    logger.info("GRÁFICOS FUNCIONANDO:")
+                    logger.info("Pie Chart: Cache Hits vs Misses")
+                    logger.info("Bar Chart: LRU vs FIFO Performance")
                     logger.info("")
-                    logger.info("✨ CARACTERÍSTICAS VERIFICADAS:")
-                    logger.info("   • ✅ Gráficos visuales funcionando correctamente")
-                    logger.info("   • ✅ Datos reales del índice cache_metrics")
-                    logger.info("   • ✅ Auto-refresh cada 30 segundos")
-                    logger.info("   • ✅ Visualizaciones interactivas")
+                    logger.info("Gráficos visuales funcionando correctamente")
                     logger.info("")
-                    logger.info("🔍 DATOS DISPONIBLES:")
-                    logger.info("   • Index: cache_metrics")
-                    logger.info("   • Políticas: CacheLRU, CacheFIFO")
-                    logger.info("   • Resultados: hit, miss")
+                    logger.info("DATOS DISPONIBLES:")
+                    logger.info("  • Index: cache_metrics")
+                    logger.info("  • Políticas: CacheLRU, CacheFIFO")
+                    logger.info("  • Resultados: hit, miss")
                     logger.info("=" * 70)
                     logger.info("")
                     
@@ -501,7 +486,7 @@ def run_monitoring_phase(duration_minutes=10):
                 logger.info(f"Sistema - Eventos: {status.get('total_events_processed', 0)}, "
                           f"Pipeline: {status.get('pipeline_status', 'unknown')}")
             
-            time.sleep(10)  # Reducido de 30 a 10 segundos para monitoreo más rápido
+            time.sleep(10)
         
         logger.info("Fase de monitoreo completada")
         return True
@@ -567,7 +552,7 @@ def generate_system_report():
         "services": {
             "elasticsearch": "http://localhost:9200",
             "kibana": "http://localhost:5601",
-            "mongodb": "mongodb://mongo:27017"
+            "mongodb": "mongodb://localhost:27017"
         },
         "features_completed": [
             "Pipeline integrado completo",
@@ -733,42 +718,32 @@ def main(args):
         
         success = True
         
-        # Modo especial: solo visualización automática
         if hasattr(args, 'visualizar') and args.visualizar:
-            logger.info("🎯 MODO VISUALIZACIÓN AUTOMÁTICA ACTIVADO")
+            logger.info("MODO VISUALIZACIÓN ACTIVADO")
             
-            # Ejecutar cache para generar datos
             logger.info("Generando datos para visualización...")
             success &= run_cache_testing_phase()
             time.sleep(2)
             
-            # Crear dashboards automáticos
             success &= create_automatic_dashboards()
             
             if success:
-                logger.info("🎉 ¡VISUALIZACIÓN AUTOMÁTICA COMPLETADA!")
+                logger.info("VISUALIZACIÓN AUTOMÁTICA COMPLETADA!")
                 logger.info("")
-                logger.info("🎯 DASHBOARD FUNCIONAL DISPONIBLE:")
+                logger.info("DASHBOARD DISPONIBLE:")
                 logger.info("   http://localhost:5601/app/dashboards#/view/dashboard-graphics-waze")
                 logger.info("")
-                logger.info("📊 DATOS GENERADOS:")
+                logger.info("DATOS GENERADOS:")
                 logger.info("   • Cache LRU y FIFO probados con múltiples tasas")
                 logger.info("   • Eventos de hits y misses registrados")
-                logger.info("   • Métricas de rendimiento almacenadas")
-                logger.info("   • Timeline completo de eventos disponible")
-                logger.info("")
-                logger.info("🔍 TAMBIÉN DISPONIBLE EN:")
-                logger.info("   • Discover: http://localhost:5601/app/discover")
-                logger.info("   • Index Patterns: cache_metrics*")
             else:
-                logger.warning("⚠️ Visualización completada con advertencias")
-                logger.info("💡 Los datos están disponibles en Discover")
+                logger.warning("Visualización completada con advertencias")
+                logger.info("Los datos están disponibles en Discover")
             
             total_time = time.time() - start_time
             logger.info(f"Visualización ejecutada en {total_time:.2f} segundos")
             return
         
-        # Flujo normal del sistema
         if not args.skip_scraper:
             success &= run_scraper_phase()
             time.sleep(2)

@@ -125,7 +125,6 @@ class KibanaDashboardCreator:
                 ]
             }
             
-            # Primero crear las búsquedas guardadas (saved searches)
             self._create_saved_search("cache-discover-search", 
                                      "Búsqueda de Métricas de Cache",
                                      "cache-metrics-pattern",
@@ -136,7 +135,6 @@ class KibanaDashboardCreator:
                                      "pipeline-metrics-pattern",
                                      ["timestamp", "eventos_procesados", "tiempo_total", "fase"])
             
-            # Crear el dashboard
             url = f"{self.kibana_url}/api/saved_objects/dashboard/{dashboard_id}"
             response = requests.post(url, headers=self.headers, json=dashboard_payload)
             
@@ -153,9 +151,7 @@ class KibanaDashboardCreator:
             return False
     
     def _create_saved_search(self, search_id, title, index_pattern_id, columns):
-        """Crear una búsqueda guardada para usar en el dashboard"""
         try:
-            # Verificar si ya existe
             check_url = f"{self.kibana_url}/api/saved_objects/search/{search_id}"
             check_response = requests.get(check_url, headers=self.headers)
             
@@ -163,7 +159,6 @@ class KibanaDashboardCreator:
                 logger.info(f"Búsqueda guardada '{search_id}' ya existe")
                 return True
             
-            # Crear búsqueda guardada
             search_payload = {
                 "attributes": {
                     "title": title,

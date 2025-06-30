@@ -1,4 +1,3 @@
---Carga csv
 incidentes = LOAD '/data/incidentes_limpios.csv'
   USING PigStorage(',')
   AS (fecha:chararray, tipo:chararray, subtipo:chararray, subtipo_normalizado:chararray, ciudad:chararray, calle:chararray, lat:float, lon:float);

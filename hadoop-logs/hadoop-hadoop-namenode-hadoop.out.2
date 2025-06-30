@@ -15,7 +15,7 @@ cpu time                   (seconds, -t) unlimited
 max user processes                  (-u) unlimited
 virtual memory              (kbytes, -v) unlimited
 file locks                          (-x) unlimited
-2025-06-29 23:01:24,923 INFO  namenode.NameNode (LogAdapter.java:info(51)) - STARTUP_MSG: 
+2025-06-30 02:34:43,910 INFO  namenode.NameNode (LogAdapter.java:info(51)) - STARTUP_MSG: 
 /************************************************************
 STARTUP_MSG: Starting NameNode
 STARTUP_MSG:   host = localhost/127.0.0.1
@@ -25,263 +25,255 @@ STARTUP_MSG:   classpath = /opt/hadoop/etc/hadoop:/opt/hadoop/share/hadoop/commo
 STARTUP_MSG:   build = https://github.com/apache/hadoop.git -r 706d88266abcee09ed78fbaa0ad5f74d818ab0e9; compiled by 'stevel' on 2023-03-15T15:56Z
 STARTUP_MSG:   java = 1.8.0_452
 ************************************************************/
-2025-06-29 23:01:24,992 INFO  namenode.NameNode (LogAdapter.java:info(51)) - registered UNIX signal handlers for [TERM, HUP, INT]
-2025-06-29 23:01:26,092 INFO  namenode.NameNode (NameNode.java:createNameNode(1716)) - createNameNode []
-2025-06-29 23:01:26,696 WARN  impl.MetricsConfig (MetricsConfig.java:loadFirst(136)) - Cannot locate configuration: tried hadoop-metrics2-namenode.properties,hadoop-metrics2.properties
-2025-06-29 23:01:27,383 INFO  impl.MetricsSystemImpl (MetricsSystemImpl.java:startTimer(378)) - Scheduled Metric snapshot period at 10 second(s).
-2025-06-29 23:01:27,383 INFO  impl.MetricsSystemImpl (MetricsSystemImpl.java:start(191)) - NameNode metrics system started
-2025-06-29 23:01:27,514 INFO  namenode.NameNodeUtils (NameNodeUtils.java:getClientNamenodeAddress(79)) - fs.defaultFS is hdfs://hadoop:9000
-2025-06-29 23:01:27,515 INFO  namenode.NameNode (NameNode.java:<init>(1018)) - Clients should use hadoop:9000 to access this namenode/service.
-2025-06-29 23:01:28,533 INFO  util.JvmPauseMonitor (JvmPauseMonitor.java:run(188)) - Starting JVM pause monitor
-2025-06-29 23:01:28,694 INFO  hdfs.DFSUtil (DFSUtil.java:httpServerTemplateForNNAndJN(1694)) - Filter initializers set : org.apache.hadoop.http.lib.StaticUserWebFilter,org.apache.hadoop.hdfs.web.AuthFilterInitializer
-2025-06-29 23:01:28,722 INFO  hdfs.DFSUtil (DFSUtil.java:httpServerTemplateForNNAndJN(1716)) - Starting Web-server for hdfs at: http://0.0.0.0:9870
-2025-06-29 23:01:28,791 INFO  util.log (Log.java:initialized(170)) - Logging initialized @10168ms to org.eclipse.jetty.util.log.Slf4jLog
-2025-06-29 23:01:29,558 WARN  server.AuthenticationFilter (AuthenticationFilter.java:constructSecretProvider(240)) - Unable to initialize FileSignerSecretProvider, falling back to use random secrets. Reason: Could not read signature secret file: /home/hadoop/hadoop-http-auth-signature-secret
-2025-06-29 23:01:29,626 INFO  http.HttpRequestLog (HttpRequestLog.java:getRequestLog(82)) - Http request log for http.requests.namenode is not defined
-2025-06-29 23:01:29,702 INFO  http.HttpServer2 (HttpServer2.java:addGlobalFilter(1124)) - Added global filter 'safety' (class=org.apache.hadoop.http.HttpServer2$QuotingInputFilter)
-2025-06-29 23:01:29,716 INFO  http.HttpServer2 (HttpServer2.java:addFilter(1097)) - Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context hdfs
-2025-06-29 23:01:29,720 INFO  http.HttpServer2 (HttpServer2.java:addFilter(1107)) - Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context static
-2025-06-29 23:01:29,725 INFO  http.HttpServer2 (HttpServer2.java:addFilter(1107)) - Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context logs
-2025-06-29 23:01:29,741 INFO  http.HttpServer2 (HttpServer2.java:addFilter(1097)) - Added filter AuthFilter (class=org.apache.hadoop.hdfs.web.AuthFilter) to context hdfs
-2025-06-29 23:01:29,752 INFO  http.HttpServer2 (HttpServer2.java:addFilter(1107)) - Added filter AuthFilter (class=org.apache.hadoop.hdfs.web.AuthFilter) to context static
-2025-06-29 23:01:29,755 INFO  http.HttpServer2 (HttpServer2.java:addFilter(1107)) - Added filter AuthFilter (class=org.apache.hadoop.hdfs.web.AuthFilter) to context logs
-2025-06-29 23:01:30,051 INFO  http.HttpServer2 (HttpServer2.java:addJerseyResourcePackage(951)) - addJerseyResourcePackage: packageName=org.apache.hadoop.hdfs.server.namenode.web.resources;org.apache.hadoop.hdfs.web.resources, pathSpec=/webhdfs/v1/*
-2025-06-29 23:01:30,103 INFO  http.HttpServer2 (HttpServer2.java:bindListener(1357)) - Jetty bound to port 9870
-2025-06-29 23:01:30,106 INFO  server.Server (Server.java:doStart(375)) - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 1.8.0_452-8u452-ga~us1-0ubuntu1~22.04-b09
-2025-06-29 23:01:30,293 INFO  server.session (DefaultSessionIdManager.java:doStart(334)) - DefaultSessionIdManager workerName=node0
-2025-06-29 23:01:30,296 INFO  server.session (DefaultSessionIdManager.java:doStart(339)) - No SessionScavenger set, using defaults
-2025-06-29 23:01:30,305 INFO  server.session (HouseKeeper.java:startScavenging(132)) - node0 Scavenging every 600000ms
-2025-06-29 23:01:30,557 WARN  server.AuthenticationFilter (AuthenticationFilter.java:constructSecretProvider(240)) - Unable to initialize FileSignerSecretProvider, falling back to use random secrets. Reason: Could not read signature secret file: /home/hadoop/hadoop-http-auth-signature-secret
-2025-06-29 23:01:30,577 INFO  handler.ContextHandler (ContextHandler.java:doStart(921)) - Started o.e.j.s.ServletContextHandler@4d15107f{logs,/logs,file:///opt/hadoop/logs/,AVAILABLE}
-2025-06-29 23:01:30,600 INFO  handler.ContextHandler (ContextHandler.java:doStart(921)) - Started o.e.j.s.ServletContextHandler@60f00693{static,/static,file:///opt/hadoop/share/hadoop/hdfs/webapps/static/,AVAILABLE}
-2025-06-29 23:01:31,261 INFO  handler.ContextHandler (ContextHandler.java:doStart(921)) - Started o.e.j.w.WebAppContext@5717c37{hdfs,/,file:///opt/hadoop/share/hadoop/hdfs/webapps/hdfs/,AVAILABLE}{file:/opt/hadoop/share/hadoop/hdfs/webapps/hdfs}
-2025-06-29 23:01:31,450 INFO  server.AbstractConnector (AbstractConnector.java:doStart(333)) - Started ServerConnector@2235eaab{HTTP/1.1, (http/1.1)}{0.0.0.0:9870}
-2025-06-29 23:01:31,451 INFO  server.Server (Server.java:doStart(415)) - Started @12829ms
-2025-06-29 23:01:33,480 WARN  namenode.FSNamesystem (FSNamesystem.java:checkConfiguration(774)) - Only one image storage directory (dfs.namenode.name.dir) configured. Beware of data loss due to lack of redundant storage directories!
-2025-06-29 23:01:33,499 WARN  namenode.FSNamesystem (FSNamesystem.java:checkConfiguration(779)) - Only one namespace edits storage directory (dfs.namenode.edits.dir) configured. Beware of data loss due to lack of redundant storage directories!
-2025-06-29 23:01:33,903 INFO  namenode.FSEditLog (FSEditLog.java:newInstance(232)) - Edit logging is async:true
-2025-06-29 23:01:35,639 INFO  namenode.FSNamesystem (FSNamesystem.java:<init>(843)) - KeyProvider: null
-2025-06-29 23:01:35,678 INFO  namenode.FSNamesystem (FSNamesystemLock.java:<init>(141)) - fsLock is fair: true
-2025-06-29 23:01:35,682 INFO  namenode.FSNamesystem (FSNamesystemLock.java:<init>(159)) - Detailed lock hold time metrics enabled: false
-2025-06-29 23:01:35,748 INFO  namenode.FSNamesystem (FSNamesystem.java:<init>(882)) - fsOwner                = hadoop (auth:SIMPLE)
-2025-06-29 23:01:35,755 INFO  namenode.FSNamesystem (FSNamesystem.java:<init>(883)) - supergroup             = supergroup
-2025-06-29 23:01:35,758 INFO  namenode.FSNamesystem (FSNamesystem.java:<init>(884)) - isPermissionEnabled    = true
-2025-06-29 23:01:35,762 INFO  namenode.FSNamesystem (FSNamesystem.java:<init>(885)) - isStoragePolicyEnabled = true
-2025-06-29 23:01:35,767 INFO  namenode.FSNamesystem (FSNamesystem.java:<init>(896)) - HA Enabled: false
-2025-06-29 23:01:36,265 INFO  common.Util (Util.java:isDiskStatsEnabled(395)) - dfs.datanode.fileio.profiling.sampling.percentage set to 0. Disabling file IO profiling
-2025-06-29 23:01:38,061 INFO  blockmanagement.DatanodeManager (DatanodeManager.java:setBlockInvalidateLimit(2125)) - dfs.block.invalidate.limit : configured=1000, counted=60, effected=1000
-2025-06-29 23:01:38,063 INFO  blockmanagement.DatanodeManager (DatanodeManager.java:<init>(322)) - dfs.namenode.datanode.registration.ip-hostname-check=true
-2025-06-29 23:01:38,123 INFO  blockmanagement.BlockManager (InvalidateBlocks.java:printBlockDeletionTime(77)) - dfs.namenode.startup.delay.block.deletion.sec is set to 000:00:00:00.000
-2025-06-29 23:01:38,149 INFO  blockmanagement.BlockManager (InvalidateBlocks.java:printBlockDeletionTime(83)) - The block deletion will start around 2025 Jun 29 23:01:38
-2025-06-29 23:01:38,259 INFO  util.GSet (LightWeightGSet.java:computeCapacity(408)) - Computing capacity for map BlocksMap
-2025-06-29 23:01:38,271 INFO  util.GSet (LightWeightGSet.java:computeCapacity(409)) - VM type       = 64-bit
-2025-06-29 23:01:38,288 INFO  util.GSet (LightWeightGSet.java:computeCapacity(410)) - 2.0% max memory 1.7 GB = 35.2 MB
-2025-06-29 23:01:38,292 INFO  util.GSet (LightWeightGSet.java:computeCapacity(415)) - capacity      = 2^22 = 4194304 entries
-2025-06-29 23:01:38,448 INFO  blockmanagement.BlockManager (BlockManager.java:createSPSManager(5447)) - Storage policy satisfier is disabled
-2025-06-29 23:01:38,458 INFO  blockmanagement.BlockManager (BlockManager.java:createBlockTokenSecretManager(633)) - dfs.block.access.token.enable = false
-2025-06-29 23:01:38,642 INFO  blockmanagement.BlockManagerSafeMode (BlockManagerSafeMode.java:<init>(160)) - dfs.namenode.safemode.threshold-pct = 0.999
-2025-06-29 23:01:38,656 INFO  blockmanagement.BlockManagerSafeMode (BlockManagerSafeMode.java:<init>(161)) - dfs.namenode.safemode.min.datanodes = 0
-2025-06-29 23:01:38,677 INFO  blockmanagement.BlockManagerSafeMode (BlockManagerSafeMode.java:<init>(163)) - dfs.namenode.safemode.extension = 30000
-2025-06-29 23:01:38,705 INFO  blockmanagement.BlockManager (BlockManager.java:<init>(619)) - defaultReplication         = 3
-2025-06-29 23:01:38,720 INFO  blockmanagement.BlockManager (BlockManager.java:<init>(620)) - maxReplication             = 512
-2025-06-29 23:01:38,722 INFO  blockmanagement.BlockManager (BlockManager.java:<init>(621)) - minReplication             = 1
-2025-06-29 23:01:38,722 INFO  blockmanagement.BlockManager (BlockManager.java:<init>(622)) - maxReplicationStreams      = 2
-2025-06-29 23:01:38,741 INFO  blockmanagement.BlockManager (BlockManager.java:<init>(623)) - redundancyRecheckInterval  = 3000ms
-2025-06-29 23:01:38,741 INFO  blockmanagement.BlockManager (BlockManager.java:<init>(624)) - encryptDataTransfer        = false
-2025-06-29 23:01:38,742 INFO  blockmanagement.BlockManager (BlockManager.java:<init>(625)) - maxNumBlocksToLog          = 1000
-2025-06-29 23:01:40,027 INFO  namenode.FSDirectory (SerialNumberManager.java:<clinit>(51)) - GLOBAL serial map: bits=29 maxEntries=536870911
-2025-06-29 23:01:40,046 INFO  namenode.FSDirectory (SerialNumberManager.java:<clinit>(51)) - USER serial map: bits=24 maxEntries=16777215
-2025-06-29 23:01:40,061 INFO  namenode.FSDirectory (SerialNumberManager.java:<clinit>(51)) - GROUP serial map: bits=24 maxEntries=16777215
-2025-06-29 23:01:40,073 INFO  namenode.FSDirectory (SerialNumberManager.java:<clinit>(51)) - XATTR serial map: bits=24 maxEntries=16777215
-2025-06-29 23:01:40,618 INFO  util.GSet (LightWeightGSet.java:computeCapacity(408)) - Computing capacity for map INodeMap
-2025-06-29 23:01:40,634 INFO  util.GSet (LightWeightGSet.java:computeCapacity(409)) - VM type       = 64-bit
-2025-06-29 23:01:40,667 INFO  util.GSet (LightWeightGSet.java:computeCapacity(410)) - 1.0% max memory 1.7 GB = 17.6 MB
-2025-06-29 23:01:40,717 INFO  util.GSet (LightWeightGSet.java:computeCapacity(415)) - capacity      = 2^21 = 2097152 entries
-2025-06-29 23:01:40,729 INFO  namenode.FSDirectory (FSDirectory.java:<init>(335)) - ACLs enabled? true
-2025-06-29 23:01:40,737 INFO  namenode.FSDirectory (FSDirectory.java:<init>(339)) - POSIX ACL inheritance enabled? true
-2025-06-29 23:01:40,743 INFO  namenode.FSDirectory (FSDirectory.java:<init>(343)) - XAttrs enabled? true
-2025-06-29 23:01:40,744 INFO  namenode.NameNode (FSDirectory.java:<init>(406)) - Caching file names occurring more than 10 times
-2025-06-29 23:01:40,818 INFO  snapshot.SnapshotManager (SnapshotManager.java:<init>(124)) - Loaded config captureOpenFiles: false, skipCaptureAccessTimeOnlyChange: false, snapshotDiffAllowSnapRootDescendant: true, maxSnapshotLimit: 65536
-2025-06-29 23:01:40,823 INFO  snapshot.SnapshotManager (DirectoryDiffListFactory.java:init(43)) - SkipList is disabled
-2025-06-29 23:01:40,922 INFO  util.GSet (LightWeightGSet.java:computeCapacity(408)) - Computing capacity for map cachedBlocks
-2025-06-29 23:01:40,925 INFO  util.GSet (LightWeightGSet.java:computeCapacity(409)) - VM type       = 64-bit
-2025-06-29 23:01:40,926 INFO  util.GSet (LightWeightGSet.java:computeCapacity(410)) - 0.25% max memory 1.7 GB = 4.4 MB
-2025-06-29 23:01:40,934 INFO  util.GSet (LightWeightGSet.java:computeCapacity(415)) - capacity      = 2^19 = 524288 entries
-2025-06-29 23:01:41,314 INFO  metrics.TopMetrics (TopMetrics.java:logConf(75)) - NNTop conf: dfs.namenode.top.window.num.buckets = 10
-2025-06-29 23:01:41,362 INFO  metrics.TopMetrics (TopMetrics.java:logConf(77)) - NNTop conf: dfs.namenode.top.num.users = 10
-2025-06-29 23:01:41,393 INFO  metrics.TopMetrics (TopMetrics.java:logConf(79)) - NNTop conf: dfs.namenode.top.windows.minutes = 1,5,25
-2025-06-29 23:01:42,038 INFO  namenode.FSNamesystem (FSNamesystem.java:initRetryCache(1119)) - Retry cache on namenode is enabled
-2025-06-29 23:01:42,085 INFO  namenode.FSNamesystem (FSNamesystem.java:initRetryCache(1127)) - Retry cache will use 0.03 of total heap and retry cache entry expiry time is 600000 millis
-2025-06-29 23:01:42,183 INFO  util.GSet (LightWeightGSet.java:computeCapacity(408)) - Computing capacity for map NameNodeRetryCache
-2025-06-29 23:01:42,184 INFO  util.GSet (LightWeightGSet.java:computeCapacity(409)) - VM type       = 64-bit
-2025-06-29 23:01:42,185 INFO  util.GSet (LightWeightGSet.java:computeCapacity(410)) - 0.029999999329447746% max memory 1.7 GB = 540.2 KB
-2025-06-29 23:01:42,185 INFO  util.GSet (LightWeightGSet.java:computeCapacity(415)) - capacity      = 2^16 = 65536 entries
-2025-06-29 23:01:42,600 INFO  common.Storage (Storage.java:tryLock(948)) - Lock on /hadoop/dfs/name/in_use.lock acquired by nodename 47@localhost
-2025-06-29 23:01:42,899 INFO  namenode.FileJournalManager (FileJournalManager.java:recoverUnfinalizedSegments(428)) - Recovering unfinalized segments in /hadoop/dfs/name/current
-2025-06-29 23:01:43,488 INFO  namenode.FileJournalManager (FileJournalManager.java:finalizeLogSegment(145)) - Finalizing edits file /hadoop/dfs/name/current/edits_inprogress_0000000000000000017 -> /hadoop/dfs/name/current/edits_0000000000000000017-0000000000000000017
-2025-06-29 23:01:43,825 INFO  namenode.FSImage (FSImage.java:loadFSImageFile(800)) - Planning to load image: FSImageFile(file=/hadoop/dfs/name/current/fsimage_0000000000000000014, cpktTxId=0000000000000000014)
-2025-06-29 23:01:45,577 INFO  namenode.FSImageFormatPBINode (FSImageFormatPBINode.java:loadINodeSectionHeader(413)) - Loading 9 INodes.
-2025-06-29 23:01:45,723 INFO  namenode.FSImageFormatPBINode (FSImageFormatPBINode.java:loadINodeSection(371)) - Successfully loaded 9 inodes
-2025-06-29 23:01:45,881 INFO  namenode.FSImageFormatPBINode (FSImageFormatPBINode.java:waitBlocksMapAndNameCacheUpdateFinished(344)) - Completed update blocks map and name cache, total waiting duration 0ms.
-2025-06-29 23:01:46,014 INFO  namenode.FSImageFormatProtobuf (FSImageFormatProtobuf.java:load(255)) - Loaded FSImage in 2 seconds.
-2025-06-29 23:01:46,021 INFO  namenode.FSImage (FSImage.java:loadFSImage(978)) - Loaded image for txid 14 from /hadoop/dfs/name/current/fsimage_0000000000000000014
-2025-06-29 23:01:46,034 INFO  namenode.FSImage (FSImage.java:loadEdits(911)) - Reading org.apache.hadoop.hdfs.server.namenode.RedundantEditLogInputStream@4204541c expecting start txid #15
-2025-06-29 23:01:46,036 INFO  namenode.FSImage (FSEditLogLoader.java:loadFSEdits(178)) - Start loading edits file /hadoop/dfs/name/current/edits_0000000000000000015-0000000000000000015 maxTxnsToRead = 9223372036854775807
-2025-06-29 23:01:46,048 INFO  namenode.RedundantEditLogInputStream (RedundantEditLogInputStream.java:nextOp(187)) - Fast-forwarding stream '/hadoop/dfs/name/current/edits_0000000000000000015-0000000000000000015' to transaction ID 15
-2025-06-29 23:01:46,372 INFO  namenode.FSImage (FSEditLogLoader.java:loadFSEdits(188)) - Loaded 1 edits file(s) (the last named /hadoop/dfs/name/current/edits_0000000000000000015-0000000000000000015) of total size 1048576.0, total edits 1.0, total load time 177.0 ms
-2025-06-29 23:01:46,374 INFO  namenode.RedundantEditLogInputStream (RedundantEditLogInputStream.java:nextOp(187)) - Fast-forwarding stream '/hadoop/dfs/name/current/edits_0000000000000000016-0000000000000000016' to transaction ID 15
-2025-06-29 23:01:47,716 INFO  namenode.FSEditLogLoader (FSEditLogLoader.java:loadEditRecords(319)) - replaying edit log: 1/1 transactions completed. (100%)
-2025-06-29 23:01:47,733 INFO  namenode.RedundantEditLogInputStream (RedundantEditLogInputStream.java:nextOp(187)) - Fast-forwarding stream '/hadoop/dfs/name/current/edits_0000000000000000017-0000000000000000017' to transaction ID 15
-2025-06-29 23:01:47,747 INFO  namenode.FSNamesystem (FSNamesystem.java:loadFSImage(1241)) - Need to save fs image? false (staleImage=false, haEnabled=false, isRollingUpgrade=false)
-2025-06-29 23:01:47,907 INFO  namenode.FSEditLog (FSEditLog.java:startLogSegment(1407)) - Starting log segment at 18
-2025-06-29 23:01:48,310 INFO  util.JvmPauseMonitor (JvmPauseMonitor.java:run(205)) - Detected pause in JVM or host machine (eg GC): pause of approximately 1139ms
-GC pool 'PS Scavenge' had collection(s): count=1 time=1321ms
-2025-06-29 23:01:49,088 INFO  namenode.NameCache (NameCache.java:initialized(143)) - initialized with 0 entries 0 lookups
-2025-06-29 23:01:49,096 INFO  namenode.FSNamesystem (FSNamesystem.java:loadFromDisk(815)) - Finished loading FSImage in 6848 msecs
-2025-06-29 23:01:51,480 INFO  namenode.NameNode (NameNodeRpcServer.java:<init>(451)) - RPC server is binding to hadoop:9000
-2025-06-29 23:01:51,481 INFO  namenode.NameNode (NameNodeRpcServer.java:<init>(456)) - Enable NameNode state context:false
-2025-06-29 23:01:51,518 INFO  ipc.CallQueueManager (CallQueueManager.java:<init>(90)) - Using callQueue: class java.util.concurrent.LinkedBlockingQueue, queueCapacity: 1000, scheduler: class org.apache.hadoop.ipc.DefaultRpcScheduler, ipcBackoff: false.
-2025-06-29 23:01:51,586 INFO  ipc.Server (Server.java:run(1319)) - Starting Socket Reader #1 for port 9000
-2025-06-29 23:01:52,112 INFO  namenode.FSNamesystem (FSNamesystem.java:registerMBean(5501)) - Registered FSNamesystemState, ReplicatedBlocksState and ECBlockGroupsState MBeans.
-2025-06-29 23:01:52,165 INFO  namenode.LeaseManager (LeaseManager.java:getNumUnderConstructionBlocks(166)) - Number of blocks under construction: 0
-2025-06-29 23:01:52,214 INFO  blockmanagement.DatanodeAdminDefaultMonitor (DatanodeAdminDefaultMonitor.java:processConf(116)) - Initialized the Default Decommission and Maintenance monitor
-2025-06-29 23:01:52,223 INFO  blockmanagement.BlockManager (BlockManager.java:run(4968)) - Start MarkedDeleteBlockScrubber thread
-2025-06-29 23:01:52,306 INFO  blockmanagement.BlockManager (BlockManager.java:initializeReplQueues(5176)) - initializing replication queues
-2025-06-29 23:01:52,322 INFO  hdfs.StateChange (BlockManagerSafeMode.java:leaveSafeMode(399)) - STATE* Leaving safe mode after 0 secs
-2025-06-29 23:01:52,325 INFO  hdfs.StateChange (BlockManagerSafeMode.java:leaveSafeMode(405)) - STATE* Network topology has 0 racks and 0 datanodes
-2025-06-29 23:01:52,329 INFO  hdfs.StateChange (BlockManagerSafeMode.java:leaveSafeMode(407)) - STATE* UnderReplicatedBlocks has 0 blocks
-2025-06-29 23:01:52,374 INFO  blockmanagement.BlockManager (BlockManager.java:processMisReplicatesAsync(3742)) - Total number of blocks            = 0
-2025-06-29 23:01:52,391 INFO  blockmanagement.BlockManager (BlockManager.java:processMisReplicatesAsync(3743)) - Number of invalid blocks          = 0
-2025-06-29 23:01:52,392 INFO  blockmanagement.BlockManager (BlockManager.java:processMisReplicatesAsync(3744)) - Number of under-replicated blocks = 0
-2025-06-29 23:01:52,392 INFO  blockmanagement.BlockManager (BlockManager.java:processMisReplicatesAsync(3745)) - Number of  over-replicated blocks = 0
-2025-06-29 23:01:52,393 INFO  blockmanagement.BlockManager (BlockManager.java:processMisReplicatesAsync(3747)) - Number of blocks being written    = 0
-2025-06-29 23:01:52,394 INFO  hdfs.StateChange (BlockManager.java:processMisReplicatesAsync(3750)) - STATE* Replication Queue initialization scan for invalid, over- and under-replicated blocks completed in 72 msec
-2025-06-29 23:01:52,718 INFO  ipc.Server (Server.java:run(1558)) - IPC Server Responder: starting
-2025-06-29 23:01:52,748 INFO  ipc.Server (Server.java:run(1398)) - IPC Server listener on 9000: starting
-2025-06-29 23:01:52,806 INFO  namenode.NameNode (NameNode.java:startCommonServices(904)) - NameNode RPC up at: hadoop/127.0.0.1:9000
-2025-06-29 23:01:52,834 INFO  namenode.FSNamesystem (FSNamesystem.java:startActiveServices(1353)) - Starting services required for active state
-2025-06-29 23:01:52,835 INFO  namenode.FSDirectory (FSDirectory.java:updateCountForQuota(840)) - Initializing quota with 12 thread(s)
-2025-06-29 23:01:52,945 INFO  namenode.FSDirectory (FSDirectory.java:updateCountForQuota(849)) - Quota initialization completed in 109 milliseconds
+2025-06-30 02:34:44,121 INFO  namenode.NameNode (LogAdapter.java:info(51)) - registered UNIX signal handlers for [TERM, HUP, INT]
+2025-06-30 02:34:47,380 INFO  namenode.NameNode (NameNode.java:createNameNode(1716)) - createNameNode []
+2025-06-30 02:34:52,513 WARN  impl.MetricsConfig (MetricsConfig.java:loadFirst(136)) - Cannot locate configuration: tried hadoop-metrics2-namenode.properties,hadoop-metrics2.properties
+2025-06-30 02:34:55,072 INFO  impl.MetricsSystemImpl (MetricsSystemImpl.java:startTimer(378)) - Scheduled Metric snapshot period at 10 second(s).
+2025-06-30 02:34:55,087 INFO  impl.MetricsSystemImpl (MetricsSystemImpl.java:start(191)) - NameNode metrics system started
+2025-06-30 02:34:56,446 INFO  namenode.NameNodeUtils (NameNodeUtils.java:getClientNamenodeAddress(79)) - fs.defaultFS is hdfs://hadoop:9000
+2025-06-30 02:34:56,537 INFO  namenode.NameNode (NameNode.java:<init>(1018)) - Clients should use hadoop:9000 to access this namenode/service.
+2025-06-30 02:35:07,179 INFO  util.JvmPauseMonitor (JvmPauseMonitor.java:run(188)) - Starting JVM pause monitor
+2025-06-30 02:35:08,674 INFO  hdfs.DFSUtil (DFSUtil.java:httpServerTemplateForNNAndJN(1694)) - Filter initializers set : org.apache.hadoop.http.lib.StaticUserWebFilter,org.apache.hadoop.hdfs.web.AuthFilterInitializer
+2025-06-30 02:35:09,332 INFO  hdfs.DFSUtil (DFSUtil.java:httpServerTemplateForNNAndJN(1716)) - Starting Web-server for hdfs at: http://0.0.0.0:9870
+2025-06-30 02:35:10,093 INFO  util.log (Log.java:initialized(170)) - Logging initialized @44070ms to org.eclipse.jetty.util.log.Slf4jLog
+2025-06-30 02:35:15,072 WARN  server.AuthenticationFilter (AuthenticationFilter.java:constructSecretProvider(240)) - Unable to initialize FileSignerSecretProvider, falling back to use random secrets. Reason: Could not read signature secret file: /home/hadoop/hadoop-http-auth-signature-secret
+2025-06-30 02:35:15,244 INFO  http.HttpRequestLog (HttpRequestLog.java:getRequestLog(82)) - Http request log for http.requests.namenode is not defined
+2025-06-30 02:35:15,542 INFO  http.HttpServer2 (HttpServer2.java:addGlobalFilter(1124)) - Added global filter 'safety' (class=org.apache.hadoop.http.HttpServer2$QuotingInputFilter)
+2025-06-30 02:35:15,615 INFO  http.HttpServer2 (HttpServer2.java:addFilter(1097)) - Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context hdfs
+2025-06-30 02:35:15,649 INFO  http.HttpServer2 (HttpServer2.java:addFilter(1107)) - Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context static
+2025-06-30 02:35:15,652 INFO  http.HttpServer2 (HttpServer2.java:addFilter(1107)) - Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context logs
+2025-06-30 02:35:15,728 INFO  http.HttpServer2 (HttpServer2.java:addFilter(1097)) - Added filter AuthFilter (class=org.apache.hadoop.hdfs.web.AuthFilter) to context hdfs
+2025-06-30 02:35:15,736 INFO  http.HttpServer2 (HttpServer2.java:addFilter(1107)) - Added filter AuthFilter (class=org.apache.hadoop.hdfs.web.AuthFilter) to context static
+2025-06-30 02:35:15,763 INFO  http.HttpServer2 (HttpServer2.java:addFilter(1107)) - Added filter AuthFilter (class=org.apache.hadoop.hdfs.web.AuthFilter) to context logs
+2025-06-30 02:35:17,561 INFO  http.HttpServer2 (HttpServer2.java:addJerseyResourcePackage(951)) - addJerseyResourcePackage: packageName=org.apache.hadoop.hdfs.server.namenode.web.resources;org.apache.hadoop.hdfs.web.resources, pathSpec=/webhdfs/v1/*
+2025-06-30 02:35:18,071 INFO  http.HttpServer2 (HttpServer2.java:bindListener(1357)) - Jetty bound to port 9870
+2025-06-30 02:35:18,165 INFO  server.Server (Server.java:doStart(375)) - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 1.8.0_452-8u452-ga~us1-0ubuntu1~22.04-b09
+2025-06-30 02:35:19,135 INFO  server.session (DefaultSessionIdManager.java:doStart(334)) - DefaultSessionIdManager workerName=node0
+2025-06-30 02:35:19,139 INFO  server.session (DefaultSessionIdManager.java:doStart(339)) - No SessionScavenger set, using defaults
+2025-06-30 02:35:19,180 INFO  server.session (HouseKeeper.java:startScavenging(132)) - node0 Scavenging every 600000ms
+2025-06-30 02:35:19,483 WARN  server.AuthenticationFilter (AuthenticationFilter.java:constructSecretProvider(240)) - Unable to initialize FileSignerSecretProvider, falling back to use random secrets. Reason: Could not read signature secret file: /home/hadoop/hadoop-http-auth-signature-secret
+2025-06-30 02:35:19,580 INFO  handler.ContextHandler (ContextHandler.java:doStart(921)) - Started o.e.j.s.ServletContextHandler@4d15107f{logs,/logs,file:///opt/hadoop/logs/,AVAILABLE}
+2025-06-30 02:35:19,630 INFO  handler.ContextHandler (ContextHandler.java:doStart(921)) - Started o.e.j.s.ServletContextHandler@60f00693{static,/static,file:///opt/hadoop/share/hadoop/hdfs/webapps/static/,AVAILABLE}
+2025-06-30 02:35:24,711 INFO  handler.ContextHandler (ContextHandler.java:doStart(921)) - Started o.e.j.w.WebAppContext@5717c37{hdfs,/,file:///opt/hadoop/share/hadoop/hdfs/webapps/hdfs/,AVAILABLE}{file:/opt/hadoop/share/hadoop/hdfs/webapps/hdfs}
+2025-06-30 02:35:25,082 INFO  server.AbstractConnector (AbstractConnector.java:doStart(333)) - Started ServerConnector@2235eaab{HTTP/1.1, (http/1.1)}{0.0.0.0:9870}
+2025-06-30 02:35:25,099 INFO  server.Server (Server.java:doStart(415)) - Started @59100ms
+2025-06-30 02:35:30,300 WARN  namenode.FSNamesystem (FSNamesystem.java:checkConfiguration(774)) - Only one image storage directory (dfs.namenode.name.dir) configured. Beware of data loss due to lack of redundant storage directories!
+2025-06-30 02:35:30,317 WARN  namenode.FSNamesystem (FSNamesystem.java:checkConfiguration(779)) - Only one namespace edits storage directory (dfs.namenode.edits.dir) configured. Beware of data loss due to lack of redundant storage directories!
+2025-06-30 02:35:31,872 INFO  namenode.FSEditLog (FSEditLog.java:newInstance(232)) - Edit logging is async:true
+2025-06-30 02:35:34,707 INFO  namenode.FSNamesystem (FSNamesystem.java:<init>(843)) - KeyProvider: null
+2025-06-30 02:35:34,859 INFO  namenode.FSNamesystem (FSNamesystemLock.java:<init>(141)) - fsLock is fair: true
+2025-06-30 02:35:34,899 INFO  namenode.FSNamesystem (FSNamesystemLock.java:<init>(159)) - Detailed lock hold time metrics enabled: false
+2025-06-30 02:35:35,328 INFO  namenode.FSNamesystem (FSNamesystem.java:<init>(882)) - fsOwner                = hadoop (auth:SIMPLE)
+2025-06-30 02:35:35,434 INFO  namenode.FSNamesystem (FSNamesystem.java:<init>(883)) - supergroup             = supergroup
+2025-06-30 02:35:35,440 INFO  namenode.FSNamesystem (FSNamesystem.java:<init>(884)) - isPermissionEnabled    = true
+2025-06-30 02:35:35,482 INFO  namenode.FSNamesystem (FSNamesystem.java:<init>(885)) - isStoragePolicyEnabled = true
+2025-06-30 02:35:35,530 INFO  namenode.FSNamesystem (FSNamesystem.java:<init>(896)) - HA Enabled: false
+2025-06-30 02:35:37,098 INFO  common.Util (Util.java:isDiskStatsEnabled(395)) - dfs.datanode.fileio.profiling.sampling.percentage set to 0. Disabling file IO profiling
+2025-06-30 02:35:46,683 INFO  blockmanagement.DatanodeManager (DatanodeManager.java:setBlockInvalidateLimit(2125)) - dfs.block.invalidate.limit : configured=1000, counted=60, effected=1000
+2025-06-30 02:35:46,684 INFO  blockmanagement.DatanodeManager (DatanodeManager.java:<init>(322)) - dfs.namenode.datanode.registration.ip-hostname-check=true
+2025-06-30 02:35:46,795 INFO  blockmanagement.BlockManager (InvalidateBlocks.java:printBlockDeletionTime(77)) - dfs.namenode.startup.delay.block.deletion.sec is set to 000:00:00:00.000
+2025-06-30 02:35:46,799 INFO  blockmanagement.BlockManager (InvalidateBlocks.java:printBlockDeletionTime(83)) - The block deletion will start around 2025 Jun 30 02:35:46
+2025-06-30 02:35:46,877 INFO  util.GSet (LightWeightGSet.java:computeCapacity(408)) - Computing capacity for map BlocksMap
+2025-06-30 02:35:46,889 INFO  util.GSet (LightWeightGSet.java:computeCapacity(409)) - VM type       = 64-bit
+2025-06-30 02:35:46,906 INFO  util.GSet (LightWeightGSet.java:computeCapacity(410)) - 2.0% max memory 1.7 GB = 35.2 MB
+2025-06-30 02:35:46,921 INFO  util.GSet (LightWeightGSet.java:computeCapacity(415)) - capacity      = 2^22 = 4194304 entries
+2025-06-30 02:35:47,188 INFO  blockmanagement.BlockManager (BlockManager.java:createSPSManager(5447)) - Storage policy satisfier is disabled
+2025-06-30 02:35:47,196 INFO  blockmanagement.BlockManager (BlockManager.java:createBlockTokenSecretManager(633)) - dfs.block.access.token.enable = false
+2025-06-30 02:35:47,307 INFO  blockmanagement.BlockManagerSafeMode (BlockManagerSafeMode.java:<init>(160)) - dfs.namenode.safemode.threshold-pct = 0.999
+2025-06-30 02:35:47,320 INFO  blockmanagement.BlockManagerSafeMode (BlockManagerSafeMode.java:<init>(161)) - dfs.namenode.safemode.min.datanodes = 0
+2025-06-30 02:35:47,330 INFO  blockmanagement.BlockManagerSafeMode (BlockManagerSafeMode.java:<init>(163)) - dfs.namenode.safemode.extension = 30000
+2025-06-30 02:35:47,393 INFO  blockmanagement.BlockManager (BlockManager.java:<init>(619)) - defaultReplication         = 3
+2025-06-30 02:35:47,409 INFO  blockmanagement.BlockManager (BlockManager.java:<init>(620)) - maxReplication             = 512
+2025-06-30 02:35:47,427 INFO  blockmanagement.BlockManager (BlockManager.java:<init>(621)) - minReplication             = 1
+2025-06-30 02:35:47,434 INFO  blockmanagement.BlockManager (BlockManager.java:<init>(622)) - maxReplicationStreams      = 2
+2025-06-30 02:35:47,456 INFO  blockmanagement.BlockManager (BlockManager.java:<init>(623)) - redundancyRecheckInterval  = 3000ms
+2025-06-30 02:35:47,464 INFO  blockmanagement.BlockManager (BlockManager.java:<init>(624)) - encryptDataTransfer        = false
+2025-06-30 02:35:47,479 INFO  blockmanagement.BlockManager (BlockManager.java:<init>(625)) - maxNumBlocksToLog          = 1000
+2025-06-30 02:35:49,019 INFO  namenode.FSDirectory (SerialNumberManager.java:<clinit>(51)) - GLOBAL serial map: bits=29 maxEntries=536870911
+2025-06-30 02:35:49,034 INFO  namenode.FSDirectory (SerialNumberManager.java:<clinit>(51)) - USER serial map: bits=24 maxEntries=16777215
+2025-06-30 02:35:49,049 INFO  namenode.FSDirectory (SerialNumberManager.java:<clinit>(51)) - GROUP serial map: bits=24 maxEntries=16777215
+2025-06-30 02:35:49,059 INFO  namenode.FSDirectory (SerialNumberManager.java:<clinit>(51)) - XATTR serial map: bits=24 maxEntries=16777215
+2025-06-30 02:35:49,657 INFO  util.GSet (LightWeightGSet.java:computeCapacity(408)) - Computing capacity for map INodeMap
+2025-06-30 02:35:49,673 INFO  util.GSet (LightWeightGSet.java:computeCapacity(409)) - VM type       = 64-bit
+2025-06-30 02:35:49,692 INFO  util.GSet (LightWeightGSet.java:computeCapacity(410)) - 1.0% max memory 1.7 GB = 17.6 MB
+2025-06-30 02:35:49,701 INFO  util.GSet (LightWeightGSet.java:computeCapacity(415)) - capacity      = 2^21 = 2097152 entries
+2025-06-30 02:35:49,809 INFO  namenode.FSDirectory (FSDirectory.java:<init>(335)) - ACLs enabled? true
+2025-06-30 02:35:49,881 INFO  namenode.FSDirectory (FSDirectory.java:<init>(339)) - POSIX ACL inheritance enabled? true
+2025-06-30 02:35:50,091 INFO  namenode.FSDirectory (FSDirectory.java:<init>(343)) - XAttrs enabled? true
+2025-06-30 02:35:50,149 INFO  namenode.NameNode (FSDirectory.java:<init>(406)) - Caching file names occurring more than 10 times
+2025-06-30 02:35:50,525 INFO  snapshot.SnapshotManager (SnapshotManager.java:<init>(124)) - Loaded config captureOpenFiles: false, skipCaptureAccessTimeOnlyChange: false, snapshotDiffAllowSnapRootDescendant: true, maxSnapshotLimit: 65536
+2025-06-30 02:35:50,591 INFO  snapshot.SnapshotManager (DirectoryDiffListFactory.java:init(43)) - SkipList is disabled
+2025-06-30 02:35:50,711 INFO  util.GSet (LightWeightGSet.java:computeCapacity(408)) - Computing capacity for map cachedBlocks
+2025-06-30 02:35:50,729 INFO  util.GSet (LightWeightGSet.java:computeCapacity(409)) - VM type       = 64-bit
+2025-06-30 02:35:50,742 INFO  util.GSet (LightWeightGSet.java:computeCapacity(410)) - 0.25% max memory 1.7 GB = 4.4 MB
+2025-06-30 02:35:50,750 INFO  util.GSet (LightWeightGSet.java:computeCapacity(415)) - capacity      = 2^19 = 524288 entries
+2025-06-30 02:35:51,263 INFO  metrics.TopMetrics (TopMetrics.java:logConf(75)) - NNTop conf: dfs.namenode.top.window.num.buckets = 10
+2025-06-30 02:35:51,313 INFO  metrics.TopMetrics (TopMetrics.java:logConf(77)) - NNTop conf: dfs.namenode.top.num.users = 10
+2025-06-30 02:35:51,329 INFO  metrics.TopMetrics (TopMetrics.java:logConf(79)) - NNTop conf: dfs.namenode.top.windows.minutes = 1,5,25
+2025-06-30 02:35:51,394 INFO  namenode.FSNamesystem (FSNamesystem.java:initRetryCache(1119)) - Retry cache on namenode is enabled
+2025-06-30 02:35:51,405 INFO  namenode.FSNamesystem (FSNamesystem.java:initRetryCache(1127)) - Retry cache will use 0.03 of total heap and retry cache entry expiry time is 600000 millis
+2025-06-30 02:35:51,459 INFO  util.GSet (LightWeightGSet.java:computeCapacity(408)) - Computing capacity for map NameNodeRetryCache
+2025-06-30 02:35:51,489 INFO  util.GSet (LightWeightGSet.java:computeCapacity(409)) - VM type       = 64-bit
+2025-06-30 02:35:51,508 INFO  util.GSet (LightWeightGSet.java:computeCapacity(410)) - 0.029999999329447746% max memory 1.7 GB = 540.2 KB
+2025-06-30 02:35:51,521 INFO  util.GSet (LightWeightGSet.java:computeCapacity(415)) - capacity      = 2^16 = 65536 entries
+2025-06-30 02:35:52,057 INFO  common.Storage (Storage.java:tryLock(948)) - Lock on /hadoop/dfs/name/in_use.lock acquired by nodename 47@localhost
+2025-06-30 02:35:52,687 INFO  namenode.FileJournalManager (FileJournalManager.java:recoverUnfinalizedSegments(428)) - Recovering unfinalized segments in /hadoop/dfs/name/current
+2025-06-30 02:35:53,318 INFO  namenode.FileJournalManager (FileJournalManager.java:finalizeLogSegment(145)) - Finalizing edits file /hadoop/dfs/name/current/edits_inprogress_0000000000000000019 -> /hadoop/dfs/name/current/edits_0000000000000000019-0000000000000000019
+2025-06-30 02:35:59,477 INFO  util.JvmPauseMonitor (JvmPauseMonitor.java:run(205)) - Detected pause in JVM or host machine (eg GC): pause of approximately 4961ms
+GC pool 'PS MarkSweep' had collection(s): count=1 time=830ms
+GC pool 'PS Scavenge' had collection(s): count=1 time=4394ms
+2025-06-30 02:36:01,023 INFO  namenode.FSImage (FSImage.java:loadFSImageFile(800)) - Planning to load image: FSImageFile(file=/hadoop/dfs/name/current/fsimage_0000000000000000018, cpktTxId=0000000000000000018)
+2025-06-30 02:36:04,986 INFO  namenode.FSImageFormatPBINode (FSImageFormatPBINode.java:loadINodeSectionHeader(413)) - Loading 9 INodes.
+2025-06-30 02:36:05,723 INFO  namenode.FSImageFormatPBINode (FSImageFormatPBINode.java:loadINodeSection(371)) - Successfully loaded 9 inodes
+2025-06-30 02:36:06,041 INFO  namenode.FSImageFormatPBINode (FSImageFormatPBINode.java:waitBlocksMapAndNameCacheUpdateFinished(344)) - Completed update blocks map and name cache, total waiting duration 0ms.
+2025-06-30 02:36:06,327 INFO  namenode.FSImageFormatProtobuf (FSImageFormatProtobuf.java:load(255)) - Loaded FSImage in 4 seconds.
+2025-06-30 02:36:06,385 INFO  namenode.FSImage (FSImage.java:loadFSImage(978)) - Loaded image for txid 18 from /hadoop/dfs/name/current/fsimage_0000000000000000018
+2025-06-30 02:36:06,645 INFO  namenode.FSImage (FSImage.java:loadEdits(911)) - Reading org.apache.hadoop.hdfs.server.namenode.RedundantEditLogInputStream@4204541c expecting start txid #19
+2025-06-30 02:36:06,693 INFO  namenode.FSImage (FSEditLogLoader.java:loadFSEdits(178)) - Start loading edits file /hadoop/dfs/name/current/edits_0000000000000000019-0000000000000000019 maxTxnsToRead = 9223372036854775807
+2025-06-30 02:36:06,769 INFO  namenode.RedundantEditLogInputStream (RedundantEditLogInputStream.java:nextOp(187)) - Fast-forwarding stream '/hadoop/dfs/name/current/edits_0000000000000000019-0000000000000000019' to transaction ID 19
+2025-06-30 02:36:09,618 INFO  namenode.FSImage (FSEditLogLoader.java:loadFSEdits(188)) - Loaded 1 edits file(s) (the last named /hadoop/dfs/name/current/edits_0000000000000000019-0000000000000000019) of total size 1048576.0, total edits 1.0, total load time 982.0 ms
+2025-06-30 02:36:09,686 INFO  namenode.FSNamesystem (FSNamesystem.java:loadFSImage(1241)) - Need to save fs image? false (staleImage=false, haEnabled=false, isRollingUpgrade=false)
+2025-06-30 02:36:09,776 INFO  namenode.FSEditLog (FSEditLog.java:startLogSegment(1407)) - Starting log segment at 20
+2025-06-30 02:36:13,007 INFO  namenode.NameCache (NameCache.java:initialized(143)) - initialized with 0 entries 0 lookups
+2025-06-30 02:36:13,145 INFO  namenode.FSNamesystem (FSNamesystem.java:loadFromDisk(815)) - Finished loading FSImage in 21599 msecs
+2025-06-30 02:36:28,374 INFO  namenode.NameNode (NameNodeRpcServer.java:<init>(451)) - RPC server is binding to hadoop:9000
+2025-06-30 02:36:28,432 INFO  namenode.NameNode (NameNodeRpcServer.java:<init>(456)) - Enable NameNode state context:false
+2025-06-30 02:36:30,224 INFO  ipc.CallQueueManager (CallQueueManager.java:<init>(90)) - Using callQueue: class java.util.concurrent.LinkedBlockingQueue, queueCapacity: 1000, scheduler: class org.apache.hadoop.ipc.DefaultRpcScheduler, ipcBackoff: false.
+2025-06-30 02:36:30,951 INFO  ipc.Server (Server.java:run(1319)) - Starting Socket Reader #1 for port 9000
+2025-06-30 02:36:34,094 INFO  namenode.FSNamesystem (FSNamesystem.java:registerMBean(5501)) - Registered FSNamesystemState, ReplicatedBlocksState and ECBlockGroupsState MBeans.
+2025-06-30 02:36:35,367 INFO  namenode.LeaseManager (LeaseManager.java:getNumUnderConstructionBlocks(166)) - Number of blocks under construction: 0
+2025-06-30 02:36:36,367 INFO  blockmanagement.DatanodeAdminDefaultMonitor (DatanodeAdminDefaultMonitor.java:processConf(116)) - Initialized the Default Decommission and Maintenance monitor
+2025-06-30 02:36:36,420 INFO  blockmanagement.BlockManager (BlockManager.java:run(4968)) - Start MarkedDeleteBlockScrubber thread
+2025-06-30 02:36:36,511 INFO  blockmanagement.BlockManager (BlockManager.java:initializeReplQueues(5176)) - initializing replication queues
+2025-06-30 02:36:36,734 INFO  hdfs.StateChange (BlockManagerSafeMode.java:leaveSafeMode(399)) - STATE* Leaving safe mode after 0 secs
+2025-06-30 02:36:36,780 INFO  hdfs.StateChange (BlockManagerSafeMode.java:leaveSafeMode(405)) - STATE* Network topology has 0 racks and 0 datanodes
+2025-06-30 02:36:36,812 INFO  hdfs.StateChange (BlockManagerSafeMode.java:leaveSafeMode(407)) - STATE* UnderReplicatedBlocks has 0 blocks
+2025-06-30 02:36:37,202 INFO  blockmanagement.BlockManager (BlockManager.java:processMisReplicatesAsync(3742)) - Total number of blocks            = 0
+2025-06-30 02:36:37,290 INFO  blockmanagement.BlockManager (BlockManager.java:processMisReplicatesAsync(3743)) - Number of invalid blocks          = 0
+2025-06-30 02:36:37,381 INFO  blockmanagement.BlockManager (BlockManager.java:processMisReplicatesAsync(3744)) - Number of under-replicated blocks = 0
+2025-06-30 02:36:37,450 INFO  blockmanagement.BlockManager (BlockManager.java:processMisReplicatesAsync(3745)) - Number of  over-replicated blocks = 0
+2025-06-30 02:36:37,482 INFO  blockmanagement.BlockManager (BlockManager.java:processMisReplicatesAsync(3747)) - Number of blocks being written    = 0
+2025-06-30 02:36:37,500 INFO  hdfs.StateChange (BlockManager.java:processMisReplicatesAsync(3750)) - STATE* Replication Queue initialization scan for invalid, over- and under-replicated blocks completed in 764 msec
+2025-06-30 02:36:40,208 INFO  ipc.Server (Server.java:run(1398)) - IPC Server listener on 9000: starting
+2025-06-30 02:36:40,292 INFO  ipc.Server (Server.java:run(1558)) - IPC Server Responder: starting
+2025-06-30 02:36:40,780 INFO  namenode.NameNode (NameNode.java:startCommonServices(904)) - NameNode RPC up at: hadoop/127.0.0.1:9000
+2025-06-30 02:36:41,027 INFO  namenode.FSNamesystem (FSNamesystem.java:startActiveServices(1353)) - Starting services required for active state
+2025-06-30 02:36:41,976 INFO  namenode.FSDirectory (FSDirectory.java:updateCountForQuota(840)) - Initializing quota with 12 thread(s)
+2025-06-30 02:36:43,189 INFO  namenode.FSDirectory (FSDirectory.java:updateCountForQuota(849)) - Quota initialization completed in 1189 milliseconds
 name space=9
 storage space=0
 storage types=RAM_DISK=0, SSD=0, DISK=0, ARCHIVE=0, PROVIDED=0
-2025-06-29 23:01:53,044 INFO  blockmanagement.CacheReplicationMonitor (CacheReplicationMonitor.java:run(160)) - Starting CacheReplicationMonitor with interval 30000 milliseconds
-2025-06-29 23:02:03,550 INFO  hdfs.StateChange (DatanodeManager.java:registerDatanode(1168)) - BLOCK* registerDatanode: from DatanodeRegistration(127.0.0.1:9866, datanodeUuid=6200348a-5533-4665-8b58-83bb8e827ded, infoPort=9864, infoSecurePort=0, ipcPort=9867, storageInfo=lv=-57;cid=CID-9483172c-cb70-4bca-998d-2c3a820d91df;nsid=667841717;c=1749006972704) storage 6200348a-5533-4665-8b58-83bb8e827ded
-2025-06-29 23:02:03,603 INFO  net.NetworkTopology (NetworkTopology.java:add(156)) - Adding a new node: /default-rack/127.0.0.1:9866
-2025-06-29 23:02:03,634 INFO  blockmanagement.BlockReportLeaseManager (BlockReportLeaseManager.java:registerNode(200)) - Registered DN 6200348a-5533-4665-8b58-83bb8e827ded (127.0.0.1:9866).
-2025-06-29 23:02:04,760 INFO  blockmanagement.DatanodeDescriptor (DatanodeDescriptor.java:updateStorage(1010)) - Adding new storage ID DS-f60a695d-6038-4c60-ab30-5182c0ac12f4 for DN 127.0.0.1:9866
-2025-06-29 23:02:05,948 INFO  BlockStateChange (BlockManager.java:processReport(2793)) - BLOCK* processReport 0x8cc9d9570f018199 with lease ID 0x997cf886412f20d5: Processing first storage report for DS-f60a695d-6038-4c60-ab30-5182c0ac12f4 from datanode DatanodeRegistration(127.0.0.1:9866, datanodeUuid=6200348a-5533-4665-8b58-83bb8e827ded, infoPort=9864, infoSecurePort=0, ipcPort=9867, storageInfo=lv=-57;cid=CID-9483172c-cb70-4bca-998d-2c3a820d91df;nsid=667841717;c=1749006972704)
-2025-06-29 23:02:05,991 INFO  BlockStateChange (BlockManager.java:processReport(2825)) - BLOCK* processReport 0x8cc9d9570f018199 with lease ID 0x997cf886412f20d5: from storage DS-f60a695d-6038-4c60-ab30-5182c0ac12f4 node DatanodeRegistration(127.0.0.1:9866, datanodeUuid=6200348a-5533-4665-8b58-83bb8e827ded, infoPort=9864, infoSecurePort=0, ipcPort=9867, storageInfo=lv=-57;cid=CID-9483172c-cb70-4bca-998d-2c3a820d91df;nsid=667841717;c=1749006972704), blocks: 0, hasStaleStorage: false, processing time: 33 msecs, invalidatedBlocks: 0
-2025-06-29 23:02:43,577 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=getfileinfo	src=/user/waze	dst=null	perm=null	proto=rpc
-2025-06-29 23:02:43,581 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=getfileinfo	src=/tmp/hadoop-yarn/staging/history/done	dst=null	perm=null	proto=rpc
-2025-06-29 23:02:44,163 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=getfileinfo	src=/tmp/hadoop-yarn/staging/history/done_intermediate	dst=null	perm=null	proto=rpc
-2025-06-29 23:02:44,253 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/hadoop-yarn/staging/history/done	dst=null	perm=null	proto=rpc
-2025-06-29 23:03:04,647 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=getfileinfo	src=/user/waze	dst=null	perm=null	proto=rpc
-2025-06-29 23:03:16,605 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/hadoop-yarn/staging/history/done	dst=null	perm=null	proto=rpc
-2025-06-29 23:04:00,484 INFO  util.JvmPauseMonitor (JvmPauseMonitor.java:run(205)) - Detected pause in JVM or host machine (eg GC): pause of approximately 1293ms
+2025-06-30 02:36:43,977 INFO  blockmanagement.CacheReplicationMonitor (CacheReplicationMonitor.java:run(160)) - Starting CacheReplicationMonitor with interval 30000 milliseconds
+2025-06-30 02:36:59,477 INFO  util.JvmPauseMonitor (JvmPauseMonitor.java:run(205)) - Detected pause in JVM or host machine (eg GC): pause of approximately 1607ms
 No GCs detected
-2025-06-29 23:04:04,001 INFO  util.JvmPauseMonitor (JvmPauseMonitor.java:run(205)) - Detected pause in JVM or host machine (eg GC): pause of approximately 1016ms
+2025-06-30 02:37:05,876 INFO  util.JvmPauseMonitor (JvmPauseMonitor.java:run(205)) - Detected pause in JVM or host machine (eg GC): pause of approximately 3741ms
 No GCs detected
-2025-06-29 23:05:46,551 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/hadoop-yarn/staging/history/done_intermediate	dst=null	perm=null	proto=rpc
-2025-06-29 23:08:48,405 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/hadoop-yarn/staging/history/done_intermediate	dst=null	perm=null	proto=rpc
-2025-06-29 23:11:46,536 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/hadoop-yarn/staging/history/done_intermediate	dst=null	perm=null	proto=rpc
-2025-06-29 23:14:46,525 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/hadoop-yarn/staging/history/done_intermediate	dst=null	perm=null	proto=rpc
-2025-06-29 23:17:46,487 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/hadoop-yarn/staging/history/done_intermediate	dst=null	perm=null	proto=rpc
-2025-06-29 23:20:46,482 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/hadoop-yarn/staging/history/done_intermediate	dst=null	perm=null	proto=rpc
-2025-06-29 23:23:46,669 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/hadoop-yarn/staging/history/done_intermediate	dst=null	perm=null	proto=rpc
-2025-06-29 23:26:46,471 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/hadoop-yarn/staging/history/done_intermediate	dst=null	perm=null	proto=rpc
-2025-06-29 23:29:46,459 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/hadoop-yarn/staging/history/done_intermediate	dst=null	perm=null	proto=rpc
-2025-06-29 23:32:46,517 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/hadoop-yarn/staging/history/done_intermediate	dst=null	perm=null	proto=rpc
-2025-06-29 23:35:46,744 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/hadoop-yarn/staging/history/done_intermediate	dst=null	perm=null	proto=rpc
-2025-06-29 23:38:46,435 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/hadoop-yarn/staging/history/done_intermediate	dst=null	perm=null	proto=rpc
-2025-06-29 23:41:46,477 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/hadoop-yarn/staging/history/done_intermediate	dst=null	perm=null	proto=rpc
-2025-06-29 23:44:46,815 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/hadoop-yarn/staging/history/done_intermediate	dst=null	perm=null	proto=rpc
-2025-06-29 23:47:46,470 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/hadoop-yarn/staging/history/done_intermediate	dst=null	perm=null	proto=rpc
-2025-06-29 23:50:46,373 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/hadoop-yarn/staging/history/done_intermediate	dst=null	perm=null	proto=rpc
-2025-06-29 23:53:46,355 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/hadoop-yarn/staging/history/done_intermediate	dst=null	perm=null	proto=rpc
-2025-06-29 23:56:46,451 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/hadoop-yarn/staging/history/done_intermediate	dst=null	perm=null	proto=rpc
-2025-06-29 23:59:46,275 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/hadoop-yarn/staging/history/done_intermediate	dst=null	perm=null	proto=rpc
-2025-06-30 00:02:46,253 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/hadoop-yarn/staging/history/done_intermediate	dst=null	perm=null	proto=rpc
-2025-06-30 00:04:56,407 INFO  util.JvmPauseMonitor (JvmPauseMonitor.java:run(205)) - Detected pause in JVM or host machine (eg GC): pause of approximately 1455ms
+2025-06-30 02:37:14,585 INFO  util.JvmPauseMonitor (JvmPauseMonitor.java:run(205)) - Detected pause in JVM or host machine (eg GC): pause of approximately 1599ms
 No GCs detected
-2025-06-30 00:05:46,253 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/hadoop-yarn/staging/history/done_intermediate	dst=null	perm=null	proto=rpc
-2025-06-30 00:08:46,217 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/hadoop-yarn/staging/history/done_intermediate	dst=null	perm=null	proto=rpc
-2025-06-30 00:11:46,292 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/hadoop-yarn/staging/history/done_intermediate	dst=null	perm=null	proto=rpc
-2025-06-30 00:14:46,159 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/hadoop-yarn/staging/history/done_intermediate	dst=null	perm=null	proto=rpc
-2025-06-30 00:17:48,346 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/hadoop-yarn/staging/history/done_intermediate	dst=null	perm=null	proto=rpc
-2025-06-30 00:17:58,607 INFO  util.JvmPauseMonitor (JvmPauseMonitor.java:run(205)) - Detected pause in JVM or host machine (eg GC): pause of approximately 1016ms
+2025-06-30 02:37:43,085 INFO  hdfs.StateChange (DatanodeManager.java:registerDatanode(1168)) - BLOCK* registerDatanode: from DatanodeRegistration(127.0.0.1:9866, datanodeUuid=6200348a-5533-4665-8b58-83bb8e827ded, infoPort=9864, infoSecurePort=0, ipcPort=9867, storageInfo=lv=-57;cid=CID-9483172c-cb70-4bca-998d-2c3a820d91df;nsid=667841717;c=1749006972704) storage 6200348a-5533-4665-8b58-83bb8e827ded
+2025-06-30 02:37:43,147 INFO  net.NetworkTopology (NetworkTopology.java:add(156)) - Adding a new node: /default-rack/127.0.0.1:9866
+2025-06-30 02:37:43,154 INFO  blockmanagement.BlockReportLeaseManager (BlockReportLeaseManager.java:registerNode(200)) - Registered DN 6200348a-5533-4665-8b58-83bb8e827ded (127.0.0.1:9866).
+2025-06-30 02:37:45,301 INFO  blockmanagement.DatanodeDescriptor (DatanodeDescriptor.java:updateStorage(1010)) - Adding new storage ID DS-f60a695d-6038-4c60-ab30-5182c0ac12f4 for DN 127.0.0.1:9866
+2025-06-30 02:37:46,741 INFO  BlockStateChange (BlockManager.java:processReport(2793)) - BLOCK* processReport 0xc9597dd434060f26 with lease ID 0x5c1da3249d16d79a: Processing first storage report for DS-f60a695d-6038-4c60-ab30-5182c0ac12f4 from datanode DatanodeRegistration(127.0.0.1:9866, datanodeUuid=6200348a-5533-4665-8b58-83bb8e827ded, infoPort=9864, infoSecurePort=0, ipcPort=9867, storageInfo=lv=-57;cid=CID-9483172c-cb70-4bca-998d-2c3a820d91df;nsid=667841717;c=1749006972704)
+2025-06-30 02:37:46,805 INFO  BlockStateChange (BlockManager.java:processReport(2825)) - BLOCK* processReport 0xc9597dd434060f26 with lease ID 0x5c1da3249d16d79a: from storage DS-f60a695d-6038-4c60-ab30-5182c0ac12f4 node DatanodeRegistration(127.0.0.1:9866, datanodeUuid=6200348a-5533-4665-8b58-83bb8e827ded, infoPort=9864, infoSecurePort=0, ipcPort=9867, storageInfo=lv=-57;cid=CID-9483172c-cb70-4bca-998d-2c3a820d91df;nsid=667841717;c=1749006972704), blocks: 0, hasStaleStorage: false, processing time: 63 msecs, invalidatedBlocks: 0
+2025-06-30 02:38:08,669 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=getfileinfo	src=/user/waze	dst=null	perm=null	proto=rpc
+2025-06-30 02:38:10,997 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=getfileinfo	src=/tmp/hadoop-yarn/staging/history/done	dst=null	perm=null	proto=rpc
+2025-06-30 02:38:15,332 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=getfileinfo	src=/tmp/hadoop-yarn/staging/history/done_intermediate	dst=null	perm=null	proto=rpc
+2025-06-30 02:38:16,029 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/hadoop-yarn/staging/history/done	dst=null	perm=null	proto=rpc
+2025-06-30 02:38:56,489 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/hadoop-yarn/staging/history/done	dst=null	perm=null	proto=rpc
+2025-06-30 02:39:05,766 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=getfileinfo	src=/user/waze	dst=null	perm=null	proto=rpc
+2025-06-30 02:40:16,971 INFO  util.JvmPauseMonitor (JvmPauseMonitor.java:run(205)) - Detected pause in JVM or host machine (eg GC): pause of approximately 1126ms
 No GCs detected
-2025-06-30 00:20:48,029 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/hadoop-yarn/staging/history/done_intermediate	dst=null	perm=null	proto=rpc
-2025-06-30 00:23:47,222 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/hadoop-yarn/staging/history/done_intermediate	dst=null	perm=null	proto=rpc
-2025-06-30 00:24:47,888 INFO  util.JvmPauseMonitor (JvmPauseMonitor.java:run(205)) - Detected pause in JVM or host machine (eg GC): pause of approximately 1028ms
+2025-06-30 02:40:29,928 INFO  util.JvmPauseMonitor (JvmPauseMonitor.java:run(205)) - Detected pause in JVM or host machine (eg GC): pause of approximately 1145ms
 No GCs detected
-2025-06-30 00:26:46,037 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/hadoop-yarn/staging/history/done_intermediate	dst=null	perm=null	proto=rpc
-2025-06-30 00:28:55,125 INFO  util.JvmPauseMonitor (JvmPauseMonitor.java:run(205)) - Detected pause in JVM or host machine (eg GC): pause of approximately 3030ms
+2025-06-30 02:40:32,102 INFO  util.JvmPauseMonitor (JvmPauseMonitor.java:run(205)) - Detected pause in JVM or host machine (eg GC): pause of approximately 1635ms
 No GCs detected
-2025-06-30 00:29:47,257 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/hadoop-yarn/staging/history/done_intermediate	dst=null	perm=null	proto=rpc
-2025-06-30 00:32:46,398 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/hadoop-yarn/staging/history/done_intermediate	dst=null	perm=null	proto=rpc
-2025-06-30 00:33:37,936 INFO  util.JvmPauseMonitor (JvmPauseMonitor.java:run(205)) - Detected pause in JVM or host machine (eg GC): pause of approximately 1389ms
+2025-06-30 02:41:25,937 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/hadoop-yarn/staging/history/done_intermediate	dst=null	perm=null	proto=rpc
+2025-06-30 02:44:27,755 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/hadoop-yarn/staging/history/done_intermediate	dst=null	perm=null	proto=rpc
+2025-06-30 02:47:25,834 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/hadoop-yarn/staging/history/done_intermediate	dst=null	perm=null	proto=rpc
+2025-06-30 02:48:10,069 INFO  util.JvmPauseMonitor (JvmPauseMonitor.java:run(205)) - Detected pause in JVM or host machine (eg GC): pause of approximately 2683ms
 No GCs detected
-2025-06-30 00:35:14,855 INFO  util.JvmPauseMonitor (JvmPauseMonitor.java:run(205)) - Detected pause in JVM or host machine (eg GC): pause of approximately 1491ms
+2025-06-30 02:48:13,998 INFO  util.JvmPauseMonitor (JvmPauseMonitor.java:run(205)) - Detected pause in JVM or host machine (eg GC): pause of approximately 2605ms
 No GCs detected
-2025-06-30 00:35:18,860 INFO  util.JvmPauseMonitor (JvmPauseMonitor.java:run(205)) - Detected pause in JVM or host machine (eg GC): pause of approximately 2783ms
+2025-06-30 02:50:25,892 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/hadoop-yarn/staging/history/done_intermediate	dst=null	perm=null	proto=rpc
+2025-06-30 02:53:04,758 INFO  util.JvmPauseMonitor (JvmPauseMonitor.java:run(205)) - Detected pause in JVM or host machine (eg GC): pause of approximately 1423ms
 No GCs detected
-2025-06-30 00:35:46,035 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/hadoop-yarn/staging/history/done_intermediate	dst=null	perm=null	proto=rpc
-2025-06-30 00:38:46,076 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/hadoop-yarn/staging/history/done_intermediate	dst=null	perm=null	proto=rpc
-2025-06-30 00:41:46,022 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/hadoop-yarn/staging/history/done_intermediate	dst=null	perm=null	proto=rpc
-2025-06-30 00:42:43,565 INFO  util.JvmPauseMonitor (JvmPauseMonitor.java:run(205)) - Detected pause in JVM or host machine (eg GC): pause of approximately 2435ms
+2025-06-30 02:53:25,853 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/hadoop-yarn/staging/history/done_intermediate	dst=null	perm=null	proto=rpc
+2025-06-30 02:55:47,290 INFO  util.JvmPauseMonitor (JvmPauseMonitor.java:run(205)) - Detected pause in JVM or host machine (eg GC): pause of approximately 1469ms
 No GCs detected
-2025-06-30 00:44:45,991 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/hadoop-yarn/staging/history/done_intermediate	dst=null	perm=null	proto=rpc
-2025-06-30 00:47:45,947 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/hadoop-yarn/staging/history/done_intermediate	dst=null	perm=null	proto=rpc
-2025-06-30 00:50:46,807 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/hadoop-yarn/staging/history/done_intermediate	dst=null	perm=null	proto=rpc
-2025-06-30 00:53:45,871 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/hadoop-yarn/staging/history/done_intermediate	dst=null	perm=null	proto=rpc
-2025-06-30 00:56:45,855 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/hadoop-yarn/staging/history/done_intermediate	dst=null	perm=null	proto=rpc
-2025-06-30 00:59:48,365 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/hadoop-yarn/staging/history/done_intermediate	dst=null	perm=null	proto=rpc
-2025-06-30 01:02:45,797 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/hadoop-yarn/staging/history/done_intermediate	dst=null	perm=null	proto=rpc
-2025-06-30 01:04:53,196 INFO  util.JvmPauseMonitor (JvmPauseMonitor.java:run(205)) - Detected pause in JVM or host machine (eg GC): pause of approximately 1215ms
+2025-06-30 02:56:25,850 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/hadoop-yarn/staging/history/done_intermediate	dst=null	perm=null	proto=rpc
+2025-06-30 02:57:32,655 INFO  util.JvmPauseMonitor (JvmPauseMonitor.java:run(205)) - Detected pause in JVM or host machine (eg GC): pause of approximately 1849ms
 No GCs detected
-2025-06-30 01:05:46,115 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/hadoop-yarn/staging/history/done_intermediate	dst=null	perm=null	proto=rpc
-2025-06-30 01:08:46,184 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/hadoop-yarn/staging/history/done_intermediate	dst=null	perm=null	proto=rpc
-2025-06-30 01:11:46,270 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/hadoop-yarn/staging/history/done_intermediate	dst=null	perm=null	proto=rpc
-2025-06-30 01:14:36,350 INFO  util.JvmPauseMonitor (JvmPauseMonitor.java:run(205)) - Detected pause in JVM or host machine (eg GC): pause of approximately 1548ms
+2025-06-30 02:59:25,732 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/hadoop-yarn/staging/history/done_intermediate	dst=null	perm=null	proto=rpc
+2025-06-30 02:59:41,175 INFO  util.JvmPauseMonitor (JvmPauseMonitor.java:run(205)) - Detected pause in JVM or host machine (eg GC): pause of approximately 2066ms
 No GCs detected
-2025-06-30 01:14:46,151 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/hadoop-yarn/staging/history/done_intermediate	dst=null	perm=null	proto=rpc
-2025-06-30 01:17:46,139 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/hadoop-yarn/staging/history/done_intermediate	dst=null	perm=null	proto=rpc
-2025-06-30 01:20:46,031 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/hadoop-yarn/staging/history/done_intermediate	dst=null	perm=null	proto=rpc
-2025-06-30 01:23:46,225 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/hadoop-yarn/staging/history/done_intermediate	dst=null	perm=null	proto=rpc
-2025-06-30 01:26:32,531 INFO  util.JvmPauseMonitor (JvmPauseMonitor.java:run(205)) - Detected pause in JVM or host machine (eg GC): pause of approximately 2228ms
+2025-06-30 02:59:46,148 INFO  util.JvmPauseMonitor (JvmPauseMonitor.java:run(205)) - Detected pause in JVM or host machine (eg GC): pause of approximately 1364ms
 No GCs detected
-2025-06-30 01:26:46,379 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/hadoop-yarn/staging/history/done_intermediate	dst=null	perm=null	proto=rpc
-2025-06-30 01:29:46,096 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/hadoop-yarn/staging/history/done_intermediate	dst=null	perm=null	proto=rpc
-2025-06-30 01:32:46,056 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/hadoop-yarn/staging/history/done_intermediate	dst=null	perm=null	proto=rpc
-2025-06-30 01:35:45,995 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/hadoop-yarn/staging/history/done_intermediate	dst=null	perm=null	proto=rpc
-2025-06-30 01:38:45,970 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/hadoop-yarn/staging/history/done_intermediate	dst=null	perm=null	proto=rpc
-2025-06-30 01:41:45,943 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/hadoop-yarn/staging/history/done_intermediate	dst=null	perm=null	proto=rpc
-2025-06-30 01:44:45,958 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/hadoop-yarn/staging/history/done_intermediate	dst=null	perm=null	proto=rpc
-2025-06-30 01:45:43,305 INFO  util.JvmPauseMonitor (JvmPauseMonitor.java:run(205)) - Detected pause in JVM or host machine (eg GC): pause of approximately 1338ms
+2025-06-30 02:59:51,514 INFO  util.JvmPauseMonitor (JvmPauseMonitor.java:run(205)) - Detected pause in JVM or host machine (eg GC): pause of approximately 1394ms
 No GCs detected
-2025-06-30 01:47:45,862 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/hadoop-yarn/staging/history/done_intermediate	dst=null	perm=null	proto=rpc
-2025-06-30 01:49:31,900 INFO  util.JvmPauseMonitor (JvmPauseMonitor.java:run(205)) - Detected pause in JVM or host machine (eg GC): pause of approximately 1190ms
+2025-06-30 03:02:25,680 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/hadoop-yarn/staging/history/done_intermediate	dst=null	perm=null	proto=rpc
+2025-06-30 03:03:16,273 INFO  util.JvmPauseMonitor (JvmPauseMonitor.java:run(205)) - Detected pause in JVM or host machine (eg GC): pause of approximately 1015ms
 No GCs detected
-2025-06-30 01:50:11,889 INFO  util.JvmPauseMonitor (JvmPauseMonitor.java:run(205)) - Detected pause in JVM or host machine (eg GC): pause of approximately 1313ms
+2025-06-30 03:03:23,545 INFO  util.JvmPauseMonitor (JvmPauseMonitor.java:run(205)) - Detected pause in JVM or host machine (eg GC): pause of approximately 4282ms
 No GCs detected
-2025-06-30 01:50:45,824 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/hadoop-yarn/staging/history/done_intermediate	dst=null	perm=null	proto=rpc
-2025-06-30 01:53:45,835 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/hadoop-yarn/staging/history/done_intermediate	dst=null	perm=null	proto=rpc
-2025-06-30 01:56:45,954 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/hadoop-yarn/staging/history/done_intermediate	dst=null	perm=null	proto=rpc
-2025-06-30 01:57:07,863 INFO  util.JvmPauseMonitor (JvmPauseMonitor.java:run(205)) - Detected pause in JVM or host machine (eg GC): pause of approximately 1570ms
+2025-06-30 03:05:25,821 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/hadoop-yarn/staging/history/done_intermediate	dst=null	perm=null	proto=rpc
+2025-06-30 03:07:54,663 INFO  util.JvmPauseMonitor (JvmPauseMonitor.java:run(205)) - Detected pause in JVM or host machine (eg GC): pause of approximately 1932ms
 No GCs detected
-2025-06-30 01:58:34,324 INFO  util.JvmPauseMonitor (JvmPauseMonitor.java:run(205)) - Detected pause in JVM or host machine (eg GC): pause of approximately 1129ms
+2025-06-30 03:08:02,785 INFO  util.JvmPauseMonitor (JvmPauseMonitor.java:run(205)) - Detected pause in JVM or host machine (eg GC): pause of approximately 1986ms
 No GCs detected
-2025-06-30 01:58:40,275 INFO  util.JvmPauseMonitor (JvmPauseMonitor.java:run(205)) - Detected pause in JVM or host machine (eg GC): pause of approximately 1286ms
+2025-06-30 03:08:25,545 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/hadoop-yarn/staging/history/done_intermediate	dst=null	perm=null	proto=rpc
+2025-06-30 03:11:25,545 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/hadoop-yarn/staging/history/done_intermediate	dst=null	perm=null	proto=rpc
+2025-06-30 03:12:35,730 INFO  util.JvmPauseMonitor (JvmPauseMonitor.java:run(205)) - Detected pause in JVM or host machine (eg GC): pause of approximately 1006ms
 No GCs detected
-2025-06-30 01:59:46,095 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/hadoop-yarn/staging/history/done_intermediate	dst=null	perm=null	proto=rpc
-2025-06-30 02:01:13,409 INFO  util.JvmPauseMonitor (JvmPauseMonitor.java:run(205)) - Detected pause in JVM or host machine (eg GC): pause of approximately 5855ms
+2025-06-30 03:14:25,518 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/hadoop-yarn/staging/history/done_intermediate	dst=null	perm=null	proto=rpc
+2025-06-30 03:17:25,531 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/hadoop-yarn/staging/history/done_intermediate	dst=null	perm=null	proto=rpc
+2025-06-30 03:20:29,445 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/hadoop-yarn/staging/history/done_intermediate	dst=null	perm=null	proto=rpc
+2025-06-30 03:23:11,525 INFO  util.JvmPauseMonitor (JvmPauseMonitor.java:run(205)) - Detected pause in JVM or host machine (eg GC): pause of approximately 1014ms
 No GCs detected
-2025-06-30 02:01:19,188 INFO  util.JvmPauseMonitor (JvmPauseMonitor.java:run(205)) - Detected pause in JVM or host machine (eg GC): pause of approximately 3705ms
+2025-06-30 03:23:15,202 INFO  util.JvmPauseMonitor (JvmPauseMonitor.java:run(205)) - Detected pause in JVM or host machine (eg GC): pause of approximately 1151ms
 No GCs detected
-2025-06-30 02:02:47,077 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/hadoop-yarn/staging/history/done_intermediate	dst=null	perm=null	proto=rpc
-2025-06-30 02:05:46,006 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/hadoop-yarn/staging/history/done_intermediate	dst=null	perm=null	proto=rpc
-2025-06-30 02:05:59,354 INFO  util.JvmPauseMonitor (JvmPauseMonitor.java:run(205)) - Detected pause in JVM or host machine (eg GC): pause of approximately 2011ms
+2025-06-30 03:23:26,014 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/hadoop-yarn/staging/history/done_intermediate	dst=null	perm=null	proto=rpc
+2025-06-30 03:25:36,955 INFO  util.JvmPauseMonitor (JvmPauseMonitor.java:run(205)) - Detected pause in JVM or host machine (eg GC): pause of approximately 1223ms
 No GCs detected
-2025-06-30 02:06:11,241 INFO  util.JvmPauseMonitor (JvmPauseMonitor.java:run(205)) - Detected pause in JVM or host machine (eg GC): pause of approximately 1203ms
+2025-06-30 03:26:26,674 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/hadoop-yarn/staging/history/done_intermediate	dst=null	perm=null	proto=rpc
+2025-06-30 03:29:25,581 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/hadoop-yarn/staging/history/done_intermediate	dst=null	perm=null	proto=rpc
+2025-06-30 03:32:25,137 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/hadoop-yarn/staging/history/done_intermediate	dst=null	perm=null	proto=rpc
+2025-06-30 03:35:25,077 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/hadoop-yarn/staging/history/done_intermediate	dst=null	perm=null	proto=rpc
+2025-06-30 03:37:11,376 INFO  util.JvmPauseMonitor (JvmPauseMonitor.java:run(205)) - Detected pause in JVM or host machine (eg GC): pause of approximately 1168ms
 No GCs detected
+2025-06-30 03:37:20,610 INFO  util.JvmPauseMonitor (JvmPauseMonitor.java:run(205)) - Detected pause in JVM or host machine (eg GC): pause of approximately 2410ms
+No GCs detected
+2025-06-30 03:38:27,363 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/hadoop-yarn/staging/history/done_intermediate	dst=null	perm=null	proto=rpc
+2025-06-30 03:39:14,543 INFO  util.JvmPauseMonitor (JvmPauseMonitor.java:run(205)) - Detected pause in JVM or host machine (eg GC): pause of approximately 2171ms
+No GCs detected
+2025-06-30 03:41:25,107 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/hadoop-yarn/staging/history/done_intermediate	dst=null	perm=null	proto=rpc
+2025-06-30 03:44:25,220 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/hadoop-yarn/staging/history/done_intermediate	dst=null	perm=null	proto=rpc
+2025-06-30 03:45:17,291 INFO  util.JvmPauseMonitor (JvmPauseMonitor.java:run(205)) - Detected pause in JVM or host machine (eg GC): pause of approximately 1974ms
+No GCs detected
+2025-06-30 03:47:25,074 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/hadoop-yarn/staging/history/done_intermediate	dst=null	perm=null	proto=rpc
+2025-06-30 03:50:24,994 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/hadoop-yarn/staging/history/done_intermediate	dst=null	perm=null	proto=rpc
+2025-06-30 03:53:24,958 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/hadoop-yarn/staging/history/done_intermediate	dst=null	perm=null	proto=rpc
+2025-06-30 03:56:13,022 INFO  util.JvmPauseMonitor (JvmPauseMonitor.java:run(205)) - Detected pause in JVM or host machine (eg GC): pause of approximately 1209ms
+No GCs detected
+2025-06-30 03:56:19,059 INFO  util.JvmPauseMonitor (JvmPauseMonitor.java:run(205)) - Detected pause in JVM or host machine (eg GC): pause of approximately 1903ms
+No GCs detected
+2025-06-30 03:56:25,251 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/hadoop-yarn/staging/history/done_intermediate	dst=null	perm=null	proto=rpc
+2025-06-30 03:57:48,828 INFO  util.JvmPauseMonitor (JvmPauseMonitor.java:run(205)) - Detected pause in JVM or host machine (eg GC): pause of approximately 1454ms
+No GCs detected
+2025-06-30 03:59:24,959 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/hadoop-yarn/staging/history/done_intermediate	dst=null	perm=null	proto=rpc
+2025-06-30 04:02:29,755 INFO  util.JvmPauseMonitor (JvmPauseMonitor.java:run(205)) - Detected pause in JVM or host machine (eg GC): pause of approximately 1340ms
+No GCs detected
+2025-06-30 04:02:35,210 INFO  util.JvmPauseMonitor (JvmPauseMonitor.java:run(205)) - Detected pause in JVM or host machine (eg GC): pause of approximately 2045ms
+No GCs detected
+2025-06-30 04:02:35,591 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/hadoop-yarn/staging/history/done_intermediate	dst=null	perm=null	proto=rpc
+2025-06-30 04:05:24,895 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/hadoop-yarn/staging/history/done_intermediate	dst=null	perm=null	proto=rpc
+2025-06-30 04:08:24,866 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/hadoop-yarn/staging/history/done_intermediate	dst=null	perm=null	proto=rpc
+2025-06-30 04:09:30,704 INFO  util.JvmPauseMonitor (JvmPauseMonitor.java:run(205)) - Detected pause in JVM or host machine (eg GC): pause of approximately 1511ms
+No GCs detected
+2025-06-30 04:11:24,887 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/hadoop-yarn/staging/history/done_intermediate	dst=null	perm=null	proto=rpc
+2025-06-30 04:12:23,318 INFO  util.JvmPauseMonitor (JvmPauseMonitor.java:run(205)) - Detected pause in JVM or host machine (eg GC): pause of approximately 1325ms
+No GCs detected
+2025-06-30 04:13:57,729 INFO  util.JvmPauseMonitor (JvmPauseMonitor.java:run(205)) - Detected pause in JVM or host machine (eg GC): pause of approximately 1062ms
+No GCs detected
+2025-06-30 04:14:25,364 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/hadoop-yarn/staging/history/done_intermediate	dst=null	perm=null	proto=rpc
+2025-06-30 04:17:24,869 INFO  FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8570)) - allowed=true	ugi=hadoop (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/tmp/hadoop-yarn/staging/history/done_intermediate	dst=null	perm=null	proto=rpc
